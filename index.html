@@ -28,10 +28,10 @@
                 <h1 class="title title_margin-xs">Подберём для <br class="d-md-none">вас идеальных жильцов</h1>
                 <div class="preview__subtitle title_size-md text-light">В точном соответствии с вашими требованиями</div>
                 <div class="horizontal-form">
-                    <form action="#">
+                    <form action="send.php">
                         <div class="horizontal-form__inside">
-                            <div class="form-group"><input type="tel" required class="form-contol mask" placeholder="+7 ("></div>
-                            <div class="form-group"><button class="btn w-100-sm" type="button">Начать подбор</button></div>
+                            <div class="form-group"><input type="tel" required class="form-contol mask phone" id="phone" placeholder="+7 ("></div>
+                            <div class="form-group"><button class="btn w-100-sm btnsubmit" type="submit" name="submit">Начать подбор</button></div>
                         </div>
                     </form>
                 </div>
@@ -290,9 +290,9 @@
                         <p class="d-sm-none">Заполняйте форму прямо сейчас!</p>
                         <p class="d-sm-block d-none">В точном соответствии с вашими требованиями</p>
                         <div class="contacts-block__form">
-                            <form action="#">
-                                <div class="form-group"><input type="tel" required class="form-contol mask" placeholder="+7 ("></div>
-                                <div class="form-group"><button class="btn w-100" type="button">Начать подбор</button></div>
+                            <form action="send.php">
+                                <div class="form-group"><input type="tel" required class="form-contol phone" id="phone" placeholder="+7 ("></div>
+                                <div class="form-group"><button class="btn w-100 btnsubmit" type="submit" name="submit">Начать подбор</button></div>
                             </form>
                         </div>
                     </div>
