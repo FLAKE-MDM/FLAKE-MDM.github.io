@@ -1,89 +1,72 @@
-$('.steps__slider').slick({
-  slidesToShow: 3,
-  arrows: false,
+$('.nav-tab').slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 8,
   responsive: [
     {
-      breakpoint: 8000,
-      settings: "unslick"
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 6,
+      }
     },
     {
       breakpoint: 992,
       settings: {
-        slidesToShow: 1,
-        centerMode: true,
-        centerPadding: '10px',
-        dots: true
+        slidesToShow: 4,
       }
-    }
-  ]
-});
-$('.quarantee__slider').slick({
-  slidesToShow: 3,
-  arrows: false,
-  responsive: [
-    {
-      breakpoint: 8000,
-      settings: "unslick"
     },
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 1,
+        infinite: true,
+        arrows: false,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         centerMode: true,
-        centerPadding: '15px',
-        dots: true
+        centerPadding: '30px',
       }
     }
   ]
 });
-$('.surrendered__slider').slick({
-  slidesToShow: 3,
-  arrows: false,
+$('.steps-list').slick({
+  dots: false,
+  infinite: false,
+  arrows:false,
   responsive: [
+    {
+      breakpoint: 8000,
+      settings: "unslick",
+    },
     {
       breakpoint: 992,
       settings: {
         slidesToShow: 2,
-        centerMode: true,
-        centerPadding: '20px',
-        dots: true,
+        slidesToScroll: 2,
       }
     },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        centerMode: true,
-        centerPadding: '15px',
-        dots: true,
-      }
-    }
   ]
 });
-$('.review__slider').slick({
-  slidesToShow: 3,
-  arrows: true,
-  responsive: [
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2,
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        centerMode: true,
-        centerPadding: '15px',
-        adaptiveHeight: true
-      }
-    }
-  ]
-});
-$(document).ready(function(){
-  $('.mask').inputmask("+7 (999) 99-99-999");
-});
+
+// tab
+$('.nav-tab__link').click(function(e){
+  e.preventDefault();
+  $('.nav-tab__link').removeClass("active");
+  $(this).addClass("active");
+  $('.tab-pane').removeClass("show active");
+  $(this.dataset.href).addClass("show active");
+})
 
 
+$('.btn-collapse').click(function(){
+  $(this).toggleClass("active");
+  if($(this).find(".btn-collapse__text").html() == "ПОКАЗАТЬ ЕЩЕ"){
+    $(this).find(".btn-collapse__text").html("СКРЫТЬ ВИДЕО");
+  } else{
+    $(this).find(".btn-collapse__text").html("ПОКАЗАТЬ ЕЩЕ");
+  }
+})
 
+$('.faq-item__link').click(function(){
+  $(this).parent().toggleClass('open')
+})

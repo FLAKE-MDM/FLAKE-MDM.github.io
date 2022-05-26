@@ -4,319 +4,728 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Оконный континет</title>
+    <title>Qlipsa</title>
+    <link rel="stylesheet" href="css/fancybox.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/favicon.png">
 </head>
 <body>
     <div class="wrap">
         <div class="container">
             <!-- header -->
-            <header class="header d-flex wrap-sm">
+            <header class="header d-flex">
+                <button class="btn-menu" data-bs-toggle="collapse" data-bs-target="#nav"></button>
                 <a href="/" class="logo header__logo"><img src="img/logo.svg" alt="" class="img-fluid"></a>
-                <div class="slogan d-none d-lg-block">Сдадим вашу квартиру в Москве Без комиссии</div>
-                <a href="" class="whatsapp-link">Напишите в <br>WhatsApp</a>
-                <div class="phone-block">
-                    <p>Звоните, Пн-Вс с 9 до 21</p>
-                    <p><a href="tel:84950213106" class="phone-block__link">8 (495) 021-31-06</a></p>
-                </div>
+                <nav class="nav collapse" id="nav">
+                    <div class="nav__list">
+                        <a href="#" class="nav__link nav__link_active">ТЕСТРИРОВАТЬ ОНЛАЙН</a>
+                        <a href="#" class="nav__link">О QLIPSA</a>
+                        <a href="#" class="nav__link">ДЛЯ КОГО</a>
+                        <a href="#" class="nav__link">ПОЧЕМУ МЫ</a>
+                        <a href="#" class="nav__link">КЕЙСЫ</a>
+                        <a href="#" class="nav__link">КАК РАБОТАЕТ?</a>
+                        <a href="#" class="nav__link">FAQ</a>
+                    </div>
+                </nav>
+                <a href="#" class="btn d-sm-none">РЕГИСТРАЦИЯ</a>
+                <a href="#" class="btn-circle btn-outline btn-circle_sm btn-login header__login">
+                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.625 3.875C3.625 5.73575 5.13925 7.25 7 7.25C8.86075 7.25 10.375 5.73575 10.375 3.875C10.375 2.01425 8.86075 0.5 7 0.5C5.13925 0.5 3.625 2.01425 3.625 3.875ZM13 14.75H13.75V14C13.75 11.1058 11.3942 8.75 8.5 8.75H5.5C2.605 8.75 0.25 11.1058 0.25 14V14.75H13Z" fill="url(#paint0_linear_35_82)"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_35_82" x1="0.25" y1="14.75" x2="14.4792" y2="1.26971" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#7081F6"/>
+                                <stop offset="1" stop-color="#31C5F9"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>                        
+                </a>
             </header>
             <!-- /header -->
             <!-- preview -->
-            <div class="preview margin-x-sm text-center">
-                <h1 class="title title_margin-xs">Подберём для <br class="d-md-none">вас идеальных жильцов</h1>
-                <div class="preview__subtitle title_size-md text-light">В точном соответствии с вашими требованиями</div>
-                <div class="horizontal-form">
-                    <form action="send.php">
-                        <div class="horizontal-form__inside">
-                            <div class="form-group"><input type="tel" required class="form-contol mask phone" id="phone" placeholder="+7 ("></div>
-                            <div class="form-group"><button class="btn w-100-sm btnsubmit" type="submit" name="submit">Начать подбор</button></div>
-                        </div>
-                    </form>
+            <div class="preview row">
+                <div class="col-xl-5 preview__text col-lg-6">
+                    <div class="title title_size-lg preview__title"><span class="text-primary">Увеличьте</span> <br class="d-sm-block">продажи до 50% <br class="d-md-none">с видео от <span class="text-primary">Qlipsa</span></div>
+                    <p><span class="text-primary">Персонализированные ролики</span> <br>для ваших клиентов, автоматическая генерация <br class="d-sm-none">и отправка, подключение к CRM</p>
+                    <a href="#" class="btn-circle">
+                        ПОЛУЧИТЬ <br>ДЕМОРОЛИК
+                        <span class="btn-circle btn-outline btn-circle-absolute btn-circle_md">
+                            <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.5 11.134C20.1667 11.5189 20.1667 12.4811 19.5 12.866L1.5 23.2583C0.833335 23.6432 8.07478e-07 23.1621 8.41127e-07 22.3923L1.74965e-06 1.60769C1.7833e-06 0.837894 0.833336 0.356769 1.5 0.741669L19.5 11.134Z" fill="url(#paint0_linear_64_2436)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_64_2436" x1="-7" y1="-2" x2="21" y2="26" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#7081F6"/>
+                                        <stop offset="1" stop-color="#31C5F9"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>                                
+                        </span>
+                    </a>
+                </div>
+                <div class="col-xl-7 col-lg-6">
+                    <div class="preview__image">
+                        <img src="img/preview.png" alt="" class="img-fluid">
+                    </div>
                 </div>
             </div>
             <!-- /preview -->
+            <!-- about -->
+            <div class="about row section">
+                <div class="col-lg-6 order-lg-2 about__text">
+                    <div class="title title_size-md text-center-md">Что такое <span class="text-primary">Qlipsa</span>?</div>
+                    <div class="about__image d-md-block"><img src="img/about.png" alt="" class="img-fluid"></div>
+                    <div class="d-flex title-wrap">
+                        <div class="title-before"><img src="img/play.svg" alt=""></div>
+                        <div class="title title_size-sm"><span class="text-primary">За 30 секунд</span> генерирует видео для ваших клиентов</div>
+                    </div>
+                    <p><span class="text-primary text-bold">Qlipsa</span> – это сервис быстрого создания персонализированных видео для ваших клиентов от лица компании. Это может быть описание услуг, товара, коммерческое и любое другое предложение в форме ролика или видео презентации.</p>
+                    <p><span class="text-primary text-bold">Qlipsa</span> по вашему шаблону склеивает фото, видео, накладывает музыку, надписи и озвучивает текст.</p>
+                    <p class="text-primary text-bold">Вы получаете полностью готовое видео для отправки потенциальным партнёрам и клиентам.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about__image d-md-none"><img src="img/about.png" alt="" class="img-fluid"></div>
+                </div>
+            </div>
+            <!-- /about -->
+            <!-- for -->
+            <div class="for row section">
+                <div class="col-lg-6">
+                    <div class="title title_size-md text-center-md"><span class="text-primary">Для кого</span> подойдет?</div>
+                    <div class="for__image d-md-block">
+                        <img src="img/for.png" alt="" class="img-fluid">
+                        <a href="#" class="for__btn btn-circle d-sm-none">ПОПРОБОВАТЬ <br>ПРЯМО СЕЙЧАС</a>
+                    </div>
+                    <div class="d-flex title-wrap title-wrap_margin">
+                        <div class="title-before"><img src="img/play.svg" alt=""></div>
+                        <div class="title title_size-sm">Видео <span class="text-primary">Qlipsa</span> досматривают до конца <span class="text-primary">в 5 раз больше</span> чем обычные ролики</div>
+                    </div>
+                    <p><span class="text-primary text-bold">Qlipsa</span> подходит для всех компаний и предпринимателей, которые хотят повысить количество продаж. Персонализированные ролики с обращением к конкретному клиенту, партнёру удерживают их интерес на протяжении всего видео.</p>
+                    <p><span class="text-primary text-bold">Qlipsa</span> подойдёт для любых коммерческих и некоммерческих организаций. </p>
+                    <p class="text-bold text-lg text-margin text-center-sm"><span class="text-primary">Попробуйте Qlipsa</span> и увеличьте конверсию продаж <br class="d-lg-none"><span class="text-primary">до 50% уже в первый месяц</span> после установки!</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="for__image d-md-none">
+                        <img src="img/for.png" alt="" class="img-fluid">
+                        <a href="#" class="for__btn btn-circle">ПОПРОБОВАТЬ <br>ПРЯМО СЕЙЧАС</a>
+                    </div>
+                </div>
+                <div class="for__btn d-sm-block">
+                    <div class="circle circle_sm"></div>
+                    <div class="circle circle_md"></div>
+                    <div class="circle circle_lg"></div>
+                    <a href="#" class="btn-circle">ПОПРОБОВАТЬ ПРЯМО СЕЙЧАС</a>
+                </div>
+            </div>
+            <!-- /for -->
+            <!-- advantages -->
+            <div class="advantages row">
+                <div class="advantages__item_large">
+                    <div class="title title_size-md advantages__title text-center-sm">Преимущества <br class="d-sm-none"><span class="text-primary">Qlipsa</span></div>
+                </div>
+                <a href="#" class="advantages__item advantages__item_margin">
+                    <div class="text-primary text-bold advantages__item-title text-lg text-styling">Новый вид коммуникации</div>
+                    с клиентами, партнерами и потребителями
+                </a>
+                <a href="#" class="advantages__item advantages__item_margin">
+                    <div class="text-primary text-bold advantages__item-title text-lg text-styling">Низкая оплата</div>
+                    всего лишь 15₽ за 1 минуту видео
+                </a>
+                <a href="#" class="advantages__item">
+                    <div class="text-primary text-bold advantages__item-title text-lg text-styling">Даём 100₽ на  Ваш баланс для теста</div>
+                    сохраните ваши деньги, протестировав все возможности <span class="text-primary">Qlipsa</span>
+                </a>
+                <a href="#" class="advantages__item">
+                    <div class="text-primary text-bold advantages__item-title text-lg text-styling">Повышайте конверсию продаж</div>
+                    отправляйте 3000 персонализированных роликов вашим клиентам каждый день
+                </a>
+                <a href="#" class="advantages__item advantages__item_large">
+                    <div class="text-primary text-bold advantages__item-title text-lg text-styling">Легкая настройка без специалистов</div>
+                    справится рядовой сотрудник. Приложение имеет интуитивно понятный интерфейс и простую навигацию. Не требует обучения и знаний видеомонтажа
+                </a>
+                <a href="#" class="advantages__item advantages__item_large">
+                    <div class="text-primary text-bold advantages__item-title text-lg text-styling">Бесплатное подключение за 3 минуты</div>
+                    достаточно зарегистрироваться, создать шаблон и подключить к CRM
+                </a>
+                <a href="#" class="advantages__item">
+                    <div class="text-primary text-bold advantages__item-title text-lg text-styling">Полная автоматизация</div>
+                    видео создаются автоматически без вашего участия
+                </a>
+                <a href="#" class="advantages__item">
+                    <div class="text-primary text-bold advantages__item-title text-lg text-styling">Подойдёт под любые отрасли</div>
+                    цели и задачи бизнеса
+                </a>
+                <a href="#" class="advantages__item">
+                    <div class="text-primary text-bold advantages__item-title text-lg text-styling">Автоматическая генерация видео за 30 секунд</div>
+                </a>
+                <a href="#" class="advantages__item">
+                    <div class="text-primary text-bold advantages__item-title text-lg text-styling">Интегрируется с любой CRM</div>
+                </a>
+            </div>
+            <!-- /advantages -->
+            <!-- examples -->
+            <div class="examples">
+                <div class="title title_size-md text-center"><span class="text-primary">Примеры</span> роликов <br class="d-sm-block">от <span class="text-primary">Qlipsa</span></div>
+                <div class="nav nav-tab" id="nav-tab" role="tablist">
+                    <a class="nav-tab__link active" href="#" data-href="#tab-1">БИЗНЕС</a>
+                    <a class="nav-tab__link" href="#" data-href="#tab-2">ПРАЗДНИКИ</a>
+                    <a class="nav-tab__link" href="#" data-href="#tab-3">СПОРТ</a>
+                    <a class="nav-tab__link" href="#" data-href="#tab-4">КОНЦЕРТЫ</a>
+                    <a class="nav-tab__link" href="#" data-href="#tab-5">ЮБИЛЕИ</a>
+                    <a class="nav-tab__link" href="#" data-href="#tab-6">СВАДЬБЫ</a>
+                    <a class="nav-tab__link" href="#" data-href="#tab-7">ОТКРЫТИЕ</a>
+                    <a class="nav-tab__link" href="#" data-href="#tab-8">МЕРОПРИЯТИЯ</a>
+                    <a class="nav-tab__link" href="#" data-href="#tab-3">СПОРТ</a>
+                    <a class="nav-tab__link" href="#" data-href="#tab-4">КОНЦЕРТЫ</a>
+                    <a class="nav-tab__link" href="#" data-href="#tab-5">ЮБИЛЕИ</a>
+                    <a class="nav-tab__link" href="#" data-href="#tab-6">СВАДЬБЫ</a>
+                </div>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel">
+                        <div class="examples-list row">
+                            <div class="examples-col-1">
+                                <div class="row">
+                                    <div class="col-6 col-lg-12">
+                                        <a href="https://youtu.be/wce0-IkdyAI" class="example-item" data-fancybox="gallery1">
+                                            <img src="img/content/example-1.jpg" alt="" class="example-item__image">
+                                            <div class="example-item__title">Название видео</div>
+                                            <div class="example-item__btn"></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-6 col-lg-12">
+                                        <a href="https://youtu.be/wce0-IkdyAI" class="example-item" data-fancybox="gallery2">
+                                            <img src="img/content/example-4.jpg" alt="" class="example-item__image">
+                                            <div class="example-item__title">Название видео</div>
+                                            <div class="example-item__btn"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="examples-col-2 d-flex">
+                                <a href="https://youtu.be/wce0-IkdyAI" class="example-item" data-fancybox="gallery3">
+                                    <img src="img/content/example-2.jpg" alt="" class="example-item__image">
+                                    <div class="example-item__title">Название видео</div>
+                                    <div class="example-item__btn"></div>
+                                </a>
+                            </div>
+                            <div class="examples-col-3">
+                                <div class="row">
+                                    <div class="col-6 d-flex">
+                                        <div class="examples__wrap-btn">
+                                            <a href="#" class="btn-circle btn-circle_lg">
+                                                СОЗДАЙТЕ СВОЙ ПРЯМО СЕЙЧАС
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="https://youtu.be/wce0-IkdyAI" class="example-item" data-fancybox="gallery4">
+                                            <img src="img/content/example-3.jpg" alt="" class="example-item__image">
+                                            <div class="example-item__title">Название видео</div>
+                                            <div class="example-item__btn"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="https://youtu.be/wce0-IkdyAI" class="example-item" data-fancybox="gallery5">
+                                    <img src="img/content/example-5.jpg" alt="" class="example-item__image">
+                                    <div class="example-item__title">Название видео</div>
+                                    <div class="example-item__btn"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="examples-list collapse" id="collapse-1">
+                            <div class="row">
+                                <div class="examples-col-3">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <a href="#" class="example-item">
+                                                <img src="img/content/example-6.jpg" alt="" class="example-item__image">
+                                                <div class="example-item__title">Название видео</div>
+                                                <div class="example-item__btn"></div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#" class="example-item">
+                                                <img src="img/content/example-7.jpg" alt="" class="example-item__image">
+                                                <div class="example-item__title">Название видео</div>
+                                                <div class="example-item__btn"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="example-item">
+                                        <img src="img/content/example-10.jpg" alt="" class="example-item__image">
+                                        <div class="example-item__title">Название видео</div>
+                                        <div class="example-item__btn"></div>
+                                    </a>
+                                </div>
+                                <div class="examples-col-2">
+                                    <a href="#" class="example-item">
+                                        <img src="img/content/example-8.jpg" alt="" class="example-item__image">
+                                        <div class="example-item__title">Название видео</div>
+                                        <div class="example-item__btn"></div>
+                                    </a>
+                                </div>
+                                <div class="examples-col-1">
+                                    <div class="row">
+                                        <div class="col-6 col-lg-12">
+                                            <a href="#" class="example-item">
+                                                <img src="img/content/example-9.jpg" alt="" class="example-item__image">
+                                                <div class="example-item__title">Название видео</div>
+                                                <div class="example-item__btn"></div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-lg-12">
+                                            <a href="#" class="example-item">
+                                                <img src="img/content/example-11.jpg" alt="" class="example-item__image">
+                                                <div class="example-item__title">Название видео</div>
+                                                <div class="example-item__btn"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center wrap-btn">
+                            <a href="#collapse-1" data-bs-toggle="collapse" class="btn btn-outline w-100_sm btn-collapse btn_md">
+                                <div class="btn-collapse__text">ПОКАЗАТЬ ЕЩЕ</div>
+                                <span class="caret"></span>   
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab-2" role="tabpanel">
+                        <div class="examples-list row">
+                            <div class="examples-col-1">
+                                <div class="row">
+                                    <div class="col-6 col-lg-12">
+                                        <a href="#" class="example-item">
+                                            <img src="img/content/example-6.jpg" alt="" class="example-item__image">
+                                            <div class="example-item__title">Название видео</div>
+                                            <div class="example-item__btn"></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-6 col-lg-12">
+                                        <a href="#" class="example-item">
+                                            <img src="img/content/example-7.jpg" alt="" class="example-item__image">
+                                            <div class="example-item__title">Название видео</div>
+                                            <div class="example-item__btn"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="examples-col-2 d-flex">
+                                <a href="#" class="example-item">
+                                    <img src="img/content/example-8.jpg" alt="" class="example-item__image">
+                                    <div class="example-item__title">Название видео</div>
+                                    <div class="example-item__btn"></div>
+                                </a>
+                            </div>
+                            <div class="examples-col-3">
+                                <div class="row">
+                                    <div class="col-6 d-flex">
+                                        <div class="examples__wrap-btn">
+                                            <a href="#" class="btn-circle btn-circle_lg">
+                                                СОЗДАЙТЕ СВОЙ ПРЯМО СЕЙЧАС
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="example-item">
+                                            <img src="img/content/example-3.jpg" alt="" class="example-item__image">
+                                            <div class="example-item__title">Название видео</div>
+                                            <div class="example-item__btn"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="#" class="example-item">
+                                    <img src="img/content/example-5.jpg" alt="" class="example-item__image">
+                                    <div class="example-item__title">Название видео</div>
+                                    <div class="example-item__btn"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="examples-list collapse" id="collapse-2">
+                            <div class="row">
+                                <div class="examples-col-3">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <a href="#" class="example-item">
+                                                <img src="img/content/example-6.jpg" alt="" class="example-item__image">
+                                                <div class="example-item__title">Название видео</div>
+                                                <div class="example-item__btn"></div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#" class="example-item">
+                                                <img src="img/content/example-7.jpg" alt="" class="example-item__image">
+                                                <div class="example-item__title">Название видео</div>
+                                                <div class="example-item__btn"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="example-item">
+                                        <img src="img/content/example-10.jpg" alt="" class="example-item__image">
+                                        <div class="example-item__title">Название видео</div>
+                                        <div class="example-item__btn"></div>
+                                    </a>
+                                </div>
+                                <div class="examples-col-2">
+                                    <a href="#" class="example-item">
+                                        <img src="img/content/example-8.jpg" alt="" class="example-item__image">
+                                        <div class="example-item__title">Название видео</div>
+                                        <div class="example-item__btn"></div>
+                                    </a>
+                                </div>
+                                <div class="examples-col-1">
+                                    <div class="row">
+                                        <div class="col-6 col-lg-12">
+                                            <a href="#" class="example-item">
+                                                <img src="img/content/example-9.jpg" alt="" class="example-item__image">
+                                                <div class="example-item__title">Название видео</div>
+                                                <div class="example-item__btn"></div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-lg-12">
+                                            <a href="#" class="example-item">
+                                                <img src="img/content/example-11.jpg" alt="" class="example-item__image">
+                                                <div class="example-item__title">Название видео</div>
+                                                <div class="example-item__btn"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center wrap-btn">
+                            <a href="#collapse-2" data-bs-toggle="collapse" class="btn btn-outline btn-collapse btn_md w-100_sm">
+                                <div class="btn-collapse__text">ПОКАЗАТЬ ЕЩЕ</div>
+                                <span class="caret"></span>   
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab-3" role="tabpanel"></div>
+                    <div class="tab-pane fade" id="tab-4" role="tabpanel"></div>
+                    <div class="tab-pane fade" id="tab-5" role="tabpanel"></div>
+                    <div class="tab-pane fade" id="tab-6" role="tabpanel"></div>
+                    <div class="tab-pane fade" id="tab-7" role="tabpanel"></div>
+                    <div class="tab-pane fade" id="tab-8" role="tabpanel"></div>
+                    <div class="tab-pane fade" id="tab-9" role="tabpanel"></div>
+                </div>
+            </div>
+            <!-- /examples -->
             <!-- steps -->
-            <div class="title text-center title_margin-md">Как мы сдаем <br class="d-md-none">квартиру</div>
-            <div class="row steps__slider">
-                <div class="col-lg-4 d-flex">
-                    <div class="step-item text-light">
-                        <div class="step-item__num">1</div>
-                        <p>Уточняем детали о вашей квартире, размещаем объявления на площадках</p>
+            <div class="steps">
+                <div class="title title_size-md text-center"><span class="text-primary">Как это</span> работает?</div>
+                <div class="d-md-flex steps__wrap-btn">
+                    <div class="btn btn-dark btn_sm">
+                        <img src="img/hand.svg" alt="" class="icon-hand">
+                        свайпай в бок
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex">
-                    <div class="step-item text-light">
-                        <div class="step-item__num">2</div>
-                        <p>Отвечаем на звонки, выбираем наиболее подходящих арендаторов</p>
+                <div class="steps-list">
+                    <div class="step-item">
+                        <div class="step-item__num">01</div>
+                        <div class="step-item__icon"></div>
+                        <p>Регистрируетесь в <span class="text-primary text-bold">Qlipsa</span></p>
                     </div>
-                </div>
-                <div class="col-lg-4 d-flex">
-                    <div class="step-item text-light">
-                        <div class="step-item__num">3</div>
-                        <p>Организовываем показы и проводим сделку</p>
+                    <div class="step-item">
+                        <div class="step-item__num">02</div>
+                        <div class="step-item__icon"></div>
+                        <p>Бесплатно получаете от нас <br><span class="text-primary text-bold">100₽</span> на свой баланс</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-item__num">03</div>
+                        <div class="step-item__icon"></div>
+                        <p>Создаёте шаблон ролика, настраиваете CRM</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-item__num">04</div>
+                        <div class="step-item__icon"></div>
+                        <p>Ваш клиент попадает <br>в CRM</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-item__num">05</div>
+                        <div class="step-item__icon"></div>
+                        <p>CRM отправляет запрос в <span class="text-primary text-bold">Qlipsa</span>, которая создаёт ролик для вашего клиента</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-item__num">06</div>
+                        <div class="step-item__icon"></div>
+                        <p><span class="text-primary text-bold">Qlipsa</span> отправляет видео в CRM, которая направляет ссылку на видео по указанному контакту клиента</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-item__num">07</div>
+                        <div class="step-item__icon"></div>
+                        <p>Ваш клиент получает видео, презентацию вашего продукта, услуги, преимуществ компании</p>
+                    </div>
+                    <div class="step-item">
+                        <a href="#" class="btn-circle">НАЧНИТЕ ИСПОЛЬЗОВАТЬ</a>
                     </div>
                 </div>
             </div>
             <!-- /steps -->
-            <!-- advantages -->
-            <div class="advantages margin-x-sm bg-primary">
-                <div class="title title_margin-lg text-center">Сдадим вашу квартиру <br><span class="text-danger">быстрее</span> других агентств</div>
-                <div class="row">
-                    <div class="col-lg-7">
-                        <div class="advantages-item d-flex">
-                            <div class="wrap-icon d-sm-none"><img src="img/icons/doc.svg" alt="" class="img-fluid"></div>
-                            <div class="advantages-item__text">
-                                <div class="title_size-md advantages-item__title">Мощное продвижение вашей квартиры</div>
-                                <p>Используем платную рекламу на крупнейших площадках. Объявления находятся в ТОПе поисковой выдачи и получают больше просмотров, целевых звонков.</p>
-                            </div>
-                        </div>
-                        <div class="advantages-item d-flex">
-                            <div class="wrap-icon d-sm-none"><img src="img/icons/doc.svg" alt="" class="img-fluid"></div>
-                            <div class="advantages-item__text">
-                                <div class="title_size-md advantages-item__title">Не теряем просмотры</div>
-                                <p>Организуем просмотр квартиры в любое удобное время. Если вы не можете присутствовать на встрече - покажем самостоятельно.</p>
-                            </div>
-                        </div>
-                        <div class="advantages-item d-flex">
-                            <div class="wrap-icon d-sm-none"><img src="img/icons/doc.svg" alt="" class="img-fluid"></div>
-                            <div class="advantages-item__text">
-                                <div class="title_size-md advantages-item__title">Не тратим ваше время</div>
-                                <p>На связи с 9:00 до 21:00, принимаем звонки, согласовываем показы. Заранее обговариваем каких жильцов хотите и не тратим время на пустые показы.  </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 d-none d-lg-block">
-                        <div class="advantages__logos-group">
-                            <div class="advantages__logo advantages__logo_padding"><img src="img/logo-cian.svg" alt="" class="img-fluid"></div>
-                            <div class="advantages__logo advantages__logo_padding-sm"><img src="img/logo-avito.svg" alt="" class="img-fluid"></div>
-                            <div class="advantages__logo"><img src="img/logo-ya-realty.svg" alt="" class="img-fluid"></div>
-                        </div>
-                    </div>
+            <!-- faq -->
+            <div class="faq row">
+                <div class="col-lg-5">
+                    <div class="title title_size-md text-center-md faq__title"><span class="text-primary">Часто</span> <br class="d-sm-block">задаваемые <span class="text-primary">вопросы</span></div>
+                    <div class="faq__image d-md-none"><img src="img/faq.png" alt="" class="img-fluid"></div>
                 </div>
-                <div class="row advantages__row">
-                    <div class="statistics-item col-6 col-md-3">
-                        <div class="statistics-item__num">x11</div>
-                        <p>больше охват</p>
+                <div class="col-lg-7">
+                    <div class="faq-item">
+                        <a href="#faq-1" class="faq-item__link" data-bs-toggle="collapse">
+                            <div class="faq-item__text">Чем <span class="text-primary">Qlipsa</span> отличается от конкурентов?</div>
+                            <svg class="faq-item__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 0H10V16H6V0Z" fill="url(#paint0_linear_36_251)"/>
+                                <path d="M16 6V10L0 10L1.74845e-07 6L16 6Z" fill="url(#paint1_linear_36_251)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_36_251" x1="0" y1="16" x2="16" y2="0" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#7081F6"/>
+                                        <stop offset="1" stop-color="#31C5F9"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_36_251" x1="0" y1="16" x2="16" y2="0" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#7081F6"/>
+                                        <stop offset="1" stop-color="#31C5F9"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>                                
+                        </a>
+                        <div class="collapse" id="faq-1">
+                            <div class="faq-item__body">
+                                <p>Навыки не нужны. <span class="text-primary text-bold">Qlipsa</span> запускается в один клик. Просто один раз создайте шаблоны роликов, с чем справится любой сотрудник компании, после чего программа будет автоматически генерировать видео вашим клиентам.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="statistics-item col-6 col-md-3">
-                        <div class="statistics-item__num">x6</div>
-                        <p>больше звонков</p>
+                    <div class="faq-item open">
+                        <a href="#faq-2" class="faq-item__link" data-bs-toggle="collapse" aria-expanded="true">
+                            <div class="faq-item__text">Для создания видео нужны навыки монтажа видео?</div>
+                            <svg class="faq-item__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 0H10V16H6V0Z" fill="url(#paint0_linear_36_251)"/>
+                                <path d="M16 6V10L0 10L1.74845e-07 6L16 6Z" fill="url(#paint1_linear_36_251)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_36_251" x1="0" y1="16" x2="16" y2="0" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#7081F6"/>
+                                        <stop offset="1" stop-color="#31C5F9"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_36_251" x1="0" y1="16" x2="16" y2="0" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#7081F6"/>
+                                        <stop offset="1" stop-color="#31C5F9"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>                                
+                        </a>
+                        <div class="collapse show" id="faq-2">
+                            <div class="faq-item__body">
+                                <p>Навыки не нужны. <span class="text-primary text-bold">Qlipsa</span> запускается в один клик. Просто один раз создайте шаблоны роликов, с чем справится любой сотрудник компании, после чего программа будет автоматически генерировать видео вашим клиентам.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="statistics-item col-6 col-md-3">
-                        <div class="statistics-item__num">x4</div>
-                        <p>больше показов</p>
+                    <div class="faq-item">
+                        <a href="#faq-3" class="faq-item__link" data-bs-toggle="collapse">
+                            <div class="faq-item__text">Зачем моему бизнесу <span class="text-primary">Qlipsa</span>?</div>
+                            <svg class="faq-item__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 0H10V16H6V0Z" fill="url(#paint0_linear_36_251)"/>
+                                <path d="M16 6V10L0 10L1.74845e-07 6L16 6Z" fill="url(#paint1_linear_36_251)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_36_251" x1="0" y1="16" x2="16" y2="0" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#7081F6"/>
+                                        <stop offset="1" stop-color="#31C5F9"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_36_251" x1="0" y1="16" x2="16" y2="0" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#7081F6"/>
+                                        <stop offset="1" stop-color="#31C5F9"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>                                
+                        </a>
+                        <div class="collapse" id="faq-3">
+                            <div class="faq-item__body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga blanditiis, quo consequatur repudiandae magni ullam aliquid cupiditate et molestiae totam magnam amet, vitae debitis nam quisquam. Officia, rem reprehenderit minus nulla necessitatibus exercitationem sit est atque dolorem, accusantium perspiciatis amet eligendi. Labore, temporibus. Exercitationem excepturi, reiciendis id similique maiores est?</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="statistics-item col-6 col-md-3">
-                        <div class="statistics-item__num">x3</div>
-                        <p>быстрее сдача</p>
+                    <div class="faq-item">
+                        <a href="#faq-4" class="faq-item__link" data-bs-toggle="collapse">
+                            <div class="faq-item__text">Это дорого?</div>
+                            <svg class="faq-item__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 0H10V16H6V0Z" fill="url(#paint0_linear_36_251)"/>
+                                <path d="M16 6V10L0 10L1.74845e-07 6L16 6Z" fill="url(#paint1_linear_36_251)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_36_251" x1="0" y1="16" x2="16" y2="0" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#7081F6"/>
+                                        <stop offset="1" stop-color="#31C5F9"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_36_251" x1="0" y1="16" x2="16" y2="0" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#7081F6"/>
+                                        <stop offset="1" stop-color="#31C5F9"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>                                
+                        </a>
+                        <div class="collapse" id="faq-4">
+                            <div class="faq-item__body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga blanditiis, quo consequatur repudiandae magni ullam aliquid cupiditate et molestiae totam magnam amet, vitae debitis nam quisquam. Officia, rem reprehenderit minus nulla necessitatibus exercitationem sit est atque dolorem, accusantium perspiciatis amet eligendi. Labore, temporibus. Exercitationem excepturi, reiciendis id similique maiores est?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <a href="#faq-5" class="faq-item__link" data-bs-toggle="collapse">
+                            <div class="faq-item__text">Как протестировать сервис?</div>
+                            <svg class="faq-item__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 0H10V16H6V0Z" fill="url(#paint0_linear_36_251)"/>
+                                <path d="M16 6V10L0 10L1.74845e-07 6L16 6Z" fill="url(#paint1_linear_36_251)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_36_251" x1="0" y1="16" x2="16" y2="0" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#7081F6"/>
+                                        <stop offset="1" stop-color="#31C5F9"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_36_251" x1="0" y1="16" x2="16" y2="0" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#7081F6"/>
+                                        <stop offset="1" stop-color="#31C5F9"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>                                
+                        </a>
+                        <div class="collapse" id="faq-5">
+                            <div class="faq-item__body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga blanditiis, quo consequatur repudiandae magni ullam aliquid cupiditate et molestiae totam magnam amet, vitae debitis nam quisquam. Officia, rem reprehenderit minus nulla necessitatibus exercitationem sit est atque dolorem, accusantium perspiciatis amet eligendi. Labore, temporibus. Exercitationem excepturi, reiciendis id similique maiores est?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <a href="#faq-6" class="faq-item__link" data-bs-toggle="collapse">
+                            <div class="faq-item__text">Как интегрировать <span class="text-primary">Qlipsa</span> в мою компанию?</div>
+                            <svg class="faq-item__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 0H10V16H6V0Z" fill="url(#paint0_linear_36_251)"/>
+                                <path d="M16 6V10L0 10L1.74845e-07 6L16 6Z" fill="url(#paint1_linear_36_251)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_36_251" x1="0" y1="16" x2="16" y2="0" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#7081F6"/>
+                                        <stop offset="1" stop-color="#31C5F9"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_36_251" x1="0" y1="16" x2="16" y2="0" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#7081F6"/>
+                                        <stop offset="1" stop-color="#31C5F9"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>                                
+                        </a>
+                        <div class="collapse" id="faq-6">
+                            <div class="faq-item__body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga blanditiis, quo consequatur repudiandae magni ullam aliquid cupiditate et molestiae totam magnam amet, vitae debitis nam quisquam. Officia, rem reprehenderit minus nulla necessitatibus exercitationem sit est atque dolorem, accusantium perspiciatis amet eligendi. Labore, temporibus. Exercitationem excepturi, reiciendis id similique maiores est?</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- /advantages -->
-            <!-- clients -->
-            <div class="row">
-                <div class="col-lg-6"></div>
-                <div class="col-lg-6">
-                    <div class="title title_margin-sm text-center-md">Поиск жильцов по <br><span class="text-danger">вашим</span> критериям</div>
+            <!-- /faq -->
+            <!-- start -->
+            <div class="start">
+                <div class="start__text">
+                    <div class="title title_size-md start__title">Протестируйте <span class="text-fill">Qlipsa</span> бесплатно! </div>
+                    <p class="text-lg">Зарегистрируйтесь и <span class="text-bold">получите 100 ₽</span> на Ваш баланс</p>
                 </div>
+                <div class="start__btn">
+                    <div class="circle circle_sm"></div>
+                    <div class="circle circle_md"></div>
+                    <div class="circle circle_lg"></div>
+                    <a href="#" class="btn-circle">НАЧАТЬ ТЕСТИРОВАНИЕ</a>
+                </div>
+                <div class="start__image"><img src="img/start.png" alt="" class="img-fluid"></div>
             </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="clients__image">
-                        <img src="img/clients.png" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <p>Все требования к нанимателям предварительно согласовываются с Вами. Сразу отсеиваем неподходящий контингент. <br>Учтем ваши пожелания:</p>
-                    <ul class="check-list">
-                        <li class="check-list__item">Состав проживающих</li>
-                        <li class="check-list__item">Национальный вопрос</li>
-                        <li class="check-list__item">Срок аренды</li>
-                        <li class="check-list__item">Наличие и возраст детей</li>
-                        <li class="check-list__item">Домашние животные</li>
-                        <li class="check-list__item">Платежеспособность</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- /clients -->
-            <!-- quarantee -->
-            <div class="quarantee">
-                <div class="title title_margin-md text-center">Ваше спокойствие гарантировано <br><span class="text-danger">грамотным</span> договором найма</div>
-                <div class="quarantee__slider">
-                    <div class="quarantee-item">
-                        <div class="wrap-icon bg-primary"><img src="img/icons/calendar.svg" alt="" class="img-fluid"></div>
-                        <div class="title_size-md title_margin-xs">Срок аренды</div>
-                        <p>11 месяцев, так как по закону, договор аренды более года, должен пройти государственную регистрацию.</p>
-                    </div>
-                    <div class="quarantee-item">
-                        <div class="wrap-icon bg-primary"><img src="img/icons/human.svg" alt="" class="img-fluid"></div>
-                        <div class="title_size-md title_margin-xs">Состав жильцов</div>
-                        <p>Если с арендатором будут проживать члены семьи или сожители, то обязательно всех добавляем в договор.</p>
-                    </div>
-                    <div class="quarantee__image bg-primary d-none d-lg-block"></div>
-                    <div class="quarantee-item">
-                        <div class="wrap-icon bg-primary"><img src="img/icons/animals.svg" alt="" class="img-fluid"></div>
-                        <div class="title_size-md title_margin-xs">Животные</div>
-                        <p>Мы любим животных, но ваше имущество не должно пострадать, поэтому есть пункт и про них.</p>
-                    </div>
-                    <div class="quarantee-item">
-                        <div class="wrap-icon bg-primary"><img src="img/icons/deposit.svg" alt="" class="img-fluid"></div>
-                        <div class="title_size-md title_margin-xs">Депозит</div>
-                        <p>Он равен месячной сумме аренды вашей квартиры и служит гарантом длительного проживания арендатора.</p>
-                    </div>
-                    <div class="quarantee-item">
-                        <div class="wrap-icon bg-primary"><img src="img/icons/sublease.svg" alt="" class="img-fluid"></div>
-                        <div class="title_size-md title_margin-xs">Субаренда</div>
-                        <p>В случае отсутствия этого пункта, вашу квартиру могут сдать третьим лицам.</p>
-                    </div>
-                    <div class="quarantee-item">
-                        <div class="wrap-icon bg-primary"><img src="img/icons/doc.svg" alt="" class="img-fluid"></div>
-                        <div class="title_size-md title_margin-xs">Акт приема - передачи</div>
-                        <p>Составляем опись имущества и вписываем показания счетчиков.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- /quarantee -->
-        </div>
-        <div class="bg-light margin-x-sm">
-            <div class="container">
-                <!-- surrendered -->
-                <div class="surrendered">
-                    <div class="title title_margin-md text-center">Сданные квартиры</div>
-                    <div class="surrendered__slider">
-                        <div>
-                            <div class="apartment-item">
-                                <div class="apartment-item__image"><img src="img/apartment-1.jpg" alt="" class="w-100"></div>
-                                <div class="apartment-item__body">
-                                    <div class="title_size-md">68 000 ₽ в месяц</div>
-                                    <div class="apartment-item__decription">2 - комнатная квартира, 56 м²</div>
-                                    <p>Зоологический переулок, 4-6</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="apartment-item">
-                                <div class="apartment-item__image"><img src="img/apartment-2.jpg" alt="" class="w-100"></div>
-                                <div class="apartment-item__body">
-                                    <div class="title_size-md">57 000 ₽ в месяц</div>
-                                    <div class="apartment-item__decription">1 - комнатная квартира, 42 м²</div>
-                                    <p>Электролитный проезд, 16к 3</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="apartment-item">
-                                <div class="apartment-item__image"><img src="img/apartment-3.jpg" alt="" class="w-100"></div>
-                                <div class="apartment-item__body">
-                                    <div class="title_size-md">57 000 ₽ в месяц</div>
-                                    <div class="apartment-item__decription">2 - комнатная квартира, 56 м²</div>
-                                    <p>Варшавское шоссе , 139</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /surrendered -->
-                <!-- reviews -->
-                <div class="reviews">
-                    <div class="title title_margin-md text-center">Уже <span class="text-danger">помогли</span> <br>сдать квартиру</div>
-                    <div class="review__slider">
-                        <div>
-                            <div class="review-item">
-                                <div class="d-flex">
-                                    <div class="review-item__image"><img src="img/review-1.jpg" alt="" class="w-100"></div>
-                                    <div class="review-item__text">
-                                        <div class="review-item__name">Евгения Ч.</div>
-                                        <div class="rating">
-                                            <div class="rating_active" style="width: 100%"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Спасибо агенту Елене за проделанную работу. Очень быстро и по необходимым параметрам нашла съемщика для квартиры. Огромная благодарность, будем обращаться еще.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="review-item">
-                                <div class="d-flex">
-                                    <div class="review-item__image"><img src="img/review-2.jpg" alt="" class="w-100"></div>
-                                    <div class="review-item__text">
-                                        <div class="review-item__name">Наталья Иванова</div>
-                                        <div class="rating">
-                                            <div class="rating_active" style="width: 100%"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Выражаю благодарность Доржиной Ирине за оперативную сдачу квартиры. Сделанные ею фото объекта и текст объявления позволили в короткие сроки найти подходящего клиента. В текст договора внесли важные для нас поправки. Мелочей для Ирины нет - профессионал своего дела.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="review-item">
-                                <div class="d-flex">
-                                    <div class="review-item__image"><img src="img/review-3.jpg" alt="" class="w-100"></div>
-                                    <div class="review-item__text">
-                                        <div class="review-item__name">Алексей Захаров</div>
-                                        <div class="rating">
-                                            <div class="rating_active" style="width: 100%"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Обратилась в Инком по вопросу сдачи квартиры в аренду. Вела сделку Шомпал Юлия. Все сделано быстро, качественно. за неделю нашли хороших арендаторов. Надеюсь на дальнейшее сотрудничество.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="review-item">
-                                <div class="d-flex">
-                                    <div class="review-item__image"><img src="img/review-2.jpg" alt="" class="w-100"></div>
-                                    <div class="review-item__text">
-                                        <div class="review-item__name">Наталья Иванова</div>
-                                        <div class="rating">
-                                            <div class="rating_active" style="width: 100%"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Выражаю благодарность Доржиной Ирине за оперативную сдачу квартиры. Сделанные ею фото объекта и текст объявления позволили в короткие сроки найти подходящего клиента. В текст договора внесли важные для нас поправки. Мелочей для Ирины нет - профессионал своего дела.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /reviews -->
-                <!-- contacts-block -->
-                <div class="contacts-block d-flex margin-x-sm">
-                    <div class="contacts-block__image d-sm-none"><img src="img/contacts.jpg" alt=""></div>
-                    <div class="contacts-block__text">
-                        <div class="title_size-md contacts-block__title">Подберём для <br class="d-md-none">вас <span class="text-danger">идеальных</span> жильцов</div>
-                        <p class="d-sm-none">Заполняйте форму прямо сейчас!</p>
-                        <p class="d-sm-block d-none">В точном соответствии с вашими требованиями</p>
-                        <div class="contacts-block__form">
-                            <form action="send.php">
-                                <div class="form-group"><input type="tel" required class="form-contol phone" id="phone" placeholder="+7 ("></div>
-                                <div class="form-group"><button class="btn w-100 btnsubmit" type="submit" name="submit">Начать подбор</button></div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <!-- /contacts-block -->
-            </div>
+            <!-- /start -->
         </div>
         <!-- footer -->
-        <footer class="footer bg-light">
-            <div class="container d-flex footer__container wrap-sm">
-                <a href="/" class="logo footer__logo"><img src="img/logo.svg" alt="" class="img-fluid"></a>
-                <a href="#" class="footer__privacy">Политика конфиденциальности</a>
-                <a href="#" class="whatsapp-link d-none d-lg-flex">Напишите в <br>WhatsApp</a>
-                <div class="phone-block">
-                    <p>Звоните, Пн-Вс с 9 до 21</p>
-                    <p><a href="tel:84950213106" class="phone-block__link">8 (495) 021-31-06</a></p>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-xl-5 col-6">
+                        <a href="/" class="logo footer__logo"><img src="img/logo.svg" alt="" class="w-100"></a>
+                        <div class="footer__slogan">онлайн-сервис создания <br>персонализированных <br>видеороликов</div>
+                    </div>
+                    <div class="col-6 d-sm-flex">
+                        <div class="social-list d-flex footer__social-list">
+                            <a href="#" class="btn-circle btn-outline btn-circle_sm social-list__link">
+                                <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 3.456V9.5625C15.5 10.1851 15.2618 10.7841 14.8342 11.2367C14.4067 11.6892 13.8221 11.961 13.2005 11.9963L13.0625 12H2.9375C2.3149 12 1.71588 11.7618 1.26333 11.3342C0.810775 10.9067 0.538999 10.3221 0.50375 9.7005L0.5 9.5625V3.456L7.739 7.248C7.81953 7.29018 7.90909 7.31222 8 7.31222C8.09091 7.31222 8.18047 7.29018 8.261 7.248L15.5 3.456ZM2.9375 1.77038e-08H13.0625C13.6667 -7.2761e-05 14.2494 0.224247 14.6975 0.62945C15.1457 1.03465 15.4274 1.59186 15.488 2.193L8 6.1155L0.512 2.193C0.570143 1.61573 0.832287 1.07814 1.25131 0.676847C1.67034 0.275557 2.21876 0.0368902 2.798 0.0037501L2.9375 1.77038e-08H13.0625H2.9375Z" fill="url(#paint0_linear_38_356)"/>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_38_356" x1="0.5" y1="12" x2="12.2073" y2="-2.63415" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#7081F6"/>
+                                            <stop offset="1" stop-color="#31C5F9"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>                                            
+                            </a>
+                            <a href="#" class="btn-circle btn-outline btn-circle_sm social-list__link">
+                                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.4985 0.787859L1.20095 5.91561C0.293455 6.28011 0.298705 6.78636 1.03445 7.01211L4.44845 8.07711L12.3475 3.09336C12.721 2.86611 13.0622 2.98836 12.7817 3.23736L6.38196 9.01311H6.38045L6.38196 9.01386L6.14646 12.5329C6.49146 12.5329 6.6437 12.3746 6.8372 12.1879L8.49545 10.5754L11.9447 13.1231C12.5807 13.4734 13.0375 13.2934 13.1957 12.5344L15.46 1.86336C15.6917 0.934109 15.1052 0.513359 14.4985 0.787859Z" fill="url(#paint0_linear_38_357)"/>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_38_357" x1="0.5" y1="12" x2="12.2073" y2="-2.63415" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#7081F6"/>
+                                            <stop offset="1" stop-color="#31C5F9"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>                                            
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-xl-7">
+                        <div class="row">
+                            <div class="col-md-4 col-6">
+                                <div class="footer__title">НАВИГАЦИЯ</div>
+                                <ul class="footer-nav">
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Тестировать онлайн</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Как это работает</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Кейсы</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Цены</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Контакты</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <div class="footer__title">ПОЛЬЗОВАТЕЛЯМ</div>
+                                <ul class="footer-nav">
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Политика конфидиенцальности</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Пользовательское соглашение</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Партнерская программа</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">База знаний</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 d-flex d-sm-none">
+                                <div class="social-list d-flex footer__social-list">
+                                    <a href="#" class="btn-circle btn-outline btn-circle_sm social-list__link">
+                                        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.5 3.456V9.5625C15.5 10.1851 15.2618 10.7841 14.8342 11.2367C14.4067 11.6892 13.8221 11.961 13.2005 11.9963L13.0625 12H2.9375C2.3149 12 1.71588 11.7618 1.26333 11.3342C0.810775 10.9067 0.538999 10.3221 0.50375 9.7005L0.5 9.5625V3.456L7.739 7.248C7.81953 7.29018 7.90909 7.31222 8 7.31222C8.09091 7.31222 8.18047 7.29018 8.261 7.248L15.5 3.456ZM2.9375 1.77038e-08H13.0625C13.6667 -7.2761e-05 14.2494 0.224247 14.6975 0.62945C15.1457 1.03465 15.4274 1.59186 15.488 2.193L8 6.1155L0.512 2.193C0.570143 1.61573 0.832287 1.07814 1.25131 0.676847C1.67034 0.275557 2.21876 0.0368902 2.798 0.0037501L2.9375 1.77038e-08H13.0625H2.9375Z" fill="url(#paint0_linear_38_3562)"/>
+                                            <defs>
+                                                <linearGradient id="paint0_linear_38_3562" x1="0.5" y1="12" x2="12.2073" y2="-2.63415" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#7081F6"/>
+                                                    <stop offset="1" stop-color="#31C5F9"/>
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>                                            
+                                    </a>
+                                    <a href="#" class="btn-circle btn-outline btn-circle_sm social-list__link">
+                                        <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4985 0.787859L1.20095 5.91561C0.293455 6.28011 0.298705 6.78636 1.03445 7.01211L4.44845 8.07711L12.3475 3.09336C12.721 2.86611 13.0622 2.98836 12.7817 3.23736L6.38196 9.01311H6.38045L6.38196 9.01386L6.14646 12.5329C6.49146 12.5329 6.6437 12.3746 6.8372 12.1879L8.49545 10.5754L11.9447 13.1231C12.5807 13.4734 13.0375 13.2934 13.1957 12.5344L15.46 1.86336C15.6917 0.934109 15.1052 0.513359 14.4985 0.787859Z" fill="url(#paint0_linear_38_3572)"/>
+                                            <defs>
+                                                <linearGradient id="paint0_linear_38_3572" x1="0.5" y1="12" x2="12.2073" y2="-2.63415" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#7081F6"/>
+                                                    <stop offset="1" stop-color="#31C5F9"/>
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>                                            
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="copyright text-center-sm">QLIPSA © Все права защищены | 2022 | thefrestdesign</div>
+                    </div>
                 </div>
             </div>
         </footer>
         <!-- /footer -->
     </div>
-</body>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
     <script src="js/main.js"></script>
+</body>
 </html>
