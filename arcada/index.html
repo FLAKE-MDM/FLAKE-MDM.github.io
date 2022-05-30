@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аркада группа компаний</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png">
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <header class="header">
+            <!-- collapse-nav -->
+            <div class="collapse-nav collapse" id="nav">
+                <div class="collapse-nav__header d-none d-md-flex justify-content-between align-items-center">
+                    <a href="/" class="logo"><img src="img/logo.svg" alt="" class="img-fluid"></a>
+                    <a href="#nav" class="close collapse-nav__close" data-bs-toggle="collapse">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="1.48439" y1="1.51451" x2="18.4565" y2="18.4836" stroke="#2C374B" stroke-width="2"/>
+                            <line x1="18.4571" y1="1.51472" x2="1.48655" y2="18.4853" stroke="#2C374B" stroke-width="2"/>
+                        </svg>                            
+                    </a>
+                </div>
+                <ul class="collapse-nav-list">
+                    <li class="collapse-nav-list__item"><a href="#" class="collapse-nav-list__link collapse-nav-list__link_active text-link">Главная</a></li>
+                    <li class="collapse-nav-list__item"><a href="#" class="collapse-nav-list__link text-link">Каталог</a></li>
+                    <li class="collapse-nav-list__item"><a href="#" class="collapse-nav-list__link text-link">Инвестиции</a></li>
+                    <li class="collapse-nav-list__item"><a href="#" class="collapse-nav-list__link text-link">Как купить?</a></li>
+                    <li class="collapse-nav-list__item"><a href="#" class="collapse-nav-list__link text-link">Контакты</a></li>
+                    <li class="collapse-nav-list__item"><a href="#" class="collapse-nav-list__link text-link">О компании</a></li>
+                    <li class="collapse-nav-list__item"><a href="#" class="collapse-nav-list__link text-link">Партнеры</a></li>
+                    <li class="collapse-nav-list__item"><a href="#" class="collapse-nav-list__link text-link">Пресс центр</a></li>
+                </ul>
+                <div class="collapse-nav__footer row row-xl align-items-center">
+                    <div class="col-md-6">
+                        <a href="#callback" class="btn btn-primary w-100" data-bs-toggle="modal">Заказать звонок</a>
+                    </div>
+                    <div class="col-md-6 d-none d-md-block"><a href="tel:+73654777730" class="text_size-lg text-link">+7 (3654) 77-77-30</a></div>
+                </div>
+            </div>
+            <!-- /collapse-nav -->
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <a href="/" class="logo header__logo"><img src="img/logo.svg" alt="" class="img-fluid"></a>
+                    <button class="btn-menu collapsed" data-bs-toggle="collapse" data-bs-target="#nav">
+                        <span class="btn-menu__item"></span>
+                        <span class="btn-menu__item"></span>
+                        <span class="btn-menu__item"></span>
+                    </button>
+                    <nav class="nav header__nav d-none d-xl-block">
+                        <ul class="nav-list d-flex">
+                            <li class="nav-list__item"><a href="#" class="nav-list__link text-link">Каталог</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-list__link text-link">Как купить?</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-list__link text-link">О компании</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-list__link text-link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__contacts d-flex align-items-center">
+                        <a href="tel:+73654777730" class="phone header__phone text-link">+7 (3654) 77-77-30</a>
+                        <a href="#callback" class="btn btn-primary d-none d-md-block" data-bs-toggle="modal">Заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+        <!-- preview -->
+        <div class="preview">
+            <div class="container d-flex">
+                <div class="title title_size-xl preview__title">Уникальная недвижимость <br><span class="text-inversion">в Крыму</span></div>
+                <div class="preview__text text-right text-medium">3 бизнес-объекта <br>от застройщика в Крыму</div>
+            </div>
+            <div class="container-fluid">
+                <div class="preview__image">
+                    <img src="img/content/preview.jpg" alt="" class="w-100 d-none d-md-block">
+                    <img src="img/content/preview-m.jpg" alt="" class="w-100 d-md-none">
+                </div>
+            </div>
+        </div>
+        <!-- /preview -->
+        <!-- advantages -->
+        <div class="container">
+            <div class="advantages">
+                <div class="row">
+                    <div class="col-lg-3 col-6">
+                        <div class="advantages-item text_size-md">
+                            <div class="advantages-item__num">10</div>
+                            <div class="advantages-item__text">Лет на рынке  курортной недвижимости</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="advantages-item text_size-md">
+                            <div class="advantages-item__num">14</div>
+                            <div class="advantages-item__text">Проектов реализованы  управляющей компанией</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="advantages-item text_size-md">
+                            <div class="advantages-item__num">13</div>
+                            <div class="advantages-item__text">Проектов на стадии строительства</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="advantages-item text_size-md">
+                            <div class="advantages-item__num">11</div>
+                            <div class="advantages-item__text">Проектов на стадии проектирования</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /advantages -->
+        <!-- objects -->
+        <div class="objects">
+            <div class="container">
+                <div class="objects-slider slider-margin">
+                    <div>
+                        <a href="#" class="objects-item">
+                            <img src="img/content/objects-1.jpg" alt="" class="objects-item__image">
+                            <div class="objects-item__title title text-inversion title_size-sm">Жилой комплекс <br>«Алушта-Ривьера»</div>
+                            <div class="objects-item__logo"><img src="img/content/objects-1-logo.svg" alt="" class="img-fluid"></div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="objects-item">
+                            <img src="img/content/objects-2.jpg" alt="" class="objects-item__image">
+                            <div class="objects-item__title title text-inversion title_size-sm">Апарт-отель <br>«Морис Парк»</div>
+                            <div class="objects-item__logo"><img src="img/content/objects-2-logo.svg" alt=""  class="img-fluid"></div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="objects-item">
+                            <img src="img/content/objects-3.jpg" alt="" class="objects-item__image">
+                            <div class="objects-item__title title text-inversion title_size-sm">Жилой комплекс <br>«Победа»</div>
+                            <div class="objects-item__logo"><img src="img/content/objects-1-logo.svg" alt="" class="img-fluid"></div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="objects-item">
+                            <img src="img/content/objects-4.jpg" alt="" class="objects-item__image">
+                            <div class="objects-item__title title text-inversion title_size-sm">Жилой комплекс <br>«Маяк»</div>
+                            <div class="objects-item__logo"><img src="img/content/objects-1-logo.svg" alt="" class="img-fluid"></div>
+                        </a>
+                    </div>
+                </div>
+                <p class="text-center"><a href="#" class="btn btn-outline btn_size-md w-100_sm">Все объекты</a></p>
+            </div>
+        </div>
+        <!-- /objects -->
+        <!-- advantages-slider -->
+        <div class="container-fluid">
+            <div class="wrap-advantages-slider">
+                <div class="advantages-slider">
+                    <div class="advantages-slider__item">
+                        <div class="advantages-slider__image"><img src="img/content/advantages-slide.jpg" alt="" class="w-100"></div>
+                        <div class="advantages-slider__body">
+                            <div class="container advantages-slider__container">
+                                <div class="advantages-slider__wrap-title">
+                                    <div class="title title_size-md text-inversion">Почему Крым</div>
+                                    <div class="advantages-slider__sub-title title text-inversion">Лучший выбор <br>купить недвижимость</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantages-slider__body advantages-slider__body_bottom">
+                            <div class="container advantages-slider__container">
+                                <div class="advantages-slider__description text_size-md">
+                                    <div class="advantages-slider__description-title title title_size-xs">Природа</div>
+                                    <p>От холодных северных ветров отделяют острые пики горной гряды, а с юга зимой согревает никогда не замерзающее море.</p>
+                                    <div class="d-flex justify-content-between mt-auto align-items-end">
+                                        <div class="slider-arrows">
+                                            <button type="button" role="button" class="slick-arrow prev"><svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.125 21.038L0.75 11.663V10.3374L10.125 0.962402L11.4506 2.28803L3.67687 10.0637H23.25V11.9387H3.675L11.4525 19.7124L10.1269 21.038H10.125Z" fill="#333333"/></svg></button>
+                                            <button type="button" role="button" class="slick-arrow next"><svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.875 21.038L23.25 11.663V10.3374L13.875 0.962402L12.5494 2.28803L20.3231 10.0637H0.75V11.9387H20.325L12.5475 19.7124L13.8731 21.038H13.875Z" fill="#333333"/></svg></button>
+                                        </div>
+                                        <div class="dots-counter d-none d-lg-block">
+                                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle class="circle-go" cx="25" cy="25" r="24.5"/>
+                                            </svg>
+                                            <span class="current-slide">1</span>
+                                            <span class="slide-count">4</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantages-slider__item">
+                        <div class="advantages-slider__image"><img src="img/content/advantages-slide.jpg" alt="" class="w-100"></div>
+                        <div class="advantages-slider__body">
+                            <div class="container advantages-slider__container">
+                                <div class="advantages-slider__wrap-title">
+                                    <div class="title title_size-md text-inversion">Почему Крым</div>
+                                    <div class="advantages-slider__sub-title title text-inversion">Лучший выбор <br>купить недвижимость</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantages-slider__body advantages-slider__body_bottom">
+                            <div class="container advantages-slider__container">
+                                <div class="advantages-slider__description text_size-md">
+                                    <div class="advantages-slider__description-title title title_size-xs">Экология</div>
+                                    <p>От холодных северных ветров отделяют острые пики горной гряды, а с юга зимой согревает никогда не замерзающее море.</p>
+                                    <div class="d-flex justify-content-between mt-auto align-items-end">
+                                        <div class="slider-arrows">
+                                            <button type="button" role="button" class="slick-arrow prev"><svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.125 21.038L0.75 11.663V10.3374L10.125 0.962402L11.4506 2.28803L3.67687 10.0637H23.25V11.9387H3.675L11.4525 19.7124L10.1269 21.038H10.125Z" fill="#333333"/></svg></button>
+                                            <button type="button" role="button" class="slick-arrow next"><svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.875 21.038L23.25 11.663V10.3374L13.875 0.962402L12.5494 2.28803L20.3231 10.0637H0.75V11.9387H20.325L12.5475 19.7124L13.8731 21.038H13.875Z" fill="#333333"/></svg></button>
+                                        </div>
+                                        <div class="dots-counter d-none d-lg-block">
+                                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle class="circle-go" cx="25" cy="25" r="24.5"/>
+                                            </svg>
+                                            <span class="current-slide">2</span>
+                                            <span class="slide-count">4</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantages-slider__item">
+                        <div class="advantages-slider__image"><img src="img/content/advantages-slide.jpg" alt="" class="w-100"></div>
+                        <div class="advantages-slider__body">
+                            <div class="container advantages-slider__container">
+                                <div class="advantages-slider__wrap-title">
+                                    <div class="title title_size-md text-inversion">Почему Крым</div>
+                                    <div class="advantages-slider__sub-title title text-inversion">Лучший выбор <br>купить недвижимость</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantages-slider__body advantages-slider__body_bottom">
+                            <div class="container advantages-slider__container">
+                                <div class="advantages-slider__description text_size-md">
+                                    <div class="advantages-slider__description-title title title_size-xs">Природа</div>
+                                    <p>От холодных северных ветров отделяют острые пики горной гряды, а с юга зимой согревает никогда не замерзающее море.</p>
+                                    <div class="d-flex justify-content-between mt-auto align-items-end">
+                                        <div class="slider-arrows">
+                                            <button type="button" role="button" class="slick-arrow prev"><svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.125 21.038L0.75 11.663V10.3374L10.125 0.962402L11.4506 2.28803L3.67687 10.0637H23.25V11.9387H3.675L11.4525 19.7124L10.1269 21.038H10.125Z" fill="#333333"/></svg></button>
+                                            <button type="button" role="button" class="slick-arrow next"><svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.875 21.038L23.25 11.663V10.3374L13.875 0.962402L12.5494 2.28803L20.3231 10.0637H0.75V11.9387H20.325L12.5475 19.7124L13.8731 21.038H13.875Z" fill="#333333"/></svg></button>
+                                        </div>
+                                        <div class="dots-counter d-none d-lg-block">
+                                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle class="circle-go" cx="25" cy="25" r="24.5"/>
+                                            </svg>
+                                            <span class="current-slide">3</span>
+                                            <span class="slide-count">4</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantages-slider__item">
+                        <div class="advantages-slider__image"><img src="img/content/advantages-slide.jpg" alt="" class="w-100"></div>
+                        <div class="advantages-slider__body">
+                            <div class="container advantages-slider__container">
+                                <div class="advantages-slider__wrap-title">
+                                    <div class="title title_size-md text-inversion">Почему Крым</div>
+                                    <div class="advantages-slider__sub-title title text-inversion">Лучший выбор <br>купить недвижимость</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantages-slider__body advantages-slider__body_bottom">
+                            <div class="container advantages-slider__container">
+                                <div class="advantages-slider__description text_size-md">
+                                    <div class="advantages-slider__description-title title title_size-xs">Экология</div>
+                                    <p>От холодных северных ветров отделяют острые пики горной гряды, а с юга зимой согревает никогда не замерзающее море.</p>
+                                    <div class="d-flex justify-content-between mt-auto align-items-end">
+                                        <div class="slider-arrows">
+                                            <button type="button" role="button" class="slick-arrow prev"><svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.125 21.038L0.75 11.663V10.3374L10.125 0.962402L11.4506 2.28803L3.67687 10.0637H23.25V11.9387H3.675L11.4525 19.7124L10.1269 21.038H10.125Z" fill="#333333"/></svg></button>
+                                            <button type="button" role="button" class="slick-arrow next"><svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.875 21.038L23.25 11.663V10.3374L13.875 0.962402L12.5494 2.28803L20.3231 10.0637H0.75V11.9387H20.325L12.5475 19.7124L13.8731 21.038H13.875Z" fill="#333333"/></svg></button>
+                                        </div>
+                                        <div class="dots-counter d-none d-lg-block">
+                                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle class="circle-go" cx="25" cy="25" r="24.5"/>
+                                            </svg>
+                                            <span class="current-slide">4</span>
+                                            <span class="slide-count">4</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /advantages-slider -->
+        <!-- investments -->
+        <div class="investments">
+            <div class="container-fluid container-fluid_padding-sm">
+                <div class="row row-xl">
+                    <div class="col-md-6 d-flex">
+                        <div class="investments__image"><img src="img/content/investments.jpg" alt="" class="w-100 d-block"></div>
+                    </div>
+                    <div class="col-md-6 d-flex flex-column">
+                        <div class="title title_size-md investments__title">Инвестиции <br>в девелопмент</div>
+                        <p class="text_size-lg col-xl-10 col-md-11">Выгодное соинвестирование в объекты качественной курортной недвижимости на ранних стадиях строительства с доходностью от 23% до 40% годовых.</p>
+                        <p><a href="#" class="link-underline text-semibold text-upper text-link">Подробнее</a></p>
+                        <div class="investments__slider">
+                            <div>
+                                <div class="investments-item">
+                                    <div class="title investments-item__title">Апарт-отель «Морис Парк»</div>
+                                    <p>При инвестиции в 9 000 000 р., сумма прибыли составит от  3 000 000 р.</p>
+                                    <div class="investments-item__footer d-flex justify-content-between">
+                                        <div class="investments-item__logo"><img src="img/content/investments-logo-1.svg" alt="" class="img-fluid"></div>
+                                        <div class="d-flex investments-item__profit">
+                                            <div class="text-right investments-item__profit-text">Прибыль <br>от</div>
+                                            <div class="investments-item__profit-num">23%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="investments-item">
+                                    <div class="title investments-item__title">ЖК «Победа»</div>
+                                    <p>При инвестиции в 9 000 000 р., сумма прибыли составит от  3 000 000 р.</p>
+                                    <div class="investments-item__footer d-flex justify-content-between">
+                                        <div class="investments-item__logo"><img src="img/content/investments-logo-2.svg" alt="" class="img-fluid"></div>
+                                        <div class="d-flex investments-item__profit">
+                                            <div class="text-right investments-item__profit-text">Прибыль <br>от</div>
+                                            <div class="investments-item__profit-num">23%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="investments-item">
+                                    <div class="title investments-item__title">Апарт-отель «Морис Парк»</div>
+                                    <p>При инвестиции в 9 000 000 р., сумма прибыли составит от  3 000 000 р.</p>
+                                    <div class="investments-item__footer d-flex justify-content-between">
+                                        <div class="investments-item__logo"><img src="img/content/investments-logo-1.svg" alt="" class="img-fluid"></div>
+                                        <div class="d-flex investments-item__profit">
+                                            <div class="text-right investments-item__profit-text">Прибыль <br>от</div>
+                                            <div class="investments-item__profit-num">23%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /investments -->
+        <div class="container">
+            <!-- section -->
+            <section class="section">
+                <div class="row row-xl">
+                    <div class="col-lg-6 col-xl-8 order-lg-2 d-flex">
+                        <div class="section__image image-block"><img src="img/content/section-1.jpg" alt=""></div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 d-flex flex-column">
+                        <div class="section__title title title_size-sm title_margin-sm">Коммерческая недвижимость</div>
+                        <p>Места, в которых выгодно и приятно расширять или создавать новый бизнес.</p>
+                        <div class="mt-auto"><a href="#" class="text-link link-underline text-semibold text-upper">Подробнее</a></div>
+                    </div>
+                </div>
+            </section>
+            <!-- /section -->
+            <!-- section -->
+            <section class="section">
+                <div class="row row-xl">
+                    <div class="col-lg-6 d-flex col-xl-8">
+                        <div class="section__image image-block"><img src="img/content/section-2.jpg" alt=""></div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 d-flex flex-column">
+                        <div class="section__title title title_size-sm title_margin-sm">Апартаменты, <br class="d-none d-xl-block">как новый вид доходов</div>
+                        <p>Предложения о покупке апартаментов для жизни и сдачи в аренду круглый год, или в курортный сезон с доходностью от 11% годовых.</p>
+                        <div class="mt-auto"><a href="#" class="text-link link-underline text-semibold text-upper">Подробнее</a></div>
+                    </div>
+                </div>
+            </section>
+            <!-- /section -->
+            <!-- partnership -->
+            <div class="partnership">
+                <div class="row row-xl">
+                    <div class="col-xl-7 col-md-6 d-flex order-md-2">
+                        <div class="partnership__image image-block"><img src="img/content/partnership.jpg" alt=""></div>
+                    </div>
+                    <div class="col-xl-5 col-md-6 d-flex flex-column partnership__text">
+                        <div class="title title_size-md title_margin-lg">Партнерство</div>
+                        <p>Аркада Групп — вдохновляющие проекты, соединяющие в себе архитектурные традиции и стандарты сервиса лучших курортов мира.</p>
+                        <p><a href="#" class="text-link link-underline text-semibold text-upper">Стать партнером</a></p>
+                        <div class="partnership__info mt-auto">
+                            <div class="row row-xl">
+                                <div class="col-6 col-lg-4">
+                                    <div class="partnership__item text_size-sm">
+                                        <div class="partnership__num">8233 м<sup>²</sup></div>
+                                        <p>Коммерческих площадей</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <div class="partnership__item text_size-sm">
+                                        <div class="partnership__num">672</div>
+                                        <p>Дома в 5 коттеджных посёлках</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <div class="partnership__item text_size-sm">
+                                        <div class="partnership__num">2509 </div>
+                                        <p>Квартир 
+                                            и жилых комплексах</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /partnership -->
+            <!-- news -->
+            <div class="news">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="title title_size-md">Пресс-центр</div>
+                    <a href="#" class="text-link link-underline text-semibold text-upper news__link d-none d-md-block">Все новости</a>
+                </div>
+                <div class="news-slider">
+                    <div class="news-item">
+                        <a href="#" class="news-item__image image-block"><img src="img/content/news-1.jpg" alt="" class="d-block w-100"></a>
+                        <div class="news-item__title text_size-lg text-semibold"><a href="#">В коттеджном поселке LUCH I положен старт строительства</a></div>
+                        <div class="post-date text_size-md">Новости компании, 12.04.2022</div>
+                    </div>
+                    <div class="news-item">
+                        <a href="#" class="news-item__image image-block"><img src="img/content/news-2.jpg" alt="" class="d-block w-100"></a>
+                        <div class="news-item__title text_size-lg text-semibold"><a href="#">Московская международная выставка элитной недвижимости</a></div>
+                        <div class="post-date text_size-md">Строительство, 12.04.2022</div>
+                    </div>
+                    <div class="news-item">
+                        <a href="#" class="news-item__image image-block"><img src="img/content/news-3.jpg" alt="" class="d-block w-100"></a>
+                        <div class="news-item__title text_size-lg text-semibold"><a href="#">В коттеджном поселке LUCHI положен старт строительства</a></div>
+                        <div class="post-date text_size-md">Строительство, 12.04.2022</div>
+                    </div>
+                </div>
+            </div>
+            <!-- /news -->
+            <!-- quiz -->
+            <div class="quiz">
+                <div class="title title_size-md">Предложение <br class="d-md-none">для вас</div>
+                <div class="quiz-block">
+                    <!-- quiz-block__container -->
+                    <div class="quiz-block__container">
+                        <!-- quiz-block-1 -->
+                        <div class="quiz-block__card show fade" id="quiz-block-1">
+                            <div class="quiz-block__header text_size-lg text-semibold text-dark d-flex justify-content-between">
+                                <div class="quiz-block__title">Выберите объект назначения</div>
+                                <div class="quiz-block__steps">Шаг <span class="text-primary">1</span> из 4</div>
+                            </div>
+                            <div class="quiz-block__body">
+                                <div class="row">
+                                    <div class="col-6 col-xl-3 col-md-4">
+                                        <label class="block-label">
+                                            <input type="checkbox">
+                                            <span class="quiz-checkbox-input btn">
+                                                <span class="quiz-checkbox-input__image image-block"><img src="img/content/quiz.jpg" alt=""></span>
+                                                <span class="quiz-checkbox-input__text">Инвестиции</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-xl-3 col-md-4">
+                                        <label class="block-label">
+                                            <input type="checkbox">
+                                            <span class="quiz-checkbox-input btn">
+                                                <span class="quiz-checkbox-input__image image-block"><img src="img/content/quiz.jpg" alt=""></span>
+                                                <span class="quiz-checkbox-input__text">Для жизни</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-xl-3 col-md-4">
+                                        <label class="block-label">
+                                            <input type="checkbox">
+                                            <span class="quiz-checkbox-input btn">
+                                                <span class="quiz-checkbox-input__image image-block"><img src="img/content/quiz.jpg" alt=""></span>
+                                                <span class="quiz-checkbox-input__text">Для отдыха</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-xl-3 col-md-4">
+                                        <label class="block-label">
+                                            <input type="checkbox" checked>
+                                            <span class="quiz-checkbox-input btn">
+                                                <span class="quiz-checkbox-input__image image-block"><img src="img/content/quiz.jpg" alt=""></span>
+                                                <span class="quiz-checkbox-input__text">Под сдачу</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-xl-3 col-md-4">
+                                        <label class="block-label">
+                                            <input type="checkbox">
+                                            <span class="quiz-checkbox-input btn">
+                                                <span class="quiz-checkbox-input__image image-block"><img src="img/content/quiz.jpg" alt=""></span>
+                                                <span class="quiz-checkbox-input__text">Под офис</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-xl-3 col-md-4">
+                                        <label class="block-label">
+                                            <input type="checkbox">
+                                            <span class="quiz-checkbox-input btn">
+                                                <span class="quiz-checkbox-input__image image-block"><img src="img/content/quiz.jpg" alt=""></span>
+                                                <span class="quiz-checkbox-input__text">Для бизнеса</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-xl-3 col-md-4">
+                                        <label class="block-label">
+                                            <input type="checkbox">
+                                            <span class="quiz-checkbox-input btn">
+                                                <span class="quiz-checkbox-input__image image-block"><img src="img/content/quiz.jpg" alt=""></span>
+                                                <span class="quiz-checkbox-input__text">Паркинг</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-block__footer d-flex justify-content-between">
+                                <a href="#" class="btn btn-outline quiz-prev disabled btn_size-md">Назад</a>
+                                <a href="#quiz-block-2" class="btn btn-outline btn-quiz btn_size-md" data-bs-toggle="collapse">Далее</a>
+                            </div>
+                        </div>
+                        <!-- /quiz-block-1 -->
+                        <!-- quiz-block-2 -->
+                        <div class="quiz-block__card fade" id="quiz-block-2">
+                            <div class="quiz-block__header text_size-lg text-semibold text-dark d-flex justify-content-between">
+                                <div class="quiz-block__title">Выберите объект, один или несколько</div>
+                                <div class="quiz-block__steps">Шаг <span class="text-primary">2</span> из 4</div>
+                            </div>
+                            <div class="quiz-block__body">
+                                <div class="row">
+                                    <div class="col-6 col-xl-3 col-md-4">
+                                        <label class="block-label">
+                                            <input type="checkbox">
+                                            <span class="quiz-checkbox-input btn">
+                                                <span class="quiz-checkbox-input__image image-block"><img src="img/content/quiz.jpg" alt=""></span>
+                                                <span class="quiz-checkbox-input__text">Апартаменты</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-xl-3 col-md-4">
+                                        <label class="block-label">
+                                            <input type="checkbox">
+                                            <span class="quiz-checkbox-input btn">
+                                                <span class="quiz-checkbox-input__image image-block"><img src="img/content/quiz.jpg" alt=""></span>
+                                                <span class="quiz-checkbox-input__text">Квартира</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-xl-3 col-md-4">
+                                        <label class="block-label">
+                                            <input type="checkbox">
+                                            <span class="quiz-checkbox-input btn">
+                                                <span class="quiz-checkbox-input__image image-block"><img src="img/content/quiz.jpg" alt=""></span>
+                                                <span class="quiz-checkbox-input__text">Таунхаус</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-xl-3 col-md-4">
+                                        <label class="block-label">
+                                            <input type="checkbox" checked>
+                                            <span class="quiz-checkbox-input btn">
+                                                <span class="quiz-checkbox-input__image image-block"><img src="img/content/quiz.jpg" alt=""></span>
+                                                <span class="quiz-checkbox-input__text">Коттедж</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-xl-3 col-md-4">
+                                        <label class="block-label">
+                                            <input type="checkbox">
+                                            <span class="quiz-checkbox-input btn">
+                                                <span class="quiz-checkbox-input__image image-block"><img src="img/content/quiz.jpg" alt=""></span>
+                                                <span class="quiz-checkbox-input__text">Вилла</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-xl-3 col-md-4">
+                                        <label class="block-label">
+                                            <input type="checkbox">
+                                            <span class="quiz-checkbox-input btn">
+                                                <span class="quiz-checkbox-input__image image-block"><img src="img/content/quiz.jpg" alt=""></span>
+                                                <span class="quiz-checkbox-input__text">Коммерческая недвижимость</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-block__footer d-flex justify-content-between">
+                                <a href="#quiz-block-1" class="btn btn-outline btn-quiz btn_size-md" data-bs-toggle="collapse">Назад</a>
+                                <a href="#quiz-block-3" class="btn btn-outline btn-quiz btn_size-md" data-bs-toggle="collapse">Далее</a>
+                            </div>
+                        </div>
+                        <!-- /quiz-block-2 -->
+                        <!-- quiz-block-3 -->
+                        <div class="quiz-block__card fade" id="quiz-block-3">
+                            <div class="quiz-block__header text_size-lg text-semibold text-dark d-flex justify-content-between">
+                                <div class="quiz-block__title">Каким бюджетом вы располагаете на выбранные цели?</div>
+                                <div class="quiz-block__steps">Шаг <span class="text-primary">3</span> из 4</div>
+                            </div>
+                            <div class="quiz-block__body">
+                                <div class="row row-lg">
+                                    <div class="col-xxl-4 col-md-6">
+                                        <label class="block-label">
+                                            <input type="radio" type="radio" name="budget" checked>
+                                            <span class="quiz-radio-input btn">От 3 000 000  до 6 000 000 </span>
+                                        </label>
+                                        <label class="block-label">
+                                            <input type="radio" type="radio" name="budget">
+                                            <span class="quiz-radio-input btn">От 6 000 000 до 10 000 000 </span>
+                                        </label>
+                                        <label class="block-label">
+                                            <input type="radio" type="radio" name="budget">
+                                            <span class="quiz-radio-input btn">От 10 000 000 до 15 000 000</span>
+                                        </label>
+                                        <label class="block-label">
+                                            <input type="radio" type="radio" name="budget">
+                                            <span class="quiz-radio-input btn">От 15 000 000  до 50 000 000  </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-xxl-4 col-md-6">
+                                        <label class="block-label">
+                                            <input type="radio" type="radio" name="budget">
+                                            <span class="quiz-radio-input btn">Более 50 000 000</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-block__footer d-flex justify-content-between">
+                                <a href="#quiz-block-4" class="btn btn-outline btn-quiz btn_size-md" data-bs-toggle="collapse">Назад</a>
+                                <a href="#quiz-block-4" class="btn btn-outline btn-quiz btn_size-md" data-bs-toggle="collapse">Далее</a>
+                            </div>
+                        </div>
+                        <!-- /quiz-block-3 -->
+                        <!-- quiz-block-4 -->
+                        <div class="quiz-block__card fade" id="quiz-block-4">
+                            <div class="quiz-block__header text_size-lg text-semibold text-dark d-flex justify-content-between">
+                                <div class="quiz-block__title">В каком городе?</div>
+                                <div class="quiz-block__steps">Шаг <span class="text-primary">4</span> из 4</div>
+                            </div>
+                            <div class="quiz-block__body">
+                                <div class="row row-lg">
+                                    <div class="col-xxl-4 col-md-6">
+                                        <label class="block-label">
+                                            <input type="radio" type="radio" name="place" checked>
+                                            <span class="quiz-radio-input btn">Большая Ялта</span>
+                                        </label>
+                                        <label class="block-label">
+                                            <input type="radio" type="radio" name="place">
+                                            <span class="quiz-radio-input btn">Большая Алушта</span>
+                                        </label>
+                                        <label class="block-label">
+                                            <input type="radio" type="radio" name="place">
+                                            <span class="quiz-radio-input btn">Судак</span>
+                                        </label>
+                                        <label class="block-label">
+                                            <input type="radio" type="radio" name="place">
+                                            <span class="quiz-radio-input btn">Симферополь</span>
+                                        </label>
+                                    </div>
+                                    <div class="col-xxl-4 col-md-6">
+                                        <label class="block-label">
+                                            <input type="radio" type="radio" name="place">
+                                            <span class="quiz-radio-input btn">Евпатория</span>
+                                        </label>
+                                        <label class="block-label">
+                                            <input type="radio" type="radio" name="place">
+                                            <span class="quiz-radio-input btn">Нет предпочтений по городу</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quiz-block__footer d-flex justify-content-between">
+                                <a href="#quiz-block-3" class="btn btn-outline btn-quiz btn_size-md" data-bs-toggle="collapse">Назад</a>
+                                <a href="#quiz-block-5" class="btn btn-outline btn-quiz btn_size-md" data-bs-toggle="collapse">Далее</a>
+                            </div>
+                        </div>
+                        <!-- /quiz-block-4 -->
+                        <!-- quiz-block-5 -->
+                        <div class="quiz-block__card fade" id="quiz-block-5">
+                            <div class="quiz-block__header text_size-lg text-semibold text-dark d-flex justify-content-between">
+                                <div class="quiz-block__title">Оставьте ваши контактные данные для связи</div>
+                                <div class="quiz-block__steps">Финальный шаг</div>
+                            </div>
+                            <form action="#">
+                                <div class="quiz-block__body">
+                                    <div class="quiz-block__form">
+                                        <div class="row row-lg">
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Имя">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Номер телефона">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <select class="form-control">
+                                                        <option disabled selected>Способ связи</option>
+                                                        <option value="Телефон">Телефон</option>
+                                                        <option value="Email">Email</option>
+                                                        <option value="Telegram">Telegram</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text_size-sm text-light"><input type="checkbox" class="form-check-input" checked>Подтверждаю свое согласие на обработку персональных данных и соглашаетесь с <a href="#" class="text-primary text-link link-underline pb-0">политикой конфиденциальности.</a></p>
+                                </div>
+                                <div class="quiz-block__footer d-flex justify-content-between">
+                                    <a href="#quiz-block-4" class="btn btn-outline btn-quiz btn_size-md" data-bs-toggle="collapse">Назад</a>
+                                    <a href="#quiz-block-6" class="btn btn-primary btn-quiz btn_size-md" data-bs-toggle="collapse">Отправить</a>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /quiz-block-5 -->
+                        <!-- quiz-block-6 -->
+                        <div class="quiz-block__card fade" id="quiz-block-6">
+                            <div class="quiz-block__header text_size-lg text-semibold text-dark d-flex justify-content-between">
+                                <div class="quiz-block__title">Оставьте ваши контактные данные для связи</div>
+                                <div class="quiz-block__steps">Финальный шаг</div>
+                            </div>
+                            <div class="quiz-block__body d-flex flex-column justify-content-center text-center">
+                                <div class="title title_size-md quiz-block__body-title">Спасибо за обращение!</div>
+                                <p>С вами в ближайшее время свяжется <br>наш менеджер!</p>
+                            </div>
+                            <div class="quiz-block__footer d-flex justify-content-end">
+                                <a href="#" class="btn btn-primary btn-primary btn_size-md btn-quiz-last">ОК</a>
+                            </div>
+                        </div>
+                        <!-- /quiz-block-6 -->
+                    </div>
+                    <!-- /quiz-block__container -->
+                </div>
+                  
+            </div>
+            <!-- /quiz -->
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="row">
+                    <div class="col-md-5 col-lg-6">
+                        <div class="footer__title title text_size-lg">Навигация</div>
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="footer-nav">
+                                    <li class="footer-nav__item"><a href="#" class="text-link text-light">Каталог</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="text-link text-light">Как купить</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="text-link text-light">О компании</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="text-link text-light">Контакты</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="footer-nav footer-nav_padding">
+                                    <li class="footer-nav__item"><a href="#" class="text-link text-light">Инвестиции</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="text-link text-light">Партнерам</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="text-link text-light">Пресс-центр</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-lg-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="footer__title title text_size-lg">Контакты</div>
+                                <p><a href="tel:+73654777730" class="text-link text-light">+7 (3654) 77-77-30</a></p>
+                                <p><a href="#mailto:info@arkada-group.ru" class="text-link text-light">info@arkada-group.ru</a></p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="footer__contacts">
+                                    <a href="#" class="cirle-link footer__cirle-link">
+                                        <div class="cirle-link__image"><img src="img/house.svg" alt="" class="img-fluid"></div>
+                                        <div class="cirle-link__text">Квартиры <br>в наличии</div>
+                                    </a>
+                                    <p>ул. Пушкина, 11 <br>Симферополь, Республика Крым</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom text_size-xs">
+                <div class="container d-flex justify-content-between">
+                    <div class="copyright">
+                        <p>© Аркада Группа компаний, 2005—2022</p>
+                        <p><a href="#" class="text-light">Политика конфиденциальности</a></p>
+                    </div>
+                    <div class="text-right producer"><p>Сайт сделан в <a href="#">Kozlov Marketing</a></p></div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+    </div>
+    <!-- callback -->
+    <div class="modal fade" id="callback" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close modal__close" data-bs-dismiss="modal">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="1.48439" y1="1.51451" x2="18.4565" y2="18.4836" stroke="#2C374B" stroke-width="2"/>
+                        <line x1="18.4571" y1="1.51472" x2="1.48655" y2="18.4853" stroke="#2C374B" stroke-width="2"/>
+                    </svg> 
+                </button>
+                <div class="text-center title modal__title">Закажите звонок</div>
+                <p class="text-center text_size-md text-light">Наш менеджер перезвонит <br>и поможет решить ваш вопрос!</p>
+                <form action="#" class="modal__form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Имя">
+                    </div>
+                    <div class="form-group form-group_margin">
+                        <input type="text" class="form-control" placeholder="Номер телефона">
+                    </div>
+                    <div class="form-group text-center">
+                        <button class="btn btn-primary btn_size-lg" data-bs-toggle="modal" data-bs-target="#thanks">Заказать звонок</button>
+                    </div>
+                </form>
+                <div class="text-center text_size-xs text-light form-after-text">Нажимая кнопку “Заказать звонок” вы подтверждаете свое согласие на обработку <a href="#" class="text-link text-primary link-underline text_size-xs">персональных данных</a>.</div>
+            </div>
+        </div>
+    </div>
+    <!-- /callback -->
+    <!-- thanks -->
+    <div class="modal fade" id="thanks" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close modal__close" data-bs-dismiss="modal">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="1.48439" y1="1.51451" x2="18.4565" y2="18.4836" stroke="#2C374B" stroke-width="2"/>
+                        <line x1="18.4571" y1="1.51472" x2="1.48655" y2="18.4853" stroke="#2C374B" stroke-width="2"/>
+                    </svg> 
+                </button>
+                <div class="text-center title modal__title">Спасибо <br>за обращение!</div>
+                <p class="text-center text_size-md text-light">С вами в ближайшее время свяжется <br>наш менеджер!</p>
+                <p class="text-center"><a href="#" class="btn btn-primary btn_size-lg" data-bs-dismiss="modal">ОК</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- /thanks -->
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
