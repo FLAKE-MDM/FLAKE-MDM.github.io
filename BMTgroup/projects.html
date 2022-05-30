@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMTgroup</title>
+
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png">
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <div class="d-flex header__top">
+                    <a href="/" class="logo header__logo"><img src="img/logo.svg" alt="" class="img-fluid"></a>
+                    <div class="header__contacts d-none d-lg-flex">
+                        <div class="header__contacts-item">
+                            <span class="text-medium">Мы работаем:</span> пн-вс 9:00 - 19:00 
+                        </div>
+                        <div class="header__contacts-item">
+                            <span class="text-medium">Телефон: </span><a href="tel:+78008888888">+7 800 888 88 88</a>
+                        </div>
+                    </div>
+                    <a href="#callback" data-bs-toggle="modal" class="btn d-none d-lg-block">Оставить заявку</a>
+                    <button class="btn-menu btn-menu-open d-lg-none icon-menu-black icon"></button>
+                    <button class="btn-menu btn-menu-close d-lg-none"><span class="icon icon-close"></span></button>
+                </div>
+            </div>
+            <nav class="header__nav" id="nav">
+                <div class="container">
+                    <div class="d-flex flex-wrap flex-lg-nowrap">
+                        <!-- nav-tabs -->
+                        <ul class="nav nav-tabs d-lg-none" id="heder-tab" role="tablist">
+                            <li class="nav-tabs__item" role="presentation">
+                                <a class="nav-tabs__link active" data-bs-toggle="tab" href="#menu" role="tab" aria-selected="true">разделы</a>
+                            </li>
+                            <li class="nav-tabs__item" role="presentation">
+                                <a class="nav-tabs__link" data-bs-toggle="tab" href="#catalogue" role="tab" aria-selected="false">Каталог</a>
+                            </li>
+                        </ul>
+                        <!-- /nav-tabs -->
+                        <div class="tab-content d-flex" id="hederTabContent">
+                            <div class="header__tab-pane tab-pane fade" id="catalogue" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="dropdown">
+                                    <a href="#" class="nav__link nav__link_active dropdown-toggle d-none d-lg-flex" data-bs-toggle="dropdown"><span class="icon icon-menu"></span> Открыть каталог</a>
+                                    <div class="dropdown-menu dropdown-menu__catalogue">
+                                        <ul class="sub-nav">
+                                            <li class="sub-nav__item">
+                                                <a href="#" class="sub-nav__link dropdown-toggle" data-bs-toggle="dropdown">Реанимация и интенсивная терапия</a>
+                                                <div class="dropdown-menu dropdown-menu_sub">
+                                                    <ul class="sub-nav">
+                                                        <li class="sub-nav__item"><a href="#" class="sub-nav__link">Реанимация и интенсивная терапия</a></li>
+                                                        <li class="sub-nav__item"><a href="#" class="sub-nav__link">Акушерство, Гинекология и неонатология</a></li>
+                                                        <li class="sub-nav__item"><a href="#" class="sub-nav__link">Эндоскопия</a></li>
+                                                        <li class="sub-nav__item"><a href="#" class="sub-nav__link">Функциональная диагностика</a></li>
+                                                        <li class="sub-nav__item"><a href="#" class="sub-nav__link">Травматология и ортопедия</a></li>
+                                                        <li class="sub-nav__item"><a href="#" class="sub-nav__link">Нейрохирургия</a></li>
+                                                        <li class="sub-nav__item"><a href="#" class="sub-nav__link">Ультразвуковое оборудовани</a></li>
+                                                        <li class="sub-nav__item"><a href="#" class="sub-nav__link">Оториноларингология</a></li>
+                                                        <li class="sub-nav__item"><a href="#" class="sub-nav__link">Офтальмология</a></li>
+                                                        <li class="sub-nav__item"><a href="#" class="sub-nav__link">Патологическая анатомия и судебная медицина	</a></li>
+                                                        <li class="sub-nav__item"><a href="#" class="sub-nav__link">Лабораторное и аналитическое оборудование</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="sub-nav__item"><a href="#" class="sub-nav__link dropdown-toggle">Акушерство, Гинекология и неонатология</a></li>
+                                            <li class="sub-nav__item"><a href="#" class="sub-nav__link dropdown-toggle">Эндоскопия</a></li>
+                                            <li class="sub-nav__item"><a href="#" class="sub-nav__link dropdown-toggle">Функциональная диагностика</a></li>
+                                            <li class="sub-nav__item"><a href="#" class="sub-nav__link dropdown-toggle">Травматология и ортопедия</a></li>
+                                            <li class="sub-nav__item"><a href="#" class="sub-nav__link dropdown-toggle">Нейрохирургия</a></li>
+                                            <li class="sub-nav__item"><a href="#" class="sub-nav__link dropdown-toggle">Ультразвуковое оборудовани</a></li>
+                                            <li class="sub-nav__item"><a href="#" class="sub-nav__link dropdown-toggle">Оториноларингология</a></li>
+                                            <li class="sub-nav__item"><a href="#" class="sub-nav__link dropdown-toggle">Офтальмология</a></li>
+                                            <li class="sub-nav__item"><a href="#" class="sub-nav__link dropdown-toggle">Патологическая анатомия и судебная медицина	</a></li>
+                                            <li class="sub-nav__item"><a href="#" class="sub-nav__link dropdown-toggle">Лабораторное и аналитическое оборудование</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__tab-pane tab-pane fade show active" id="menu" role="tabpanel">
+                                <ul class="d-lg-flex nav-list">
+                                    <li class="nav-list__item"><a href="#" class="nav__link">О Компании</a></li>
+                                    <li class="nav-list__item dropdown">
+                                        <a href="#" class="nav__link dropdown-toggle" data-bs-toggle="dropdown">Документы</a>
+                                        <div class="dropdown-menu">
+                                            <ul class="sub-nav">
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Реанимация и интенсивная терапия</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Акушерство, Гинекология и неонатология</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Эндоскопия</a></li>
+                                                <li class="sub-nav__item"><a href="#" class="sub-nav__link">Функциональная диагностика</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-list__item"><a href="#" class="nav__link">Наши проекты</a></li>
+                                    <li class="nav-list__item"><a href="#" class="nav__link">Контакты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="search">
+                            <form action="#">
+                                <input type="search" class="search__input" placeholder="Поиск...">
+                                <button class="search__btn"><span class="icon-search icon"></span></button>
+                            </form>
+                        </div>
+                        <div class="header__contacts d-lg-none">
+                            <div class="header__contacts-item">
+                                <span class="text-medium">Мы работаем:</span> пн-вс 9:00 - 19:00 
+                            </div>
+                            <div class="header__contacts-item">
+                                <span class="text-medium">Телефон: </span><a href="tel:+78008888888">+7 800 888 88 88</a>
+                            </div>
+                        </div>
+                        <a href="#callback" data-bs-toggle="modal" class="btn d-lg-none btn-square w-100">Оставить заявку</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="header__info">
+                <div class="container">
+                    <div class="title_size-md text-center">Наши проекты</div>
+                    <!-- breadcrumb -->
+                    <ul class="breadcrumb breadcrumb_size-md justify-content-center">
+                        <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Главная</a></li>
+                        <li class="breadcrumb__item">Наши проекты</li>
+                    </ul>
+                    <!-- /breadcrumb -->
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="project-item">
+                            <a href="#" class="project-item__image"><img src="img/content/project.jpg" alt="" class="w-100"></a>
+                            <div class="project-item__body">
+                                <a href="#" class="project-item__title">Оснащение кабинета МРТ</a>
+                                <p>Территориальное расположение: ПРИМ (псковкий дкбг)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project-item">
+                            <a href="#" class="project-item__image"><img src="img/content/project.jpg" alt="" class="w-100"></a>
+                            <div class="project-item__body">
+                                <a href="#" class="project-item__title">Оснащение кабинета МРТ</a>
+                                <p>Территориальное расположение: ПРИМ (псковкий дкбг)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project-item">
+                            <a href="#" class="project-item__image"><img src="img/content/project.jpg" alt="" class="w-100"></a>
+                            <div class="project-item__body">
+                                <a href="#" class="project-item__title">Оснащение кабинета МРТ</a>
+                                <p>Территориальное расположение: ПРИМ (псковкий дкбг)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project-item">
+                            <a href="#" class="project-item__image"><img src="img/content/project.jpg" alt="" class="w-100"></a>
+                            <div class="project-item__body">
+                                <a href="#" class="project-item__title">Оснащение кабинета МРТ</a>
+                                <p>Территориальное расположение: ПРИМ (псковкий дкбг)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project-item">
+                            <a href="#" class="project-item__image"><img src="img/content/project.jpg" alt="" class="w-100"></a>
+                            <div class="project-item__body">
+                                <a href="#" class="project-item__title">Оснащение кабинета МРТ</a>
+                                <p>Территориальное расположение: ПРИМ (псковкий дкбг)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project-item">
+                            <a href="#" class="project-item__image"><img src="img/content/project.jpg" alt="" class="w-100"></a>
+                            <div class="project-item__body">
+                                <a href="#" class="project-item__title">Оснащение кабинета МРТ</a>
+                                <p>Территориальное расположение: ПРИМ (псковкий дкбг)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-xl-3 footer__info">
+                        <a href="/" class="logo footer__logo"><img src="img/logo-footer.svg" alt="" class="img-fluid"></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                        <ul class="social-list footer__social-list">
+                            <li class="social-list__item"><a href="#" class="social-list__link twitter" target="_blanksocial-list"></a></li>
+                            <li class="social-list__item"><a href="#" class="social-list__link facebook" target="_blanksocial-list"></a></li>
+                            <li class="social-list__item"><a href="#" class="social-list__link instagram" target="_blanksocial-list"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 d-md-flex footer__row">
+                        <div class="footer__col footer__col-1">
+                            <div class="footer__title">ПРОДУКЦИЯ</div> 
+                            <ul class="footer-nav">
+                                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Lorem ipsum</a></li>
+                                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Lorem ipsum</a></li>
+                                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Lorem ipsum</a></li>
+                                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Lorem ipsum</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__col footer__col-2">
+                            <div class="footer__title">Информация</div> 
+                            <ul class="footer-nav">
+                                <li class="footer-nav__item"><a href="#" class="footer-nav__link">О Компании</a></li>
+                                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Статьи</a></li>
+                                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__col footer__col-3">
+                            <div class="footer__title">КОНТАКТЫ</div> 
+                            <ul class="footer-nav">
+                                <li class="footer-nav__item"><a href="mailto:info@form.com" class="footer-nav__link">info@form.com</a></li>
+                                <li class="footer-nav__item"><a href="tel:8825873025" class="footer-nav__link">882-587-3025</a></li>
+                                <li class="footer-nav__item">6116 Willa River Suite 610</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 footer__subscription d-md-flex d-lg-block">
+                        <div class="col-md-5 col-lg-12">
+                            <div class="footer__title">ПОДПИСАТЬСЯ НА НОВОСТИ</div> 
+                            <p>Duis autem vel eum</p>
+                        </div>
+                        <div class="col-md-7 col-lg-12">
+                            <div class="subscription-form">
+                                <form action="#">
+                                    <div class="d-flex">
+                                        <label class="form__label subscription-form__label">
+                                            <span class="icon form__icon icon-subscription-email"></span>
+                                            <input type="email" class="subscription-form__input" placeholder="Email">
+                                        </label>
+                                        <button class="btn subscription-form__btn">подписаться</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="d-md-flex justify-content-between">
+                        <div class="footer__bottom-text">Duis autem vel eum</div>
+                        <div class="copyright">©2021 - Form  <span class="separator">|</span>   All right reserved</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- callback -->
+        <div class="modal fade" id="callback" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal__body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span class="icon icon-close-black"></span></button>
+                    <div class="modal__title text-center">Заполните форму</div>
+                    <p class="text-center">Для консультации со специалистом</p>
+                    <form action="#" class="modal__form mx-auto form">
+                        <div class="form__group">
+                            <label class="form__label">
+                                <span class="form__icon icon icon-user"></span>
+                                <input type="text" class="form__control" placeholder="Имя">
+                            </label>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label">
+                                <span class="form__icon icon icon-email"></span>
+                                <input type="email" class="form__control" placeholder="Email">
+                            </label>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label">
+                                <span class="form__icon icon icon-phone"></span>
+                                <input type="tel" class="form__control" placeholder="Телефон">
+                            </label>
+                        </div>
+                        <div class="form__group">
+                            <button class="btn w-100 btn-square">Отправить</button>
+                        </div>
+                        <div class="form__text">Отправляя эту форму, вы даете свое согласие на обработку персональных данных в соответствии с нашей <a href="#" class="link-underline">Политикой конфиденциальности</a>.</div>
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- /callback -->
+    </div>
+
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

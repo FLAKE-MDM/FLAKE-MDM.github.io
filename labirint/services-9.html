@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Компания ВАРИАНТ-А</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png">
+</head>
+<body>
+    <div class="wrap" id="wrap">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <div class="d-flex align-items-center flex-wrap flex-lg-nowrap">
+                    <a href="/" class="logo header__logo"><img src="img/logo.svg" alt="" class="img-fluid"></a>
+                    <nav class="nav collapse" id="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#services-nav" data-bs-toggle="modal" class="nav__link services-toggler">
+                                    <svg class="icon-menu" width="20" height="20" viewBox="0 0 20 20" fill="#000066" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="3" y="5" width="14" height="3" rx="1.5" fill=""/>
+                                        <rect x="3" y="12" width="11" height="3" rx="1.5" fill=""/>
+                                    </svg>
+                                    Услуги
+                                </a>
+                            </li>
+                            <li class="nav__item"><a href="about.html" class="nav__link">О компании</a></li>
+                            <li class="nav__item"><a href="cases.html" class="nav__link">Кейсы</a></li>
+                            <li class="nav__item"><a href="blog.html" class="nav__link">Блог</a></li>
+                            <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+                            <li class="nav__item d-md-none"><a href="tel:8800003020" class="phone header__phone text-primary">8 800 00 30 20</a></li>
+                            <li class="nav__item d-sm-none"><a href="#collapse-callback" data-bs-toggle="collapse" class="btn btn-danger-outline btn-sm close-menu">Обратный звонок</a></li>
+                        </ul>
+                    </nav>
+                    <a href="tel:8800003020" class="phone header__phone text-primary d-none d-md-block d-lg-none d-xl-block">8 800 00 30 20</a>
+                    <a href="#collapse-callback" data-bs-toggle="collapse" class="btn btn-danger-outline btn-sm d-none d-sm-block">Обратный звонок</a>
+                    <button class="d-lg-none btn-menu collapsed" data-bs-toggle="collapse" data-bs-target="#nav">
+                        <svg class="btn-menu__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="5" width="14" height="3" rx="1.5" fill=""/>
+                            <rect x="3" y="12" width="11" height="3" rx="1.5" fill=""/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+        <!-- collapse-callback -->
+        <div class="collapse-callback collapse" id="collapse-callback">
+            <div class="collapse-callback__inside">
+                <div class="container">
+                    <div class="collapse-callback__title">Заказать звонок</div>
+                    <div class="d-lg-flex align-items-start">
+                        <div class="collapse-callback__form">
+                            <form action="#">
+                                <div class="d-md-flex align-items-start">
+                                    <div class="form-group collapse-callback__form-col">
+                                        <input class="form-control" type="text" placeholder="Имя">
+                                    </div>
+                                    <div class="form-group collapse-callback__form-col">
+                                        <input class="form-control is-invalid" type="tel" placeholder="Телефон">
+                                    </div>
+                                    <button class="btn btn-danger w-100-sm">Заказать звонок</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="collapse-callback__text text-md">
+                            <p>Нажимая кнопку, ты разрешаешь обработку персональных данных и соглашаешься с <a href="#" class="text-danger">политикой конфинденциальности</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /collapse-callback -->
+        <!-- heading-block -->
+        <div class="heading-block heading-block_margin">
+            <div class="container heading-block__container">
+                <!-- breadcrumb -->
+                <ul class="breadcrumb">
+                    <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Главная страница </a></li>
+                    <li class="breadcrumb__item">Коммерческое и промышленное оборудование</li>
+                </ul>
+                <!-- /breadcrumb -->
+            </div>
+        </div>
+        <!-- /heading-block -->
+        <div class="container">
+            <!-- service-preview -->
+            <div class="service-preview d-lg-flex">
+                <div class="service-preview__text">
+                    <h1 class="title-lg text-primary">Материалы и инструменты
+                        для мелкого ремонта</h1>
+                    <p class="text-lg">Рассчитайте стоимость доставки и аренды промышленного оборудования 
+                       <br class="d-none d-lg-block">с точностью <b>95%</b> прямо сейчас <b class="text-primary">за 10 минут</b></p>
+                    <div class="d-flex flex-wrap align-items-center">
+                        <a href="#" class="btn btn-danger w-100-xs">Рассчитать стоимость</a>
+                        <div class="text-danger text-free text-lg text-semi-bold">Бесплатно :)</div>
+                    </div>
+                </div>
+                <div class="service-preview__image"><img src="img/service-9.jpg" alt=""></div>
+            </div>
+            <!-- /service-preview -->
+            <!-- service-categories -->
+            <div class="categories-block">
+                <a href="#" class="categories-block__link">Оборудование для уплотнений грунта</a>
+                <a href="#" class="categories-block__link">Оборудование для бетонирования</a>
+                <a href="#" class="categories-block__link">Резчики свежего бетона</a>
+                <a href="#" class="categories-block__link">Машины для шлифовки пола</a>
+                <a href="#" class="categories-block__link">Системы сбора пыли</a>
+                <a href="#" class="categories-block__link">Стенорезные машины</a>
+            </div>
+            <!-- /service-categories -->
+            <!-- service-advantages -->
+            <div class="title-lg title-after">Преимущества</div>
+            <p class="text-lg">Предприятий использующих подрядные компании для сохранения своих производственных ресурсов и обеспечения комфортных условий для работ</p>
+            <div class="row service-advantages__row">
+                <div class="col-lg-4">
+                    <div class="advantages-item d-flex">
+                        <div class="advantages-item__icon icon icon-company"></div>
+                        <div class="advantages-item__text">
+                            <div class="advantages-item__num text-danger">Более 10 000</div>
+                            <div class="advantages-item__title">Предприятий</div>
+                            <p>Предприятий использующих коммерческое оборудование для сохранения своих производственных ресурсов и обеспечения комфортных условий для работ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="advantages-item d-flex">
+                        <div class="advantages-item__icon icon icon-person"></div>
+                        <div class="advantages-item__text">
+                            <div class="advantages-item__num text-danger">Более 1 000 000</div>
+                            <div class="advantages-item__title">Человек</div>
+                            <p>Более 1 000 000 человек уже оценили преимущества работы с качественным проверенным оборудованием</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="advantages-item d-flex">
+                        <div class="advantages-item__icon icon icon-schedule"></div>
+                        <div class="advantages-item__text">
+                            <div class="advantages-item__num text-danger">3 - 6</div>
+                            <div class="advantages-item__title">От 3 до 6 раз</div>
+                            <p>Повышается эффективность р абот на объекте, экономия во времени, деньгих и других ресурсов требующих быстрого отклика на нужды рабочих</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-lg">Кроме того, Губернатор озвучил ряд инициатив по благоустройству городских территорий. А также он выступил с инициативой предоставления субсидии на благоустройство парков в административных центрах субъектов Российской Федерации. В настоящее время эти населенные пункты из-за численности своего населения лишены возможности принимать участие во Всероссийском конкурсе лучших проектов создания комфортной городской среды.</p>
+            <!-- /service-advantages -->
+            <!-- service-about -->
+            <div class="service-about-block">
+                <div class="title-lg title-after">Компания А-вариант</div>
+                <p class="text-lg">Предприятий использующих подрядные компании для сохранения своих производственных ресурсов и обеспечения комфортных условий для работ</p>
+                <div class="row">
+                    <div class="col-md-6 service-about-block__item">
+                        <div class="service-about-block__title d-flex text-danger text-semi-bold">
+                            <div class="service-about-block__icon icon icon-aim"></div>
+                            Наша миссия
+                        </div>
+                        <p>Компания «Старатели» завершила сделку по приобретению завода по производству сухих строительных смесей в Михайловском районе Рязанской области.</p>
+                    </div>
+                    <div class="col-md-6 service-about-block__item">
+                        <div class="service-about-block__title d-flex text-danger text-semi-bold">
+                            <div class="service-about-block__icon icon icon-time"></div>
+                            Работаем с 2012 года
+                        </div>
+                        <p>Как стало известно нашему корреспонденту, сегодня служба Росреестра зарегистрировала право собственности на имущественный комплекс, который был куплен компанией по результатам торгов 18 января 2022 года.</p>
+                    </div>
+                    <div class="col-md-6 service-about-block__item">
+                        <div class="service-about-block__title d-flex text-danger text-semi-bold">
+                            <div class="service-about-block__icon icon icon-hand"></div>
+                            Мы решили проблемы
+                        </div>
+                        <p>Мощности завода позволяют выпускать до 40 тысяч тонн сухих строительных смесей ежегодно. </p>
+                    </div>
+                    <div class="col-md-6 service-about-block__item">
+                        <div class="service-about-block__title d-flex text-danger text-semi-bold">
+                            <div class="service-about-block__icon icon icon-object"></div>
+                            Более 870 объектов
+                        </div>
+                        <p>Компания планирует начать выпуск продукции в марте 2022 года.</p>
+                    </div>
+                    <div class="col-md-6 service-about-block__item">
+                        <div class="service-about-block__title d-flex text-danger text-semi-bold">
+                            <div class="service-about-block__icon icon icon-command"></div>
+                            Обладатели команды профессионалов
+                        </div>
+                        <p>Ассортимент продукции под торговой маркой «Старатели» включает  в себя модифицированные сухие строительные смеси на гипсовом и цементном вяжущем.</p>
+                    </div>
+                    <div class="col-md-6 service-about-block__item">
+                        <div class="service-about-block__title d-flex text-danger text-semi-bold">
+                            <div class="service-about-block__icon icon icon-work"></div>
+                            Работаем с крупными предприятиями
+                        </div>
+                        <p>Ввод в эксплуатацию нового завода позволит компании «Старатели» укрепить свои позиции не только в Рязанской, но также Тульской, Липецкой и других областях.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /service-about -->
+            <!-- request-block -->
+            <div class="request-block">
+                <div class="title-before">Решай проблемы быстрее!</div>
+                <div class="text-lg request-block__text">
+                    <p>Для сотрудничества в Москве и в Москвовской области просто заполни заявку или закажи обратный звонок. Менеджер по работе с клиентами выйдет на связь и подготовит персональное коммерческое предложение от Вариант А, составленное с учетом желаемых целей и возможностей</p>
+                </div>
+                <div class="nav tab-nav" id="nav-tab" role="tablist">
+                    <a class="tab-nav__link active" id="nav-home-tab" data-bs-toggle="tab" href="#request" role="tab" aria-controls="nav-home" aria-selected="true">Оставить заявку</a>
+                    <a class="tab-nav__link" data-bs-toggle="tab" href="#callback" role="tab" aria-selected="false">Заказать звонок</a>
+                </div>
+                <div class="request-block__form">
+                    <form action="#">
+                        <div class="tab-content request-block__tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="request" role="tabpanel" aria-labelledby="nav-home-tab">
+                                <div class="d-md-flex">
+                                    <div class="request-block__col">
+                                        <div class="form-group-md">
+                                            <input class="form-control form-control-md" type="text" placeholder="Имя">
+                                        </div>
+                                        <div class="form-group-md">
+                                            <input class="form-control form-control-md is-invalid" type="tel" placeholder="Телефон">
+                                        </div>
+                                        <div class="form-group-md">
+                                            <input class="form-control form-control-md" type="email" placeholder="E-mail">
+                                        </div>
+                                        <div class="form-group-md">
+                                            <input class="form-control form-control-md" type="text" placeholder="Компания">
+                                        </div>
+                                        <div class="form-group-md">
+                                            <input class="form-control form-control-md" type="text" placeholder="Род деятельности">
+                                        </div>
+                                    </div>
+                                    <div class="request-block__col-large">
+                                        <div class="form-group-md">
+                                            <textarea name="message" id="message" class="form-control request-block__textarea" placeholder="Опиши задачи, которые вы хотите решить с помощью наших услуг."></textarea>
+                                        </div>
+                                        <div class="file-block">
+                                            <input id="file" class="file collapse" type="file" multiple>
+                                            <label class="btn-light btn text-md file-block__label" for="file">Приложить файл или ТЗ</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="callback" role="tabpanel">
+                                <div class="row request-block__callback">
+                                    <div class="col-sm-6">
+                                        <div class="form-group-md">
+                                            <input class="form-control" type="text" placeholder="Имя">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group-md">
+                                            <input class="form-control is-invalid" type="tel" placeholder="Телефон">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray text-normal pb-4">Работаем по будням с 9:00 до 18:00. Заявки, отправленные в выходные, обрабатываем в первый рабочий день до 10:30.</p>
+                        <div class="d-md-flex flex-row-reverse align-items-center">
+                            <button class="btn btn-danger w-100-sm request-block__btn">Отправить заявку</button>
+                            <div class="text-md text-right">Нажимая кнопку, ты разрешаешь обработку персональных данных и соглашаешься с <a href="#" class="text-danger">политикой конфинденциальности</a></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- /request-block  -->
+            <!-- news-block -->
+            <div class="news-block">
+                <div class="title-xl title-after">Новости</div>
+                <div class="nav tab-nav_margin tab-nav" id="news-nav-tab" role="tablist">
+                    <a class="tab-nav__link active" data-bs-toggle="tab" href="#last-news" role="tab">Последние новости</a>
+                    <a class="tab-nav__link" href="#press-releases" data-bs-toggle="tab">Пресс релизы</a>
+                    <a class="tab-nav__link" href="#our-victories" data-bs-toggle="tab">Наши победы</a>
+                    <a class="tab-nav__link ml-auto" href="#">Все</a>
+                </div>
+                <div class="tab-content request-block__tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="last-news" role="tabpanel">
+                        <div class="row row-md news-row">
+                            <div class="news-item col-sm-6 col-lg-4">
+                                <a href="article.html" class="news-item__image">
+                                    <img src="img/news-1.jpg" alt="" class="w-100">
+                                </a>
+                                <div class="news-item__title">
+                                    <a href="article.html" class="news-item__link">Вариант А разработала новую схему поставок промышелнного оборудования на Российский рынок</a>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <a href="#" class="btn-label news-item__label">Новость</a>
+                                    <div class="news-item__post-date">1 января 2020г.</div>
+                                </div>
+                            </div>
+                            <div class="news-item col-sm-6 col-lg-4">
+                                <a href="article.html" class="news-item__image">
+                                    <img src="img/news-2.jpg" alt="" class="w-100">
+                                </a>
+                                <div class="news-item__title">
+                                    <a href="article.html" class="news-item__link">Старт продаж — самый выгодный момент для покупки. Купить квартиру и оформить ипотеку можно онлайн на нашем сайте</a>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <a href="#" class="btn-label news-item__label">Новость</a>
+                                    <div class="news-item__post-date">1 января 2020г.</div>
+                                </div>
+                            </div>
+                            <div class="news-item col-sm-6 col-lg-4">
+                                <a href="article.html" class="news-item__image">
+                                    <img src="img/news-3.jpg" alt="" class="w-100">
+                                </a>
+                                <div class="news-item__title">
+                                    <a href="article.html" class="news-item__link">Москве нужно еще не менее 5 тысяч специалистов в области BIM</a>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <a href="#" class="btn-label news-item__label">Новость</a>
+                                    <div class="news-item__post-date">1 января 2020г.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="press-releases" role="tabpanel">
+                        <div class="row row-md news-row">
+                            <div class="news-item col-sm-6 col-lg-4">
+                                <a href="article.html" class="news-item__image">
+                                    <img src="img/news-4.jpg" alt="" class="w-100">
+                                </a>
+                                <div class="news-item__title">
+                                    <a href="article.html" class="news-item__link">Вариант А разработала новую схему поставок промышелнного оборудования на Российский рынок</a>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <a href="#" class="btn-label news-item__label">Новость</a>
+                                    <div class="news-item__post-date">1 января 2020г.</div>
+                                </div>
+                            </div>
+                            <div class="news-item col-sm-6 col-lg-4">
+                                <a href="article.html" class="news-item__image">
+                                    <img src="img/news-5.jpg" alt="" class="w-100">
+                                </a>
+                                <div class="news-item__title">
+                                    <a href="article.html" class="news-item__link">Старт продаж — самый выгодный момент для покупки. Купить квартиру и оформить ипотеку можно онлайн на нашем сайте</a>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <a href="#" class="btn-label news-item__label">Новость</a>
+                                    <div class="news-item__post-date">1 января 2020г.</div>
+                                </div>
+                            </div>
+                            <div class="news-item col-sm-6 col-lg-4">
+                                <a href="article.html" class="news-item__image">
+                                    <img src="img/news-6.jpg" alt="" class="w-100">
+                                </a>
+                                <div class="news-item__title">
+                                    <a href="article.html" class="news-item__link">Москве нужно еще не менее 5 тысяч специалистов в области BIM</a>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <a href="#" class="btn-label news-item__label">Новость</a>
+                                    <div class="news-item__post-date">1 января 2020г.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="our-victories" role="tabpanel">
+                        <div class="row row-md news-row">
+                            <div class="news-item col-sm-6 col-lg-4">
+                                <a href="article.html" class="news-item__image">
+                                    <img src="img/news-7.jpg" alt="" class="w-100">
+                                </a>
+                                <div class="news-item__title">
+                                    <a href="article.html" class="news-item__link">Вариант А разработала новую схему поставок промышелнного оборудования на Российский рынок</a>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <a href="#" class="btn-label news-item__label">Новость</a>
+                                    <div class="news-item__post-date">1 января 2020г.</div>
+                                </div>
+                            </div>
+                            <div class="news-item col-sm-6 col-lg-4">
+                                <a href="article.html" class="news-item__image">
+                                    <img src="img/news-8.jpg" alt="" class="w-100">
+                                </a>
+                                <div class="news-item__title">
+                                    <a href="article.html" class="news-item__link">Старт продаж — самый выгодный момент для покупки. Купить квартиру и оформить ипотеку можно онлайн на нашем сайте</a>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <a href="#" class="btn-label news-item__label">Новость</a>
+                                    <div class="news-item__post-date">1 января 2020г.</div>
+                                </div>
+                            </div>
+                            <div class="news-item col-sm-6 col-lg-4">
+                                <a href="article.html" class="news-item__image">
+                                    <img src="img/news-9.jpg" alt="" class="w-100">
+                                </a>
+                                <div class="news-item__title">
+                                    <a href="article.html" class="news-item__link">Москве нужно еще не менее 5 тысяч специалистов в области BIM</a>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <a href="#" class="btn-label news-item__label">Новость</a>
+                                    <div class="news-item__post-date">1 января 2020г.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /news-block -->
+        </div>
+        <!-- footer -->
+        <footer class="footer footer__padding">
+            <div class="container footer__container">
+                <div class="row"> 
+                    <div class="footer__col-1 col-sm-6">
+                        <a href="/" class="footer__logo"><img src="img/logo-footer.svg" alt="" class="img-fluid"></a>
+                        <ul class="footer__links footer__nav">
+                            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Правила использования сайта</a></li>
+                            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Защита персональных данных</a></li>
+                            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Научная миссия</a></li>
+                            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Карта сайта</a></li>
+                        </ul>
+                        <a href="#wrap" class="top-link"><div class="icon caret-top"></div></a>
+                    </div>
+                    <div class="footer__col-2 col-sm-6">
+                        <div class="footer__title">Услуги</div>
+                        <ul class="footer__nav">
+                            <li class="footer__nav-item"><a href="service-1.html" class="footer__nav-link">Коммерческое и промышленное оборудование</a></li>
+                            <li class="footer__nav-item"><a href="service-2.html" class="footer__nav-link">Российские промышленные компрессоры</a></li>
+                            <li class="footer__nav-item"><a href="service-3.html" class="footer__nav-link">Навесное оборудование любой сложности для экскаваторов и другой спецтехники</a></li>
+                            <li class="footer__nav-item"><a href="service-4.html" class="footer__nav-link">Сварочное оборудование промышленного класса</a></li>
+                            <li class="footer__nav-item"><a href="service-5.html" class="footer__nav-link">Инструменты и оборудование для строительства и садоводства</a></li>
+                            <li class="footer__nav-item"><a href="service-6.html" class="footer__nav-link">Качественные алмазные инструменты</a></li>
+                            <li class="footer__nav-item"><a href="service-7.html" class="footer__nav-link">Абразивные инструменты</a></li>
+                            <li class="footer__nav-item"><a href="service-8.html" class="footer__nav-link">Аккумуляторные системы</a></li>
+                            <li class="footer__nav-item"><a href="service-9.html" class="footer__nav-link">Материалы и инструменты для мелкого ремонта</a></li>
+                            <li class="footer__nav-item"><a href="service-10.html" class="footer__nav-link">Уборочное и моющее оборудование</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col-3 col-sm-6">
+                        <div class="footer__title">Компания</div>
+                        <ul class="footer__nav">
+                             <li class="footer__nav-item"><a href="#" class="footer__nav-link">Новости</a>
+                             <li class="footer__nav-item"><a href="cases.html" class="footer__nav-link">Кейсы</a>
+                             <li class="footer__nav-item"><a href="#" class="footer__nav-link">Отзывы</a>
+                             <li class="footer__nav-item"><a href="blog.html" class="footer__nav-link">Статьи</a>
+                             <li class="footer__nav-item"><a href="#" class="footer__nav-link">Хочу знать</a>
+                             <li class="footer__nav-item"><a href="#" class="footer__nav-link">Вакансии</a>
+                             <li class="footer__nav-item"><a href="contacts.html" class="footer__nav-link">Контакты</a>
+                             <li class="footer__nav-item"><a href="#" class="footer__nav-link">Инструменты</a>
+                        </ul>
+                    </div>
+                    <div class="footer__col-4 col-sm-6">
+                        <div class="footer__title">Задать вопрос</div>
+                        <p>Закажи звонок эксперта Варианта А. Перезвоним и расскажем, как увеличить прибыль компании средствами профессионалов</p>
+                        <div class="footer__form">
+                            <form action="#">
+                                <div class="form-group-sm">
+                                    <input class="form-control form-control-md is-invalid inversion" type="tel" placeholder="Телефон">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control form-control-md inversion" type="email" placeholder="E-mail">
+                                </div>
+                                <div class="text-md">
+                                    <p>Нажимая кнопку, ты разрешаешь обработку персональных данных и соглашаешься с <a href="#" class="text-danger">политикой конфинденциальности</a></p>
+                                </div>
+                                <button class="btn btn-danger btn-block">Отправить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <div class="copyright text-normal">
+                                <p>Москва, Островитянова, д.11, помещ. 7, ком. 2, офис 55. Телефон: +7 (394) 888 88 88</p>
+                                <p>Многопрофильная компания снабжения — Вариант А</p>
+                            </div>
+                        </div>
+                        <div class="col-md-5 d-flex">
+                            <div class="social-list footer__social-list">
+                                <a href="#" class="social-list__item" target="_blank"><span class="icon icon-telegram"></span></a>
+                                <a href="#" class="social-list__item" target="_blank"><span class="icon icon-vk"></span></a>
+                                <a href="#" class="social-list__item" target="_blank"><span class="icon icon-facebook"></span></a>
+                                <a href="#" class="social-list__item" target="_blank"><span class="icon icon-youtube"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+    </div>
+
+    
+    <!-- services-nav -->
+    <div class="modal fade" id="services-nav">
+        <div class="modal-dialog services__modal-dialog">
+            <div class="services-nav">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="/" class="logo services-nav__logo"><img src="img/logo.svg" alt="" class="img-fluid"></a>
+                        <button type="button" class="icon-close services-nav__close icon" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <ul class="services-nav__list">
+                        <li class="services-nav__list-item active">
+                            <a href="#" class="services-nav__list-link">Коммерческое и промышленное оборудование</a>
+                            <div class="services-nav__subnav bg-1">
+                                <div class="services-nav__subnav-title"><a href="services-1.html" class="services-nav__subnav-title-link">Коммерческое и промышленное оборудование</a></div>
+                                <ul class="services-nav__subnav-list">
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Оборудование для уплотнений грунта</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Оборудование для бетонирования</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item active">
+                                        <a href="#" class="services-nav__subnav-link">Резчики свежего бетона</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Машины для шлифовки пола</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Системы сбора пыли</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Стенорезные машины</a>
+                                    </li>
+                                </ul>
+                                <div class="services-nav__subnav-image services-nav__subnav-image-1">
+                                    <img src="img/services-nav-1.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="services-nav__list-item">
+                            <a href="#" class="services-nav__list-link">Российские промышленные компрессоры</a>
+                            <div class="services-nav__subnav bg-2">
+                                <div class="services-nav__subnav-title"><a href="services-2.html" class="services-nav__subnav-title-link">Российские промышленные компрессоры</a></div>
+                                <ul class="services-nav__subnav-list">
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Винтовые компрессоры</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Поршневые компрессоры</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Воздушные ресиверы</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Моечные установки</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Аппараты струйной чистки</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Подготовка воздуха</a>
+                                    </li>
+                                </ul>
+                                <div class="services-nav__subnav-image services-nav__subnav-image-2">
+                                    <img src="img/services-nav-2.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="services-nav__list-item">
+                            <a href="#" class="services-nav__list-link">Навесное обородувание любой сложности для экскаваторов и другой спецтехники</a>
+                            <div class="services-nav__subnav bg-3">
+                                <div class="services-nav__subnav-title"><a href="services-3.html" class="services-nav__subnav-title-link">Навесное обородувание любой сложности для экскаваторов и другой спецтехники</a></div>
+                                <ul class="services-nav__subnav-list">
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Понтоны на экскаватор</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Импактор</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Фрезы</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Навесные пилы</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Мульчер</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Вибротрамбовка</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Срубка круглых свай</a>
+                                    </li>
+                                </ul>
+                                <div class="services-nav__subnav-image services-nav__subnav-image-3">
+                                    <img src="img/services-nav-3.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="services-nav__list-item">
+                            <a href="#" class="services-nav__list-link">Сварочное оборудование промышленного класса</a>
+                            <div class="services-nav__subnav bg-4">
+                                <div class="services-nav__subnav-title"><a href="services-4.html" class="services-nav__subnav-title-link">Сварочное оборудование <br>промышленного класса</a></div>
+                                <ul class="services-nav__subnav-list">
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Источники для строжки</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Источники для аргонодуговой сварки на 1000 А и выше</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Источники для гальванизации и гальванотехники</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Источники для индукционного нагрева</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Источники для дуговой плавки</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Источники для плазменного сжигания отходов</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Источники для тяговых подстанций городского электротранспорта</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Комплексные решения</a>
+                                    </li>
+                                </ul>
+                                <div class="services-nav__subnav-image services-nav__subnav-image-4">
+                                    <img src="img/services-nav-4.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="services-nav__list-item">
+                            <a href="#" class="services-nav__list-link">Инструменты и оборудование для строительства и садоводства</a>
+                            <div class="services-nav__subnav bg-5">
+                                <div class="services-nav__subnav-title"><a href="services-5.html" class="services-nav__subnav-title-link">Инструменты и оборудование для строительства и садоводства</a></div>
+                                <ul class="services-nav__subnav-list">
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Электроинструмент</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Оснастка</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Садовая техника</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Строительная техника</a>
+                                    </li>
+                                </ul>
+                                <div class="services-nav__subnav-image services-nav__subnav-image-5">
+                                    <img src="img/services-nav-5.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="services-nav__list-item">
+                            <a href="#" class="services-nav__list-link">Качественные алмазные инструменты</a>
+                            <div class="services-nav__subnav bg-6">
+                                <div class="services-nav__subnav-title"><a href="services-6.html" class="services-nav__subnav-title-link">Качественные алмазные <br>инструменты</a></div>
+                                <ul class="services-nav__subnav-list">
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Диски алмазные</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Диски пильные</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Коронки и Сверла</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Полотна для реноваторов и МФИ</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Ножи для электрорубанка</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Сопутствующая оснастка</a>
+                                    </li>
+                                </ul>
+                                <div class="services-nav__subnav-image services-nav__subnav-image-6">
+                                    <img src="img/services-nav-6.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="services-nav__list-item">
+                            <a href="#" class="services-nav__list-link">Абразивные инструменты</a>
+                            <div class="services-nav__subnav bg-7">
+                                <div class="services-nav__subnav-title"><a href="services-7.html" class="services-nav__subnav-title-link">Абразивные инструменты</a></div>
+                                <ul class="services-nav__subnav-list">
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Отрезные круги</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Зачистные круги на бакелитовой связке</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Круги лепестковые торцевые</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Круги лепестковые радиальные</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Круги лепестковые на шпильке</a>
+                                    </li>
+                                </ul>
+                                <div class="services-nav__subnav-image services-nav__subnav-image-7">
+                                    <img src="img/services-nav-7.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="services-nav__list-item">
+                            <a href="#" class="services-nav__list-link">Аккумуляторные системы</a>
+                            <div class="services-nav__subnav bg-8">
+                                <div class="services-nav__subnav-title"><a href="services-8.html" class="services-nav__subnav-title-link">Аккумуляторные системы</a></div>
+                                <ul class="services-nav__subnav-list">
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Малая механизация</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Аккумуляторные инструменты</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Сетевые инструменты</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Садовые инструменты</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Освещение</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Хранение</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Ручные инструменты</a>
+                                    </li>
+                                </ul>
+                                <div class="services-nav__subnav-image services-nav__subnav-image-8">
+                                    <img src="img/services-nav-8.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="services-nav__list-item">
+                            <a href="#" class="services-nav__list-link">Материалы и инструменты для мелкого ремонта</a>
+                            <div class="services-nav__subnav bg-9">
+                                <div class="services-nav__subnav-title"><a href="services-9.html" class="services-nav__subnav-title-link">Материалы и инструменты для <br>мелкого ремонта</a></div>
+                                <ul class="services-nav__subnav-list">
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Клей для плитки</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Гидроизоляция</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Штукатурка</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Ровнители пола</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Шпаклевка</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Краска</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Система утепления фасадов</a>
+                                    </li>
+                                </ul>
+                                <div class="services-nav__subnav-image services-nav__subnav-image-9">
+                                    <img src="img/services-nav-9.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="services-nav__list-item">
+                            <a href="#" class="services-nav__list-link">Уборочное и моющее оборудование</a>
+                            <div class="services-nav__subnav bg-10">
+                                <div class="services-nav__subnav-title"><a href="services-10.html" class="services-nav__subnav-title-link">Уборочное и моющее <br>оборудование</a></div>
+                                <ul class="services-nav__subnav-list">
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Автомойки</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Техника для внутренней уборки</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Садовая техника</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Уборочный инвентарь</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Моющиеся средства</a>
+                                    </li>
+                                    <li class="services-nav__subnav-item">
+                                        <a href="#" class="services-nav__subnav-link">Индустриальные решения</a>
+                                    </li>
+                                </ul>
+                                <div class="services-nav__subnav-image services-nav__subnav-image-10">
+                                    <img src="img/services-nav-10.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /services-nav -->
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
