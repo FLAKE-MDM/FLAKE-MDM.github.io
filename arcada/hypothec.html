@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аркада группа компаний</title>
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png">
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <header class="header">
+            <!-- collapse-nav -->
+            <div class="collapse-nav collapse" id="nav">
+                <div class="collapse-nav__header d-none d-md-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <a href="/" class="logo"><img src="img/logo.svg" alt="" class="img-fluid"></a>
+                        <div class="slogan"><img src="img/slogan.svg" alt="" class="img-fluid"></div>
+                    </div>
+                    <a href="#nav" class="close collapse-nav__close" data-bs-toggle="collapse">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="1.48439" y1="1.51451" x2="18.4565" y2="18.4836" stroke="#2C374B" stroke-width="2"/>
+                            <line x1="18.4571" y1="1.51472" x2="1.48655" y2="18.4853" stroke="#2C374B" stroke-width="2"/>
+                        </svg>                            
+                    </a>
+                </div>
+                <ul class="collapse-nav-list">
+                    <li class="collapse-nav-list__item"><a href="index.html" class="collapse-nav-list__link collapse-nav-list__link_active text-link">Главная</a></li>
+                    <li class="collapse-nav-list__item"><a href="catalogue.html" class="collapse-nav-list__link text-link">Каталог</a></li>
+                    <li class="collapse-nav-list__item"><a href="investments.html" class="collapse-nav-list__link text-link">Инвестиции</a></li>
+                    <li class="collapse-nav-list__item"><a href="buy.html" class="collapse-nav-list__link text-link">Как купить?</a></li>
+                    <li class="collapse-nav-list__item"><a href="contacts.html" class="collapse-nav-list__link text-link">Контакты</a></li>
+                    <li class="collapse-nav-list__item"><a href="about.html" class="collapse-nav-list__link text-link">О компании</a></li>
+                    <li class="collapse-nav-list__item"><a href="partners.html" class="collapse-nav-list__link text-link">Партнеры</a></li>
+                    <li class="collapse-nav-list__item"><a href="news.html" class="collapse-nav-list__link text-link">Пресс центр</a></li>
+                </ul>
+                <div class="collapse-nav__footer">
+                    <p class="d-none d-md-block"><a href="tel:+73654777730" class="text-link">+7 (3654) 77-77-30</a></p>
+                    <p><a href="#callback" class="btn btn-primary w-100_sm" data-bs-toggle="modal">Заказать звонок</a></p>
+                </div>
+            </div>
+            <!-- /collapse-nav -->
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center">
+                        <a href="/" class="logo"><img src="img/logo.svg" alt="" class="img-fluid"></a>
+                        <div class="slogan slogan_inverison"><img src="img/slogan.svg" alt="" class="img-fluid"></div>
+                    </div>
+                    <button class="btn-menu collapsed" data-bs-toggle="collapse" data-bs-target="#nav">
+                        <span class="btn-menu__item"></span>
+                        <span class="btn-menu__item"></span>
+                        <span class="btn-menu__item"></span>
+                    </button>
+                    <nav class="nav header__nav d-none d-xxl-block">
+                        <ul class="nav-list d-flex">
+                            <li class="nav-list__item"><a href="catalogue.html" class="nav-list__link text-link">Каталог</a></li>
+                            <li class="nav-list__item"><a href="buy.html" class="nav-list__link text-link">Как купить?</a></li>
+                            <li class="nav-list__item"><a href="about.html" class="nav-list__link text-link">О компании</a></li>
+                            <li class="nav-list__item"><a href="contacts.html" class="nav-list__link text-link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__contacts d-flex align-items-center">
+                        <a href="tel:+73654777730" class="phone header__phone text-link">+7 (3654) 77-77-30</a>
+                        <a href="#callback" class="btn btn-primary d-none d-md-block" data-bs-toggle="modal">Заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+        <!-- content -->
+        <div class="content">
+            <div class="container">
+                <!-- breadcrumb -->
+                <ul class="breadcrumb text_size-sm wow fadeInUp">
+                    <li class="breadcrumb__item"><a href="#" class="breadcrumb__link text-link">Главная</a></li>
+                    <li class="breadcrumb__item"><a href="#" class="breadcrumb__link text-link">Как купить</a></li>
+                    <li class="breadcrumb__item">Ипотека</li>
+                </ul>
+                <!-- /breadcrumb -->
+                <div class="title title_size-lg title-headline wow fadeInUp">Ипотека и рассрочка</div>
+                <div class="text-section mt-0 wow fadeInUp">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-6">
+                            <p class="text_size-lg">Проект инвестиционного апарт-отеля, с уникальной инфраструктурой внутри отеля. Апартаменты «Морис Парк» вы можете приобрести в собственность для отдыха, либо передать их в управление апарт-отелю и получать прибыль. Коттеджный посёлок в стиле Chalet с закрытой территорией в тихой уединенной локации с видом на море и горы.</p>
+                        </div>
+                        <div class="col-lg-6 col-xl-3">
+                            <p>Выгодное соинвестирование в объекты качественной курортной недвижимости на ранних стадиях строительства с доходностью от 23% до 40% годовых.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- calculator -->
+                <div class="calculator wow fadeInUp mt-0">
+                    <div class="d-md-flex justify-content-between align-items-center flex-wrap wow fadeInUp">
+                        <div class="title calculator__title title_size-sm">Расчитайте ваш платеж</div>
+                        <div class="calculator__logo"><img src="img/content/calculator-logo.svg" alt=""></div>
+                    </div>
+                    <ul class="nav catalogue-nav calculator__nav wow fadeInUp" id="calculator-nav" role="tablist">
+                        <li class="catalogue-nav__item" role="presentation">
+                            <a class="btn btn-outline catalogue-nav__link active" data-bs-toggle="tab" href="#hypothec" role="tab" aria-selected="true">Ипотека</a>
+                        </li>
+                        <li class="catalogue-nav__item" role="presentation">
+                            <a class="btn btn-outline catalogue-nav__link" data-bs-toggle="tab" href="#installment" role="tab" aria-selected="false">Рассрочка</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content calculator__tab-content" id="calculatorTabContent">
+                        <!-- hypothec -->
+                        <div class="tab-pane fade show active" id="hypothec" role="tabpanel" tabindex="0">
+                            <form action="#">
+                                <div class="d-lg-flex justify-content-between">
+                                    <div class="calculator__col wow fadeInUp">
+                                        <div class="form-group_margin-lg">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="text_size-md text-semibold">Стоимость недвижимости</div>
+                                                <input type="text" class="range-value" id="price-value-hypothec" readonly>
+                                            </div>
+                                            <div id="price-range-hypothec"></div>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="text_size-sm range-min">4 млн</div>
+                                                <div class="text_size-sm range-max">100 млн</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group_margin-lg">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="text_size-md text-semibold">Первоначальный взнос</div>
+                                                <input type="text" class="range-value" id="contribution-value-hypothec" readonly>
+                                            </div>
+                                            <div id="contribution-range-hypothec"></div>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="text_size-sm range-min">4 млн</div>
+                                                <div class="text_size-sm range-max">75 млн</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="text_size-md text-semibold">Срок кредитования</div>
+                                                <input type="text" class="range-value range-value_md" id="tern-value-hypothec">
+                                            </div>
+                                            <div id="term-range-hypothec"></div>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="text_size-sm range-min">1 год</div>
+                                                <div class="text_size-sm range-max">30 лет</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="calculator-block wow fadeInUp">
+                                        <div class="calculator-block__header">
+                                            <div class="row">
+                                                <div class="col-md-6 col-xl-6 col-lg-12 calculator-block__col">
+                                                    <p class="text_size-md">Сумма кредита</p>
+                                                    <div class="calculator-block__price" id="price-hypothec">4 200 000 руб </div>
+                                                </div>
+                                                <div class="col-md-6 col-xl-6 col-lg-12 calculator-block__col">
+                                                    <p class="text_size-md">Ежемесячный платеж</p>
+                                                    <div class="calculator-block__price" id="payment-hypothec">32 000 руб </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group_margin-lg">
+                                            <p class="text_size-md">Процентная ставка</p>
+                                            <div class="d-flex align-items-center">
+                                                <div class="input-number">
+                                                    <div class="input-number__minus"></div>
+                                                    <input class="input-number__input" type="text" pattern="^[0-9]+$" value="9" id="precent-hypothec">
+                                                    <div class="input-number__plus"></div>
+                                                    <div class="input-number__text">%</div>
+                                                </div>
+                                                <div class="text_size-xs">Укажите процентную <br>ставку</div>
+                                            </div>
+                                        </div>
+                                        <div class="calculator-block__footer d-flex">
+                                            <input type="text" class="form-control" placeholder="Сумма платежа">
+                                            <button class="btn btn-primary btn_size-md calculator-block__btn" id="btn-hypothec" type="button">Одобрить ипотеку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /hypothec -->
+                        <!-- installment -->
+                        <div class="tab-pane fade" id="installment" role="tabpanel" tabindex="0">
+                            <form action="#">
+                                <div class="d-lg-flex justify-content-between">
+                                    <div class="calculator__col">
+                                        <div class="form-group_margin-lg">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="text_size-md text-semibold">Стоимость недвижимости</div>
+                                                <input type="text" class="range-value" id="price-value-installment" readonly>
+                                            </div>
+                                            <div id="price-range-installment"></div>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="text_size-sm range-min">4 млн</div>
+                                                <div class="text_size-sm range-max">100 млн</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group_margin-lg">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="text_size-md text-semibold">Первоначальный взнос</div>
+                                                <input type="text" class="range-value" id="contribution-value-installment" readonly>
+                                            </div>
+                                            <div id="contribution-range-installment"></div>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="text_size-sm range-min">4 млн</div>
+                                                <div class="text_size-sm range-max">75 млн</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="text_size-md text-semibold">Срок кредитования</div>
+                                                <input type="text" class="range-value range-value_md" id="tern-value-installment" readonly>
+                                            </div>
+                                            <div id="term-range-installment"></div>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="text_size-sm range-min">1 год</div>
+                                                <div class="text_size-sm range-max">30 лет</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="calculator-block">
+                                        <div class="calculator-block__header">
+                                            <div class="row">
+                                                <div class="col-md-6 col-xl-6 col-lg-12 calculator-block__col">
+                                                    <p class="text_size-md">Сумма кредита</p>
+                                                    <div class="calculator-block__price">4 200 000 руб </div>
+                                                </div>
+                                                <div class="col-md-6 col-xl-6 col-lg-12 calculator-block__col">
+                                                    <p class="text_size-md">Ежемесячный платеж</p>
+                                                    <div class="calculator-block__price">32 000 руб </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group_margin-lg">
+                                            <p class="text_size-md">Процентная ставка</p>
+                                            <div class="d-flex align-items-center">
+                                                <div class="input-number">
+                                                    <div class="input-number__minus"></div>
+                                                    <input class="input-number__input" type="text" pattern="^[0-9]+$" value="9">
+                                                    <div class="input-number__plus"></div>
+                                                    <div class="input-number__text">%</div>
+                                                </div>
+                                                <div class="text_size-xs">Укажите процентную <br>ставку</div>
+                                            </div>
+                                        </div>
+                                        <div class="calculator-block__footer d-flex">
+                                            <input type="text" class="form-control" placeholder="Сумма платежа">
+                                            <button class="btn btn-primary btn_size-md calculator-block__btn" type="button">Одобрить ипотеку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /installment -->
+                    </div>
+                </div>
+                <!-- /calculator -->
+                <!-- consultation -->
+                <div class="consultation margin_xl-top">
+                    <div class="row row-md">
+                        <div class="col-xl-8 col-lg-7 d-flex">
+                            <div class="image-block consultation__image wow fadeInUp">
+                                <img src="img/consultation.jpg" alt="">
+                                <div class="title title_size-md text-inversion consultation__title wow fadeInUp">Консультация</div>
+                                <ul class="consultation-list wow fadeInUp">
+                                    <li class="consultation-list__item"><a href="#" class="text-link text-inversion">Возможности рассрочки</a></li>
+                                    <li class="consultation-list__item"><a href="#" class="text-link text-inversion">Скидки и акции</a></li>
+                                    <li class="consultation-list__item"><a href="#" class="text-link text-inversion">Материнский капитал</a></li>
+                                    <li class="consultation-list__item"><a href="#" class="text-link text-inversion">Ипотечные программы</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+                            <!-- form-block -->
+                            <div class="form-block bg-secondary wow fadeInUp">
+                                <div class="form-block__title title text-inversion">Закажите звонок</div>
+                                <p class="text_size-md">Наш менеджер перезвонит и поможет решить ваш вопрос!</p>
+                                <form action="#">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control_inversion" placeholder="Имя">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control_inversion" placeholder="Номер телефона">
+                                    </div>
+                                    <div class="text-inversion form-block__text d-flex">
+                                        <input type="checkbox" class="form-check-input form-check-input_inversion">
+                                        <p>Подтверждаю свое согласие на обработку персональных данных и соглашаюсь с <a href="#" class="pb-0 text-link link-underline text-inversion">политикой конфиденциальности.</a></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-primary btn-primary_inversion btn_size-sm w-100_sm">Заказать звонок</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- /form-block -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /consultation -->
+            </div>
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="row">
+                    <div class="col-md-5 col-lg-6 wow fadeInUp">
+                        <div class="footer__title title text_size-lg">Навигация</div>
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="footer-nav">
+                                    <li class="footer-nav__item"><a href="#" class="text-link text-light">Каталог</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="text-link text-light">Как купить</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="text-link text-light">О компании</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="text-link text-light">Контакты</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="footer-nav footer-nav_padding">
+                                    <li class="footer-nav__item"><a href="#" class="text-link text-light">Инвестиции</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="text-link text-light">Партнерам</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="text-link text-light">Пресс-центр</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-lg-6 wow fadeInUp">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="footer__title title text_size-lg">Контакты</div>
+                                <p><a href="tel:+73654777730" class="text-link text-light">+7 (3654) 77-77-30</a></p>
+                                <p><a href="#mailto:info@arkada-group.ru" class="text-link text-light">info@arkada-group.ru</a></p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="footer__contacts">
+                                    <a href="#" class="cirle-link footer__cirle-link wow fadeInUp">
+                                        <div class="cirle-link__image"><img src="img/house.svg" alt="" class="img-fluid"></div>
+                                        <div class="cirle-link__text">Квартиры <br>в наличии</div>
+                                    </a>
+                                    <p>ул. Пушкина, 11 <br>Симферополь, Республика Крым</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright text_size-xs">
+                    <p>© Аркада Группа компаний, 2005—2022</p>
+                    <p><a href="#" class="text-light">Политика конфиденциальности</a></p>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+    </div>
+    <!-- callback -->
+    <div class="modal fade" id="callback" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close modal__close" data-bs-dismiss="modal">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="1.48439" y1="1.51451" x2="18.4565" y2="18.4836" stroke="#2C374B" stroke-width="2"/>
+                        <line x1="18.4571" y1="1.51472" x2="1.48655" y2="18.4853" stroke="#2C374B" stroke-width="2"/>
+                    </svg> 
+                </button>
+                <div class="text-center title modal__title">Закажите звонок</div>
+                <p class="text-center text_size-md text-light">Наш менеджер перезвонит <br>и поможет решить ваш вопрос!</p>
+                <form action="#" class="modal__form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Имя">
+                    </div>
+                    <div class="form-group form-group_margin">
+                        <input type="text" class="form-control" placeholder="Номер телефона">
+                    </div>
+                    <div class="form-group text-center">
+                        <button class="btn btn-primary btn_size-lg" data-bs-toggle="modal" data-bs-target="#thanks">Заказать звонок</button>
+                    </div>
+                </form>
+                <div class="text-center text_size-xs text-light form-after-text">Нажимая кнопку “Заказать звонок” вы подтверждаете свое согласие на обработку <a href="#" class="text-link text-primary link-underline text_size-xs">персональных данных</a>.</div>
+            </div>
+        </div>
+    </div>
+    <!-- /callback -->
+    <!-- thanks -->
+    <div class="modal fade" id="thanks" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-content_padding">
+                <button type="button" class="close modal__close" data-bs-dismiss="modal">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="1.48439" y1="1.51451" x2="18.4565" y2="18.4836" stroke="#2C374B" stroke-width="2"/>
+                        <line x1="18.4571" y1="1.51472" x2="1.48655" y2="18.4853" stroke="#2C374B" stroke-width="2"/>
+                    </svg> 
+                </button>
+                <div class="text-center title modal__title">Спасибо <br>за обращение!</div>
+                <p class="text-center text_size-md text-light">С вами в ближайшее время свяжется <br>наш менеджер!</p>
+                <p class="text-center"><a href="#" class="btn btn-primary btn_size-lg" data-bs-dismiss="modal">ОК</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- /thanks -->
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
