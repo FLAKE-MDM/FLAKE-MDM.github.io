@@ -1,0 +1,286 @@
+
+
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="MobileOptimized" content="360">
+    <title>Socketify</title>
+    <link rel="icon" href="/static/favicon.png">
+    <link href="/static/styles/main.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="wrap">
+    <header class="header d-flex">
+        
+        
+        
+        
+        
+        <a href="/" class="logo d-flex header__logo">
+            <img src="/static/assets/images/logo.svg" alt="Socketify" class="logo__image">
+            <span class="logo__text text-primary">Socketify</span>
+        </a>
+        
+        <nav class="nav">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="nav__logo">
+                <img src="/static/assets/images/logo-nav.svg" alt="">
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        
+    <div class="row">
+        <div class="col-6">
+            <div class="box box_padding">
+                <div class="box__title text-primary">Час оренди:</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                    <label class="label-button">
+    <input type="radio" name="time"
+           onclick="set_hours('1')">
+    <span class="button-box">
+        <span class="button-box__marker"></span>
+        <span class="d-flex">
+            <span class="button-box__wrap-time">
+                <span class="button-box__time">1 </span>
+                година 
+               
+               
+               
+               
+               
+            </span>
+            <span class="button-box__price">7,0 грн.</span>
+        </span>
+    </span>
+</label>
+                
+                
+                    <label class="label-button">
+    <input type="radio" name="time"
+           onclick="set_hours('2')">
+    <span class="button-box">
+        <span class="button-box__marker"></span>
+        <span class="d-flex">
+            <span class="button-box__wrap-time">
+                <span class="button-box__time">2 </span>
+               
+                години 
+               
+               
+               
+               
+            </span>
+            <span class="button-box__price">14,0 грн.</span>
+        </span>
+    </span>
+</label>
+                
+                
+                    <label class="label-button">
+    <input type="radio" name="time"
+           onclick="set_hours('3')">
+    <span class="button-box">
+        <span class="button-box__marker"></span>
+        <span class="d-flex">
+            <span class="button-box__wrap-time">
+                <span class="button-box__time">3 </span>
+               
+               
+                години 
+               
+               
+               
+            </span>
+            <span class="button-box__price">21,0 грн.</span>
+        </span>
+    </span>
+</label>
+                
+
+                <br/>
+
+                <select id="hours_custom" name="hours_custom" class="custom-select w-100">
+                    <option value="1">1 година - 7,0 грн.</option>
+                    <option value="2">2 години - 14,0 грн.</option>
+                    <option value="3">3 години - 21,0 грн.</option>
+                    <option value="4">4 години - 28,0 грн.</option>
+                    <option value="5">5 годин - 35,0 грн.</option>
+                    <option value="6">6 годин - 42,0 грн.</option>
+                    <option value="7">7 годин - 49,0 грн.</option>
+                    <option value="8">8 годин - 56,0 грн.</option>
+                    <option value="9">9 годин - 63,0 грн.</option>
+                    <option value="10">10 годин - 70,0 грн.</option>
+                </select>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="box">
+                <div class="box__row">
+                    <div class="text-sm text-light">Розетка</div>
+                    <h1 class="m-0">11</h1>
+                    <input type="hidden" id="socket_id" name="socket_id" value="11"/>
+                </div>
+
+                <div class="box__row">
+                    <div class="text-sm text-light">Потужність</div>
+                    <b>до 2000,0 Вт</b>
+                </div>
+                <div class="box__row">
+                    <div class="text-sm text-light">Адреса</div>
+                    <a href="https://maps.google.com?saddr=Current+Location&daddr=50,450347374794696,30,507345129012823">Київ, вул. Олеся Гончара 41а</a>
+                </div>
+            </div>
+            
+                <button class="box box-btn">
+                    <span id="power-btn" class="power-btn" onclick="submit_rent_form()"></span>
+                </button>
+            
+        </div>
+    </div>
+
+    <a href="/map/" class="box box-map">
+        <span class="icon icon-map"></span>
+        Мапа розеток
+    </a>
+
+    <div class="row">
+
+    
+
+        <div class="col-6">
+            <a href="/profile/" class="box box_padding-md">
+                <b>Мій профіль</b>
+            </a>
+        </div>
+
+        <div class="col-6">
+            <a href="/orders/" class="box box_padding-md">
+                <b>Мої замовлення</b>
+            </a>
+        </div>
+
+        <div class="col-6">
+            <a href="/sockets/my" class="box box_padding-md">
+                <b>Мої розетки</b>
+            </a>
+        </div>
+
+    
+
+    
+        <div class="col-6">
+            <a href="http://t.me/socketify_chat" class="box box_padding-md">
+                <div class="box__text">
+                    Хочу собі таку розетку
+                </div>
+            </a>
+        </div>
+    
+
+</div>
+
+    <div class="row">
+        
+    </div>
+
+    <script>
+        function submit_rent_form() {
+            var socket_id = document.getElementById("socket_id").value;
+            
+            var minutes = parseInt(document.getElementById("hours_custom").value) * 60;
+
+            window.open(`/make-order/${socket_id}/${minutes}`, '_blank').focus();
+        }
+    </script>
+
+    </main>
+</div>
+<div class="modal fade" id="success-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close icon-close" data-dismiss="modal" aria-label="Close"></button>
+            <div class="modal__title text-center">Дякуємо, ваша заявка відправлена</div>
+            <p class="text-center">Протягом <b class="text-primary">5 хвилин</b>, ми вам передзвонимо</p></div>
+    </div>
+</div>
+<script src="/static/js/runtime.bundle.js"></script>
+<script src="/static/js/main.bundle.js"></script>
+
+<input type="hidden" id="minutes" value="5"/>
+
+<script>
+    function set_hours(hours_count) {
+        document.getElementById("hours_custom").value = parseInt(hours_count)
+    }
+
+    function set_minutes(minutes_count) {
+        document.getElementById("minutes").value = parseInt(minutes_count)
+    }
+</script>
+
+<script type='text/javascript'>
+  window.smartlook||(function(d) {
+    var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+    c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+    })(document);
+    smartlook('init', '5ce60123128bfa9c49aa90660f5a1870bb728ea3', { region: 'eu' });
+</script>
+
+<input type="hidden" id="userid" name="userid" value="16"/>
+
+</body>
+</html>

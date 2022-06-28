@@ -1,0 +1,201 @@
+
+
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="MobileOptimized" content="360">
+    <title>Socketify</title>
+    <link rel="icon" href="/static/favicon.png">
+    <link href="/static/styles/main.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="wrap">
+    <header class="header d-flex">
+        
+        
+        
+        
+        
+        <a href="/" class="logo d-flex header__logo">
+            <img src="/static/assets/images/logo.svg" alt="Socketify" class="logo__image">
+            <span class="logo__text text-primary">Socketify</span>
+        </a>
+        
+        <nav class="nav">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="nav__logo">
+                <img src="/static/assets/images/logo-nav.svg" alt="">
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        
+
+    <input type="hidden" id="state" name="state" value="off"/>
+    <main class="main">
+        <div class="row">
+            <div class="col-6">
+                <div class="box box_padding">
+                    <div class="box__title text-primary">
+                        
+                            Замовлення завершене
+                        
+                    </div>
+                    
+                </div>
+                
+                    <div class="box">
+                        <div class="box__row">
+                            <div class="text-light">
+                                <p><b>Час увімкнення:</b> 2022-06-27 22:18</p>
+                                <p><b>Час вимкнення:</b> 2022-06-28 08:18.</p>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+            <div class="col-6">
+
+                <div class="box">
+                    <div class="box__row">
+                        <b>
+                            Замовлення
+                            <h1>236</h1>
+                        </b>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box__row">
+                        <b>
+                            <a href="/socket/1">
+                                Розетка
+                                <h1>1</h1>
+                            </a>
+                        </b>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box__row">
+                        <p class="text-sm text-light">Допустима потужність</p>
+                        <b>4000,0</b>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <input type="hidden" id="orderid" value="236"/>
+
+    <script>
+        function update_metrics() {
+            var socket_state = document.getElementById("state").value;
+            let url = '/metrics/' + document.getElementById("orderid").value;
+            fetch(url)
+                .then(res => res.json())
+                .then((d) => {
+                    if (!d['state'].includes(socket_state)) {
+                        window.location.reload()
+                    } else {
+                        document.getElementById("amp").innerText = d['a']
+                        document.getElementById("pwr").innerText = d['p']
+                        document.getElementById("enr").innerText = d['e']
+                        document.getElementById("vol").innerText = d['v']
+                        document.getElementById("progress").style = 'height:' + d['progress'] + '%'
+                        document.getElementById("timeleft").innerText = d['left']
+                    }
+                })
+                .catch(err => {
+                    throw err
+                });
+        }
+
+        var socket_state = document.getElementById("state").value;
+        setInterval(update_metrics, 1000);
+
+        function turn_socket_during_order(new_state) {
+            var user_id = document.getElementById("userid").value;
+            if (Number.isInteger(parseInt(user_id))) {
+                var order_id = document.getElementById("orderid").value;
+                xhr = new XMLHttpRequest();
+                xhr.open('POST', '/turn-socket-during-order/');
+                xhr.setRequestHeader('Content-Type', 'application/json');
+                xhr.onload = function () {
+                    if (xhr.status === 200) {
+                        window.location.reload()
+                    } else if (xhr.status !== 200) {
+                        alert('Request failed.  Returned status of ' + xhr.status);
+                    }
+                };
+
+                xhr.send(JSON.stringify({
+                    order_id: order_id,
+                    new_state: new_state
+                }));
+            } else {
+                alert("Please log in to site")
+            }
+        }
+    </script>
+
+    </main>
+</div>
+<div class="modal fade" id="success-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close icon-close" data-dismiss="modal" aria-label="Close"></button>
+            <div class="modal__title text-center">Дякуємо, ваша заявка відправлена</div>
+            <p class="text-center">Протягом <b class="text-primary">5 хвилин</b>, ми вам передзвонимо</p></div>
+    </div>
+</div>
+<script src="/static/js/runtime.bundle.js"></script>
+<script src="/static/js/main.bundle.js"></script>
+
+<input type="hidden" id="minutes" value="5"/>
+
+<script>
+    function set_hours(hours_count) {
+        document.getElementById("hours_custom").value = parseInt(hours_count)
+    }
+
+    function set_minutes(minutes_count) {
+        document.getElementById("minutes").value = parseInt(minutes_count)
+    }
+</script>
+
+<script type='text/javascript'>
+  window.smartlook||(function(d) {
+    var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+    c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+    })(document);
+    smartlook('init', '5ce60123128bfa9c49aa90660f5a1870bb728ea3', { region: 'eu' });
+</script>
+
+<input type="hidden" id="userid" name="userid" value="16"/>
+
+</body>
+</html>

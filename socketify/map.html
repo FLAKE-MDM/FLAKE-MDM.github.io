@@ -1,0 +1,203 @@
+
+
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="MobileOptimized" content="360">
+    <title>Socketify</title>
+    <link rel="icon" href="/static/favicon.png">
+    <link href="/static/styles/main.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="wrap">
+    <header class="header d-flex">
+        
+        
+        
+        
+        
+        <a href="/" class="logo d-flex header__logo">
+            <img src="/static/assets/images/logo.svg" alt="Socketify" class="logo__image">
+            <span class="logo__text text-primary">Socketify</span>
+        </a>
+        
+        
+    </header>
+    <main class="main main-full">
+        
+    
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+                  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+                  crossorigin=""/>
+            <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+                    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+                    crossorigin=""></script>
+            <div id="map" class="map"></div>
+            <script>
+                function init_map(latitude, longitude, zoom) {
+                    var map;
+                    map = L.map('map').setView([latitude, longitude], zoom);
+                    var tiles = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                            maxZoom: 18,
+                            attribution: "",
+                            id: 'mapbox/streets-v11',
+                            tileSize: 512,
+                            zoomOffset: -1
+                        },
+                    ).addTo(map);
+
+                    let iconOptionsOnline = {
+                        title: "socketify",
+                        draggable: false,
+                        icon: L.icon(customIconOnline = {
+                            iconUrl: "https://socketify.tech/static/online.png",
+                            iconSize: [30, 30]
+                        })
+                    }
+
+                    let iconOptionsOffline = {
+                        title: "socketify",
+                        draggable: false,
+                        icon: L.icon(customIconOffline = {
+                            iconUrl: "https://socketify.tech/static/offline.png",
+                            iconSize: [30, 30]
+                        })
+                    }
+                    let iconOptionsCharging = {
+                        title: "socketify",
+                        draggable: false,
+                        icon: L.icon(customIconOffline = {
+                            iconUrl: "https://socketify.tech/static/charging.png",
+                            iconSize: [30, 30]
+                        })
+                    }
+                    
+                        L.marker([50.58424706443165, 30.49582744159616],
+                             iconOptionsOnline  ).
+                        addTo(map)
+                            .bindPopup('<b>7,0 грн. / година (до 4000,0 Вт)</b><br/>' +
+                                '<a href="/socket/1" id="socket-1">Набережна 5</a>');
+                    
+                        L.marker([50.42367166532504, 30.53455],
+                             iconOptionsOnline  ).
+                        addTo(map)
+                            .bindPopup('<b>10,0 грн. / година (до 4000,0 Вт)</b><br/>' +
+                                '<a href="/socket/2" id="socket-2">Коновальца 36Е</a>');
+                    
+                        L.marker([50.4574312, 30.437584],
+                             iconOptionsOnline  ).
+                        addTo(map)
+                            .bindPopup('<b>30,0 грн. / година (до 4000,0 Вт)</b><br/>' +
+                                '<a href="/socket/3" id="socket-3">Марії Капніст (Желябова), 10А</a>');
+                    
+                        L.marker([50.2699, 30.6146],
+                             iconOptionsOnline  ).
+                        addTo(map)
+                            .bindPopup('<b>20,0 грн. / година (до 3000,0 Вт)</b><br/>' +
+                                '<a href="/socket/5" id="socket-5">Конча Озерна</a>');
+                    
+                        L.marker([50.50811, 30.61051],
+                             iconOptionsOnline  ).
+                        addTo(map)
+                            .bindPopup('<b>5,0 грн. / година (до 2000,0 Вт)</b><br/>' +
+                                '<a href="/socket/6" id="socket-6">Маяковского 30</a>');
+                    
+                        L.marker([50.42197, 30.53114],
+                             iconOptionsOffline ).
+                        addTo(map)
+                            .bindPopup('<b>30,0 грн. / година (до 4000,0 Вт) - офлайн</b><br/>' +
+                                '<a href="/socket/7" id="socket-7">Тверський тупик, 4</a>');
+                    
+                        L.marker([50.404290408503, 30.63252390774149],
+                             iconOptionsOffline ).
+                        addTo(map)
+                            .bindPopup('<b>8,0 грн. / година (до 4000,0 Вт) - офлайн</b><br/>' +
+                                '<a href="/socket/8" id="socket-8">Григоренка 29</a>');
+                    
+                        L.marker([50.47109469286841, 30.63325320634142],
+                             iconOptionsOffline ).
+                        addTo(map)
+                            .bindPopup('<b>8,0 грн. / година (до 4000,0 Вт) - офлайн</b><br/>' +
+                                '<a href="/socket/9" id="socket-9">Милютенка 16</a>');
+                    
+                        L.marker([50.52352790320842, 30.505179563428715],
+                             iconOptionsOffline ).
+                        addTo(map)
+                            .bindPopup('<b>10,0 грн. / година (до 4000,0 Вт) - офлайн</b><br/>' +
+                                '<a href="/socket/10" id="socket-10">Героiв Днiпра</a>');
+                    
+                        L.marker([50.450347374794696, 30.507345129012823],
+                             iconOptionsOnline  ).
+                        addTo(map)
+                            .bindPopup('<b>7,0 грн. / година (до 2000,0 Вт)</b><br/>' +
+                                '<a href="/socket/11" id="socket-11">вул. Олеся Гончара 41а</a>');
+                    
+                        L.marker([50.50655451692231, 30.4237513728435],
+                             iconOptionsOffline ).
+                        addTo(map)
+                            .bindPopup('<b>8,0 грн. / година (до 4000,0 Вт) - офлайн</b><br/>' +
+                                '<a href="/socket/12" id="socket-12">Правди 78</a>');
+                    
+                        L.marker([50.42796905039826, 30.38658334286842],
+                             iconOptionsOffline ).
+                        addTo(map)
+                            .bindPopup('<b>9,0 грн. / година (до 4000,0 Вт) - офлайн</b><br/>' +
+                                '<a href="/socket/13" id="socket-13">Володимира Покотила, 5</a>');
+                    
+                }
+
+                window.onload = function () {
+                    if (navigator.geolocation) {
+                        navigator.geolocation.getCurrentPosition(function (position) {
+                            init_map(position.coords.latitude, position.coords.longitude, 14)
+                        }, function (error) {
+                            init_map(50.49189584994811, 30.515855209741293, 11)
+                            console.log('Error occurred. Error code: ' + error.code);
+                        }, {timeout: 5000});
+                    } else {
+                        console.log('no geolocation support');
+                    }
+                };
+            </script>
+
+    </main>
+</div>
+<div class="modal fade" id="success-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close icon-close" data-dismiss="modal" aria-label="Close"></button>
+            <div class="modal__title text-center">Дякуємо, ваша заявка відправлена</div>
+            <p class="text-center">Протягом <b class="text-primary">5 хвилин</b>, ми вам передзвонимо</p></div>
+    </div>
+</div>
+<script src="/static/js/runtime.bundle.js"></script>
+<script src="/static/js/main.bundle.js"></script>
+
+<input type="hidden" id="minutes" value="5"/>
+
+<script>
+    function set_hours(hours_count) {
+        document.getElementById("hours_custom").value = parseInt(hours_count)
+    }
+
+    function set_minutes(minutes_count) {
+        document.getElementById("minutes").value = parseInt(minutes_count)
+    }
+</script>
+
+<script type='text/javascript'>
+  window.smartlook||(function(d) {
+    var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+    c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+    })(document);
+    smartlook('init', '5ce60123128bfa9c49aa90660f5a1870bb728ea3', { region: 'eu' });
+</script>
+
+<input type="hidden" id="userid" name="userid" value="16"/>
+
+</body>
+</html>
