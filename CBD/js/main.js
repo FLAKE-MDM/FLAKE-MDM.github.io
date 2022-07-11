@@ -257,7 +257,7 @@ $('.fake-select__item').click(function(){
 // basket
 $('.remove-link').click(function(e){
   e.preventDefault();
-  $(this).parents('.basket-item').remove();
+  $(this).parents('.remove-item').remove();
 })
 $('.basket-item__favorite').click(function(e){
   e.preventDefault();
@@ -430,526 +430,90 @@ $('.tag-nav__link').click(function(e){
   }
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$('.object-preview-slider').slick({
-  dots: false,
-  infinite: true,
-  arrows:false,
-  fade: true,
-  cssEase: 'linear',
-  pauseOnHover: false,
-  autoplay: true,
-  autoplaySpeed: 5700,
-  focusOnSelect: false,
+// datepicker
+$(document).ready ( function(){
+  $( "#birthday" ).val("24 мая 1991");
 });
+$( "#birthday" ).datepicker( $.datepicker.regional[ "ru" ] );
+$( "#birthday" ).datepicker( "option", "dateFormat", "d MM y" );
 
-
-
-
-
-// quiz
-$('.btn-quiz').click(function(e){
+// user-tab
+let mediaQuery = window.matchMedia('(max-width: 991px)');
+if (mediaQuery.matches) {
+  window.onload = function(){
+    $('.link-tab, .tab-pane-fixed').removeClass('active');
+  }
+  $('.link-tab').click(function(){
+    $('body').addClass('fixed-header');
+  })
+}
+$('.close-tab').click(function(e){
   e.preventDefault();
-  $(this).parents('.quiz-block__card').removeClass('show')
-
+  $(this).closest('.tab-pane-fixed').removeClass('active');
+  $('.link-tab').removeClass('active');
+  if($('.tab-pane-fixed').is('.active') == false){
+    $('body').removeClass('fixed-header');
+  }
+  
 })
 
 
-
-var mySlider = $('.objects-slider');
-mySlider.slick({
+$('.bonus-slider').slick({
   dots: false,
-  infinite: true,
-  arrows: false,
+  infinite: false,
+  arrows: true,
+  prevArrow: $('.bonus-slider__prev'),
+  nextArrow: $('.bonus-slider__next'),
   slidesToShow: 2,
   slidesToScroll: 1,
-  centerMode: true,
-  centerPadding: '125px',
   responsive: [
-    {
-      breakpoint: 992,
-      settings: "unslick",
-    },
-  ]
-});
-
-
-
-
-$('.news-slider').slick({
-  dots: false,
-  infinite: false,
-  arrows:false,
-  responsive: [
-    {
-      breakpoint: 8000,
-      settings: "unslick",
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 1,
-        dots: true,
-      }
-    },
-  ]
-});
-
-
-
-// catalogue tab
-$('#catalogue-nav-all').click(function(e){
-  e.preventDefault();
-  $('#catalogueTabContent').find('.tab-pane').addClass('show active')
-  let catalogueSelected = document.querySelector('#catalogue-selected');
-  catalogueSelected.innerHTML = this.innerHTML;
-})
-
-$('.catalogue-btn').click(function(e){
-  e.preventDefault();
-  $('.tab-pane').removeClass('show active');
-  $($(this).attr('href')).addClass('show active');
-  let catalogueSelected = document.querySelector('#catalogue-selected');
-  catalogueSelected.innerHTML = this.innerHTML;
-})
-
-$('.gallery-slider').slick({
-  dots: false,
-  infinite: true,
-  arrows: true,
-  prevArrow: $('.prev'),
-  nextArrow: $('.next'),
-  slidesToShow: 1,
-  centerMode: true,
-  centerPadding: '348px',
-  responsive: [
-    {
-      breakpoint: 1600,
-      settings: {
-        centerPadding: '270px',
-      }
-    },
-    {
-      breakpoint: 1400,
-      settings: {
-        centerPadding: '150px',
-      }
-    },
-    {
-      breakpoint: 1200,
-      settings: {
-        centerPadding: '140px',
-      }
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        centerPadding: '0',
-        dots: true,
-      }
-    },
-  ]
-});
-
-$('.team-slider').slick({
-  dots: false,
-  infinite: true,
-  arrows: false,
-  slidesToShow: 3,
-  centerMode: true,
-  centerPadding: '241px',
-  responsive: [
-    {
-      breakpoint: 1400,
-      settings: {
-        centerPadding: '100px',
-      }
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2,
-        centerPadding: '50px',
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        centerPadding: '0',
-        slidesToShow: 1,
-        centerMode: false,
-        dots: true
-      }
-    },
-  ]
-});
-
-$('.description-slider').slick({
-  dots: false,
-  infinite: true,
-  arrows: true,
-  prevArrow: $('.prev-descriprion'),
-  nextArrow: $('.next-descriprion'),
-  slidesToShow: 2,
-  centerMode: true,
-  centerPadding: '372px',
-  responsive: [
-    {
-      breakpoint: 1600,
-      settings: {
-        centerPadding: '270px',
-      }
-    },
-    {
-      breakpoint: 1400,
-      settings: {
-        centerPadding: '150px',
-      }
-    },
-    {
-      breakpoint: 1200,
-      settings: {
-        centerPadding: '140px',
-      }
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        centerPadding: '0',
-        centerMode: false,
-        dots: true,
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        centerMode: false,
-        dots: true,
-      }
-    },
-  ]
-});
-
-$('.types-slider').slick({
-  dots: false,
-  infinite: true,
-  arrows: true,
-  prevArrow: $('.prev-types'),
-  nextArrow: $('.next-types'),
-  slidesToShow: 2,
-  centerMode: true,
-  centerPadding: '372px',
-  responsive: [
-    {
-      breakpoint: 1600,
-      settings: {
-        centerPadding: '270px',
-      }
-    },
-    {
-      breakpoint: 1400,
-      settings: {
-        centerPadding: '150px',
-      }
-    },
-    {
-      breakpoint: 1200,
-      settings: {
-        centerPadding: '140px',
-      }
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        dots: true,
-        centerMode: false,
-      }
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        dots: true,
-        centerMode: false,
-        slidesToShow: 1,
-      }
-    },
-  ]
-});
-
-$('.progress-slider').slick({
-  dots: false,
-  infinite: false,
-  arrows: true,
-  prevArrow: $('.prev-progress'),
-  nextArrow: $('.next-progress'),
-  slidesToShow: 4,
-  responsive: [
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 3,
-      }
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2,
-        dots: true,
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        dots: true,
-      }
-    },
-  ]
-});
-
-$('.other-slider').slick({
-  dots: false,
-  infinite: false,
-  arrows:false,
-  responsive: [
-    {
-      breakpoint: 8000,
-      settings: "unslick",
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2,
-        dots: true,
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        dots: true,
-      }
-    },
-  ]
-});
-
-$('.partners-slider').slick({
-  dots: false,
-  infinite: true,
-  arrows: false,
-  slidesToShow: 6,
-  responsive: [
-    {
-      breakpoint: 1400,
-      settings: {
-        slidesToShow: 5,
-        dots: true,
-      }
-    },
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 4,
-      }
-    },
     {
       breakpoint: 992,
       settings: {
         slidesToShow: 3,
+        slidesToScroll: 1,
       }
     },
     {
       breakpoint: 768,
       settings: {
         slidesToShow: 2,
-        dots: true, 
-        arrows: true,
-        prevArrow: $('.prev-partners'),
-        nextArrow: $('.next-partners'),
+        slidesToScroll: 1,
       }
     },
   ]
 });
+$('.user-heading-nav__link').click(function(){
+  if($('#user-partners').is('.active')){
+    $('.bonus-slider').slick('refresh');
+  }
+})
 
-// range
-$( function() {
-  $( "#price-range-hypothec" ).slider({
-    min: 4000000,
-    max: 100000000,
-    value: 14000000,
-    step: 100000,
-    range: "min",
-    slide: function( event, ui ) {
-      $( "#price-value-hypothec" ).val( ui.value );
-    }
-  });
-  $( "#price-value-hypothec" ).val( $( "#price-range-hypothec" ).slider( "value" ) );
-} );
-
-$( function() {
-  $( "#contribution-range-hypothec" ).slider({
-    min: 4000000,
-    max: 75000000,
-    value: 5000000,
-    step: 100000,
-    range: "min",
-    slide: function( event, ui ) {
-      $( "#contribution-value-hypothec" ).val( ui.value );
-    }
-  });
-  $( "#contribution-value-hypothec" ).val( $( "#contribution-range-hypothec" ).slider( "value" ) );
-} );
-
-$( function() {
-  $( "#term-range-hypothec" ).slider({
-    min: 1,
-    max: 30,
-    value: 5,
-    step: 1,
-    range: "min",
-    slide: function( event, ui ) {
-      $( "#tern-value-hypothec" ).val( ui.value );
-    }
-  });
-  $( "#tern-value-hypothec" ).val( $( "#term-range-hypothec" ).slider( "value" ) );
-} );
-$( function() {
-  $( "#price-range-installment" ).slider({
-    min: 4000000,
-    max: 100000000,
-    value: 4200000,
-    step: 100000,
-    range: "min",
-    slide: function( event, ui ) {
-      $( "#price-value-installment" ).val( ui.value );
-    }
-  });
-  $( "#price-value-installment" ).val( $( "#price-range-installment" ).slider( "value" ) );
-} );
-$( function() {
-  $( "#contribution-range-installment" ).slider({
-    min: 4000000,
-    max: 75000000,
-    value: 4200000,
-    step: 100000,
-    range: "min",
-    slide: function( event, ui ) {
-      $( "#contribution-value-installment").val( ui.value );
-    }
-  });
-  $( "#contribution-value-installment" ).val( $( "#contribution-range-installment" ).slider( "value" ) );
-} );
-
-$( function() {
-  $( "#term-range-installment" ).slider({
-    min: 1,
-    max: 30,
-    value: 3,
-    step: 1,
-    range: "min",
-    slide: function( event, ui ) {
-      $( "#tern-value-installment" ).val( ui.value );
-    }
-  });
-  $( "#tern-value-installment" ).val( $( "#term-range-installment" ).slider( "value" ) );
-} );
+$('.mobile-table').cardtable();
 
 
 
 
-// // map
-// function initMap() {
-// 	var contactsMap1 = new ymaps.Map('map', {
-// 		center: [44.67524497177621, 34.4134283065796],
-// 		zoom: 16,
-// 		controls: [],
-// 	}),
-
-// 	myPlacemark = new ymaps.Placemark(contactsMap1.getCenter(), {
-// 		hintContent: 'Аркада',
-// 		balloonContent: 'Аркада',
-// 	}, {
-// 		iconLayout: 'default#image',
-// 		iconImageHref: '../img/map.svg',
-// 		iconImageSize: [64, 64],
-// 	});
-
-// 	contactsMap1.geoObjects.add(myPlacemark)
-// 	contactsMap1.controls.add('zoomControl');
-// 	contactsMap1.behaviors.disable('scrollZoom');
-// }
-
-// setTimeout(function(){
-// 	var elem = document.createElement('script');
-// 	elem.type = 'text/javascript';
-// 	elem.src = 'https://api-maps.yandex.ru/2.1/?apikey=3e26cc7f-cb09-4e2a-a793-17fd25834825&lang=ru_RU&onload=initMap';
-// 	document.getElementsByTagName('body')[0].appendChild(elem);
-// }, 1000);
 
 
 
-// calculator
-$(document).ready ( function(){
-  calculate('hypothec')
-  calculate('installment')
- });
-function calculate(name){
-  let summ = $(`#price-value-${name}`).val() - $(`#contribution-value-${name}`).val();
-  let month = $(`#tern-value-${name}`).val() * 12;
-  let precent = $(`#precent-${name}`).val() / 12;
-  let payment = Math.round(summ * precent / (1 - (1 + precent) * (1 - month)))
-  $(`#price-${name}`).text(summ);
-  $(`#payment-${name}`).text(payment);
-}
-$( "#price-range-hypothec, #contribution-range-hypothec, #term-range-hypothec" ).slider({
-  change: function( event, ui ) { 
-    calculate('hypothec')
-   }
-});
-$( "#price-range-installment, #contribution-range-installment, #term-range-installment" ).slider({
-  change: function( event, ui ) { 
-    calculate('installment')
-   }
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

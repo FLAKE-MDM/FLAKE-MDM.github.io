@@ -12,6 +12,17 @@
 </head>
 <body>
     <div class="wrap">
+        <!-- info-block -->
+        <div class="info-block collapse show bg-primary" id="info-block">
+            <div class="container">
+                <div class="info-block__body text-center text-inversion text_size-xs">
+                    <p class="d-none d-md-block">При заказе от 4 000 ₽ – доставка за наш счет</p>
+                    <p class="d-md-none">Бесплатная доставка от 4 000 ₽</p>
+                    <a href="#info-block" class="icon icon-close-inversion info-block__close" data-bs-toggle="collapse"></a>
+                </div>
+            </div>
+        </div>
+        <!-- /info-block -->
         <!-- header -->
         <header class="header">
             <div class="container">
@@ -111,81 +122,504 @@
             <a href="#" class="pane-close nav-pane-close__link"></a>
         </header>
         <!-- /header -->
-        <div class="container content_padding">
-            <!-- breadcrumb -->
-            <ul class="breadcrumb">
-                <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Главная</a></li>
-                <li class="breadcrumb__item">Возврат и обмен</li>
-            </ul>
-            <!-- /breadcrumb -->
-            <div class="title_size-lg title_margin-bottom-sm d-lg-none">Возврат и обмен</div>
-            <div class="d-lg-flex">
-                <!-- sidebar -->
-                <div class="sidebar">
-                    <ul class="sidebar-nav sidebar-nav_tablet-bordered">
-                        <li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">Пользовательское соглашение</a></li>
-                        <li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">Политика конфиденциальности</a></li>
-                        <li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link active">Возврат и обмен</a></li>
-                        <li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">Авторские права</a></li>
-                        <li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">Отказ от ответственности</a></li>
-                        <li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">Использование Cookie</a></li>
-                    </ul>
-
+        <!-- preview -->
+        <div class="preview">
+            <div class="preview-slider">
+                <div>
+                    <div class="container">
+                        <div class="d-md-flex">
+                            <div class="preview__image order-md-2"><img src="img/content/preview-image.png" alt="" class="img-fluid"></div>
+                            <div class="preview__text">
+                                <div class="preview__logo"><img src="img/content/preview-logo.svg" alt="" class="img-fluid"></div>
+                                <div class="title_size-lg preview__title_margin preview__title">Получай сейчас – <br class="d-none d-lg-block">плати потом</div>
+                                <p><a href="#" class="btn btn-outline">Подробнее</a></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- /sidebar -->
-                <!-- main -->
-                <main class="main main_padding-md">
-                    <div class="title_size-lg title_margin-bottom-sm d-none d-lg-block">Возврат и обмен</div>
-                    <div class="col-md-11 col-lg-12">
-                        <p>Мы благодарим вас за вашу покупку. Мы надеемся, что вы довольны своим приобретением и хотим убедиться, что предоставляем вам лучшие условия для совершения покупок. Если вы по какой-либо причине не полностью удовлетворены приобретенным вам товаром, вы можете вернуть его и получить либо возврат потраченных денежных средств, либо обменять товар на другой. Ниже вы можете ознакомиться с нашей Политикой Возврата.</p>
-                    </div>
-                    <div class="info-text bg-dark d-flex"><span class="icon icon-info"></span>Мы возмещаем стоимость товара, если вы правильно оформили возврат!</div>
-                    <div class="col-md-11">
-                        <p>Если вы не полностью довольны вашей покупкой, мы предлагаем вам возможность его нам вернуть в течение 14 календарных дней с момента получения вами товара по указанному адресу доставки. Вы должны проинформировать нас в течение 14 дней с момента получения вами товара по адресу доставки. По соглашению, вы должны вернуть товар нам в течение последующих 14 дней. Затраты клиента на возврат товара не компенсируются.
-                        <br>Товар должен быть возвращен в том виде, в котором он был вам прислан, в упаковке, запечатанный, неиспользованный и не поврежденный (если применимо), то есть в состоянии, в котором его можно вновь продать. Некоторые портящиеся виды товаров, например, еда и пищевые добавки, не могут быть приняты к возврату, исходя из безопасности клиентов.
-                        <br>Если вы хотите вернуть товар, пожалуйста свяжитесь с нашей командой Службы Поддержки Клиентов. Товар может быть возвращен только после согласования с членом нашей команды.</p>
-                    </div>
-                    <div class="info-text info-text_margin-mobile bg-light text-primary d-flex"><span class="icon icon-info-primary"></span>Для оформления возврата нам необходим чек или доказательство совершения покупки.</div>
-                    <div class="title_size-smd return__title">Адрес для возврата товаров:</div>
-                    <p>
-                        ООО "СИБИДИ РУ"
-                        <br>115114, Г. Москва, вн.тер. г. Муниципальный Округ Даниловский, пер 1-Й Кожевнический, дом 6, строение 6, этаж 1, пом/оф III/21
-                        <br>Пожалуйста, не возвращайте нам товар без предварительного согласования с членом нашей команды Службы Поддержки Клиентов.
-                        <br>Что делать с поврежденным товаром?
-                        <br>Если товар поврежден, мы с радостью вышлем вам замену, после того как поврежденный товар будет нами получен и проверен. Пожалуйста, свяжитесь с нашей командой Службы Поддержки Клиентов и вышлите фото поврежденной упаковки и товара в ней.
-                    </p>
-                    <div class="title_size-smd return__title return__title_margin">Вопросы</div>
-                    <div class="faq-item">
-                        <a href="#faq-1" class="faq-item__link text_size-md text-semibold collapsed" data-bs-toggle="collapse">Как отказаться от совершенной покупки?</a>
-                        <div class="collapse" id="faq-1">
-                            <div class="faq-item__body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum maiores fuga iure. Autem unde optio neque earum nulla laudantium quae ducimus nihil repellat accusantium excepturi rem, velit voluptate eum iste quisquam alias odio nisi doloremque, necessitatibus cum! Ab tenetur error cumque, tempore et similique impedit ad, debitis harum reiciendis alias!</p>
-                                <p><a href="#" class="text-light">Подробнее</a></p>
+                <div class="slide-dark text-inversion">
+                    <img src="img/content/preview-slide.jpg" alt="" class="preview-slider__image d-none d-md-block">
+                    <img src="img/content/preview-slide-m.jpg" alt="" class="preview-slider__image d-md-none">
+                    <div class="container">
+                        <div class="preview__text">
+                            <div class="title_size-lg title_margin-bottom-md preview__title pb-1">Официальный магазин <br class="d-md-none">CBD продукции в России</div>
+                            <p class="d-none d-md-block">Тщательный контроль качества сырья. Всегда точная концетрация КБД. Полностью легальная продукция.</p>
+                            <div class="preview__buttons">
+                                <a href="#" class="btn btn-light">Смотреть каталог</a>
+                                <a href="#" class="btn btn-outline_inversion d-none d-lg-inline-flex">О Кбд</a>
                             </div>
                         </div>
                     </div>
-                    <div class="faq-item">
-                        <a href="#faq-2" class="faq-item__link text_size-md text-semibold collapsed" data-bs-toggle="collapse">Как получить возврат денежных средств?</a>
-                        <div class="collapse" id="faq-2">
-                            <div class="faq-item__body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum maiores fuga iure. Autem unde optio neque earum nulla laudantium quae ducimus nihil repellat accusantium excepturi rem, velit voluptate eum iste quisquam alias odio nisi doloremque, necessitatibus cum! Ab tenetur error cumque, tempore et similique impedit ad, debitis harum reiciendis alias!</p>
-                                <p><a href="#" class="text-light">Подробнее</a></p>
+                </div>
+                <div>
+                    <div class="container">
+                        <div class="d-md-flex">
+                            <div class="preview__image order-md-2"><img src="img/content/preview-image.png" alt="" class="img-fluid"></div>
+                            <div class="preview__text">
+                                <div class="preview__logo"><img src="img/content/preview-logo.svg" alt="" class="img-fluid"></div>
+                                <div class="title_size-lg preview__title_margin preview__title">Получай сейчас – <br class="d-none d-lg-block">плати потом</div>
+                                <p><a href="#" class="btn btn-outline">Подробнее</a></p>
                             </div>
                         </div>
                     </div>
-                    <div class="faq-item">
-                        <a href="#faq-3" class="faq-item__link text_size-md text-semibold collapsed" data-bs-toggle="collapse">Что делать если денежные средства не возвращены?</a>
-                        <div class="collapse" id="faq-3">
-                            <div class="faq-item__body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum maiores fuga iure. Autem unde optio neque earum nulla laudantium quae ducimus nihil repellat accusantium excepturi rem, velit voluptate eum iste quisquam alias odio nisi doloremque, necessitatibus cum! Ab tenetur error cumque, tempore et similique impedit ad, debitis harum reiciendis alias!</p>
-                                <p><a href="#" class="text-light">Подробнее</a></p>
+                </div>
+                <div class="slide-dark text-inversion">
+                    <img src="img/content/preview-slide.jpg" alt="" class="preview-slider__image d-none d-md-block">
+                    <img src="img/content/preview-slide-m.jpg" alt="" class="preview-slider__image d-md-none">
+                    <div class="container">
+                        <div class="preview__text">
+                            <div class="title_size-lg title_margin-bottom-md preview__title pb-1">Официальный магазин <br class="d-md-none">CBD продукции в России</div>
+                            <p class="d-none d-md-block">Тщательный контроль качества сырья. Всегда точная концетрация КБД. Полностью легальная продукция.</p>
+                            <div class="preview__buttons">
+                                <a href="#" class="btn btn-light">Смотреть каталог</a>
+                                <a href="#" class="btn btn-outline_inversion d-none d-lg-inline-flex">О Кбд</a>
                             </div>
                         </div>
                     </div>
-                </main>
-                <!-- /main -->
+                </div>
+                <div>
+                    <div class="container">
+                        <div class="d-md-flex">
+                            <div class="preview__image order-md-2"><img src="img/content/preview-image.png" alt="" class="img-fluid"></div>
+                            <div class="preview__text">
+                                <div class="preview__logo"><img src="img/content/preview-logo.svg" alt="" class="img-fluid"></div>
+                                <div class="title_size-lg preview__title_margin preview__title">Получай сейчас – <br class="d-none d-lg-block">плати потом</div>
+                                <p><a href="#" class="btn btn-outline">Подробнее</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- /preview -->
+        <div class="container">
+            <!-- press -->
+            <div class="press-slider home__press-slider">
+                <div><img src="img/content/press-logo-1.svg" alt="" class="img-fluid"></div>
+                <div><img src="img/content/press-logo-2.svg" alt="" class="img-fluid"></div>
+                <div><img src="img/content/press-logo-3.svg" alt="" class="img-fluid"></div>
+                <div><img src="img/content/press-logo-4.svg" alt="" class="img-fluid"></div>
+                <div><img src="img/content/press-logo-5.svg" alt="" class="img-fluid"></div>
+                <div><img src="img/content/press-logo-6.svg" alt="" class="img-fluid"></div>
+            </div>
+            <!-- /press -->
+            <!-- popular -->
+            <div class="title_size-md text-semibold title_nav title_margin-bottom-md">Популярные товары</div>
+            <div class="catalogue-slider">
+                <div>
+                    <div class="catalogue-item">
+                        <a href="item.html" class="catalogue-item__image"><img src="img/content/item-1.jpg" alt="" class="img-fluid"></a>
+                        <div class="catalogue-item__marks d-flex">
+                            <div class="mark mark_warning">0-0-12</div>
+                            <div class="mark mark_dark"><img src="img/icons/shares.svg" alt="" class="img-fluid"></div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="catalogue-item__price">10 500 ₽</div>
+                            <div class="catalogue-item__price_old">13 500 ₽</div>
+                        </div>
+                        <a href="item.html" class="catalogue-item__name">Масло КБД "Широкий спектр" 1800мг 6% GoldenSeed.life</a>
+                        <div class="wrap-rating d-flex catalogue-item__rating">
+                            <div class="rating">
+                                <div class="rating__active" style="width:80%"></div>
+                            </div>
+                            <div class="rating-num">4.9</div>
+                        </div>
+                        <div class="catalogue-item__footer d-flex">
+                            <a href="#" class="btn btn-dark btn_size-sm">В корзину</a>
+                            <a href="#" class="favorite-link toggler"><span class="icon icon-favorite"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="catalogue-item">
+                        <a href="item.html" class="catalogue-item__image"><img src="img/content/item-1.jpg" alt="" class="img-fluid"></a>
+                        <div class="catalogue-item__marks d-flex">
+                            <div class="mark mark_warning">0-0-12</div>
+                            <div class="mark mark_dark"><img src="img/icons/shares.svg" alt="" class="img-fluid"></div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="catalogue-item__price">10 500 ₽</div>
+                            <div class="catalogue-item__price_old">13 500 ₽</div>
+                        </div>
+                        <a href="item.html" class="catalogue-item__name">Масло КБД "Широкий спектр" 1800мг 6% GoldenSeed.life</a>
+                        <div class="wrap-rating d-flex catalogue-item__rating">
+                            <div class="rating">
+                                <div class="rating__active" style="width:80%"></div>
+                            </div>
+                            <div class="rating-num">4.9</div>
+                        </div>
+                        <div class="catalogue-item__footer d-flex">
+                            <a href="#" class="btn btn-dark btn_size-sm">В корзину</a>
+                            <a href="#" class="favorite-link toggler"><span class="icon icon-favorite"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="catalogue-item">
+                        <a href="item.html" class="catalogue-item__image"><img src="img/content/item-1.jpg" alt="" class="img-fluid"></a>
+                        <div class="catalogue-item__marks d-flex">
+                            <div class="mark mark_warning">0-0-12</div>
+                            <div class="mark mark_dark"><img src="img/icons/shares.svg" alt="" class="img-fluid"></div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="catalogue-item__price">10 500 ₽</div>
+                            <div class="catalogue-item__price_old">13 500 ₽</div>
+                        </div>
+                        <a href="item.html" class="catalogue-item__name">Масло КБД "Широкий спектр" 1800мг 6% GoldenSeed.life</a>
+                        <div class="wrap-rating d-flex catalogue-item__rating">
+                            <div class="rating">
+                                <div class="rating__active" style="width:80%"></div>
+                            </div>
+                            <div class="rating-num">4.9</div>
+                        </div>
+                        <div class="catalogue-item__footer d-flex">
+                            <a href="#" class="btn btn-dark btn_size-sm">В корзину</a>
+                            <a href="#" class="favorite-link toggler"><span class="icon icon-favorite"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="catalogue-item">
+                        <a href="item.html" class="catalogue-item__image"><img src="img/content/item-1.jpg" alt="" class="img-fluid"></a>
+                        <div class="catalogue-item__marks d-flex">
+                            <div class="mark mark_warning">0-0-12</div>
+                            <div class="mark mark_dark"><img src="img/icons/shares.svg" alt="" class="img-fluid"></div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="catalogue-item__price">10 500 ₽</div>
+                            <div class="catalogue-item__price_old">13 500 ₽</div>
+                        </div>
+                        <a href="item.html" class="catalogue-item__name">Масло КБД "Широкий спектр" 1800мг 6% GoldenSeed.life</a>
+                        <div class="wrap-rating d-flex catalogue-item__rating">
+                            <div class="rating">
+                                <div class="rating__active" style="width:80%"></div>
+                            </div>
+                            <div class="rating-num">4.9</div>
+                        </div>
+                        <div class="catalogue-item__footer d-flex">
+                            <a href="#" class="btn btn-dark btn_size-sm">В корзину</a>
+                            <a href="#" class="favorite-link toggler"><span class="icon icon-favorite"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="catalogue-item">
+                        <a href="item.html" class="catalogue-item__image"><img src="img/content/item-1.jpg" alt="" class="img-fluid"></a>
+                        <div class="catalogue-item__marks d-flex">
+                            <div class="mark mark_warning">0-0-12</div>
+                            <div class="mark mark_dark"><img src="img/icons/shares.svg" alt="" class="img-fluid"></div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="catalogue-item__price">10 500 ₽</div>
+                            <div class="catalogue-item__price_old">13 500 ₽</div>
+                        </div>
+                        <a href="item.html" class="catalogue-item__name">Масло КБД "Широкий спектр" 1800мг 6% GoldenSeed.life</a>
+                        <div class="wrap-rating d-flex catalogue-item__rating">
+                            <div class="rating">
+                                <div class="rating__active" style="width:80%"></div>
+                            </div>
+                            <div class="rating-num">4.9</div>
+                        </div>
+                        <div class="catalogue-item__footer d-flex">
+                            <a href="#" class="btn btn-dark btn_size-sm">В корзину</a>
+                            <a href="#" class="favorite-link toggler"><span class="icon icon-favorite"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center"><a href="catalogue.html" class="btn btn-primary">Больше товаров</a></p>
+            <!-- /popular -->
+        </div>
+        <!-- calculator -->
+        <div class="calculator-section">
+            <div class="container">
+                <div class="calculator-section__text">
+                    <div class="title_size-md text-semibold title_margin-bottom-sm">Калькулятор дозировки</div>
+                    <p>Рассчитайте свою дозировку КБД основываясь на весе вашего тела и цели использования <span class="d-none d-lg-inline">с нашей формой расчета дозировки</span>.</p>
+                    <p>
+                        <a href="#calculator-pane" class="btn btn-dark pane-open">
+                            <span class="d-none d-lg-inline-flex align-items-center"><span class="icon icon-drop btn__icon"></span>Подобрать дозировку</span>
+                            <span class="d-lg-none">Рассчитать</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- /calculator -->
+        <div class="container">
+            <!-- about -->
+            <div class="title_size-md text-semibold title_margin-bottom-md mb-0-md">Что такое КБД?</div>
+            <div class="about-section">
+                <a href="#" class="about-item about-item_vertical text-inversion">
+                    <img src="img/content/about-1.jpg" alt="" class="about-item__image d-none d-lg-block">
+                    <img src="img/content/about-1-md.jpg" alt="" class="about-item__image d-lg-none">
+                    <img src="img/content/about-1.png" alt="" class="about-item_vertical-image">
+                    <div class="about-item__body">
+                        <div class="text_size-xs text-semibold">Полезно знать</div>
+                        <div class="title_size-sm text-semibold about-item__title">Что такое КБД?</div>
+                        <p class="d-none d-lg-block">Влияние КБД на мозг и тело, преимущества для здоровья, безопасность и легальность</p>
+                    </div>
+                </a>
+                <a href="#" class="about-item">
+                    <img src="img/content/about-2.jpg" alt="" class="about-item__image">
+                    <div class="about-item__body">
+                        <div class="text_size-xs text-semibold">FAQ</div>
+                        <div class="title_size-sm text-semibold about-item__title">Часто задаваемые вопросы</div>
+                        <p class="d-none d-lg-block">Как принимать масло? Безопасно ли это и т.д.</p>
+                    </div>
+                </a>
+                <a href="#" class="about-item">
+                    <img src="img/content/about-3.png" alt="" class="about-item__image">
+                    <div class="about-item__body">
+                        <div class="text_size-xs text-semibold">Документы</div>
+                        <div class="title_size-sm text-semibold about-item__title">Сертификаты на продукцию</div>
+                        <p class="col-xl-8 d-lg-block d-none">Тщательный контроль качества сырья и его проверка независимыми лабораториями за рубежом и в России.</p>
+                    </div>
+                </a>
+            </div>
+            <p class="text-center d-none d-lg-block"><a href="#" class="btn btn-primary">Читайте другие статьи</a></p>
+            <!-- /abouts -->
+            <!-- advantages -->
+            <div class="advantages-section">
+                <div class="title_size-lg text-center title_margin-bottom-lg">Почему безопасно покупать <br class="d-none d-md-block">продукцию у нас</div>
+                <div class="row row-md">
+                    <div class="col-xl-3 col-md-6">
+                        <div class="advantages-item">
+                            <div class="advantages-item__icon bg-light"><img src="img/icons/advantages-1.svg" alt="" class="img-fluid"></div>
+                            <div class="text_size-md advantages-item__title">100% Органический продукт</div>
+                            <p>Все наши продукты производятся из 100% органической конопли, без использования ГМО и пестицидов, ведущими производителями Америки и Европы</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="advantages-item">
+                            <div class="advantages-item__icon bg-light"><img src="img/icons/advantages-2.svg" alt="" class="img-fluid"></div>
+                            <div class="text_size-md advantages-item__title">Сертификаты</div>
+                            <p>Наша продукция имеет все необходимые сертификаты для продажи на территории РФ</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="advantages-item">
+                            <div class="advantages-item__icon bg-light"><img src="img/icons/advantages-3.svg" alt="" class="img-fluid"></div>
+                            <div class="text_size-md advantages-item__title">ТГК – 0%</div>
+                            <p>Во всех наших продуктах содержание ТГК не превышает 0%</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="advantages-item">
+                            <div class="advantages-item__icon bg-light"><img src="img/icons/advantages-4.svg" alt="" class="img-fluid"></div>
+                            <div class="text_size-md advantages-item__title">Поддержка клиентов</div>
+                            <p>Наша служба поддержки клиентов всегда готова оперативно ответить на любые Ваши вопросы и дать необходимую консультацию</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /advantages -->
+        </div>
+        <!-- brands -->
+        <div class="brands-section">
+            <div class="container">
+                <div class="title_margin-bottom-md title_size-md text-semibold title_nav">Бренды</div>
+                <div class="brands-slider">
+                    <div class="brands-slider__item"><a href="brands.html" class="brands-slider__link"><img src="img/content/brand-1.svg" alt="" class="img-fluid"></a></div>
+                    <div class="brands-slider__item"><a href="brands.html" class="brands-slider__link"><img src="img/content/brand-2.svg" alt="" class="img-fluid"></a></div>
+                    <div class="brands-slider__item"><a href="brands.html" class="brands-slider__link"><img src="img/content/brand-3.svg" alt="" class="img-fluid"></a></div>
+                    <div class="brands-slider__item"><a href="brands.html" class="brands-slider__link"><img src="img/content/brand-4.svg" alt="" class="img-fluid"></a></div>
+                    <div class="brands-slider__item"><a href="brands.html" class="brands-slider__link"><img src="img/content/brand-2.svg" alt="" class="img-fluid"></a></div>
+                    <div class="brands-slider__item"><a href="brands.html" class="brands-slider__link"><img src="img/content/brand-3.svg" alt="" class="img-fluid"></a></div>
+                </div>
+            </div>
+        </div>
+        <!-- /brands -->
+        <!-- reviews -->
+        <div class="container">
+            <div class="title_size-lg text-center title_top-bottom-xl title_margin-bottom-sm">Отзывы покупателей</div>
+            <div class="d-flex justify-content-center">
+                <div class="col-md-8">
+                    <p class="text-center">Для нас очень важно, чтобы наши покупатели получали помощь и достойную обратную связь. <span class="d-none d-lg-block"> Показываем вам отзывы с независимых площадок.</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="review-slider">
+            <div>
+                <div class="review-item">
+                    <div class="review-item__rating">
+                        <div class="rating">
+                            <div class="rating__active" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center review-item__header">
+                        <div class="review-item__date">27 марта</div>
+                        <div class="review-item__from text-semibold">Яндекс.Маркет</div>
+                    </div>
+                    <div class="review-item__body">Масло CBD уменьшает стресс и беспокойство, снижает артериальное давление. CBD может помочь уменьшить воспаление и гибель клеток при патологиях сердца, благодаря своим мощным антиоксидантным и снижающим стресс свойствам.</div>
+                    <div class="text-semibold review-item__name">Аркадий</div>
+                </div>
+            </div>
+            <div>
+                <div class="review-item">
+                    <div class="review-item__rating">
+                        <div class="rating">
+                            <div class="rating__active" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center review-item__header">
+                        <div class="review-item__date">27 марта</div>
+                        <div class="review-item__from text-semibold">Яндекс.Маркет</div>
+                    </div>
+                    <div class="review-item__body">Масло CBD уменьшает стресс и беспокойство, снижает артериальное давление. CBD может помочь уменьшить воспаление и гибель клеток при патологиях сердца, благодаря своим мощным антиоксидантным и снижающим стресс свойствам.</div>
+                    <div class="text-semibold review-item__name">Михаил</div>
+                </div>
+            </div>
+            <div>
+                <div class="review-item">
+                    <div class="review-item__rating">
+                        <div class="rating">
+                            <div class="rating__active" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center review-item__header">
+                        <div class="review-item__date">27 марта</div>
+                        <div class="review-item__from text-semibold">Яндекс.Маркет</div>
+                    </div>
+                    <div class="review-item__body">Масло CBD уменьшает стресс и беспокойство, снижает артериальное давление. CBD может помочь уменьшить воспаление и гибель клеток при патологиях сердца, благодаря своим мощным антиоксидантным и снижающим стресс свойствам.</div>
+                    <div class="text-semibold review-item__name">Савелий</div>
+                </div>
+            </div>
+            <div>
+                <div class="review-item">
+                    <div class="review-item__rating">
+                        <div class="rating">
+                            <div class="rating__active" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center review-item__header">
+                        <div class="review-item__date">27 марта</div>
+                        <div class="review-item__from text-semibold">Яндекс.Маркет</div>
+                    </div>
+                    <div class="review-item__body">Масло CBD уменьшает стресс и беспокойство, снижает артериальное давление. CBD может помочь уменьшить воспаление и гибель клеток при патологиях сердца, благодаря своим мощным антиоксидантным и снижающим стресс свойствам.</div>
+                    <div class="text-semibold review-item__name">Савелий</div>
+                </div>
+            </div>
+            <div>
+                <div class="review-item">
+                    <div class="review-item__rating">
+                        <div class="rating">
+                            <div class="rating__active" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center review-item__header">
+                        <div class="review-item__date">27 марта</div>
+                        <div class="review-item__from text-semibold">Яндекс.Маркет</div>
+                    </div>
+                    <div class="review-item__body">Масло CBD уменьшает стресс и беспокойство, снижает артериальное давление. CBD может помочь уменьшить воспаление и гибель клеток при патологиях сердца, благодаря своим мощным антиоксидантным и снижающим стресс свойствам.</div>
+                    <div class="text-semibold review-item__name">Савелий</div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center"><a href="review.html" class="btn btn-primary">Смотреть все отзывы</a></p>
+        <!-- /reviews -->
+        <!-- blog -->
+        <div class="blog-section">
+            <div class="container">
+                <div class="title_size-md text-semibold blog-section__title">Блог</div>
+                <div class="row blog-section-slider">
+                    <div class="col-md-6 col-xl-4">
+                        <article class="article">
+                            <a href="#" class="toggler icon icon-bookmark article__bookmark"></a>
+                            <div class="article__image">
+                                <img src="img/content/article-1.jpg" alt="" class="w-100 d-block">
+                            </div>
+                            <a href="article.html" class="article__title title_size-sm">КБД масло при тревоге</a>
+                            <div class="article__post-date">12 января</div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <article class="article">
+                            <a href="#" class="toggler icon icon-bookmark article__bookmark"></a>
+                            <div class="article__image">
+                                <img src="img/content/article-2.jpg" alt="" class="w-100 d-block">
+                            </div>
+                            <a href="article.html" class="article__title title_size-sm">Как правильно рассчитать дозировку масла?</a>
+                            <div class="article__post-date">12 января</div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <article class="article">
+                            <a href="#" class="toggler icon icon-bookmark article__bookmark"></a>
+                            <div class="article__image">
+                                <img src="img/content/article-3.jpg" alt="" class="w-100 d-block">
+                            </div>
+                            <a href="article.html" class="article__title title_size-sm">Лучшая альтернатива медицинским препаратам</a>
+                            <div class="article__post-date">12 января</div>
+                        </article>
+                    </div>
+                </div>
+                <p class="d-none d-lg-block"><a href="#" class="text-light title_size-sm text-semibold text-semibold">Еще</a></p>
+                <div class="row d-none d-lg-flex">
+                    <div class="col-xl-4">
+                        <article class="article">
+                            <a href="article.html" class="article__title title_size-sm">КБД при похмелье</a>
+                            <div class="article__post-date">12 января</div>
+                        </article>
+                    </div>
+                    <div class="col-xl-4">
+                        <article class="article">
+                            <a href="article.html" class="article__title title_size-sm">Конопля в XXI веке: ренессанс ценной культуры</a>
+                            <div class="article__post-date">12 января</div>
+                        </article>
+                    </div>
+                    <div class="col-xl-4">
+                        <article class="article">
+                            <a href="article.html" class="article__title title_size-sm">Каннабис против короновируса</a>
+                            <div class="article__post-date">12 января</div>
+                        </article>
+                    </div>
+                </div>
+                <p class="text-center"><a href="articles.html" class="btn btn-primary blog-section__btn">Больше статей</a></p>
+            </div>
+        </div>
+        <!-- /blog -->
+        <!-- subscription -->
+        <div class="subscription-block">
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-lg-6 col-xl-5">
+                        <div class="subscription-block__text">
+                            <div class="title_size-md text-semibold title_margin-bottom-sm">Подпишись на рассылку</div>
+                            <p class="col-xl-8">Узнай первым о скидках и получай персональные предложения до –30%.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="subscription-block__form">
+                            <form action="#">
+                                <div class="d-md-flex align-items-end">
+                                    <div class="form-group subscription-block__input">
+                                        <label class="label d-lg-none">Введите e-mail</label>
+                                        <input type="email" class="form-control" placeholder="Введите e-mail">
+                                    </div>
+                                    <div class="form-group subscription-block__button">
+                                        <button class="btn btn-dark w-100">Подписаться</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center">
+            <div class="col-xl-7 col-lg-8 col-md-5 col-10">
+                <div class="title_size-lg text-center text-primary title_margin-bottom-sm">Хочешь больше бонусов?</div>
+                <p class="text-center">Подписывайся на наши социальные сети, чтобы получить больше скидок и уникальных предложений</p>
+                <div class="circle-social-list subscription__social-list d-flex justify-content-center">
+                    <a href="#" class="circle-social-list__link" target="_blank"><span class="icon icon-vk"></span></a>
+                    <a href="#" class="circle-social-list__link" target="_blank"><span class="icon icon-tg"></span></a>
+                    <a href="#" class="circle-social-list__link" target="_blank"><span class="icon icon-youtube"></span></a>
+                    <a href="#" class="circle-social-list__link" target="_blank"><span class="icon icon-zen"></span></a>
+                </div>
+            </div>
+        </div>
+        <!-- /subscription -->
         <!-- footer -->
         <footer class="footer">
             <div class="container">
@@ -305,7 +739,7 @@
         </div>
         <!-- /location-pane -->
         <!-- basket-pane -->
-        <div class="basket-pane pane" id="basket-pane">
+        <div class="basket-pane basket-pane_padding pane" id="basket-pane">
             <a href="#" class="icon icon-close basket-pane__close pane-close d-none d-lg-block"></a>
             <div class="title_size-md text-semibold basket-pane__title">Корзина <span class="basket-pane__count text_size-sm text-light text-medium">3 товара</span></div>
             <!-- basket-item -->
@@ -582,73 +1016,6 @@
         </div>
     </div>
     <!-- /success -->
-    <!-- modal-review -->
-    <div class="modal fade" id="modal-review" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog_tablet-full">
-            <div class="modal-content modal-content_padding-sm">
-                <div class="pane__header d-lg-none">
-                    <a href="#" class="pane-close icon icon-caret-prev" data-bs-dismiss="modal"></a>
-                </div>
-                <button type="button" class="icon modal__close icon-close d-none d-lg-block" data-bs-dismiss="modal"></button>
-                <div class="title_size-md title_margin-bottom-xs modal__title">Отзыв</div>
-                <div class="wrap-slider">
-                    <div class="modal-review-slider">
-                        <div class="review-item">
-                            <div class="review-item__rating">
-                                <div class="rating rating_md">
-                                    <div class="rating__active" style="width: 80%;"></div>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center review-item__header">
-                                <div class="review-item__date">27 марта</div>
-                                <div class="review-item__from text-semibold">Яндекс.Маркет</div>
-                            <div class="review-item__logo"><img src="img/icons/yandex-logo.svg" alt=""></div>
-                            </div>
-                            <div class="review-item__body">
-                                <p>Масло CBD уменьшает стресс и беспокойство, снижает артериальное давление. CBD может помочь уменьшить воспаление и гибель клеток при патологиях сердца, благодаря своим мощным антиоксидантным и снижающим стресс свойствам. Масло CBD уменьшает стресс и беспокойство, снижает артериальное давление. CBD может помочь уменьшить воспаление и гибель клеток при патологиях сердца, благодаря своим мощным антиоксидантным и снижающим стресс свойствам.</p>
-                                <p class="d-none d-lg-block">Масло CBD уменьшает стресс и беспокойство, снижает артериальное давление. CBD может помочь уменьшить воспаление и гибель клеток при патологиях сердца, благодаря своим мощным антиоксидантным и снижающим стресс свойствам.</p>
-                            </div>
-                            <div class="text-semibold review-item__name">Михаил</div>
-                        </div>
-                        <div class="review-item">
-                            <div class="review-item__rating">
-                                <div class="rating rating_md">
-                                    <div class="rating__active" style="width: 80%;"></div>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center review-item__header">
-                                <div class="review-item__date">27 марта</div>
-                                <div class="review-item__from text-semibold">Ozon</div>
-                                <div class="review-item__logo"><img src="img/icons/ozon-logo.svg" alt=""></div>
-                            </div>
-                            <div class="review-item__body">Масло CBD уменьшает стресс и беспокойство, снижает артериальное давление. CBD может помочь уменьшить воспаление и гибель клеток при патологиях сердца, благодаря своим мощным антиоксидантным и снижающим стресс свойствам.</div>
-                            <div class="text-semibold review-item__name">Аркадий</div>
-                        </div>
-                        <div class="review-item">
-                            <div class="review-item__rating">
-                                <div class="rating rating_md">
-                                    <div class="rating__active" style="width: 80%;"></div>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center review-item__header">
-                                <div class="review-item__date">27 марта</div>
-                                <div class="review-item__from text-semibold">Ozon</div>
-                                <div class="review-item__logo"><img src="img/icons/ozon-logo.svg" alt=""></div>
-                            </div>
-                            <div class="review-item__body">Масло CBD уменьшает стресс и беспокойство, снижает артериальное давление. CBD может помочь уменьшить воспаление и гибель клеток при патологиях сердца, благодаря своим мощным антиоксидантным и снижающим стресс свойствам.</div>
-                            <div class="text-semibold review-item__name">Михаил</div>
-                        </div>
-                    </div>
-                    <div class="modal-review-slider__nav d-flex">
-                        <button class="slick-arrow_circle slick-arrow_circle-prev modal-review-slider__prev"></button>
-                        <div class="slider__counter"></div>
-                        <button class="slick-arrow_circle slick-arrow_circle-next modal-review-slider__next"></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /modal-review -->
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>

@@ -34,7 +34,7 @@
                         <a href="#search" class="icons-nav__link search-btn d-none d-lg-block" data-bs-toggle="collapse">
                             <span class="icon icon-search"></span>
                         </a>
-                        <a href="index.html" class="icons-nav__link active d-lg-none">
+                        <a href="index.html" class="icons-nav__link d-lg-none">
                             <span class="icon icon-home"></span>
                             <div class="icons-nav__text">Главная</div>
                         </a>
@@ -111,79 +111,378 @@
             <a href="#" class="pane-close nav-pane-close__link"></a>
         </header>
         <!-- /header -->
-        <div class="container content_padding">
-            <!-- breadcrumb -->
-            <ul class="breadcrumb">
-                <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Главная</a></li>
-                <li class="breadcrumb__item">Возврат и обмен</li>
-            </ul>
-            <!-- /breadcrumb -->
-            <div class="title_size-lg title_margin-bottom-sm d-lg-none">Возврат и обмен</div>
-            <div class="d-lg-flex">
-                <!-- sidebar -->
-                <div class="sidebar">
-                    <ul class="sidebar-nav sidebar-nav_tablet-bordered">
-                        <li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">Пользовательское соглашение</a></li>
-                        <li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">Политика конфиденциальности</a></li>
-                        <li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link active">Возврат и обмен</a></li>
-                        <li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">Авторские права</a></li>
-                        <li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">Отказ от ответственности</a></li>
-                        <li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">Использование Cookie</a></li>
-                    </ul>
-
+        <!-- user-heading -->
+        <div class="user-heading text-inversion">
+            <div class="container">
+                <div class="back-block">
+                    <a href="index.html" class="text-inversion"><span class="icon icon-arrow-left-inversion breadcrumb__icon"></span>Назад</a>
                 </div>
-                <!-- /sidebar -->
-                <!-- main -->
-                <main class="main main_padding-md">
-                    <div class="title_size-lg title_margin-bottom-sm d-none d-lg-block">Возврат и обмен</div>
-                    <div class="col-md-11 col-lg-12">
-                        <p>Мы благодарим вас за вашу покупку. Мы надеемся, что вы довольны своим приобретением и хотим убедиться, что предоставляем вам лучшие условия для совершения покупок. Если вы по какой-либо причине не полностью удовлетворены приобретенным вам товаром, вы можете вернуть его и получить либо возврат потраченных денежных средств, либо обменять товар на другой. Ниже вы можете ознакомиться с нашей Политикой Возврата.</p>
+                <div class="d-flex user-heading__info">
+                    <div class="title_size-lg">Привет, Алексей</div>
+                    <div class="user-heading__bonus d-none d-lg-flex">
+                        <div class="user-heading__bonus-text">Бонусы</div>
+                        <div class="user-heading__bonus-value">814</div>
+                        <div class="money"><div class="icon icon-money"></div></div>
                     </div>
-                    <div class="info-text bg-dark d-flex"><span class="icon icon-info"></span>Мы возмещаем стоимость товара, если вы правильно оформили возврат!</div>
-                    <div class="col-md-11">
-                        <p>Если вы не полностью довольны вашей покупкой, мы предлагаем вам возможность его нам вернуть в течение 14 календарных дней с момента получения вами товара по указанному адресу доставки. Вы должны проинформировать нас в течение 14 дней с момента получения вами товара по адресу доставки. По соглашению, вы должны вернуть товар нам в течение последующих 14 дней. Затраты клиента на возврат товара не компенсируются.
-                        <br>Товар должен быть возвращен в том виде, в котором он был вам прислан, в упаковке, запечатанный, неиспользованный и не поврежденный (если применимо), то есть в состоянии, в котором его можно вновь продать. Некоторые портящиеся виды товаров, например, еда и пищевые добавки, не могут быть приняты к возврату, исходя из безопасности клиентов.
-                        <br>Если вы хотите вернуть товар, пожалуйста свяжитесь с нашей командой Службы Поддержки Клиентов. Товар может быть возвращен только после согласования с членом нашей команды.</p>
+                    <a href="#" class="user-heading__logout text-inversion d-none d-lg-inline-flex align-items-center">Выйти <span class="icon icon-logout"></span></a>
+                </div>
+                <ul class="nav tab-nav d-lg-flex user-heading-nav" id="user-nav" role="tablist">
+                    <li class="user-heading-nav__item tab-nav__item">
+                        <a class="user-heading-nav__link tab-nav__link link-tab" data-bs-toggle="tab" href="#user-data" role="tab" aria-selected="true">Мои данные</a>
+                    </li>
+                    <li class="user-heading-nav__item tab-nav__item">
+                        <a  class="user-heading-nav__link tab-nav__link link-tab" data-bs-toggle="tab" href="#user-order" role="tab" aria-selected="false">Мои заказы</a>
+                    </li>
+                    <li class="user-heading-nav__item tab-nav__item d-lg-none">
+                        <a href="favorites.html" class="user-heading-nav__link tab-nav__link">Избранное</a>
+                    </li>
+                    <li class="user-heading-nav__item tab-nav__item">
+                        <a class="user-heading-nav__link tab-nav__link link-tab active" data-bs-toggle="tab" href="#user-partners" role="tab" aria-selected="false">Партнерская программа</a>
+                    </li>
+                    <li class="user-heading-nav__item tab-nav__item d-lg-none">
+                        <a href="#" class="user-heading-nav__link tab-nav__link">Выйти</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /user-heading -->
+        <div class="container">
+            <div class="tab-content user__tab-content" id="userTabContent">
+                <!-- user-data -->
+                <div class="tab-pane tab-pane-fixed tab-pane__user-data" id="user-data" role="tabpanel" tabindex="0">
+                    <div class="back-block d-lg-none">
+                        <a href="#" class="close-tab"><span class="icon icon-arrow-left breadcrumb__icon"></span>Назад</a>
                     </div>
-                    <div class="info-text info-text_margin-mobile bg-light text-primary d-flex"><span class="icon icon-info-primary"></span>Для оформления возврата нам необходим чек или доказательство совершения покупки.</div>
-                    <div class="title_size-smd return__title">Адрес для возврата товаров:</div>
-                    <p>
-                        ООО "СИБИДИ РУ"
-                        <br>115114, Г. Москва, вн.тер. г. Муниципальный Округ Даниловский, пер 1-Й Кожевнический, дом 6, строение 6, этаж 1, пом/оф III/21
-                        <br>Пожалуйста, не возвращайте нам товар без предварительного согласования с членом нашей команды Службы Поддержки Клиентов.
-                        <br>Что делать с поврежденным товаром?
-                        <br>Если товар поврежден, мы с радостью вышлем вам замену, после того как поврежденный товар будет нами получен и проверен. Пожалуйста, свяжитесь с нашей командой Службы Поддержки Клиентов и вышлите фото поврежденной упаковки и товара в ней.
-                    </p>
-                    <div class="title_size-smd return__title return__title_margin">Вопросы</div>
-                    <div class="faq-item">
-                        <a href="#faq-1" class="faq-item__link text_size-md text-semibold collapsed" data-bs-toggle="collapse">Как отказаться от совершенной покупки?</a>
-                        <div class="collapse" id="faq-1">
-                            <div class="faq-item__body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum maiores fuga iure. Autem unde optio neque earum nulla laudantium quae ducimus nihil repellat accusantium excepturi rem, velit voluptate eum iste quisquam alias odio nisi doloremque, necessitatibus cum! Ab tenetur error cumque, tempore et similique impedit ad, debitis harum reiciendis alias!</p>
-                                <p><a href="#" class="text-light">Подробнее</a></p>
+                    <div class="tab-pane__content">
+                        <div class="title_size-md text-semibold user__title">Мои данные</div>
+                        <form action="#" class="user__form">
+                            <div class="order-section__body">
+                                <div class="order-section__group order-section__group_large">
+                                    <p class="text-semibold order-section__group-title d-none d-lg-block">Ваши данные</p>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" value="Алексей">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" value="Иванов">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control_light" placeholder="Отчество">
+                                    </div>
+                                </div>
+                                <div class="order-section__group order-section__group_margin">
+                                    <p class="text-semibold order-section__group-title mb-lg-3 mb-4">Пол</p>
+                                    <div class="d-flex radio-group pt-lg-0 pt-1">
+                                        <label class="radio-label d-flex align-items-center">
+                                            <input type="radio" checked name="gender" class="form-radio-input form-radio-input_border">
+                                            Мужской
+                                        </label>
+                                        <label class="radio-label d-flex align-items-center">
+                                            <input type="radio" name="gender" class="form-radio-input form-radio-input_border">
+                                            Женский
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="order-section__group">
+                                    <p class="text-semibold order-section__group-title">Дата рождения</p>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control_date" id="birthday">
+                                    </div>
+                                </div>
+                                <div class="order-section__group pt-lg-3">
+                                    <p class="text-semibold order-section__group-title">Контакты</p>
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" value="+7 900 220-20-19">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control form-control_light" placeholder="e-mail">
+                                    </div>
+                                </div>
+                                <div class="order-section__group pt-lg-4 pt-2 pb-lg-5 order-section__group_margin">
+                                    <div class="address-block">
+                                        <div class="address-block__header text-semibold">Домашний адрес</div>
+                                        <div class="address-block__body">
+                                            <p>Санкт-Петербург, ул. Рубинштейна, 14, кв 1 </p>
+                                            <p><a href="#" class="text-primary">Изменить</a></p>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary w-100 btn-plus">Добавить адрес</button>
+                                </div>
+                                <div class="order-section__group my-0">
+                                    <div class="pt-lg-2"><button class="btn-dark btn w-100">Сохранить изменения</button></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- /user-data -->
+                <!-- user-order -->
+                <div class="tab-pane tab-pane-fixed tab-pane__user-order" id="user-order" role="tabpanel" tabindex="0">
+                    <div class="back-block d-lg-none">
+                        <a href="#" class="close-tab"><span class="icon icon-arrow-left breadcrumb__icon"></span>Назад</a>
+                    </div>
+                    <div class="d-lg-flex">
+                        <!-- user__sidebar -->
+                        <div class="user__sidebar tab-pane__content">
+                            <div class="title_size-md text-semibold user__title d-lg-none">Мои заказы</div>
+                            <div class="dropdown-select">
+                                <a href="#" data-bs-toggle="dropdown" class="d-lg-none dropdown-toggle" aria-expanded="false">
+                                    <span class="catalogue-selected">Текущие заказы</span>
+                                </a>
+                                <div class="dropdown-select-menu dropdown-menu">
+                                    <ul class="user-order-nav nav" role="tablist">
+                                        <li class="user-order-nav__item">
+                                            <a href="#current-orders" class="user-order-nav__link dropdown-select__link active" data-bs-toggle="tab" role="tab" aria-selected="false"><span class="user-order-nav__mark user-order-nav__mark_primary"></span>Текущие заказы</a>
+                                        </li>
+                                        <li class="user-order-nav__item">
+                                            <a href="#completed-orders" class="user-order-nav__link dropdown-select__link" data-bs-toggle="tab" role="tab" aria-selected="false"><span class="user-order-nav__mark user-order-nav__mark_warning"></span>Завершенные</a>
+                                        </li>
+                                        <li class="user-order-nav__item">
+                                            <a href="#canceled-orders" class="user-order-nav__link dropdown-select__link" data-bs-toggle="tab" role="tab" aria-selected="false"><span class="user-order-nav__mark user-order-nav__mark_danger"></span>Отмененные</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>  
+                        </div>
+                        <!-- /user__sidebar -->
+                        <!-- main -->
+                        <main class="main">
+                            <div class="title_size-md text-semibold user__title d-none d-lg-block">Мои заказы</div>
+                            <div class="tab-content" id="userTabContent">
+                                <div class="tab-pane tab-pane_padding active" id="current-orders" role="tabpanel" tabindex="0">
+                                    <!-- order-item -->
+                                    <div class="order-item">
+                                        <a href="#order-1" class="order-item__link" data-bs-toggle="collapse" aria-expanded="true">
+                                            <div class="order-item__header d-flex justify-content-between">
+                                                <div class="order-item__text">
+                                                    <div class="order-item__name text-semibold_md"><span class="icon icon-caret"></span> Заказ №110605 от 27 апреля 2022</div>
+                                                    <div class="tag__marker tag__marker_primary order-item__marker">Доставка</div>
+                                                </div>
+                                                <div class="order-item__price">12 500 ₽</div>
+                                            </div>
+                                            <div class="order-item__image-group">
+                                                <div class="basket-item__image"><img src="img/content/item-1.jpg" alt="" class="img-fluid"></div>
+                                                <div class="basket-item__image"><img src="img/content/item-1.jpg" alt="" class="img-fluid"></div>
+                                            </div>
+                                        </a>
+                                        <div class="collapse show" id="order-1">
+                                            <div class="order-item__body">
+                                                <div class="order-item__history bg-light">
+                                                    <div class="history-item d-flex">
+                                                        <div class="history-item__date">27-04-2022</div>
+                                                        <div class="history-item__text">Создан</div>
+                                                    </div>
+                                                    <div class="history-item d-flex">
+                                                        <div class="history-item__date">27-04-2022</div>
+                                                        <div class="history-item__text">Подтвержден магазином</div>
+                                                    </div>
+                                                    <div class="history-item d-flex history-item_current">
+                                                        <div class="history-item__date">27-04-2022</div>
+                                                        <div class="history-item__text">Доставка</div>
+                                                    </div>
+                                                </div>
+                                                <div class="order-item__group">
+                                                    <div class="order-item__title text-semibold title_margin-bottom-xs">Получатель:</div>
+                                                    <div class="row">
+                                                        <div class="col-lg-4">
+                                                            <p class="text_size-sm text-light">ФИО</p>
+                                                            <p class="text_size-sm">Иванов Борис Викторович</p>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <p class="text_size-sm text-light">Телефон</p>
+                                                            <p class="text_size-sm">+ 7 999 200-24-21</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="order-item__group order-item__group_margin">
+                                                    <div class="order-item__title text-semibold title_margin-bottom-xs">Параметры оплаты:</div>
+                                                    <p class="text_size-sm">Заказ №110605 от 27 апреля 2022 на сумму 12 500 рублей – <span class="text-primary">Оплачен картой онлайн.</span></p>
+                                                </div>
+                                                <div class="order-item__group">
+                                                    <div class="order-item__title text-semibold title_margin-bottom-xs">Параметры доставки:</div>
+                                                    <div class="row">
+                                                        <div class="col-lg-4">
+                                                            <p class="text_size-sm text-light">Способ доставки</p>
+                                                            <p class="text_size-sm">СДЕК <a href="#" class="text-primary link-underline">Отследить заказ</a></p>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <p class="text_size-sm text-light">Стоимость доставки</p>
+                                                            <p class="text_size-sm">250 рублей</p>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <p class="text_size-sm text-light">Дата доставки</p>
+                                                            <p class="text_size-sm">12 мая 2022, 09:00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="order-item__group mb-0 pt-2 pt-lg-0">
+                                                    <div class="order-item__title order-item__title_margin text-semibold title_margin-bottom-xs pb-1 pb-lg-0">Состав заказа</div>
+                                                    <div class="basket-item basket-item_order d-flex align-items-center">
+                                                        <a href="item.html" class="basket-item__image"><img src="img/content/item-1.jpg" alt="" class="img-fluid"></a>
+                                                        <div class="basket-item__content">
+                                                            <a href="item.html" class="basket-item__name">Масло КБД "Широкий спектр" 1800мг 6% GoldenSeed.life</a>
+                                                            <div class="basket-item__price-wrap d-flex align-items-center">
+                                                                <div class="text_size-md basket-item__price">12 500 ₽</div>
+                                                                <span class="text-primary text_size-xs">– 15%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="basket-item basket-item_order d-flex align-items-center">
+                                                        <a href="item.html" class="basket-item__image"><img src="img/content/item-1.jpg" alt="" class="img-fluid"></a>
+                                                        <div class="basket-item__content">
+                                                            <a href="item.html" class="basket-item__name">Масло КБД "Широкий спектр" 1800мг 6% GoldenSeed.life</a>
+                                                            <div class="basket-item__price-wrap d-flex align-items-center">
+                                                                <div class="text_size-md basket-item__price">12 500 ₽</div>
+                                                                <span class="text-primary text_size-xs">– 15%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="order-item__footer">
+                                                <a href="#" class="text-primary order-item__footer-link">Связаться с магазином</a>
+                                                <a href="#" class="text-light order-item__footer-link">Отменить заказ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /order-item -->
+                                    <!-- order-item -->
+                                    <div class="order-item">
+                                        <a href="#order-2" class="order-item__link" data-bs-toggle="collapse" aria-expanded="false">
+                                            <div class="order-item__header d-flex justify-content-between">
+                                                <div class="order-item__text">
+                                                    <div class="order-item__name text-semibold_md"><span class="icon icon-caret"></span> Заказ №110605 от 27 апреля 2022</div>
+                                                    <div class="tag__marker tag__marker_warning order-item__marker">Ожидает подтверждения</div>
+                                                </div>
+                                                <div class="order-item__price">12 500 ₽</div>
+                                            </div>
+                                            <div class="order-item__image-group">
+                                                <div class="basket-item__image"><img src="img/content/item-1.jpg" alt="" class="img-fluid"></div>
+                                                <div class="basket-item__image"><img src="img/content/item-1.jpg" alt="" class="img-fluid"></div>
+                                                <div class="basket-item__image"><img src="img/content/item-1.jpg" alt="" class="img-fluid"></div>
+                                            </div>
+                                        </a>
+                                        <div class="collapse" id="order-2">
+                                            <div class="order-item__body">
+                                                <div class="order-item__history bg-light">
+                                                    <div class="history-item d-flex">
+                                                        <div class="history-item__date">27-04-2022</div>
+                                                        <div class="history-item__text">Создан</div>
+                                                    </div>
+                                                    <div class="history-item d-flex">
+                                                        <div class="history-item__date">27-04-2022</div>
+                                                        <div class="history-item__text">Подтвержден магазином</div>
+                                                    </div>
+                                                    <div class="history-item d-flex history-item_current">
+                                                        <div class="history-item__date">27-04-2022</div>
+                                                        <div class="history-item__text">Доставка</div>
+                                                    </div>
+                                                </div>
+                                                <div class="order-item__group">
+                                                    <div class="order-item__title text-semibold title_margin-bottom-xs">Получатель:</div>
+                                                    <div class="row">
+                                                        <div class="col-lg-4">
+                                                            <p class="text_size-sm text-light">ФИО</p>
+                                                            <p class="text_size-sm">Иванов Борис Викторович</p>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <p class="text_size-sm text-light">Телефон</p>
+                                                            <p class="text_size-sm">+ 7 999 200-24-21</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="order-item__group">
+                                                    <div class="order-item__title text-semibold title_margin-bottom-xs">Параметры оплаты:</div>
+                                                    <p class="text_size-sm">Заказ №110605 от 27 апреля 2022 на сумму 12 500 рублей – <span class="text-primary">Оплачен картой онлайн.</span></p>
+                                                </div>
+                                                <div class="order-item__group">
+                                                    <div class="order-item__title text-semibold title_margin-bottom-xs">Параметры доставка:</div>
+                                                    <div class="row">
+                                                        <div class="col-lg-4">
+                                                            <p class="text_size-sm text-light">Способ доставки</p>
+                                                            <p class="text_size-sm">СДЕК <a href="#" class="text-primary link-underline">Отследить заказ</a></p>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <p class="text_size-sm text-light">Стоимость доставки</p>
+                                                            <p class="text_size-sm">250 рублей</p>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <p class="text_size-sm text-light">Дата доставки</p>
+                                                            <p class="text_size-sm">12 мая 2022, 09:00</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="order-item__group mb-0">
+                                                    <div class="order-item__title order-item__title_margin text-semibold title_margin-bottom-xs">Состав заказа</div>
+                                                    <div class="basket-item basket-item_order d-flex align-items-center">
+                                                        <a href="item.html" class="basket-item__image"><img src="img/content/item-1.jpg" alt="" class="img-fluid"></a>
+                                                        <div class="basket-item__content">
+                                                            <a href="item.html" class="basket-item__name">Масло КБД "Широкий спектр" 1800мг 6% GoldenSeed.life</a>
+                                                            <div class="basket-item__price-wrap d-flex align-items-center">
+                                                                <div class="text_size-md basket-item__price">12 500 ₽</div>
+                                                                <span class="text-primary text_size-xs">– 15%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="basket-item basket-item_order d-flex align-items-center">
+                                                        <a href="item.html" class="basket-item__image"><img src="img/content/item-1.jpg" alt="" class="img-fluid"></a>
+                                                        <div class="basket-item__content">
+                                                            <a href="item.html" class="basket-item__name">Масло КБД "Широкий спектр" 1800мг 6% GoldenSeed.life</a>
+                                                            <div class="basket-item__price-wrap d-flex align-items-center">
+                                                                <div class="text_size-md basket-item__price">12 500 ₽</div>
+                                                                <span class="text-primary text_size-xs">– 15%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="basket-item basket-item_order d-flex align-items-center">
+                                                        <a href="item.html" class="basket-item__image"><img src="img/content/item-1.jpg" alt="" class="img-fluid"></a>
+                                                        <div class="basket-item__content">
+                                                            <a href="item.html" class="basket-item__name">Масло КБД "Широкий спектр" 1800мг 6% GoldenSeed.life</a>
+                                                            <div class="basket-item__price-wrap d-flex align-items-center">
+                                                                <div class="text_size-md basket-item__price">12 500 ₽</div>
+                                                                <span class="text-primary text_size-xs">– 15%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="order-item__footer">
+                                                <a href="#" class="text-primary order-item__footer-link">Связаться с магазином</a>
+                                                <a href="#" class="text-light order-item__footer-link">Отменить заказ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /order-item -->
+                                </div>
+                                <div class="tab-pane tab-pane_padding" id="completed-orders" role="tabpanel" tabindex="0">
+                                    2
+                                </div>
+                                <div class="tab-pane tab-pane_padding" id="canceled-orders" role="tabpanel" tabindex="0">
+                                    3
+                                </div>
+                            </div>
+                        </main>
+                        <!-- /main -->
+                    </div>
+                </div>
+                <!-- /user-order -->
+                <!-- user-partners -->
+                <div class="tab-pane tab-pane-fixed tab-pane__user-partners active" id="user-partners" role="tabpanel" tabindex="0">
+                    <div class="back-block d-lg-none">
+                        <a href="#" class="close-tab"><span class="icon icon-arrow-left breadcrumb__icon"></span>Назад</a>
+                    </div>
+                    <div class="tab-pane__content">
+                        <div class="title_size-md text-semibold user__title">Партнерская программа</div>
+                        <div class="bg-light user-partners-block">
+                            <p>Приглашай друзей и получай бонусы. 
+                            <br>Оплачивай <span class="text-bold">до 100% продукции</span> на сайте бонусами.</p>
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-dark">Стать участником</a>
+                                <a href="#" class="btn btn-outline">Как это работает?</a>
                             </div>
                         </div>
                     </div>
-                    <div class="faq-item">
-                        <a href="#faq-2" class="faq-item__link text_size-md text-semibold collapsed" data-bs-toggle="collapse">Как получить возврат денежных средств?</a>
-                        <div class="collapse" id="faq-2">
-                            <div class="faq-item__body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum maiores fuga iure. Autem unde optio neque earum nulla laudantium quae ducimus nihil repellat accusantium excepturi rem, velit voluptate eum iste quisquam alias odio nisi doloremque, necessitatibus cum! Ab tenetur error cumque, tempore et similique impedit ad, debitis harum reiciendis alias!</p>
-                                <p><a href="#" class="text-light">Подробнее</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <a href="#faq-3" class="faq-item__link text_size-md text-semibold collapsed" data-bs-toggle="collapse">Что делать если денежные средства не возвращены?</a>
-                        <div class="collapse" id="faq-3">
-                            <div class="faq-item__body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum maiores fuga iure. Autem unde optio neque earum nulla laudantium quae ducimus nihil repellat accusantium excepturi rem, velit voluptate eum iste quisquam alias odio nisi doloremque, necessitatibus cum! Ab tenetur error cumque, tempore et similique impedit ad, debitis harum reiciendis alias!</p>
-                                <p><a href="#" class="text-light">Подробнее</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </main>
-                <!-- /main -->
+                </div>
+                <!-- /user-partners -->
             </div>
         </div>
         <!-- footer -->
@@ -454,17 +753,17 @@
                 </div>
                 <div class="d-none d-lg-block">
                     <div class="form-group">
-                        <p class="text-semibold mb-3">Хотите ли вы преобразовать результат дозировки CBD в капли основываясь на объёме и содержании CBD в вашем продукте?</p>
+                        <p class="text-semibold">Хотите ли вы преобразовать результат дозировки CBD в капли основываясь на объёме и содержании CBD в вашем продукте?</p>
                         <label class="radio-label d-flex align-items-center"><input type="radio" name="check" class="form-radio-input">Нет</label>
                         <label class="radio-label d-flex align-items-center"><input type="radio" name="check" class="form-radio-input" checked="">Да</label>
                     </div>
                     <div class="form-group pt-1">
                         <label class="label label_md">Каков общий объем в мл вашего продукта CBD?</label>
-                        <input type="text" class="form-control form-control_md form-control_primary" value="30 ml">
+                        <input type="text" class="form-control form-control_md" value="30 ml">
                     </div>
                     <div class="form-group_margin-md">
                         <label class="label label_md">Каково общее количество CBD в продукте в миллиграммах?</label>
-                        <input type="text" class="form-control form-control_md form-control_primary" value="1800 mg">
+                        <input type="text" class="form-control form-control_md" value="1800 mg">
                     </div>
                 </div>
                 <div class="form-group_margin-md form-group_margin-md-tablet">
@@ -654,7 +953,9 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
+    <script src="js/datepicker-ru.js"></script>
     <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/stacktable.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
