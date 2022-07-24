@@ -14,8 +14,9 @@
     <div class="wrap">
         <!-- header -->
         <header class="header">
+             
             <div class="container">
-                <div class="d-flex align-items-end pos-rel">
+                <div class="d-flex align-items-end pos-rel header__top">
                     <a href="#nav" class="btn-menu d-lg-none pane-open">
                         <span class="btn-menu__item"></span>
                         <span class="btn-menu__item"></span>
@@ -29,7 +30,7 @@
                         <span class="d-none d-lg-block">8 (800) 550-19-82</span>
                         <span class="icon icon-phone d-lg-none"></span>
                     </a>
-                    <a href="#help" class="btn btn_size-xs btn-primary header__btn d-none d-lg-inline-flex" data-bs-toggle="modal">Нужна помощь?</a>
+                    <a href="#help" class="btn btn_size-xs btn-primary header__btn header__btn_home d-none d-lg-inline-flex" data-bs-toggle="modal">Нужна помощь?</a>
                     <div class="icons-nav d-flex align-items-center">
                         <a href="#search" class="icons-nav__link search-btn d-none d-lg-block" data-bs-toggle="collapse">
                             <span class="icon icon-search"></span>
@@ -56,7 +57,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="d-flex header__bottom">
+                <div class="header__bottom">
                     <a href="#location-pane" class="location-link d-lg-flex align-items-center pane-open d-none pos-rel">
                         <div class="icon-location icon"></div>
                         <div class="location-link__name">Санкт-Петербург</div>
@@ -78,7 +79,14 @@
                             <li class="nav-list__item"><a href="about-cbd.html" class="nav-list__link">О CBD</a></li>
                             <li class="nav-list__item"><a href="faq.html" class="nav-list__link">Вопросы</a></li>
                             <li class="nav-list__item d-lg-none"><a href="#help" class="btn btn_size-xs btn-primary header__btn" data-bs-toggle="modal">Нужна помощь?</a></li>
-                            <li class="nav-list__item nav-list__item_last d-none d-lg-block"><a href="#" class="nav-list__link"><span class="icon icon-dots"></span></a></li>
+                            <li class="nav-list__item nav-list__item_last d-none d-lg-block dropdown">
+                                <a href="#" class="nav-list__link" data-bs-toggle="dropdown"><span class="icon icon-dots"></span></a>
+                                <ul class="dropdown-menu dropdown-menu_right dropdown-menu_nav">
+                                    <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Дополнительный пункт меню 1</a></li>
+                                    <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link active">Дополнительный пункт меню 2</a></li>
+                                    <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Дополнительный пункт меню 3</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </nav>
                     <!-- /nav -->
@@ -441,9 +449,9 @@
                         </div>
                         <div class="d-flex text_size-xs">
                             <a href="#" class="text-primary basket-item__favorite"><span class="icon icon-favotire-primary"></span>В избранное</a>
-                            <a href="#" class="text-light remove-link">Удалить</a>
                         </div>
                     </div>
+                    <a href="#" class="text-light remove-link icon icon-del"></a>
                 </div>
             </div>
             <!-- /basket-item -->
@@ -471,9 +479,9 @@
                         </div>
                         <div class="d-flex text_size-xs">
                             <a href="#" class="text-primary basket-item__favorite"><span class="icon icon-favotire-primary"></span>В избранное</a>
-                            <a href="#" class="text-light remove-link">Удалить</a>
                         </div>
                     </div>
+                    <a href="#" class="text-light remove-link icon icon-del"></a>
                 </div>
             </div>
             <!-- /basket-item -->
@@ -501,9 +509,9 @@
                         </div>
                         <div class="d-flex text_size-xs">
                             <a href="#" class="text-primary basket-item__favorite"><span class="icon icon-favotire-primary"></span>В избранное</a>
-                            <a href="#" class="text-light remove-link">Удалить</a>
                         </div>
                     </div>
+                    <a href="#" class="text-light remove-link icon icon-del"></a>
                 </div>
             </div>
             <!-- /basket-item -->
@@ -529,24 +537,49 @@
             <div class="pane__header">
                 <a href="#" class="calculator-pane__close pane-close icon icon-close"></a>
             </div>
-            <div class="title_size-md text-semibold title_margin-bottom-sm calculator-pane__title">Калькулятор дозировки</div>
+            <div class="title_size-md text-semibold title_margin-bottom-sm calculator-pane__title">Калькулятор дозировки
+            </div>
             <p>Рассчитайте свою дозировку КБД основываясь на весе вашего тела и цели использования с нашей формой расчета дозировки.</p>
             <form action="#" class="calculator-pane__form">
                 <div class="form-group">
                     <label class="label label_md">Недуг</label>
-                    <select name="disease" id="disease" class="form-control form-control_md">
-                        <option value="Биполярное расстройство">Биполярное расстройство</option>
-                        <option value="Биполярное расстройство">Биполярное расстройство</option>
-                        <option value="Биполярное расстройство">Биполярное расстройство</option>
-                    </select>
+                    <div class="fake-select">
+                        <a href="#" class="fake-select__link dropdown-toggle form-control form-control_md" data-bs-toggle="dropdown"><span class="fake-select__value">Биполярное расстройство</span></a>
+                        <div class="dropdown-menu fake-select__dropdown">
+                            <label class="fake-select__item fake-select__item_active">
+                                <input type="radio" class="collapse" name="ailment" checked>
+                                Биполярное расстройство
+                            </label>
+                            <label class="fake-select__item">
+                                <input type="radio" class="collapse" name="ailment">
+                                Биполярное расстройство
+                            </label>
+                            <label class="fake-select__item">
+                                <input type="radio" class="collapse" name="ailment">
+                                Биполярное расстройство
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label class="label label_md">Форма</label>
-                    <select name="disease" id="disease" class="form-control form-control_md">
-                        <option value="Легкая">Легкая</option>
-                        <option value="Средняя">Средняя</option>
-                        <option value="Тяжелая">Тяжелая</option>
-                    </select>
+                    <div class="fake-select">
+                        <a href="#" class="fake-select__link dropdown-toggle form-control form-control_md" data-bs-toggle="dropdown"><span class="fake-select__value">Легкая</span></a>
+                        <div class="dropdown-menu fake-select__dropdown">
+                            <label class="fake-select__item fake-select__item_active">
+                                <input type="radio" class="collapse" name="form" checked>
+                                Легкая
+                            </label>
+                            <label class="fake-select__item">
+                                <input type="radio" class="collapse" name="form">
+                                Средняя
+                            </label>
+                            <label class="fake-select__item">
+                                <input type="radio" class="collapse" name="form">
+                                Тяжелая
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label class="label label_md">Вес</label>
@@ -554,7 +587,11 @@
                         <div class="d-flex">
                             <input type="text" class="range-value" id="mass-range-value" readonly="">
                         </div>
-                        <div id="mass-range" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min" style="width: 24.5455%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 24.5455%;"></span></div>
+                        <div id="mass-range"
+                            class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                            <div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min" style="width: 24.5455%;"></div>
+                                <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 24.5455%;"></span>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group_margin-sm pb-2 pb-lg-0">
@@ -563,7 +600,7 @@
                 </div>
                 <div class="d-none d-lg-block">
                     <div class="form-group">
-                        <p class="text-semibold mb-3">Хотите ли вы преобразовать результат дозировки CBD в капли основываясь на объёме и содержании CBD в вашем продукте?</p>
+                        <p class="text-semibold mb-3">Хотите ли вы преобразовать результат дозировки CBD в капли  основываясь на объёме и содержании CBD в вашем продукте?</p>
                         <label class="radio-label d-flex align-items-center"><input type="radio" name="check" class="form-radio-input">Нет</label>
                         <label class="radio-label d-flex align-items-center"><input type="radio" name="check" class="form-radio-input" checked="">Да</label>
                     </div>
@@ -630,17 +667,45 @@
                 <div class="pane__header d-md-none"></div>
                 <button type="button" class="icon modal__close icon-close" data-bs-dismiss="modal"></button>
                 <div class="modal__body">
-                    <div class="title_size-md title_margin-bottom-xs modal__title">Войти или зарегистрироваться</div>
-                    <p class="text_size-sm">Мы отправим на номер SMS-сообщение с кодом подтверждения.</p>
-                    <form action="#" class="modal__form">
-                        <div class="form-group_margin-sm">
-                            <label class="label">Введите телефон</label>
-                            <input type="tel" class="form-control" value="+7">
+                    <div class="tab-content" id="documentsTabContent">
+                        <div class="tab-pane show active" id="phone" role="tabpanel" tabindex="0">
+                            <div class="title_size-md title_margin-bottom-xs modal__title">Войти или зарегистрироваться</div>
+                            <p class="text_size-sm">Мы отправим на номер SMS-сообщение с кодом подтверждения.</p>
+                            <form action="#" class="modal__form">
+                                <div class="form-group_margin-sm">
+                                    <label class="label">Введите телефон</label>
+                                    <input type="tel" class="form-control" value="+7">
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-dark w-100 modal__btn" data-bs-toggle="modal" data-bs-target="#code">Получить код</button>
+                                </div>
+                            </form>
                         </div>
-                        <div class="form-group">
-                            <button class="btn btn-dark w-100 modal__btn" data-bs-toggle="modal" data-bs-target="#code">Получить код</button>
+                        <div class="tab-pane" id="email" role="tabpanel" tabindex="0">
+                            <div class="title_size-md title_margin-bottom-xs modal__title">Войдите по почте</div>
+                            <p class="text_size-sm">Только для зарегистрированных пользователей</p>
+                            <form action="#" class="modal__form">
+                                <div class="form-group_margin-md pb-0 pb-lg-2">
+                                    <label class="label">Электронная почта</label>
+                                    <input type="email" class="form-control" value="grisha@mail.ru">
+                                </div>
+                                <div class="form-group_margin-sm">
+                                    <input type="text" class="form-control" placeholder="Пароль">
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-dark w-100 modal__btn">Войти</button>
+                                </div>
+                            </form>
                         </div>
-                    </form>
+                    </div>
+                    <ul class="nav tab-nav modal__tab-nav" id="documents-nav" role="tablist">
+                        <li class="tab-nav__item" role="presentation">
+                            <a class="tab-nav__link" data-bs-toggle="tab" href="#email" role="tab" aria-selected="false">Войти по почте и паролю</a>
+                        </li>
+                        <li class="tab-nav__item" role="presentation">
+                            <a class="tab-nav__link active" data-bs-toggle="tab" href="#phone" role="tab" aria-selected="false">Войти по номеру телефона</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

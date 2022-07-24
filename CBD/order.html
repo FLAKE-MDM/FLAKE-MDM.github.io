@@ -13,104 +13,111 @@
 <body>
     <div class="wrap">
         <!-- header -->
-        <header class="header d-none d-lg-block">
-            <div class="container">
-                <div class="d-flex align-items-end pos-rel">
-                    <a href="#nav" class="btn-menu d-lg-none pane-open">
-                        <span class="btn-menu__item"></span>
-                        <span class="btn-menu__item"></span>
-                        <span class="btn-menu__item"></span>
-                    </a>
-                    <a href="index.html" class="logo header__logo">
-                        <img src="img/logo.svg" alt="" class="img-fluid hidden-inversion">
-                        <img src="img/logo-inversion.svg" alt="" class="img-fluid visible-inversion">
-                    </a>
-                    <a href="tel:88005501982" class="phone header__phone d-md-inline-flex">
-                        <span class="d-none d-lg-block">8 (800) 550-19-82</span>
-                        <span class="icon icon-phone d-lg-none"></span>
-                    </a>
-                    <a href="#help" class="btn btn_size-xs btn-primary header__btn d-none d-lg-inline-flex" data-bs-toggle="modal">Нужна помощь?</a>
-                    <div class="icons-nav d-flex align-items-center">
-                        <a href="#search" class="icons-nav__link search-btn d-none d-lg-block" data-bs-toggle="collapse">
-                            <span class="icon icon-search"></span>
-                        </a>
-                        <a href="index.html" class="icons-nav__link active d-lg-none">
-                            <span class="icon icon-home"></span>
-                            <div class="icons-nav__text">Главная</div>
-                        </a>
-                        <a href="catalogue.html" class="icons-nav__link icons-nav__link-catalogue d-lg-none">
-                            <span class="icon icon-catalogue"></span>
-                            <div class="icons-nav__text">Каталог</div>
-                        </a>
-                        <a href="#basket-pane" class="icons-nav__link pane-open-close order-lg-1">
-                            <span class="icon icon-basket"><span class="icons-nav__count">3</span></span>
-                            <div class="icons-nav__text d-lg-none">Корзина</div>
-                        </a>
-                        <a href="favorites.html" class="icons-nav__link">
-                            <span class="icon icon-favorite"></span>
-                            <div class="icons-nav__text d-lg-none">Избранное</div>
-                        </a>
-                        <a href="#login" class="icons-nav__link order-2" data-bs-toggle="modal">
-                            <span class="icon icon-login"></span>
-                            <div class="icons-nav__text d-lg-none">Профиль</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="d-flex header__bottom">
-                    <a href="#location-pane" class="location-link d-lg-flex align-items-center pane-open d-none pos-rel">
-                        <div class="icon-location icon"></div>
-                        <div class="location-link__name">Санкт-Петербург</div>
-                    </a>
-                    <!-- nav -->
-                    <nav class="nav header__nav pane pane_left" id="nav">
-                        <a href="#" class="icon icon-close nav__close d-lg-none pane-close"></a>
-                        <a href="#location-pane" class="location-link d-flex align-items-center pane-open d-lg-none">
-                            <div class="icon-location icon"></div>
-                            <div class="location-link__name">Санкт-Петербург</div>
-                        </a>
-                        <ul class="nav-list d-lg-flex">
-                            <li class="nav-list__item"><a href="catalogue.html" class="nav-list__link">Каталог</a></li>
-                            <li class="nav-list__item"><a href="about.html" class="nav-list__link">О нас</a></li>
-                            <li class="nav-list__item"><a href="brands.html" class="nav-list__link">Бренды</a></li>
-                            <li class="nav-list__item"><a href="stock.html" class="nav-list__link">Акции</a></li>
-                            <li class="nav-list__item"><a href="calculator.html" class="nav-list__link">Калькулятор дозировки</a></li>
-                            <li class="nav-list__item"><a href="blog.html" class="nav-list__link">Блог</a></li>
-                            <li class="nav-list__item"><a href="about-cbd.html" class="nav-list__link">О CBD</a></li>
-                            <li class="nav-list__item"><a href="faq.html" class="nav-list__link">Вопросы</a></li>
-                            <li class="nav-list__item d-lg-none"><a href="#help" class="btn btn_size-xs btn-primary header__btn" data-bs-toggle="modal">Нужна помощь?</a></li>
-                            <li class="nav-list__item nav-list__item_last d-none d-lg-block"><a href="#" class="nav-list__link"><span class="icon icon-dots"></span></a></li>
-                        </ul>
-                    </nav>
-                    <!-- /nav -->
-                </div>
-            </div>
-            <!-- search -->
-            <div class="search collapse" id="search">
-                <div class="search__form">
-                    <div class="container">
-                        <form action="#">
-                            <div class="d-flex align-items-center">
-                                <input type="text" id="search-input" class="search__input" placeholder="Что ищем?">
-                                <button class="search__btn icon icon-arrow"></button>
-                                <a href="#search" class="close icon icon-close search-btn" data-bs-toggle="collapse"></a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="container">
-                    <ul class="search-list">
-                        <li class="search-list__item"><a href="#" class="search-list__link">Масло КБД</a></li>
-                        <li class="search-list__item"><a href="#" class="text-light search-list__link">Чай с КБД</a></li>
-                        <li class="search-list__item"><a href="#" class="text-light search-list__link">Жидкость для вейпа с КБД</a></li>
-                        <li class="search-list__item"><a href="#" class="text-light search-list__link">Косметика с КБД</a></li>
-                        <li class="search-list__item"><a href="#" class="text-light search-list__link">Пищевые продукты с КБД</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- /search -->
-            <a href="#" class="pane-close nav-pane-close__link"></a>
-        </header>
-        <!-- /header -->
+        <header class="header">
+           <div class="container">
+               <div class="d-flex align-items-end pos-rel header__top">
+                   <a href="#nav" class="btn-menu d-lg-none pane-open">
+                       <span class="btn-menu__item"></span>
+                       <span class="btn-menu__item"></span>
+                       <span class="btn-menu__item"></span>
+                   </a>
+                   <a href="index.html" class="logo header__logo">
+                       <img src="img/logo.svg" alt="" class="img-fluid hidden-inversion">
+                       <img src="img/logo-inversion.svg" alt="" class="img-fluid visible-inversion">
+                   </a>
+                   <a href="tel:88005501982" class="phone header__phone d-md-inline-flex">
+                       <span class="d-none d-lg-block">8 (800) 550-19-82</span>
+                       <span class="icon icon-phone d-lg-none"></span>
+                   </a>
+                   <a href="#help" class="btn btn_size-xs btn-primary header__btn header__btn_home d-none d-lg-inline-flex" data-bs-toggle="modal">Нужна помощь?</a>
+                   <div class="icons-nav d-flex align-items-center">
+                       <a href="#search" class="icons-nav__link search-btn d-none d-lg-block" data-bs-toggle="collapse">
+                           <span class="icon icon-search"></span>
+                       </a>
+                       <a href="index.html" class="icons-nav__link active d-lg-none">
+                           <span class="icon icon-home"></span>
+                           <div class="icons-nav__text">Главная</div>
+                       </a>
+                       <a href="catalogue.html" class="icons-nav__link icons-nav__link-catalogue d-lg-none">
+                           <span class="icon icon-catalogue"></span>
+                           <div class="icons-nav__text">Каталог</div>
+                       </a>
+                       <a href="#basket-pane" class="icons-nav__link pane-open-close order-lg-1">
+                           <span class="icon icon-basket"><span class="icons-nav__count">3</span></span>
+                           <div class="icons-nav__text d-lg-none">Корзина</div>
+                       </a>
+                       <a href="favorites.html" class="icons-nav__link">
+                           <span class="icon icon-favorite"></span>
+                           <div class="icons-nav__text d-lg-none">Избранное</div>
+                       </a>
+                       <a href="#login" class="icons-nav__link order-2" data-bs-toggle="modal">
+                           <span class="icon icon-login"></span>
+                           <div class="icons-nav__text d-lg-none">Профиль</div>
+                       </a>
+                   </div>
+               </div>
+               <div class="header__bottom">
+                   <a href="#location-pane" class="location-link d-lg-flex align-items-center pane-open d-none pos-rel">
+                       <div class="icon-location icon"></div>
+                       <div class="location-link__name">Санкт-Петербург</div>
+                   </a>
+                   <!-- nav -->
+                   <nav class="nav header__nav pane pane_left" id="nav">
+                       <a href="#" class="icon icon-close nav__close d-lg-none pane-close"></a>
+                       <a href="#location-pane" class="location-link d-flex align-items-center pane-open d-lg-none">
+                           <div class="icon-location icon"></div>
+                           <div class="location-link__name">Санкт-Петербург</div>
+                       </a>
+                       <ul class="nav-list d-lg-flex">
+                           <li class="nav-list__item"><a href="catalogue.html" class="nav-list__link">Каталог</a></li>
+                           <li class="nav-list__item"><a href="about.html" class="nav-list__link">О нас</a></li>
+                           <li class="nav-list__item"><a href="brands.html" class="nav-list__link">Бренды</a></li>
+                           <li class="nav-list__item"><a href="stock.html" class="nav-list__link">Акции</a></li>
+                           <li class="nav-list__item"><a href="calculator.html" class="nav-list__link">Калькулятор дозировки</a></li>
+                           <li class="nav-list__item"><a href="blog.html" class="nav-list__link">Блог</a></li>
+                           <li class="nav-list__item"><a href="about-cbd.html" class="nav-list__link">О CBD</a></li>
+                           <li class="nav-list__item"><a href="faq.html" class="nav-list__link">Вопросы</a></li>
+                           <li class="nav-list__item d-lg-none"><a href="#help" class="btn btn_size-xs btn-primary header__btn" data-bs-toggle="modal">Нужна помощь?</a></li>
+                           <li class="nav-list__item nav-list__item_last d-none d-lg-block dropdown">
+                               <a href="#" class="nav-list__link" data-bs-toggle="dropdown"><span class="icon icon-dots"></span></a>
+                               <ul class="dropdown-menu dropdown-menu_right dropdown-menu_nav">
+                                   <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Дополнительный пункт меню 1</a></li>
+                                   <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link active">Дополнительный пункт меню 2</a></li>
+                                   <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Дополнительный пункт меню 3</a></li>
+                               </ul>
+                           </li>
+                       </ul>
+                   </nav>
+                   <!-- /nav -->
+               </div>
+           </div>
+           <!-- search -->
+           <div class="search collapse" id="search">
+               <div class="search__form">
+                   <div class="container">
+                       <form action="#">
+                           <div class="d-flex align-items-center">
+                               <input type="text" id="search-input" class="search__input" placeholder="Что ищем?">
+                               <button class="search__btn icon icon-arrow"></button>
+                               <a href="#search" class="close icon icon-close search-btn" data-bs-toggle="collapse"></a>
+                           </div>
+                       </form>
+                   </div>
+               </div>
+               <div class="container">
+                   <ul class="search-list">
+                       <li class="search-list__item"><a href="#" class="search-list__link">Масло КБД</a></li>
+                       <li class="search-list__item"><a href="#" class="text-light search-list__link">Чай с КБД</a></li>
+                       <li class="search-list__item"><a href="#" class="text-light search-list__link">Жидкость для вейпа с КБД</a></li>
+                       <li class="search-list__item"><a href="#" class="text-light search-list__link">Косметика с КБД</a></li>
+                       <li class="search-list__item"><a href="#" class="text-light search-list__link">Пищевые продукты с КБД</a></li>
+                   </ul>
+               </div>
+           </div>
+           <!-- /search -->
+           <a href="#" class="pane-close nav-pane-close__link"></a>
+       </header>
+       <!-- /header -->
         <div class="content bg-tablet-dark">
             <div class="container">
                 <div class="back-block">
@@ -156,9 +163,9 @@
                                                     </div>
                                                     <div class="d-flex text_size-xs">
                                                         <a href="#" class="text-primary basket-item__favorite"><span class="icon icon-favotire-primary"></span>В избранное</a>
-                                                        <a href="#" class="text-light remove-link">Удалить</a>
                                                     </div>
                                                 </div>
+                                                <a href="#" class="text-light remove-link icon icon-del"></a>
                                             </div>
                                         </div>
                                         <!-- /basket-item -->
@@ -186,9 +193,9 @@
                                                     </div>
                                                     <div class="d-flex text_size-xs">
                                                         <a href="#" class="text-primary basket-item__favorite"><span class="icon icon-favotire-primary"></span>В избранное</a>
-                                                        <a href="#" class="text-light remove-link">Удалить</a>
                                                     </div>
                                                 </div>
+                                                <a href="#" class="text-light remove-link icon icon-del"></a>
                                             </div>
                                         </div>
                                         <!-- /basket-item -->
@@ -216,9 +223,9 @@
                                                     </div>
                                                     <div class="d-flex text_size-xs">
                                                         <a href="#" class="text-primary basket-item__favorite"><span class="icon icon-favotire-primary"></span>В избранное</a>
-                                                        <a href="#" class="text-light remove-link">Удалить</a>
                                                     </div>
                                                 </div>
+                                                <a href="#" class="text-light remove-link icon icon-del"></a>
                                             </div>
                                         </div>
                                         <!-- /basket-item -->
@@ -564,9 +571,9 @@
                         </div>
                         <div class="d-flex text_size-xs">
                             <a href="#" class="text-primary basket-item__favorite"><span class="icon icon-favotire-primary"></span>В избранное</a>
-                            <a href="#" class="text-light remove-link">Удалить</a>
                         </div>
                     </div>
+                    <a href="#" class="text-light remove-link icon icon-del"></a>
                 </div>
             </div>
             <!-- /basket-item -->
@@ -594,9 +601,9 @@
                         </div>
                         <div class="d-flex text_size-xs">
                             <a href="#" class="text-primary basket-item__favorite"><span class="icon icon-favotire-primary"></span>В избранное</a>
-                            <a href="#" class="text-light remove-link">Удалить</a>
                         </div>
                     </div>
+                    <a href="#" class="text-light remove-link icon icon-del"></a>
                 </div>
             </div>
             <!-- /basket-item -->
@@ -624,9 +631,9 @@
                         </div>
                         <div class="d-flex text_size-xs">
                             <a href="#" class="text-primary basket-item__favorite"><span class="icon icon-favotire-primary"></span>В избранное</a>
-                            <a href="#" class="text-light remove-link">Удалить</a>
                         </div>
                     </div>
+                    <a href="#" class="text-light remove-link icon icon-del"></a>
                 </div>
             </div>
             <!-- /basket-item -->
@@ -652,24 +659,49 @@
             <div class="pane__header">
                 <a href="#" class="calculator-pane__close pane-close icon icon-close"></a>
             </div>
-            <div class="title_size-md text-semibold title_margin-bottom-sm calculator-pane__title">Калькулятор дозировки</div>
+            <div class="title_size-md text-semibold title_margin-bottom-sm calculator-pane__title">Калькулятор дозировки
+            </div>
             <p>Рассчитайте свою дозировку КБД основываясь на весе вашего тела и цели использования с нашей формой расчета дозировки.</p>
             <form action="#" class="calculator-pane__form">
                 <div class="form-group">
                     <label class="label label_md">Недуг</label>
-                    <select name="disease" id="disease" class="form-control form-control_md">
-                        <option value="Биполярное расстройство">Биполярное расстройство</option>
-                        <option value="Биполярное расстройство">Биполярное расстройство</option>
-                        <option value="Биполярное расстройство">Биполярное расстройство</option>
-                    </select>
+                    <div class="fake-select">
+                        <a href="#" class="fake-select__link dropdown-toggle form-control form-control_md" data-bs-toggle="dropdown"><span class="fake-select__value">Биполярное расстройство</span></a>
+                        <div class="dropdown-menu fake-select__dropdown">
+                            <label class="fake-select__item fake-select__item_active">
+                                <input type="radio" class="collapse" name="ailment" checked>
+                                Биполярное расстройство
+                            </label>
+                            <label class="fake-select__item">
+                                <input type="radio" class="collapse" name="ailment">
+                                Биполярное расстройство
+                            </label>
+                            <label class="fake-select__item">
+                                <input type="radio" class="collapse" name="ailment">
+                                Биполярное расстройство
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label class="label label_md">Форма</label>
-                    <select name="disease" id="disease" class="form-control form-control_md">
-                        <option value="Легкая">Легкая</option>
-                        <option value="Средняя">Средняя</option>
-                        <option value="Тяжелая">Тяжелая</option>
-                    </select>
+                    <div class="fake-select">
+                        <a href="#" class="fake-select__link dropdown-toggle form-control form-control_md" data-bs-toggle="dropdown"><span class="fake-select__value">Легкая</span></a>
+                        <div class="dropdown-menu fake-select__dropdown">
+                            <label class="fake-select__item fake-select__item_active">
+                                <input type="radio" class="collapse" name="form" checked>
+                                Легкая
+                            </label>
+                            <label class="fake-select__item">
+                                <input type="radio" class="collapse" name="form">
+                                Средняя
+                            </label>
+                            <label class="fake-select__item">
+                                <input type="radio" class="collapse" name="form">
+                                Тяжелая
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label class="label label_md">Вес</label>
@@ -677,7 +709,11 @@
                         <div class="d-flex">
                             <input type="text" class="range-value" id="mass-range-value" readonly="">
                         </div>
-                        <div id="mass-range" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min" style="width: 24.5455%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 24.5455%;"></span></div>
+                        <div id="mass-range"
+                            class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                            <div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min" style="width: 24.5455%;"></div>
+                                <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 24.5455%;"></span>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group_margin-sm pb-2 pb-lg-0">
@@ -686,7 +722,7 @@
                 </div>
                 <div class="d-none d-lg-block">
                     <div class="form-group">
-                        <p class="text-semibold mb-3">Хотите ли вы преобразовать результат дозировки CBD в капли основываясь на объёме и содержании CBD в вашем продукте?</p>
+                        <p class="text-semibold mb-3">Хотите ли вы преобразовать результат дозировки CBD в капли  основываясь на объёме и содержании CBD в вашем продукте?</p>
                         <label class="radio-label d-flex align-items-center"><input type="radio" name="check" class="form-radio-input">Нет</label>
                         <label class="radio-label d-flex align-items-center"><input type="radio" name="check" class="form-radio-input" checked="">Да</label>
                     </div>
@@ -763,17 +799,45 @@
                 <div class="pane__header d-md-none"></div>
                 <button type="button" class="icon modal__close icon-close" data-bs-dismiss="modal"></button>
                 <div class="modal__body">
-                    <div class="title_size-md title_margin-bottom-xs modal__title">Войти или зарегистрироваться</div>
-                    <p class="text_size-sm">Мы отправим на номер SMS-сообщение с кодом подтверждения.</p>
-                    <form action="#" class="modal__form">
-                        <div class="form-group_margin-sm">
-                            <label class="label">Введите телефон</label>
-                            <input type="tel" class="form-control" value="+7">
+                    <div class="tab-content" id="documentsTabContent">
+                        <div class="tab-pane show active" id="phone" role="tabpanel" tabindex="0">
+                            <div class="title_size-md title_margin-bottom-xs modal__title">Войти или зарегистрироваться</div>
+                            <p class="text_size-sm">Мы отправим на номер SMS-сообщение с кодом подтверждения.</p>
+                            <form action="#" class="modal__form">
+                                <div class="form-group_margin-sm">
+                                    <label class="label">Введите телефон</label>
+                                    <input type="tel" class="form-control" value="+7">
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-dark w-100 modal__btn" data-bs-toggle="modal" data-bs-target="#code">Получить код</button>
+                                </div>
+                            </form>
                         </div>
-                        <div class="form-group">
-                            <button class="btn btn-dark w-100 modal__btn" data-bs-toggle="modal" data-bs-target="#code">Получить код</button>
+                        <div class="tab-pane" id="email" role="tabpanel" tabindex="0">
+                            <div class="title_size-md title_margin-bottom-xs modal__title">Войдите по почте</div>
+                            <p class="text_size-sm">Только для зарегистрированных пользователей</p>
+                            <form action="#" class="modal__form">
+                                <div class="form-group_margin-md pb-0 pb-lg-2">
+                                    <label class="label">Электронная почта</label>
+                                    <input type="email" class="form-control" value="grisha@mail.ru">
+                                </div>
+                                <div class="form-group_margin-sm">
+                                    <input type="text" class="form-control" placeholder="Пароль">
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-dark w-100 modal__btn">Войти</button>
+                                </div>
+                            </form>
                         </div>
-                    </form>
+                    </div>
+                    <ul class="nav tab-nav modal__tab-nav" id="documents-nav" role="tablist">
+                        <li class="tab-nav__item" role="presentation">
+                            <a class="tab-nav__link" data-bs-toggle="tab" href="#email" role="tab" aria-selected="false">Войти по почте и паролю</a>
+                        </li>
+                        <li class="tab-nav__item" role="presentation">
+                            <a class="tab-nav__link active" data-bs-toggle="tab" href="#phone" role="tab" aria-selected="false">Войти по номеру телефона</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
