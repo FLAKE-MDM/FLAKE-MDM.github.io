@@ -5282,6 +5282,7 @@ select.form-control {
             transform: none !important;
     position: static;
     overflow: visible;
+    z-index: 2;
   }
 }
 
