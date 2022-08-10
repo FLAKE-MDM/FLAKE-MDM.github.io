@@ -269,7 +269,7 @@ $('.tag-del').click(function(){
 
 // fake-select
 $('.fake-select__item').click(function(){
-  $('.fake-select__item').removeClass('fake-select__item_active');
+  $('.fake-select__item').removeClass('fake-select__item_active active');
   $(this).addClass('fake-select__item_active');
   $(this).parents('.fake-select').find('.fake-select__value').html(this.innerHTML)
   $(this).parents('.fake-select').find('.fake-select__link').addClass('active');

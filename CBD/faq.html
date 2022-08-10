@@ -133,20 +133,11 @@
                     <label for class="wrap-select__label">Выбран раздел:</label>
                     <div class="fake-select">
                         <a href="#" class="fake-select__link dropdown-toggle form-control form-control_md wrap-select__form-control" data-bs-toggle="dropdown"><span class="fake-select__value">Общие вопросы</span></a>
-                        <div class="dropdown-menu fake-select__dropdown">
-                            <label class="fake-select__item fake-select__item_active">
-                                <input type="radio" class="collapse" name="ailment" checked>
-                                Общие вопросы
-                            </label>
-                            <label class="fake-select__item">
-                                <input type="radio" class="collapse" name="ailment">
-                                Вопросы 1
-                            </label>
-                            <label class="fake-select__item">
-                                <input type="radio" class="collapse" name="ailment">
-                                Вопросы 2
-                            </label>
-                        </div>
+                        <ul class="dropdown-menu fake-select__dropdown nav" role="tablist">
+                            <a data-bs-toggle="tab" href="#faq-section-1" role="tab" aria-selected="true" class="fake-select__item fake-select__item_active">Общие вопросы</a>
+                            <a data-bs-toggle="tab" href="#faq-section-2" role="tab" aria-selected="false" class="fake-select__item">Вопросы 1</a>
+                            <a data-bs-toggle="tab" href="#faq-section-3" role="tab" aria-selected="false" class="fake-select__item"> Вопросы 2</a>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -154,48 +145,83 @@
         <!-- faq-section -->
         <div class="faq-section bg-dark">
             <div class="container">
-                <div class="faq-item">
-                    <a href="#faq-1" class="faq-item__link text_size-md text-semibold" data-bs-toggle="collapse">Как правильно рассчитать дозировку масла CBD?</a>
-                    <div class="collapse show" id="faq-1">
-                        <div class="faq-item__body">
-                            <p>Правильная дозировка масла КБД зависит от индивидуальных особенностей человека. Это и разный уровень восприимчивости продукта, и отличающаяся эндоканнабиноидная система, и различное состояние здоровья каждого человека. Стандартная дозировка может воздействовать на двух людей по-разному.</p>
-                            <p><a href="#" class="text-light">Подробнее</a></p>
+                <div class="tab-content" id="documentsTabContent">
+                    <div class="tab-pane show active" id="faq-section-1" role="tabpanel" tabindex="0">
+                        <div class="faq-item">
+                            <a href="#faq-1" class="faq-item__link text_size-md text-semibold" data-bs-toggle="collapse">Как правильно рассчитать дозировку масла CBD?</a>
+                            <div class="collapse show" id="faq-1">
+                                <div class="faq-item__body">
+                                    <p>Правильная дозировка масла КБД зависит от индивидуальных особенностей человека. Это и разный уровень восприимчивости продукта, и отличающаяся эндоканнабиноидная система, и различное состояние здоровья каждого человека. Стандартная дозировка может воздействовать на двух людей по-разному.</p>
+                                    <p><a href="#" class="text-light">Подробнее</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <a href="#faq-2" class="faq-item__link text_size-md text-semibold collapsed" data-bs-toggle="collapse">Как принимать масло CBD?</a>
+                            <div class="collapse" id="faq-2">
+                                <div class="faq-item__body">
+                                    <p>Правильная дозировка масла КБД зависит от индивидуальных особенностей человека. Это и разный уровень восприимчивости продукта, и отличающаяся эндоканнабиноидная система, и различное состояние здоровья каждого человека. Стандартная дозировка может воздействовать на двух людей по-разному.</p>
+                                    <p><a href="#" class="text-light">Подробнее</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <a href="#faq-3" class="faq-item__link text_size-md text-semibold collapsed" data-bs-toggle="collapse">Через сколько масло начнет действовать на организм?</a>
+                            <div class="collapse" id="faq-3">
+                                <div class="faq-item__body">
+                                    <p>Правильная дозировка масла КБД зависит от индивидуальных особенностей человека. Это и разный уровень восприимчивости продукта, и отличающаяся эндоканнабиноидная система, и различное состояние здоровья каждого человека. Стандартная дозировка может воздействовать на двух людей по-разному.</p>
+                                    <p><a href="#" class="text-light">Подробнее</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <a href="#faq-4" class="faq-item__link text_size-md text-semibold collapsed" data-bs-toggle="collapse">Если ли алкоголь в нашем масле CBD?</a>
+                            <div class="collapse" id="faq-4">
+                                <div class="faq-item__body">
+                                    <p>Правильная дозировка масла КБД зависит от индивидуальных особенностей человека. Это и разный уровень восприимчивости продукта, и отличающаяся эндоканнабиноидная система, и различное состояние здоровья каждого человека. Стандартная дозировка может воздействовать на двух людей по-разному.</p>
+                                    <p><a href="#" class="text-light">Подробнее</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <a href="#faq-5" class="faq-item__link text_size-md text-semibold collapsed" data-bs-toggle="collapse">Это безопасно?</a>
+                            <div class="collapse" id="faq-5">
+                                <div class="faq-item__body">
+                                    <p>Правильная дозировка масла КБД зависит от индивидуальных особенностей человека. Это и разный уровень восприимчивости продукта, и отличающаяся эндоканнабиноидная система, и различное состояние здоровья каждого человека. Стандартная дозировка может воздействовать на двух людей по-разному.</p>
+                                    <p><a href="#" class="text-light">Подробнее</a></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="faq-item">
-                    <a href="#faq-2" class="faq-item__link text_size-md text-semibold collapsed" data-bs-toggle="collapse">Как принимать масло CBD?</a>
-                    <div class="collapse" id="faq-2">
-                        <div class="faq-item__body">
-                            <p>Правильная дозировка масла КБД зависит от индивидуальных особенностей человека. Это и разный уровень восприимчивости продукта, и отличающаяся эндоканнабиноидная система, и различное состояние здоровья каждого человека. Стандартная дозировка может воздействовать на двух людей по-разному.</p>
-                            <p><a href="#" class="text-light">Подробнее</a></p>
+                    <div class="tab-pane" id="faq-section-2" role="tabpanel" tabindex="0">
+                        <div class="faq-item">
+                            <a href="#faq-4" class="faq-item__link text_size-md text-semibold collapsed" data-bs-toggle="collapse">Если ли алкоголь в нашем масле CBD?</a>
+                            <div class="collapse" id="faq-4">
+                                <div class="faq-item__body">
+                                    <p>Правильная дозировка масла КБД зависит от индивидуальных особенностей человека. Это и разный уровень восприимчивости продукта, и отличающаяся эндоканнабиноидная система, и различное состояние здоровья каждого человека. Стандартная дозировка может воздействовать на двух людей по-разному.</p>
+                                    <p><a href="#" class="text-light">Подробнее</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <a href="#faq-5" class="faq-item__link text_size-md text-semibold collapsed" data-bs-toggle="collapse">Это безопасно?</a>
+                            <div class="collapse" id="faq-5">
+                                <div class="faq-item__body">
+                                    <p>Правильная дозировка масла КБД зависит от индивидуальных особенностей человека. Это и разный уровень восприимчивости продукта, и отличающаяся эндоканнабиноидная система, и различное состояние здоровья каждого человека. Стандартная дозировка может воздействовать на двух людей по-разному.</p>
+                                    <p><a href="#" class="text-light">Подробнее</a></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="faq-item">
-                    <a href="#faq-3" class="faq-item__link text_size-md text-semibold collapsed" data-bs-toggle="collapse">Через сколько масло начнет действовать на организм?</a>
-                    <div class="collapse" id="faq-3">
-                        <div class="faq-item__body">
-                            <p>Правильная дозировка масла КБД зависит от индивидуальных особенностей человека. Это и разный уровень восприимчивости продукта, и отличающаяся эндоканнабиноидная система, и различное состояние здоровья каждого человека. Стандартная дозировка может воздействовать на двух людей по-разному.</p>
-                            <p><a href="#" class="text-light">Подробнее</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <a href="#faq-4" class="faq-item__link text_size-md text-semibold collapsed" data-bs-toggle="collapse">Если ли алкоголь в нашем масле CBD?</a>
-                    <div class="collapse" id="faq-4">
-                        <div class="faq-item__body">
-                            <p>Правильная дозировка масла КБД зависит от индивидуальных особенностей человека. Это и разный уровень восприимчивости продукта, и отличающаяся эндоканнабиноидная система, и различное состояние здоровья каждого человека. Стандартная дозировка может воздействовать на двух людей по-разному.</p>
-                            <p><a href="#" class="text-light">Подробнее</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <a href="#faq-5" class="faq-item__link text_size-md text-semibold collapsed" data-bs-toggle="collapse">Это безопасно?</a>
-                    <div class="collapse" id="faq-5">
-                        <div class="faq-item__body">
-                            <p>Правильная дозировка масла КБД зависит от индивидуальных особенностей человека. Это и разный уровень восприимчивости продукта, и отличающаяся эндоканнабиноидная система, и различное состояние здоровья каждого человека. Стандартная дозировка может воздействовать на двух людей по-разному.</p>
-                            <p><a href="#" class="text-light">Подробнее</a></p>
+                    <div class="tab-pane" id="faq-section-3" role="tabpanel" tabindex="0">
+                        <div class="faq-item">
+                            <a href="#faq-5" class="faq-item__link text_size-md text-semibold collapsed" data-bs-toggle="collapse">Это безопасно?</a>
+                            <div class="collapse" id="faq-5">
+                                <div class="faq-item__body">
+                                    <p>Правильная дозировка масла КБД зависит от индивидуальных особенностей человека. Это и разный уровень восприимчивости продукта, и отличающаяся эндоканнабиноидная система, и различное состояние здоровья каждого человека. Стандартная дозировка может воздействовать на двух людей по-разному.</p>
+                                    <p><a href="#" class="text-light">Подробнее</a></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
