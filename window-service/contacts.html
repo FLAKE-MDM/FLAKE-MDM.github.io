@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оконный Сервис</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png">
+</head>
+<body>
+    <div class="wrap" id="wrap">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__block d-flex align-items-center">
+                    <a href="index.html" class="logo header__logo"><img src="img/logo.svg" alt="Оконный Сервис" class="img-fluid"></a>
+                    <a href="#" class="rating-link d-block">
+                        <div class="rating d-flex align-items-center justify-content-end">
+                            <div class="rating__stars rating__stars_size-lg">
+                                <div class="rating__active rating__active_success" style="width:100%"></div>
+                            </div>
+                            <div class="rating__num text-bold text_size-md">5,0</div>
+                        </div>
+                        <div class="text_size-sm text-bold d-flex align-items-center">Оценка клиентов <img src="img/2gis.svg" alt="" class="rating-link__image"></div>
+                    </a>
+                    <div class="header__middle">
+                        <div class="work-time d-none d-lg-flex text_size-sm"><span class="icon icon-clock"></span>С 7:00 до 24:00 без выходных в Москве и Московской области</div>
+                        <ul class="header-nav d-none d-xl-flex">
+                            <li class="header-nav__item"><a href="services.html" class="header-nav__link">Услуги</a></li>
+                            <li class="header-nav__item"><a href="reviews.html" class="header-nav__link">Отзывы</a></li>
+                            <li class="header-nav__item"><a href="#" class="header-nav__link">Прайс-лист</a></li>
+                            <li class="header-nav__item"><a href="news.html" class="header-nav__link">Блог</a></li>
+                            <li class="header-nav__item"><a href="contacts.html" class="header-nav__link">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__contacts text-right">
+                        <a href="tel:+74958888888" class="phone d-flex align-items-center"><span class="icon icon-phone-fill phone__icon"></span>+7 (495) 888-88-88</a>
+                        <a href="#callback" class="text-danger text-upper text-bold d-none d-md-inline" data-bs-toggle="modal">Перезвонить вам?</a>
+                    </div>
+                    <button class="btn-menu d-xl-none" data-bs-target="#navigation" data-bs-toggle="collapse">
+                        <span class="btn-menu__item"></span>
+                        <span class="btn-menu__item"></span>
+                        <span class="btn-menu__item"></span>
+                    </button>
+                </div>
+                <!-- navigation -->
+                <nav class="navigation collapse" id="navigation">
+                    <div class="navigation__container">
+                        <ul class="header-nav d-xl-none">
+                            <li class="header-nav__item"><a href="services.html" class="header-nav__link">Услуги</a></li>
+                            <li class="header-nav__item"><a href="reviews.html" class="header-nav__link">Отзывы</a></li>
+                            <li class="header-nav__item"><a href="#" class="header-nav__link">Прайс-лист</a></li>
+                            <li class="header-nav__item"><a href="news.html" class="header-nav__link">Блог</a></li>
+                            <li class="header-nav__item"><a href="contacts.html" class="header-nav__link">Контакты</a></li>
+                        </ul>
+                        <ul class="navigation-list d-xl-flex justify-content-between">  
+                            <li class="navigation-list__item">
+                                <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-1.svg" alt="" class="img-fluid"></span>Ремонт окон</a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-2.svg" alt="" class="img-fluid"></span>Обслуживание окон</a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-3.svg" alt="" class="img-fluid"></span>Москитные сетки</a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-4.svg" alt="" class="img-fluid"></span>Производство</a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-5.svg" alt="" class="img-fluid"></span>Рольставни</a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-6.svg" alt="" class="img-fluid"></span>Жалюзи</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- /navigation -->
+            </div>
+        </header>
+        <!-- /header -->
+        <!-- content -->
+        <div class="content">
+            <div class="container">
+                <!-- breadcrumb -->
+                <ul class="breadcrumb">
+                    <div class="breadcrumb__item"><a href="#" class="breadcrumb__link">Главная страница</a></div>
+                    <div class="breadcrumb__item">Мягкие окна</div>
+                </ul>
+                <!-- /breadcrumb -->
+                <h1 class="title_size-lg title_margin-bottom-xl text-black text-upper">Контакты</h1>
+                <div class="d-md-flex">
+                    <div class="contacts-section__text">
+                        <div class="contacts-item d-flex">
+                            <div class="contacts-item__icon icon icon-phone-primary"></div>
+                            <div class="contacts-item__text text-medium">
+                                <div class="title_margin-bottom-sm text-bold text_size-md">Телефон</div>
+                                <p><a href="tel:+74992293339">+7 (499) 229-33-39</a></p>
+                                <p><a href="tel:+79993337512">+7 (999) 333-75-12</a></p>
+                                <div class="social-list">
+                                    <a href="#" class="social-list__item bg-social_primary" target="_blank"><span class="icon icon-telegram-inversion"></span></a>
+                                    <a href="#" class="social-list__item bg-social_dark" target="_blank"><span class="icon icon-vk-inversion"></span></a>
+                                    <a href="#" class="social-list__item bg-social_succes" target="_blank"><span class="icon icon-whatsapp-inversion"></span></a>
+                                    <a href="#" class="social-list__item bg-social_danger" target="_blank"><span class="icon icon-ins-inversion"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts-item d-flex">
+                            <div class="contacts-item__icon icon icon-email"></div>
+                            <div class="contacts-item__text text-medium">
+                                <div class="title_margin-bottom-sm text-bold text_size-md">E-mail</div>
+                                <p><a href="mailto:privet@remontokon.ru">privet@remontokon.ru </a></p>
+                            </div>
+                        </div>
+                        <div class="contacts-item d-flex">
+                            <div class="contacts-item__icon icon icon-clock-primary"></div>
+                            <div class="contacts-item__text text-medium">
+                                <div class="title_margin-bottom-sm text-bold text_size-md">Время работы</div>
+                                <p>Ежедневно с 9:00 до 22:00</p>
+                            </div>
+                        </div>
+                        <div class="contacts-item d-flex">
+                            <div class="contacts-item__icon icon icon-doc"></div>
+                            <div class="contacts-item__text text-medium">
+                                <div class="title_margin-bottom-sm text-bold text_size-md">Реквизиты</div>
+                                <p>Компания ИП ДОКАЛОВ Д.Г.,
+                                <br>ИНН 644933422761
+                                <br>ОГРН 316645100103639</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts-section__map">
+                        <div class="contacts-item d-flex">
+                            <div class="contacts-item__icon icon icon-map"></div>
+                            <div class="contacts-item__text">
+                                <div class="title_margin-bottom-sm text-bold text_size-md">Ждем вас в одном из наших офисов</div>
+                                <div class="nav d-md-flex map-nav flex-wrap">
+                                    <a href="#map-1" class="btn btn-light btn_size-sm map-nav__item" data-bs-toggle="tab">
+                                        <div class="map-nav__icon"></div>г.Москва, ул.Дмитрия Ульянова, д.7Б
+                                    </a>
+                                    <a href="#map-2" class="btn btn-light btn_size-sm map-nav__item active" data-bs-toggle="tab">
+                                        <div class="map-nav__icon"></div>г.Москва, ул.Заповедная, д.14к1
+                                    </a>
+                                </div>
+                                <div class="tab-content" id="map">
+                                    <div class="tab-pane" id="map-1">
+                                        <div class="map-block map-block_lg">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2248.7951604363216!2d37.565425415928296!3d55.69254898053734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54c90e842150b%3A0x21edcff7a1d2bae8!2z0YPQuy4g0JTQvNC40YLRgNC40Y8g0KPQu9GM0Y_QvdC-0LLQsCwgN9CRLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE3MzEy!5e0!3m2!1sru!2sua!4v1661902868750!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane show active" id="map-2">
+                                        <div class="map-block map-block_lg">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2238.7313368763316!2d37.63422921613628!3d55.867327580584146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b536dd14f0dcc7%3A0x610f6d64f32cc92f!2z0JfQsNC_0L7QstC10LTQvdCw0Y8g0YPQuy4sIDE0LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTI3MDgx!5e0!3m2!1sru!2sua!4v1661902899940!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- consultation -->
+                                <div class="consultation-section_sm pos-rel">
+                                    <div class="consultation-section__text consultation-section__text_padding-sm">
+                                        <div class="title_size-md text-extrabold">
+                                            <div class="text-primary">Остались вопросы? </div>
+                                            Получите консультацию
+                                        </div>
+                                        <div class="consultation-section__form">
+                                            <form action="#" class="contacts-form success-hide">
+                                                <div class="d-lg-flex form-group form-group_horizontal">
+                                                    <div class="pos-rel form-control-wrap form-control-wrap_large">
+                                                        <span class="form-control__icon icon icon-phone"></span>
+                                                        <input type="text" class="form-control form-control_danger" placeholder="Номер телефона">
+                                                    </div>
+                                                    <button class="btn btn-danger btn_size-md w-100_md">Отправить</button>
+                                                </div>
+                                                <p class="text_size-xs">Нажимая на кнопку, Вы даете согласие на обработку своих <a href="#" class="text-bold link-underline">персональных данных</a></p>
+                                            </form>
+                                            <div class="consultation-section__success success-show">
+                                                <p class="text-center text_size-lg text-medium title_margin-bottom-md">Ваша заявка отправлена! <br>Ожидайте когда с вами свяжется наш менеджер</p>
+                                                <a href="#" class="btn btn-primary w-100 close-success">Хорошо  буду ждать</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="consultation-section__image consultation-section__image_sm"><img src="img/consultation.png" alt="" class="img-fluid"></div>
+                                </div>
+                                <!-- /consultation -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <footer class="footer footer_padding-sm">
+            <div class="container">
+               <div class="row">
+                    <div class="col-lg-3 col-md-6 footer__col-1">
+                        <a href="index.html" class="logo footer__logo"><img src="img/logo.svg" alt="Оконный Сервис" class="img-fluid"></a>
+                        <p><a href="#" class="text-secondary text-medium">Правила использования сайта</a></p>
+                        <p><a href="#" class="text-secondary text-medium">Защита персональных данных</a></p>
+                    </div>
+                    <div class="col-lg- col-md-6 footer__col-2">
+                        <div class="footer__title title_margin-bottom-md text-bold text_size-lg">Услуги</div>
+                        <ul class="footer-nav text-medium">
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Ремонт</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Обслуживание</a></li>
+                        </ul>
+                        <div class="footer__title title_margin-bottom-md text-bold text_size-lg">Москитные сетки</div>
+                        <ul class="footer-nav text-medium">
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Антикошка</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Плессе</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Антимошка</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer__col-3">
+                        <div class="footer__title title_margin-bottom-md text-bold text_size-lg">О компании</div>
+                        <ul class="footer-nav text-medium">
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Новости</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Отзывы</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Статьи</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Вопрос-ответ</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Сотрудничество</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer__col-4">
+                        <div class="footer__callback">
+                            <div class="footer__title title_margin-bottom-md text-bold text_size-lg">Задать вопрос</div>
+                            <p class="text-light">Закажи звонок эксперта. Перезвоним и расскажем, как быстро все исправить и сэкономить деньги на будущем ремонте.</p>
+                            <p><a href="#" class="btn btn-danger"><span class="d-xxl-none">стоимость</span><span class="d-none d-xxl-block">Узнать стоимость работ</span></a></p>
+                        </div>
+                    </div>
+               </div>
+               <a href="#wrap" class="circle-link up-link bg-primary"><span class="icon icon-arrow-up"></span>на вверх</a>
+               <div class="d-sm-flex justify-content-between footer__bottom">
+                    <div class="copyright text-light">Copyright ©  2010-2022</div>
+                    <div class="text-primary">Сайт сделали с любовью <3</div>
+               </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+        
+
+      
+
+    <!-- callback -->
+    <div class="modal fade" id="callback" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="icon modal__close icon-close" data-bs-dismiss="modal"></button>
+                <div class="modal__form">
+                    <div class="title_size-sm title_margin-bottom-md text-extrabold"><div class="text-primary">Оставьте заявку</div> мы перезвоним через несколько минут</div>
+                    <form action="#">
+                        <div class="pos-rel form-control-wrap form-group">
+                            <span class="form-control__icon icon icon-phone"></span>
+                            <input type="text" class="form-control form-control_danger" placeholder="Номер телефона">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn w-100 btn-danger" data-bs-toggle="modal" data-bs-target="#success">Отправить</button>
+                        </div>
+                        <p class="text-center text_size-xs">Нажимая на кнопку, Вы даете согласие на обработку своих <a href="#" class="link-underline text-bold">персональных данных</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /callback -->
+    <!-- success -->
+    <div class="modal fade" id="success" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-content_padding">
+                <button type="button" class="icon modal__close icon-close" data-bs-dismiss="modal"></button>
+                <p class="text-center text_size-lg text-medium title_margin-bottom-md modal-content__text">Ваша заявка отправлена! <br>Ожидайте когда с вами свяжется наш менеджер</p>
+                <p><a href="#" class="btn btn-primary w-100" data-bs-dismiss="modal">Хорошо  буду ждать</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- /success -->
+  
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/stacktable.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оконный Сервис</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png">
+</head>
+<body>
+    <div class="wrap" id="wrap">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__block d-flex align-items-center">
+                    <a href="index.html" class="logo header__logo"><img src="img/logo.svg" alt="Оконный Сервис" class="img-fluid"></a>
+                    <a href="#" class="rating-link d-block">
+                        <div class="rating d-flex align-items-center justify-content-end">
+                            <div class="rating__stars rating__stars_size-lg">
+                                <div class="rating__active rating__active_success" style="width:100%"></div>
+                            </div>
+                            <div class="rating__num text-bold text_size-md">5,0</div>
+                        </div>
+                        <div class="text_size-sm text-bold d-flex align-items-center">Оценка клиентов <img src="img/2gis.svg" alt="" class="rating-link__image"></div>
+                    </a>
+                    <div class="header__middle">
+                        <div class="work-time d-none d-lg-flex text_size-sm"><span class="icon icon-clock"></span>С 7:00 до 24:00 без выходных в Москве и Московской области</div>
+                        <ul class="header-nav d-none d-xl-flex">
+                            <li class="header-nav__item"><a href="services.html" class="header-nav__link">Услуги</a></li>
+                            <li class="header-nav__item"><a href="reviews.html" class="header-nav__link">Отзывы</a></li>
+                            <li class="header-nav__item"><a href="#" class="header-nav__link">Прайс-лист</a></li>
+                            <li class="header-nav__item"><a href="news.html" class="header-nav__link">Блог</a></li>
+                            <li class="header-nav__item"><a href="contacts.html" class="header-nav__link">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__contacts text-right">
+                        <a href="tel:+74958888888" class="phone d-flex align-items-center"><span class="icon icon-phone-fill phone__icon"></span>+7 (495) 888-88-88</a>
+                        <a href="#callback" class="text-danger text-upper text-bold d-none d-md-inline" data-bs-toggle="modal">Перезвонить вам?</a>
+                    </div>
+                    <button class="btn-menu d-xl-none" data-bs-target="#navigation" data-bs-toggle="collapse">
+                        <span class="btn-menu__item"></span>
+                        <span class="btn-menu__item"></span>
+                        <span class="btn-menu__item"></span>
+                    </button>
+                </div>
+                <!-- navigation -->
+                <nav class="navigation collapse" id="navigation">
+                    <div class="navigation__container">
+                        <ul class="header-nav d-xl-none">
+                            <li class="header-nav__item"><a href="services.html" class="header-nav__link">Услуги</a></li>
+                            <li class="header-nav__item"><a href="reviews.html" class="header-nav__link">Отзывы</a></li>
+                            <li class="header-nav__item"><a href="#" class="header-nav__link">Прайс-лист</a></li>
+                            <li class="header-nav__item"><a href="news.html" class="header-nav__link">Блог</a></li>
+                            <li class="header-nav__item"><a href="contacts.html" class="header-nav__link">Контакты</a></li>
+                        </ul>
+                        <ul class="navigation-list d-xl-flex justify-content-between">  
+                            <li class="navigation-list__item">
+                                <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-1.svg" alt="" class="img-fluid"></span>Ремонт окон</a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-2.svg" alt="" class="img-fluid"></span>Обслуживание окон</a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-3.svg" alt="" class="img-fluid"></span>Москитные сетки</a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-4.svg" alt="" class="img-fluid"></span>Производство</a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-5.svg" alt="" class="img-fluid"></span>Рольставни</a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-6.svg" alt="" class="img-fluid"></span>Жалюзи</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- /navigation -->
+            </div>
+        </header>
+        <!-- /header -->
+        <!-- content -->
+        <div class="content">
+            <div class="container">
+                <!-- breadcrumb -->
+                <ul class="breadcrumb">
+                    <div class="breadcrumb__item"><a href="#" class="breadcrumb__link">Главная страница</a></div>
+                    <div class="breadcrumb__item">Мягкие окна</div>
+                </ul>
+                <!-- /breadcrumb -->
+                <h1 class="title_size-lg title_margin-bottom-xl text-black text-upper">Новости</h1>
+                <div class="row row-lg blog-row">
+                    <div class="col-md-6">
+                        <a href="article.html" class="blog-item blog-item_margin blog-item_link">
+                            <div class="blog-item__image">
+                                <img src="img/content/blog-9.jpg" alt="" class="w-100 d-block">
+                                <div class="blog-item__info d-flex align-items-center">
+                                    <div class="blog-item__post-date text-semibold d-flex align-items-center">
+                                        <span class="icon icon-calendar blog-item__icon"></span>19 апреля
+                                    </div>
+                                    <div class="blog-item__view text-semibold d-flex align-items-center">
+                                        <span class="icon icon-view blog-item__icon"></span>235
+                                    </div>
+                                    <div class="rating d-flex align-items-center justify-content-end">
+                                        <div class="rating__stars">
+                                            <div class="rating__active" style="width:100%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-item__title text_size-md text-bold">Профессиональное утепление лоджии и балкона</div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="article.html" class="blog-item blog-item_margin blog-item_link">
+                            <div class="blog-item__image">
+                                <img src="img/content/blog-4.jpg" alt="" class="w-100 d-block">
+                                <div class="blog-item__info d-flex align-items-center">
+                                    <div class="blog-item__post-date text-semibold d-flex align-items-center">
+                                        <span class="icon icon-calendar blog-item__icon"></span>19 апреля
+                                    </div>
+                                    <div class="blog-item__view text-semibold d-flex align-items-center">
+                                        <span class="icon icon-view blog-item__icon"></span>235
+                                    </div>
+                                    <div class="rating d-flex align-items-center justify-content-end">
+                                        <div class="rating__stars">
+                                            <div class="rating__active" style="width:100%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-item__title text_size-md text-bold">Профессиональное утепление лоджии и балкона</div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="article.html" class="blog-item blog-item_margin blog-item_link">
+                            <div class="blog-item__image">
+                                <img src="img/content/blog-5.jpg" alt="" class="w-100 d-block">
+                                <div class="blog-item__info d-flex align-items-center">
+                                    <div class="blog-item__post-date text-semibold d-flex align-items-center">
+                                        <span class="icon icon-calendar blog-item__icon"></span>19 апреля
+                                    </div>
+                                    <div class="blog-item__view text-semibold d-flex align-items-center">
+                                        <span class="icon icon-view blog-item__icon"></span>235
+                                    </div>
+                                    <div class="rating d-flex align-items-center justify-content-end">
+                                        <div class="rating__stars">
+                                            <div class="rating__active" style="width:100%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-item__title text_size-md text-bold">Профессиональное утепление лоджии и балкона</div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="article.html" class="blog-item blog-item_margin blog-item_link">
+                            <div class="blog-item__image">
+                                <img src="img/content/blog-6.jpg" alt="" class="w-100 d-block">
+                                <div class="blog-item__info d-flex align-items-center">
+                                    <div class="blog-item__post-date text-semibold d-flex align-items-center">
+                                        <span class="icon icon-calendar blog-item__icon"></span>19 апреля
+                                    </div>
+                                    <div class="blog-item__view text-semibold d-flex align-items-center">
+                                        <span class="icon icon-view blog-item__icon"></span>235
+                                    </div>
+                                    <div class="rating d-flex align-items-center justify-content-end">
+                                        <div class="rating__stars">
+                                            <div class="rating__active" style="width:100%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-item__title text_size-md text-bold">Профессиональное утепление лоджии и балкона</div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="article.html" class="blog-item blog-item_margin blog-item_link">
+                            <div class="blog-item__image">
+                                <img src="img/content/blog-7.jpg" alt="" class="w-100 d-block">
+                                <div class="blog-item__info d-flex align-items-center">
+                                    <div class="blog-item__post-date text-semibold d-flex align-items-center">
+                                        <span class="icon icon-calendar blog-item__icon"></span>19 апреля
+                                    </div>
+                                    <div class="blog-item__view text-semibold d-flex align-items-center">
+                                        <span class="icon icon-view blog-item__icon"></span>235
+                                    </div>
+                                    <div class="rating d-flex align-items-center justify-content-end">
+                                        <div class="rating__stars">
+                                            <div class="rating__active" style="width:100%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-item__title text_size-md text-bold">Профессиональное утепление лоджии и балкона</div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="article.html" class="blog-item blog-item_margin blog-item_link">
+                            <div class="blog-item__image">
+                                <img src="img/content/blog-8.jpg" alt="" class="w-100 d-block">
+                                <div class="blog-item__info d-flex align-items-center">
+                                    <div class="blog-item__post-date text-semibold d-flex align-items-center">
+                                        <span class="icon icon-calendar blog-item__icon"></span>19 апреля
+                                    </div>
+                                    <div class="blog-item__view text-semibold d-flex align-items-center">
+                                        <span class="icon icon-view blog-item__icon"></span>235
+                                    </div>
+                                    <div class="rating d-flex align-items-center justify-content-end">
+                                        <div class="rating__stars">
+                                            <div class="rating__active" style="width:100%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-item__title text_size-md text-bold">Профессиональное утепление лоджии и балкона</div>
+                        </a>
+                    </div>
+                </div>
+                <!-- pagination -->
+                <ul class="pagination">
+                    <li class="pagination__item"><a href="#" class="pagination__link">1</a></li>
+                    <li class="pagination__item"><a href="#" class="pagination__link active">2</a></li>
+                    <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+                    <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+                    <li class="pagination__item"><a href="#" class="pagination__link icon icon-arrow-next"></a></li>
+                </ul>
+                <!-- /pagination -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- consultation -->
+        <div class="container">
+            <div class="consultation-section_md">
+                <div class="consultation-section__text consultation-section__text_block">
+                    <div class="title_size-md text-extrabold">
+                        <div class="text-primary">Остались вопросы? </div>
+                        Получите консультацию
+                    </div>
+                    <div class="consultation-section__phone consultation-section__phone_margin d-flex align-items-center text_size-lg">
+                        <span class="icon icon-phone-primary-fill"></span>
+                        <a href="tel:+74992293339" class="text-bold">+7 499 229-33-39</a>
+                        <div class="consultation-section__separator d-none d-sm-block">/</div>
+                        <a href="tel:+79993337515" class="text-bold">+7 999 333-75-15</a>
+                    </div>
+                    <div class="consultation-section__form">
+                        <form action="#" class="contacts-form success-hide">
+                            <div class="d-md-flex form-group form-group_horizontal">
+                                <div class="pos-rel form-control-wrap form-control-wrap_large">
+                                    <span class="form-control__icon icon icon-phone"></span>
+                                    <input type="text" class="form-control form-control_danger" placeholder="Номер телефона">
+                                </div>
+                                <button class="btn btn-danger btn_size-md w-100_sm">Отправить</button>
+                            </div>
+                            <p class="text_size-xs">Нажимая на кнопку, Вы даете согласие на обработку своих <a href="#" class="text-bold link-underline">персональных данных</a></p>
+                        </form>
+                        <div class="consultation-section__success consultation-section__success_margin success-show">
+                            <p class="text-center text_size-lg text-medium title_margin-bottom-md">Ваша заявка отправлена! <br>Ожидайте когда с вами свяжется наш менеджер</p>
+                            <a href="#" class="btn btn-primary w-100 close-success">Хорошо  буду ждать</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="consultation-section__image"><img src="img/consultation.png" alt="" class="img-fluid"></div>
+            </div>
+        </div>
+        <!-- /consultation -->
+        <!-- footer -->
+        <footer class="footer footer_padding-sm">
+            <div class="container">
+               <div class="row">
+                    <div class="col-lg-3 col-md-6 footer__col-1">
+                        <a href="index.html" class="logo footer__logo"><img src="img/logo.svg" alt="Оконный Сервис" class="img-fluid"></a>
+                        <p><a href="#" class="text-secondary text-medium">Правила использования сайта</a></p>
+                        <p><a href="#" class="text-secondary text-medium">Защита персональных данных</a></p>
+                    </div>
+                    <div class="col-lg- col-md-6 footer__col-2">
+                        <div class="footer__title title_margin-bottom-md text-bold text_size-lg">Услуги</div>
+                        <ul class="footer-nav text-medium">
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Ремонт</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Обслуживание</a></li>
+                        </ul>
+                        <div class="footer__title title_margin-bottom-md text-bold text_size-lg">Москитные сетки</div>
+                        <ul class="footer-nav text-medium">
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Антикошка</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Плессе</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Антимошка</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer__col-3">
+                        <div class="footer__title title_margin-bottom-md text-bold text_size-lg">О компании</div>
+                        <ul class="footer-nav text-medium">
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Новости</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Отзывы</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Статьи</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Вопрос-ответ</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Сотрудничество</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer__col-4">
+                        <div class="footer__callback">
+                            <div class="footer__title title_margin-bottom-md text-bold text_size-lg">Задать вопрос</div>
+                            <p class="text-light">Закажи звонок эксперта. Перезвоним и расскажем, как быстро все исправить и сэкономить деньги на будущем ремонте.</p>
+                            <p><a href="#" class="btn btn-danger"><span class="d-xxl-none">стоимость</span><span class="d-none d-xxl-block">Узнать стоимость работ</span></a></p>
+                        </div>
+                    </div>
+               </div>
+               <a href="#wrap" class="circle-link up-link bg-primary"><span class="icon icon-arrow-up"></span>на вверх</a>
+               <div class="d-sm-flex justify-content-between footer__bottom">
+                    <div class="copyright text-light">Copyright ©  2010-2022</div>
+                    <div class="text-primary">Сайт сделали с любовью <3</div>
+               </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+        
+
+      
+
+    <!-- callback -->
+    <div class="modal fade" id="callback" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="icon modal__close icon-close" data-bs-dismiss="modal"></button>
+                <div class="modal__form">
+                    <div class="title_size-sm title_margin-bottom-md text-extrabold"><div class="text-primary">Оставьте заявку</div> мы перезвоним через несколько минут</div>
+                    <form action="#">
+                        <div class="pos-rel form-control-wrap form-group">
+                            <span class="form-control__icon icon icon-phone"></span>
+                            <input type="text" class="form-control form-control_danger" placeholder="Номер телефона">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn w-100 btn-danger" data-bs-toggle="modal" data-bs-target="#success">Отправить</button>
+                        </div>
+                        <p class="text-center text_size-xs">Нажимая на кнопку, Вы даете согласие на обработку своих <a href="#" class="link-underline text-bold">персональных данных</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /callback -->
+    <!-- success -->
+    <div class="modal fade" id="success" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-content_padding">
+                <button type="button" class="icon modal__close icon-close" data-bs-dismiss="modal"></button>
+                <p class="text-center text_size-lg text-medium title_margin-bottom-md modal-content__text">Ваша заявка отправлена! <br>Ожидайте когда с вами свяжется наш менеджер</p>
+                <p><a href="#" class="btn btn-primary w-100" data-bs-dismiss="modal">Хорошо  буду ждать</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- /success -->
+  
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/stacktable.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

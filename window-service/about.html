@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оконный Сервис</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png">
+</head>
+<body>
+    <div class="wrap" id="wrap">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__block d-flex align-items-center">
+                    <a href="index.html" class="logo header__logo"><img src="img/logo.svg" alt="Оконный Сервис" class="img-fluid"></a>
+                    <a href="#" class="rating-link d-block">
+                        <div class="rating d-flex align-items-center justify-content-end">
+                            <div class="rating__stars rating__stars_size-lg">
+                                <div class="rating__active rating__active_success" style="width:100%"></div>
+                            </div>
+                            <div class="rating__num text-bold text_size-md">5,0</div>
+                        </div>
+                        <div class="text_size-sm text-bold d-flex align-items-center">Оценка клиентов <img src="img/2gis.svg" alt="" class="rating-link__image"></div>
+                    </a>
+                    <div class="header__middle">
+                        <div class="work-time d-none d-lg-flex text_size-sm"><span class="icon icon-clock"></span>С 7:00 до 24:00 без выходных в Москве и Московской области</div>
+                        <ul class="header-nav d-none d-xl-flex">
+                            <li class="header-nav__item"><a href="services.html" class="header-nav__link">Услуги</a></li>
+                            <li class="header-nav__item"><a href="reviews.html" class="header-nav__link">Отзывы</a></li>
+                            <li class="header-nav__item"><a href="#" class="header-nav__link">Прайс-лист</a></li>
+                            <li class="header-nav__item"><a href="news.html" class="header-nav__link">Блог</a></li>
+                            <li class="header-nav__item"><a href="contacts.html" class="header-nav__link">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__contacts text-right">
+                        <a href="tel:+74958888888" class="phone d-flex align-items-center"><span class="icon icon-phone-fill phone__icon"></span>+7 (495) 888-88-88</a>
+                        <a href="#callback" class="text-danger text-upper text-bold d-none d-md-inline" data-bs-toggle="modal">Перезвонить вам?</a>
+                    </div>
+                    <button class="btn-menu d-xl-none" data-bs-target="#navigation" data-bs-toggle="collapse">
+                        <span class="btn-menu__item"></span>
+                        <span class="btn-menu__item"></span>
+                        <span class="btn-menu__item"></span>
+                    </button>
+                </div>
+                <!-- navigation -->
+                <nav class="navigation collapse" id="navigation">
+                    <div class="navigation__container">
+                        <ul class="header-nav d-xl-none">
+                            <li class="header-nav__item"><a href="services.html" class="header-nav__link">Услуги</a></li>
+                            <li class="header-nav__item"><a href="reviews.html" class="header-nav__link">Отзывы</a></li>
+                            <li class="header-nav__item"><a href="#" class="header-nav__link">Прайс-лист</a></li>
+                            <li class="header-nav__item"><a href="news.html" class="header-nav__link">Блог</a></li>
+                            <li class="header-nav__item"><a href="contacts.html" class="header-nav__link">Контакты</a></li>
+                        </ul>
+                        <ul class="navigation-list d-xl-flex justify-content-between">  
+                            <li class="navigation-list__item">
+                                <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-1.svg" alt="" class="img-fluid"></span>Ремонт окон</a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-2.svg" alt="" class="img-fluid"></span>Обслуживание окон</a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-3.svg" alt="" class="img-fluid"></span>Москитные сетки</a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-4.svg" alt="" class="img-fluid"></span>Производство</a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-5.svg" alt="" class="img-fluid"></span>Рольставни</a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-6.svg" alt="" class="img-fluid"></span>Жалюзи</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- /navigation -->
+            </div>
+        </header>
+        <!-- /header -->
+        <!-- content -->
+        <div class="content">
+            <div class="container">
+                <!-- breadcrumb -->
+                <ul class="breadcrumb">
+                    <div class="breadcrumb__item"><a href="#" class="breadcrumb__link">Главная страница</a></div>
+                    <div class="breadcrumb__item">Мягкие окна</div>
+                </ul>
+                <!-- /breadcrumb -->
+                <h1 class="title_size-lg title_margin-bottom-xl text-black text-upper">О компании "Оконный сервис"</h1>
+                <ul class="nav tabs-nav tabs-nav_lg tabs-nav_about title_margin-bottom-xl">
+                    <li class="tabs-nav__item"><a href="#" class="tabs-nav__link active">О компании</a></li>
+                    <li class="tabs-nav__item"><a href="#" class="tabs-nav__link">Видео</a></li>
+                    <li class="tabs-nav__item"><a href="#" class="tabs-nav__link">Фотогалерея</a></li>
+                    <li class="tabs-nav__item"><a href="#" class="tabs-nav__link">Статьи</a></li>
+                </ul>
+                <div class="d-sm-flex about-preview">
+                    <div class="about-preview__logo">
+                        <img src="img/logo-vertical.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="about-preview__text text_size-md_vertical">
+                        <p>Наша компания занимается всеми видами ремонта окон и дверей из ПВХ и Алюминия, а также предлагает дополнительные услуги, тесно связанные с основным видом деятельности.</p>
+                        <p>Предлагаем нашим клиентам ремонт остекления квартир, производим москитные сетки плессе, утепляем лоджий и балконы, занимаемся обслуживанием остекления коттеджей, а также нежилых помещений.</p>
+                    </div>
+                </div>
+                <div class="title_size-sm text-semibold title_margin-bottom-mlg">Преимущества</div>
+            </div>
+            <div class="container_margin">
+                <div class="swiper about-advantages-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide about-advantages-slider-item">
+                            <div class="preview__subtitle text-violet text-extrabold about-advantages-slider-item__title">Надежность</div>
+                            <p>Мы создаем выдающиеся кейсы, решая амбициозные задачи. Накапливая опыт, мы делимся им с другими, что помогает всему рынку и даёт возможность быстрее понимать друг друга.</p>
+                        </div>
+                        <div class="swiper-slide about-advantages-slider-item">
+                            <div class="preview__subtitle text-burgundy text-extrabold about-advantages-slider-item__title">Скороть</div>
+                            <p>Мы применяем передовые разработки и выводим на рынок собственные решения. </p>
+                        </div>
+                        <div class="swiper-slide about-advantages-slider-item">
+                            <div class="preview__subtitle text-blue text-extrabold about-advantages-slider-item__title">Результат</div>
+                            <p>Команда постоянно создаёт новые шаблоны и структуры, автоматизирует процесс, чтобы ускорить работу и быстрее получить результат.</p>
+                        </div>
+                        <div class="swiper-slide about-advantages-slider-item">
+                            <div class="preview__subtitle text-aqua text-extrabold about-advantages-slider-item__title">Цель</div>
+                            <p>В процессе совместной работы мы соблюдаем все договорённости, что приводит к доверию и взаимной ответственности.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="title_size-sm text-semibold title_margin-bottom-mlg">В тесном партнерстве</div>
+                <p class="text_size-md_vertical">Кстати, сторонники тоталитаризма в науке и по сей день остаются уделом либералов, которые жаждут быть объявлены нарушающими общечеловеческие нормы этики и морали. Внезапно, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть заблокированы в рамках своих собственных рациональных ограничений.</p>
+                <p class="text_size-md_vertical">Безусловно, повышение уровня гражданского сознания предполагает независимые способы реализации укрепления моральных ценностей. Разнообразный и богатый опыт говорит нам, что социально-экономическое развитие напрямую зависит от поставленных обществом задач. </p>
+                <div class="about__logo-group logo-group d-flex flex-wrap align-items-center">
+                    <div class="logo-group__item"><img src="img/content/logo-1.svg" alt="" class="img-fluid"></div>
+                    <div class="logo-group__item"><img src="img/content/logo-2.svg" alt="" class="img-fluid"></div>
+                    <div class="logo-group__item"><img src="img/content/logo-3.svg" alt="" class="img-fluid"></div>
+                </div>
+                <div class="title_size-sm text-semibold title_margin-bottom-mlg">Сертификаты</div>
+                <div class="d-flex flex-wrap sertifficate-list">
+                    <a href="img/content/sertifficate-1.jpg" class="zoom-link sertifficate-item sertifficate-list__item" data-fancybox="sertifficates">
+                        <img src="img/content/sertifficate-1-thumb.jpg" alt="" class="w-100 d-block">
+                    </a>
+                    <a href="img/content/sertifficate-2.jpg" class="zoom-link sertifficate-item sertifficate-list__item" data-fancybox="sertifficates">
+                        <img src="img/content/sertifficate-2-thumb.jpg" alt="" class="w-100 d-block">
+                    </a>
+                    <a href="img/content/sertifficate-3.jpg" class="zoom-link sertifficate-item sertifficate-list__item" data-fancybox="sertifficates">
+                        <img src="img/content/sertifficate-3-thumb.jpg" alt="" class="w-100 d-block">
+                    </a>
+                    <a href="img/content/sertifficate-4.jpg" class="zoom-link sertifficate-item sertifficate-list__item" data-fancybox="sertifficates">
+                        <img src="img/content/sertifficate-4-thumb.jpg" alt="" class="w-100 d-block">
+                    </a>
+                </div>
+                <div class="title_size-sm text-semibold title_margin-bottom-mlg">Слова директора</div>
+                <p class="text_size-md_vertical">Учитывая ключевые сценарии поведения, консультация с широким активом не даёт нам иного выбора, кроме определения прогресса профессионального сообщества. </p>
+                <p class="text_size-md_vertical">Ясность нашей позиции очевидна: укрепление и развитие внутренней структуры позволяет оценить значение укрепления моральных ценностей. </p>
+                <div class="bg-block-light radius-block about-section_md pos-rel">
+                    <div class="row align-items-center">
+                        <div class="col-xl-4 col-md-7">
+                            <div class="about-text">
+                                <div class="about-item">
+                                    <div class="about-item__title preview__subtitle text_size-xl text-primary text-bold">500 кв.м</div>
+                                    <p class="text_size-md">Собственный оконный склад</p>
+                                </div>
+                                <div class="about-item">
+                                    <div class="about-item__title preview__subtitle text_size-xl text-primary text-bold">6 автомобилей</div>
+                                    <p class="text_size-md">своевременно работают над заказами</p>
+                                </div>
+                                <div class="about-item">
+                                    <div class="about-item__title preview__subtitle text_size-xl text-primary text-bold">2 офиса</div>
+                                    <p class="text_size-md">всегда готовы вас принять</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-7 order-lg-2">
+                            <div class="about-text text-right_xl">
+                                <div class="about-item">
+                                    <div class="about-item__title preview__subtitle text_size-xl text-primary text-bold">50 сотрудников</div>
+                                    <p class="text_size-md">работают в компании</p>
+                                </div>
+                                <div class="about-item">
+                                    <div class="about-item__title preview__subtitle text_size-xl text-primary text-bold">Более 3000</div>
+                                    <p class="text_size-md">заказов выполняем в год</p>
+                                </div>
+                                <div class="about-item">
+                                    <div class="about-item__title preview__subtitle text_size-xl text-primary text-bold">с 2010</div>
+                                    <p class="text_size-md">года в оконном бизнесе</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 order-lg-1">
+                            <div class="about-image pos-rel">
+                                <img src="img/about.png" alt="" class="img-fluid">
+                                <div class="director-info d-flex align-items-end">
+                                    <div class="director-info__image"><img src="img/signature.svg" alt="" class="img-fluid"></div>
+                                    <div class="director-info__text">
+                                        <p class="text-semibold">Алекс Михайлов</p>
+                                        <p class="text_size-xs text-medium">Директор компании</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /content -->
+        <div class="container">
+            <div class="title_size-lg title_margin-bottom-lg text-black">Остались вопросы?</div>
+            <div class="question-nav question-nav_margin d-flex flex-wrap">
+                <a href="#" class="question-nav__link d-flex align-items-center">
+                    <span class="question-nav__icon icon icon-popular"></span>
+                    <span class="text-bold text_size-md">Популярные вопросы</span>
+                </a>
+                <a href="#" class="question-nav__link d-flex align-items-center">
+                    <span class="question-nav__icon icon icon-portfolio"></span>
+                    <span class="text-bold text_size-md">Наше портфолио</span>
+                </a>
+                <a href="#" class="question-nav__link d-flex align-items-center">
+                    <span class="question-nav__icon icon icon-cooperation"></span>
+                    <span class="text-bold text_size-md">Сотрудничество</span>
+                </a>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer class="footer footer_padding-sm">
+            <div class="container">
+               <div class="row">
+                    <div class="col-lg-3 col-md-6 footer__col-1">
+                        <a href="index.html" class="logo footer__logo"><img src="img/logo.svg" alt="Оконный Сервис" class="img-fluid"></a>
+                        <p><a href="#" class="text-secondary text-medium">Правила использования сайта</a></p>
+                        <p><a href="#" class="text-secondary text-medium">Защита персональных данных</a></p>
+                    </div>
+                    <div class="col-lg- col-md-6 footer__col-2">
+                        <div class="footer__title title_margin-bottom-md text-bold text_size-lg">Услуги</div>
+                        <ul class="footer-nav text-medium">
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Ремонт</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Обслуживание</a></li>
+                        </ul>
+                        <div class="footer__title title_margin-bottom-md text-bold text_size-lg">Москитные сетки</div>
+                        <ul class="footer-nav text-medium">
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Антикошка</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Плессе</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Антимошка</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer__col-3">
+                        <div class="footer__title title_margin-bottom-md text-bold text_size-lg">О компании</div>
+                        <ul class="footer-nav text-medium">
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Новости</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Отзывы</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Статьи</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Вопрос-ответ</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Сотрудничество</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer__col-4">
+                        <div class="footer__callback">
+                            <div class="footer__title title_margin-bottom-md text-bold text_size-lg">Задать вопрос</div>
+                            <p class="text-light">Закажи звонок эксперта. Перезвоним и расскажем, как быстро все исправить и сэкономить деньги на будущем ремонте.</p>
+                            <p><a href="#" class="btn btn-danger"><span class="d-xxl-none">стоимость</span><span class="d-none d-xxl-block">Узнать стоимость работ</span></a></p>
+                        </div>
+                    </div>
+               </div>
+               <a href="#wrap" class="circle-link up-link bg-primary"><span class="icon icon-arrow-up"></span>на вверх</a>
+               <div class="d-sm-flex justify-content-between footer__bottom">
+                    <div class="copyright text-light">Copyright ©  2010-2022</div>
+                    <div class="text-primary">Сайт сделали с любовью <3</div>
+               </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+        
+
+      
+
+    <!-- callback -->
+    <div class="modal fade" id="callback" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="icon modal__close icon-close" data-bs-dismiss="modal"></button>
+                <div class="modal__form">
+                    <div class="title_size-sm title_margin-bottom-md text-extrabold"><div class="text-primary">Оставьте заявку</div> мы перезвоним через несколько минут</div>
+                    <form action="#">
+                        <div class="pos-rel form-control-wrap form-group">
+                            <span class="form-control__icon icon icon-phone"></span>
+                            <input type="text" class="form-control form-control_danger" placeholder="Номер телефона">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn w-100 btn-danger" data-bs-toggle="modal" data-bs-target="#success">Отправить</button>
+                        </div>
+                        <p class="text-center text_size-xs">Нажимая на кнопку, Вы даете согласие на обработку своих <a href="#" class="link-underline text-bold">персональных данных</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /callback -->
+    <!-- success -->
+    <div class="modal fade" id="success" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-content_padding">
+                <button type="button" class="icon modal__close icon-close" data-bs-dismiss="modal"></button>
+                <p class="text-center text_size-lg text-medium title_margin-bottom-md modal-content__text">Ваша заявка отправлена! <br>Ожидайте когда с вами свяжется наш менеджер</p>
+                <p><a href="#" class="btn btn-primary w-100" data-bs-dismiss="modal">Хорошо  буду ждать</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- /success -->
+  
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/stacktable.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

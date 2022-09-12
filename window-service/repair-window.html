@@ -88,7 +88,13 @@
            <div class="preview__image">
                 <img src="img/preview-repair-window.jpg" alt="" class="w-100">
            </div>
-           <div class="container preview__content preview__content_padding">
+           <div class="container preview__content">
+            <!-- breadcrumb -->
+            <ul class="breadcrumb">
+                <div class="breadcrumb__item"><a href="#" class="breadcrumb__link">Главная страница</a></div>
+                <div class="breadcrumb__item">Мягкие окна</div>
+            </ul>
+            <!-- /breadcrumb -->
             <div class="row">
                 <div class="col-md-7 col-xl-7">
                     <div class="preview__text preview__text_home">
@@ -423,6 +429,10 @@
                         <div class="table-responsive table-responsive_bordered">
                             <table class="repair-price-table table">
                                 <tr>
+                                    <th>Неиправность</th>
+                                    <th colspan="2">Стоимость работ</th>
+                                </tr>
+                                <tr>
                                     <td>Шумит и вибрирует</td>
                                     <td>от 1790 ₽</td>
                                     <td><div class="text-right"><a href="#" class="text-primary text-semibold">Заказать услугу</a></div></td>
@@ -631,13 +641,13 @@
                                                                 <div class="info-item__title text-semibold">Решение</div>
                                                                 <span class="text-right">Замена части профиля и полная замена стекла</span>
                                                             </div>
-                                                            <div class="project-tern project-tern_margin align-items-center d-flex flex-wrap">
+                                                            <div class="project-tern project-tern_margin align-items-center d-flex">
                                                                 <span class="icon icon-clock-success project-tern__icon"></span>
-                                                                От звонка до полного решения проблемы - <span class="text-bold">75 минут</span>
+                                                                <div class="project-tern_text">От звонка до полного решения проблемы - <span class="text-bold">75 минут</span></div>
                                                             </div>
-                                                            <div class="project-price align-items-center d-flex flex-wrap">
+                                                            <div class="project-price align-items-center d-flex">
                                                                 <span class="icon icon-price project-tern__icon"></span>
-                                                                Стоимость работ - <span class="text-bold"> 6599 ₽</span>
+                                                                <div class="project-price_text">Стоимость работ - <span class="text-bold"> 6599 ₽</span></div>
                                                             </div>
                                                             <p>Предварительные выводы неутешительны: постоянный количественный рост и сфера нашей активности создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса поэтапного и последовательного развития общества. Для современного мира базовый вектор развития прекрасно подходит для реализации поэтапного и последовательного развития общества.</p>
                                                         </div>
@@ -919,7 +929,7 @@
                 <h2 class="title_size-lg text-black title_margin-bottom-lg">Секреты и лайфхаки читайте <br class="d-none d-lg-block">в нашем <a href="#" class="text-primary-light link-underline">блоге</a></h2>
                 <div class="row row-sm">
                     <div class="col-xl-8 blog-section__col_large">
-                        <a href="news.html" class="blog-item">
+                        <a href="news.html" class="blog-item blog-item_link">
                             <div class="blog-item__image blog-item__image_size-lg">
                                 <img src="img/content/blog-1.jpg" alt="" class="w-100 d-block">
                                 <div class="blog-item__info d-flex align-items-center">
@@ -940,7 +950,7 @@
                     <div class="col-xl-4 blog-section__col">
                         <div class="row">
                             <div class="col-md-6 col-xl-12">
-                                <a href="news.html" class="blog-item blog-item_size-lg">
+                                <a href="news.html" class="blog-item blog-item_link">
                                     <div class="blog-item__image">
                                         <img src="img/content/blog-2.jpg" alt="" class="w-100 d-block">
                                         <div class="blog-item__info d-flex align-items-center">
@@ -961,7 +971,7 @@
                                 </a>
                             </div>
                             <div class="col-md-6 col-xl-12">
-                                <a href="news.html" class="blog-item blog-item_size-lg">
+                                <a href="news.html" class="blog-item blog-item_link">
                                     <div class="blog-item__image">
                                         <img src="img/content/blog-3.jpg" alt="" class="w-100 d-block">
                                         <div class="blog-item__info d-flex align-items-center">
@@ -1172,6 +1182,8 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/fancybox.umd.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/stacktable.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
