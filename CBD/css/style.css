@@ -2400,6 +2400,22 @@ a.text-inversion:hover, a.text-primary:hover {
   border-color: #F33B3B;
 }
 
+.form-control.has-error::-webkit-input-placeholder {
+  color: #F33B3B !important;
+}
+
+.form-control.has-error::-moz-placeholder {
+  color: #F33B3B !important;
+}
+
+.form-control.has-error:-moz-placeholder {
+  color: #F33B3B !important;
+}
+
+.form-control.has-error:-ms-input-placeholder {
+  color: #F33B3B !important;
+}
+
 .form-control_primary {
   border-color: #3F892C;
   color: #3F892C;
@@ -8886,6 +8902,11 @@ select.form-control {
   }
 }
 
+.fixed {
+  position: fixed;
+  top: 6rem;
+}
+
 .order {
   overflow: hidden;
   height: 1000px;
@@ -8948,7 +8969,6 @@ select.form-control {
   -ms-flex-item-align: start;
       align-self: flex-start;
   width: 40rem;
-  margin: 4.2rem 0 3rem 4rem;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 12px 30px rgba(45, 45, 45, 0.18);
           box-shadow: 0px 12px 30px rgba(45, 45, 45, 0.18);
@@ -8973,9 +8993,34 @@ select.form-control {
 
 @media only screen and (max-width: 767px) {
   .order-aside {
+    padding: 4.3rem 2.3rem;
+  }
+}
+
+.order-aside__wrap {
+  width: 40rem;
+  margin: 4.2rem 0 3rem 4rem;
+  position: relative;
+}
+
+@media only screen and (max-width: 1199px) {
+  .order-aside__wrap {
+    width: 35rem;
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .order-aside__wrap {
+    margin: 3rem 0 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .order-aside__wrap {
     width: auto;
     margin: 0 -1.5rem;
-    padding: 4.3rem 2.3rem;
   }
 }
 

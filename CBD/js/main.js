@@ -30,7 +30,6 @@ $('.preview-slider').on('beforeChange', function(event, slick, currentSlide){
 });
 
 // header
-
 let oldScrollTopPosition = 0;
 window.onscroll = function checkScroll() {
   const scrollTopPosition = document.documentElement.scrollTop;
@@ -99,7 +98,6 @@ $('.catalogue-slider').slick({
   ]
 });
 
-
 $('.blog-section-slider').slick({
   dots: false,
   infinite: true,
@@ -132,7 +130,6 @@ $('.toggler').click(function(e){
   e.preventDefault();
   $(this).toggleClass('active')
 })
-
 
 
 // pane
@@ -200,9 +197,6 @@ $('.location-list__link').click(function(e){
   $('.location-pane__input').val(this.innerHTML);
   $('.location-link__name').html(this.innerHTML);
 })
-
-
-
 
 // range
 $( function() {
@@ -275,6 +269,9 @@ $('.fake-select__item').click(function(){
   $(this).parents('.fake-select').find('.fake-select__link').addClass('active');
 })
 
+
+
+
 // basket
 $('.remove-link').click(function(e){
   e.preventDefault();
@@ -295,6 +292,64 @@ $('.radio-list__item').click(function(){
   $(this).addClass('active');
 })
 
+if(window.innerWidth > 991){
+  $(function(){
+    var topPos = $('.floating').offset().top;
+     $(window).scroll(function() {
+     var top = $(document).scrollTop(),
+         pip = $('.footer').offset().top,
+         height = $('.floating').outerHeight();
+     if (top > topPos && top < pip - height) {$('.floating').addClass('fixed').removeAttr("style");}
+     else if (top > pip - height) {$('.floating').removeClass('fixed').css({'position':'absolute','bottom':'0'});}
+     else {$('.floating').removeClass('fixed');}
+     });
+   });
+}
+
+$(document).ready(function() {
+  $('.form-valid').submit(function(e) {
+    
+    let inputs = document.querySelectorAll('.form-valid .required');
+    for(input of inputs){
+      if(!$(input).val()){
+        $(input).addClass('has-error');
+        e.preventDefault();
+      } else{
+        $(input).removeClass('has-error' );
+      }
+    }
+    
+  });
+});
+
+(function() {
+  // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+  if (!String.prototype.trim) {
+    (function() {
+      var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+      String.prototype.trim = function() {
+        return this.replace(rtrim, '');
+      };
+    })();
+  }
+
+  [].slice.call( document.querySelectorAll( '.required' ) ).forEach( function( inputEl ) {
+    inputEl.addEventListener( 'blur', onInputBlur );
+    inputEl.oninput = onInputOn;
+  } );
+  
+  function onInputOn(ev) {
+    if(ev.target.value.trim() !== '' ) {
+      $(this).removeClass('has-error');
+    }
+  };
+
+  function onInputBlur( ev ) {
+    if( ev.target.value.trim() !== '' ) {
+      $(this).removeClass('has-error');
+    }
+  }
+})();
 
 
 // // input number 
@@ -511,33 +566,6 @@ $('.user-heading-nav__link').click(function(){
 $('.mobile-table').cardtable();
 
 
-
-
-
-
-
-
-
-// youtube
-// function youTubes_makeDynamic() {
-//   var $ytIframes = $('iframe[src*="youtube.com"]');
-//   $ytIframes.each(function (i,e) {
-//     var $ytFrame = $(e);
-//     var ytKey; var tmp = $ytFrame.attr('src').split(/\//); tmp = tmp[tmp.length - 1]; tmp = tmp.split('?'); ytKey = tmp[0];
-//     var $ytLoader = $('<div class="ytLoader">');
-//     // $ytLoader.append($('<img class="cover" src="https://i.ytimg.com/vi/'+ytKey+'/hqdefault.jpg">'));
-//     $ytLoader.append($('<img class="cover" src="img/content/cover.jpg">'));
-//     // $ytLoader.append($('<img class="playBtn" src="play_button.png">'));
-//     $ytLoader.data('$ytFrame',$ytFrame);
-//     $ytFrame.replaceWith($ytLoader);
-//     $ytLoader.click(function () {
-//       var $ytFrame = $ytLoader.data('$ytFrame');
-//       $ytFrame.attr('src',$ytFrame.attr('src')+'?autoplay=1');
-//       $ytLoader.replaceWith($ytFrame);
-//     });
-//   });
-// };
-// $(document).ready(function () {youTubes_makeDynamic()});
 
 
 

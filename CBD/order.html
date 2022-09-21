@@ -124,7 +124,7 @@
                     <a href="index.html"><span class="icon icon-arrow-left breadcrumb__icon"></span>Назад</a>
                 </div>
                 <h1 class="title_size-lg title_margin-bottom-md order__title">Оформление заказа</h1>
-                <form action="#">
+                <form action="#" class="form-valid">
                     <div class="d-lg-flex">
                         <!-- order-content -->
                         <div class="order-content">
@@ -338,23 +338,23 @@
                                     <div class="order-section__group">
                                         <p class="text-semibold order-section__group-title">Ваши данные</p>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" value="Алексей">
+                                            <input type="text" class="form-control required" value="Алексей">
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" value="Иванов">
+                                            <input type="text" class="form-control required" value="Иванов">
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control form-control_light" placeholder="Отчество">
+                                            <input type="text" class="form-control form-control_light required" placeholder="Отчество">
                                         </div>
                                         <p class="text_size-xs">Иногда для получения предоплаченного заказа будет необходимо предъявить паспорт</p>
                                     </div>
                                     <div class="order-section__group">
                                         <p class="text-semibold order-section__group-title">Контакты</p>
                                         <div class="form-group">
-                                            <input type="tel" class="form-control" value="+7 900 220-20-19">
+                                            <input type="tel" class="form-control required" value="+7 900 220-20-19">
                                         </div>
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control_light" placeholder="e-mail">
+                                            <input type="email" class="form-control form-control_light required" placeholder="e-mail">
                                         </div>
                                         <div class="form-group">
                                             <label class="d-flex align-items-center text_size-xs">
@@ -366,7 +366,7 @@
                                     <p class="text-semibold order-section__group-title">Адрес получателя</p>
                                     <div class="order-section__group">
                                         <div class="form-group_margin-lg">
-                                            <input type="text" class="form-control" palaceholder="e-mail" value="Санкт-Петербург, ул. Карла Маркса, д. 7, кв. 12">
+                                            <input type="text" class="form-control required" value="Санкт-Петербург, ул. Карла Маркса, д. 7, кв. 12">
                                         </div>
                                         <div class="form-group_margin-sm">
                                             <input type="text" class="form-control form-control_light" placeholder="Комментарий к заказу">
@@ -378,47 +378,49 @@
                         </div>
                         <!-- /order-content -->
                         <!-- order-aside -->
-                        <div class="order-aside">
-                            <div class="order-aside__body">
-                                <div class="d-flex order-aside__header d-flex justify-content-between text_size-md">
-                                    <div class="text-semibold">Товары в корзине</div>
-                                    <div class="order-aside__price">37 500 ₽</div>
-                                </div>
-                                <div class="order-aside__item">
-                                    <div class="d-flex justify-content-between order-aside__title">
-                                        <a href="#sale" class="text-semibold text_size-sm order-aside__collapse-link" data-bs-toggle="collapse" aria-expanded="true"><span class="icon icon-caret"></span>Сумма скидок</a>
-                                        <div class="text_size-md text-primary order-aside__price">– 7 500 ₽</div>
+                        <div class="order-aside__wrap">
+                            <div class="order-aside floating">
+                                <div class="order-aside__body">
+                                    <div class="d-flex order-aside__header d-flex justify-content-between text_size-md">
+                                        <div class="text-semibold">Товары в корзине</div>
+                                        <div class="order-aside__price">37 500 ₽</div>
                                     </div>
-                                    <div class="collapse show" id="sale">
-                                        <div class="order-aside__collapse">
-                                            <p class="d-flex text_size-xs justify-content-between">
-                                                <span class="text-light">Товары по акции</span>
-                                                <span>– 6 000 ₽</span>
-                                            </p>
-                                            <p class="d-flex text_size-xs justify-content-between">
-                                                <span class="text-light">Промокод</span>
-                                                <span>– 1 500 ₽</span>
-                                            </p>
+                                    <div class="order-aside__item">
+                                        <div class="d-flex justify-content-between order-aside__title">
+                                            <a href="#sale" class="text-semibold text_size-sm order-aside__collapse-link" data-bs-toggle="collapse" aria-expanded="true"><span class="icon icon-caret"></span>Сумма скидок</a>
+                                            <div class="text_size-md text-primary order-aside__price">– 7 500 ₽</div>
+                                        </div>
+                                        <div class="collapse show" id="sale">
+                                            <div class="order-aside__collapse">
+                                                <p class="d-flex text_size-xs justify-content-between">
+                                                    <span class="text-light">Товары по акции</span>
+                                                    <span>– 6 000 ₽</span>
+                                                </p>
+                                                <p class="d-flex text_size-xs justify-content-between">
+                                                    <span class="text-light">Промокод</span>
+                                                    <span>– 1 500 ₽</span>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="order-aside__item">
-                                    <div class="d-flex justify-content-between order-aside__title text_size-sm">
-                                        <span class="text-semibold">Доставка</span>
-                                        <div class="text_size-sm text-primary">Бесплатно *</div>
+                                    <div class="order-aside__item">
+                                        <div class="d-flex justify-content-between order-aside__title text_size-sm">
+                                            <span class="text-semibold">Доставка</span>
+                                            <div class="text_size-sm text-primary">Бесплатно *</div>
+                                        </div>
+                                        <p class="text-light text_size-xs">* Бесплатно при сумме заказа от 4 000 ₽ </p>
                                     </div>
-                                    <p class="text-light text_size-xs">* Бесплатно при сумме заказа от 4 000 ₽ </p>
+                                    <div class="order-aside__footer d-flex justify-content-between align-items-end">
+                                        <div class="text-semibold text_size-md">Итого</div>
+                                        <div class="text_size-lg">27 500 ₽</div>
+                                    </div>
                                 </div>
-                                <div class="order-aside__footer d-flex justify-content-between align-items-end">
-                                    <div class="text-semibold text_size-md">Итого</div>
-                                    <div class="text_size-lg">27 500 ₽</div>
+                                <div class="promocode order-aside__promocode">
+                                    <input type="text" class="promocode__input has-success text-center" placeholder="ВВЕСТИ ПРОМОКОД" value="ZAKAZ15">
+                                    <div class="promocode__icon icon icon-promo"></div>
                                 </div>
+                                <button class="btn w-100 btn-active btn_size-sm btn_size-md order-aside__btn">Перейти к оплате</button>
                             </div>
-                            <div class="promocode order-aside__promocode">
-                                <input type="text" class="promocode__input has-success text-center" placeholder="ВВЕСТИ ПРОМОКОД" value="ZAKAZ15">
-                                <div class="promocode__icon icon icon-promo"></div>
-                            </div>
-                            <button class="btn w-100 btn-active btn_size-sm btn_size-md order-aside__btn">Перейти к оплате</button>
                         </div>
                         <!-- order-aside -->
                     </div>
@@ -662,7 +664,7 @@
             <div class="title_size-md text-semibold title_margin-bottom-sm calculator-pane__title">Калькулятор дозировки
             </div>
             <p>Рассчитайте свою дозировку КБД основываясь на весе вашего тела и цели использования с нашей формой расчета дозировки.</p>
-            <form action="#" class="calculator-pane__form">
+            <form action="#required" class="calculator-pane__form">
                 <div class="form-group">
                     <label class="label label_md">Недуг</label>
                     <div class="fake-select">
@@ -894,6 +896,7 @@
     <script src="js/slick.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/stacktable.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
