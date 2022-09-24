@@ -1,3 +1,7 @@
+$(document).ready(function() {
+  $(".preloader").addClass('collapse')
+});
+
 $('.preview-slider').slick({
   dots: true,
   infinite: true,
@@ -306,9 +310,10 @@ if(window.innerWidth > 991){
    });
 }
 
+let $page = $('html, body');
+
 $(document).ready(function() {
   $('.form-valid').submit(function(e) {
-    
     let inputs = document.querySelectorAll('.form-valid .required');
     for(input of inputs){
       if(!$(input).val()){
@@ -319,6 +324,15 @@ $(document).ready(function() {
       }
     }
     
+    let firstError = document.querySelector('.has-error');
+    if(firstError){
+      $page.animate({
+        scrollTop: $(firstError).offset().top - 80
+      }, 400);
+      $('.error-message').removeClass('collapse')
+    } else{
+      $('.error-message').addClass('collapse')
+    }
   });
 });
 
