@@ -301,7 +301,7 @@ if(window.innerWidth > 991){
     var topPos = $('.floating').offset().top;
      $(window).scroll(function() {
      var top = $(document).scrollTop(),
-         pip = $('.footer').offset().top,
+         pip = $('.stoper').offset().top,
          height = $('.floating').outerHeight();
      if (top > topPos && top < pip - height) {$('.floating').addClass('fixed').removeAttr("style");}
      else if (top > pip - height) {$('.floating').removeClass('fixed').css({'position':'absolute','bottom':'0'});}
