@@ -267,7 +267,7 @@ $('.tag-del').click(function(){
 
 // fake-select
 $('.fake-select__item').click(function(){
-  $('.fake-select__item').removeClass('fake-select__item_active active');
+  $(this).parents(".fake-select").find('.fake-select__item').removeClass('fake-select__item_active active');
   $(this).addClass('fake-select__item_active');
   $(this).parents('.fake-select').find('.fake-select__value').html(this.innerHTML)
   $(this).parents('.fake-select').find('.fake-select__link').addClass('active');
@@ -579,8 +579,65 @@ $('.user-heading-nav__link').click(function(){
 
 $('.mobile-table').cardtable();
 
+$("[data-brand]").click(function(){
+  let brandArr = document.querySelectorAll("a[data-brand]");
+  let categoryArrNav = document.querySelectorAll(".fake-select__item[data-category]");
+  let curentCategory = "";
 
+  categoryArrNav.forEach(itemCategory => {
+    if(itemCategory.classList.contains("fake-select__item_active")){
+        curentCategory = itemCategory.dataset.category;
+    }
+  })
 
+  if(curentCategory){
+    brandArr.forEach(item => {
+      if(item.dataset.brand == this.dataset.brand && item.dataset.category == curentCategory){
+        item.classList.remove("d-none");
+      } else{
+        item.classList.add("d-none")
+      }
+    })
+  } else{
+    brandArr.forEach(item => {
+      if(item.dataset.brand == this.dataset.brand){
+        item.classList.remove("d-none");
+      } else{
+        item.classList.add("d-none")
+      }
+    })
+  }
+})
+
+$("[data-category]").click(function(){
+  let categoryArr = document.querySelectorAll("a[data-category]");
+  let brandArrNav = document.querySelectorAll(".fake-select__item[data-brand]");
+  let curentBrand = "";
+
+  brandArrNav.forEach(itemCategory => {
+    if(itemCategory.classList.contains("fake-select__item_active")){
+      curentBrand = itemCategory.dataset.brand;
+    }
+  })
+
+  if(curentBrand){
+    categoryArr.forEach(item => {
+      if(item.dataset.category == this.dataset.category && item.dataset.brand == curentBrand){
+        item.classList.remove("d-none");
+      } else{
+        item.classList.add("d-none")
+      }
+    })
+  } else{
+    categoryArr.forEach(item => {
+      if(item.dataset.category == this.dataset.category){
+        item.classList.remove("d-none");
+      } else{
+        item.classList.add("d-none")
+      }
+    })
+  }
+})
 
 
 

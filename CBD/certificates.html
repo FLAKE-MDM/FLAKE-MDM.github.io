@@ -58,7 +58,7 @@
                     </div>
                 </div>
                 <div class="header__bottom">
-                    <a href="#location-pane" class="location-link d-lg-flex align-items-center pane-open d-none pos-rel">
+                    <a href="#location-pane" class="location-link d-xl-flex align-items-center pane-open d-none pos-rel">
                         <div class="icon-location icon"></div>
                         <div class="location-link__name">Санкт-Петербург</div>
                     </a>
@@ -71,7 +71,15 @@
                         </a>
                         <ul class="nav-list d-lg-flex">
                             <li class="nav-list__item"><a href="catalogue.html" class="nav-list__link">Каталог</a></li>
-                            <li class="nav-list__item"><a href="about.html" class="nav-list__link">О нас</a></li>
+                            <li class="nav-list__item dropdown">
+                                <a href="#about-nav" class="nav-list__link dropdown-toggle" data-bs-toggle="collapse">О нас</a>
+                                <ul class="collapse-dropdown-menu collapse" id="about-nav">
+                                    <li class="dropdown-menu__item"><a href="/about/" class="dropdown-menu__link active">О нас</a></li>
+                                    <li class="dropdown-menu__item"><a href="/return/" class="dropdown-menu__link">Возврат и обмен</a></li>
+                                    <li class="dropdown-menu__item"><a href="/delivery/" class="dropdown-menu__link">Доставка и оплата</a></li>
+                                    <li class="dropdown-menu__item"><a href="/partners/" class="dropdown-menu__link">Партнерская программа</a></li>
+                                </ul>
+                            </li>
                             <li class="nav-list__item"><a href="brands.html" class="nav-list__link">Бренды</a></li>
                             <li class="nav-list__item"><a href="stock.html" class="nav-list__link">Акции</a></li>
                             <li class="nav-list__item"><a href="calculator.html" class="nav-list__link">Калькулятор дозировки</a></li>
@@ -189,24 +197,24 @@
                             <div class="fake-select">
                                 <a href="#" class="fake-select__link dropdown-toggle" data-bs-toggle="dropdown"><span class="fake-select__value">Выберите категорию</span></a>
                                 <div class="dropdown-menu fake-select__dropdown">
-                                    <label class="fake-select__item">
-                                        <input type="radio" class="collapse" name="concentration">
+                                    <label class="fake-select__item" data-category="oil">
+                                        <input type="radio" class="collapse sort-input" name="category">
                                         Масло CBD
                                     </label>
-                                    <label class="fake-select__item">
-                                        <input type="radio" class="collapse" name="concentration">
+                                    <label class="fake-select__item" data-category="tea">
+                                        <input type="radio" class="collapse sort-input" name="category">
                                         Чай с CBD
                                     </label>
-                                    <label class="fake-select__item">
-                                        <input type="radio" class="collapse" name="concentration">
+                                    <label class="fake-select__item" data-category="vape">
+                                        <input type="radio" class="collapse sort-input" name="category">
                                         Жидкость для вейпа c CBD
                                     </label>
-                                    <label class="fake-select__item">
-                                        <input type="radio" class="collapse" name="concentration">
+                                    <label class="fake-select__item" data-category="cosmetics">
+                                        <input type="radio" class="collapse sort-input" name="category">
                                         Косметика c CBD
                                     </label>
-                                    <label class="fake-select__item">
-                                        <input type="radio" class="collapse" name="concentration">
+                                    <label class="fake-select__item" data-category="food">
+                                        <input type="radio" class="collapse sort-input" name="category">
                                         Пищевые продукты c CBD
                                     </label>
                                 </div>
@@ -214,51 +222,149 @@
                             <div class="fake-select">
                                 <a href="#" class="fake-select__link dropdown-toggle" data-bs-toggle="dropdown"><span class="fake-select__value">Выберите бранд</span></a>
                                 <div class="dropdown-menu fake-select__dropdown">
-                                    <label class="fake-select__item">
-                                        <input type="radio" class="collapse" name="brand" checked="">
-                                        GoldenSeed.life
+                                    <label class="fake-select__item" data-brand="Goldenseed.life">
+                                        <input type="radio" class="collapse sort-input" name="brand">
+                                        Goldenseed.life
                                     </label>
-                                    <label class="fake-select__item">
-                                        <input type="radio" class="collapse" name="brand">
+                                    <label class="fake-select__item" data-brand="MotherPlant">
+                                        <input type="radio" class="collapse sort-input" name="brand">
                                         MotherPlant
                                     </label>
-                                    <label class="fake-select__item">
-                                        <input type="radio" class="collapse" name="brand">
+                                    <label class="fake-select__item" data-brand="Blue Moon Hemp">
+                                        <input type="radio" class="collapse sort-input" name="brand">
                                         Blue Moon Hemp
                                     </label>
-                                    <label class="fake-select__item">
-                                        <input type="radio" class="collapse" name="brand">
+                                    <label class="fake-select__item" data-brand="GRN">
+                                        <input type="radio" class="collapse sort-input" name="brand">
                                         GRN
+                                    </label>
+                                    <label class="fake-select__item" data-brand="CannaStyle">
+                                        <input type="radio" class="collapse sort-input" name="brand">
+                                        CannaStyle
+                                    </label>
+                                    <label class="fake-select__item" data-brand="KND Labs">
+                                        <input type="radio" class="collapse sort-input" name="brand">
+                                        KND Labs
                                     </label>
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="document-item_bordered d-flex align-items-center">
+                        <a href="#" class="document-item_bordered d-flex align-items-center" data-category="vape" data-brand="CannaStyle">
                             <div class="document-item__icon"><icon class="icon-doc icon"></icon></div>
                             <div class="document-item__text">
-                                <div class="document-item__category">АНАЛИЗ</div>
+                                <div class="document-item__category">АНАЛИЗЫ</div>
                                 <div class="d-flex justify-content-between">
-                                    <div class="document-item__title">Масло КБД Изолят 600мг 2% GoldenSeed.life</div>
+                                    <div class="document-item__title">Одноразовый вейп с CBD - Ананас со льдом - CannaStyle</div>
+                                    <span class="document-item__link text-primary"><span class="icon icon-download"></span>Скачать документ</span>
+                                </div>
+                            </div>
+                        </a>	
+                        <a href="#" class="document-item_bordered d-flex align-items-center" data-category="tea" data-brand="CannaStyle">
+                            <div class="document-item__icon"><icon class="icon-doc icon"></icon></div>
+                            <div class="document-item__text">
+                                <div class="document-item__category">АНАЛИЗЫ</div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="document-item__title">Чай с CBD - Ананас со льдом - CannaStyle</div>
+                                    <span class="document-item__link text-primary"><span class="icon icon-download"></span>Скачать документ</span>
+                                </div>
+                            </div>
+                        </a>						
+                        <a href="#" class="document-item_bordered d-flex align-items-center" data-category="oil" data-brand="CannaStyle">
+                            <div class="document-item__icon"><icon class="icon-doc icon"></icon></div>
+                            <div class="document-item__text">
+                                <div class="document-item__category">АНАЛИЗЫ</div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="document-item__title">Масло CBD Широкий спектр 3000мг CannaStyle</div>
+                                    <span class="document-item__link text-primary"><span class="icon icon-download"></span>Скачать документ</span>
+                                </div>
+                            </div>
+                        </a>				
+                        <a href="#" class="document-item_bordered d-flex align-items-center" data-category="oil" data-brand="Goldenseed.life">
+                            <div class="document-item__icon"><icon class="icon-doc icon"></icon></div>
+                            <div class="document-item__text">
+                                <div class="document-item__category">АНАЛИЗЫ</div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="document-item__title">Масло CBD Широкий спектр 1800мг Goldenseed.life</div>
+                                    <span class="document-item__link text-primary"><span class="icon icon-download"></span>Скачать документ</span>
+                                </div>
+                            </div>
+                        </a>						
+                        <a href="#" class="document-item_bordered d-flex align-items-center" data-category="cosmetics" data-brand="Blue Moon Hemp">
+                            <div class="document-item__icon"><icon class="icon-doc icon"></icon></div>
+                            <div class="document-item__text">
+                                <div class="document-item__category">АНАЛИЗЫ</div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="document-item__title">Косметика CBD Широкий спектр 600мг Blue Moon Hemp</div>
+                                    <span class="document-item__link text-primary"><span class="icon icon-download"></span>Скачать документ</span>
+                                </div>
+                            </div>
+                        </a>							
+                        <a href="#" class="document-item_bordered d-flex align-items-center" data-category="tea" data-brand="Goldenseed.life">
+                            <div class="document-item__icon"><icon class="icon-doc icon"></icon></div>
+                            <div class="document-item__text">
+                                <div class="document-item__category">АНАЛИЗЫ</div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="document-item__title">Чай CBD Изолят 3000мг Goldenseed.life</div>
+                                    <span class="document-item__link text-primary"><span class="icon icon-download"></span>Скачать документ</span>
+                                </div>
+                            </div>
+                        </a>							
+                        <a href="#" class="document-item_bordered d-flex align-items-center" data-category="vape" data-brand="Goldenseed.life">
+                            <div class="document-item__icon"><icon class="icon-doc icon"></icon></div>
+                            <div class="document-item__text">
+                                <div class="document-item__category">АНАЛИЗЫ</div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="document-item__title">Жидкость для вейпа CBD Изолят 1800мг Goldenseed.life</div>
                                     <span class="document-item__link text-primary"><span class="icon icon-download"></span>Скачать документ</span>
                                 </div>
                             </div>
                         </a>
-                        <a href="#" class="document-item_bordered d-flex align-items-center">
+                        <a href="#" class="document-item_bordered d-flex align-items-center" data-category="oil" data-brand="Goldenseed.life">
                             <div class="document-item__icon"><icon class="icon-doc icon"></icon></div>
                             <div class="document-item__text">
-                                <div class="document-item__category">АНАЛИЗ</div>
+                                <div class="document-item__category">АНАЛИЗЫ</div>
                                 <div class="d-flex justify-content-between">
-                                    <div class="document-item__title">Масло КБД Изолят 600мг 2% GoldenSeed.life</div>
+                                    <div class="document-item__title">Масло CBD Изолят 600мг Goldenseed.life</div>
                                     <span class="document-item__link text-primary"><span class="icon icon-download"></span>Скачать документ</span>
                                 </div>
                             </div>
-                        </a>
-                        <a href="#" class="document-item_bordered d-flex align-items-center">
+                        </a>							
+                        <a href="#" class="document-item_bordered d-flex align-items-center" data-category="vape" data-brand="MotherPlant">
                             <div class="document-item__icon"><icon class="icon-doc icon"></icon></div>
                             <div class="document-item__text">
-                                <div class="document-item__category">АНАЛИЗ</div>
+                                <div class="document-item__category">АНАЛИЗЫ</div>
                                 <div class="d-flex justify-content-between">
-                                    <div class="document-item__title">Масло КБД Изолят 600мг 2% GoldenSeed.life</div>
+                                    <div class="document-item__title">Жидкость для вейпа - Манго - MotherPlant</div>
+                                    <span class="document-item__link text-primary"><span class="icon icon-download"></span>Скачать документ</span>
+                                </div>
+                            </div>
+                        </a>								
+                        <a href="#" class="document-item_bordered d-flex align-items-center" data-category="food" data-brand="MotherPlant">
+                            <div class="document-item__icon"><icon class="icon-doc icon"></icon></div>
+                            <div class="document-item__text">
+                                <div class="document-item__category">АНАЛИЗЫ</div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="document-item__title">Канабиоид - Ананас со льдом - MotherPlant</div>
+                                    <span class="document-item__link text-primary"><span class="icon icon-download"></span>Скачать документ</span>
+                                </div>
+                            </div>
+                        </a>	
+                        <a href="#" class="document-item_bordered d-flex align-items-center" data-category="vape" data-brand="CannaStyle">
+                            <div class="document-item__icon"><icon class="icon-doc icon"></icon></div>
+                            <div class="document-item__text">
+                                <div class="document-item__category">АНАЛИЗЫ</div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="document-item__title">Жидкость для вейпа - Ананас со льдом - CannaStyle</div>
+                                    <span class="document-item__link text-primary"><span class="icon icon-download"></span>Скачать документ</span>
+                                </div>
+                            </div>
+                        </a>								
+                        <a href="#" class="document-item_bordered d-flex align-items-center" data-category="food" data-brand="KND Labs">
+                            <div class="document-item__icon"><icon class="icon-doc icon"></icon></div>
+                            <div class="document-item__text">
+                                <div class="document-item__category">АНАЛИЗЫ</div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="document-item__title">Каннабидиол KND Labs</div>
                                     <span class="document-item__link text-primary"><span class="icon icon-download"></span>Скачать документ</span>
                                 </div>
                             </div>
@@ -754,6 +860,7 @@
     <script src="js/slick.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/stacktable.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
