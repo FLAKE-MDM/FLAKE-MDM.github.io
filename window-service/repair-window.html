@@ -14,79 +14,82 @@
 <body>
     <div class="wrap" id="wrap">
         <!-- preview -->
-        <div class="preview preview_repair-window">
-            <!-- header -->
-            <header class="header">
-                <div class="container">
-                    <div class="header__block d-flex align-items-center">
-                        <a href="index.html" class="logo header__logo"><img src="img/logo.svg" alt="Оконный Сервис" class="img-fluid"></a>
-                        <a href="#" class="rating-link d-block">
-                            <div class="rating d-flex align-items-center justify-content-end">
-                                <div class="rating__stars rating__stars_size-lg">
-                                    <div class="rating__active rating__active_success" style="width:100%"></div>
-                                </div>
-                                <div class="rating__num text-bold text_size-md">5,0</div>
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__block d-flex align-items-center">
+                    <a href="index.html" class="logo header__logo">
+                        <img src="img/logo.svg" alt="Оконный Сервис" class="img-fluid fixed-hidden">
+                        <img src="img/logo-fixed.svg" alt="Оконный Сервис" class="img-fluid fixed-visible">
+                    </a>
+                    <a href="#" class="rating-link d-block fixed-hidden">
+                        <div class="rating d-flex align-items-center justify-content-end">
+                            <div class="rating__stars rating__stars_size-lg">
+                                <div class="rating__active rating__active_success" style="width:100%"></div>
                             </div>
-                            <div class="text_size-sm text-bold d-flex align-items-center">Оценка клиентов <img src="img/2gis.svg" alt="" class="rating-link__image"></div>
-                        </a>
-                        <div class="header__middle">
-                            <div class="work-time d-none d-lg-flex text_size-sm"><span class="icon icon-clock"></span>С 7:00 до 24:00 без выходных в Москве и Московской области</div>
-                            <ul class="header-nav d-none d-xl-flex">
-                                <li class="header-nav__item"><a href="services.html" class="header-nav__link">Услуги</a></li>
-                                <li class="header-nav__item"><a href="reviews.html" class="header-nav__link">Отзывы</a></li>
-                                <li class="header-nav__item"><a href="#" class="header-nav__link">Прайс-лист</a></li>
-                                <li class="header-nav__item"><a href="news.html" class="header-nav__link">Блог</a></li>
-                                <li class="header-nav__item"><a href="contacts.html" class="header-nav__link">Контакты</a></li>
-                            </ul>
+                            <div class="rating__num text-bold text_size-md">5,0</div>
                         </div>
-                        <div class="header__contacts text-right">
-                            <a href="tel:+74958888888" class="phone d-flex align-items-center"><span class="icon icon-phone-fill phone__icon"></span>+7 (495) 888-88-88</a>
-                            <a href="#callback" class="text-danger text-upper text-bold d-none d-md-inline" data-bs-toggle="modal">Перезвонить вам?</a>
-                        </div>
-                        <button class="btn-menu d-xl-none" data-bs-target="#navigation" data-bs-toggle="collapse">
-                            <span class="btn-menu__item"></span>
-                            <span class="btn-menu__item"></span>
-                            <span class="btn-menu__item"></span>
-                        </button>
+                        <div class="text_size-sm text-bold d-flex align-items-center">Оценка клиентов <img src="img/2gis.svg" alt="" class="rating-link__image"></div>
+                    </a>
+                    <div class="header__middle">
+                        <div class="work-time d-none d-lg-flex text_size-sm fixed-hidden"><span class="icon icon-clock"></span>С 7:00 до 24:00 без выходных в Москве и Московской области</div>
+                        <ul class="header-nav d-none d-xl-flex">
+                            <li class="header-nav__item"><a href="services.html" class="header-nav__link">Услуги</a></li>
+                            <li class="header-nav__item"><a href="reviews.html" class="header-nav__link">Отзывы</a></li>
+                            <li class="header-nav__item"><a href="#" class="header-nav__link">Прайс-лист</a></li>
+                            <li class="header-nav__item"><a href="news.html" class="header-nav__link">Блог</a></li>
+                            <li class="header-nav__item"><a href="contacts.html" class="header-nav__link">Контакты</a></li>
+                        </ul>
                     </div>
-                    <!-- navigation -->
-                    <nav class="navigation collapse" id="navigation">
-                        <div class="navigation__container">
-                            <ul class="header-nav d-xl-none">
-                                <li class="header-nav__item"><a href="services.html" class="header-nav__link">Услуги</a></li>
-                                <li class="header-nav__item"><a href="reviews.html" class="header-nav__link">Отзывы</a></li>
-                                <li class="header-nav__item"><a href="#" class="header-nav__link">Прайс-лист</a></li>
-                                <li class="header-nav__item"><a href="news.html" class="header-nav__link">Блог</a></li>
-                                <li class="header-nav__item"><a href="contacts.html" class="header-nav__link">Контакты</a></li>
-                            </ul>
-                            <ul class="navigation-list d-xl-flex justify-content-between">  
-                                <li class="navigation-list__item">
-                                    <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-1.svg" alt="" class="img-fluid"></span>Ремонт окон</a>
-                                </li>
-                                <li class="navigation-list__item">
-                                    <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-2.svg" alt="" class="img-fluid"></span>Обслуживание окон</a>
-                                </li>
-                                <li class="navigation-list__item">
-                                    <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-3.svg" alt="" class="img-fluid"></span>Москитные сетки</a>
-                                </li>
-                                <li class="navigation-list__item">
-                                    <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-4.svg" alt="" class="img-fluid"></span>Производство</a>
-                                </li>
-                                <li class="navigation-list__item">
-                                    <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-5.svg" alt="" class="img-fluid"></span>Рольставни</a>
-                                </li>
-                                <li class="navigation-list__item">
-                                    <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-6.svg" alt="" class="img-fluid"></span>Жалюзи</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                    <!-- /navigation -->
+                    <div class="header__contacts text-right">
+                        <a href="tel:+74958888888" class="phone d-flex align-items-center"><span class="icon icon-phone-fill phone__icon"></span>+7 (495) 888-88-88</a>
+                        <a href="#callback" class="text-danger text-upper text-bold d-none d-md-inline" data-bs-toggle="modal">Перезвонить вам?</a>
+                    </div>
+                    <button class="btn-menu d-xl-none" data-bs-target="#navigation" data-bs-toggle="collapse">
+                        <span class="btn-menu__item"></span>
+                        <span class="btn-menu__item"></span>
+                        <span class="btn-menu__item"></span>
+                    </button>
                 </div>
-            </header>
-            <!-- /header -->
+                <!-- navigation -->
+                <nav class="navigation collapse fixed-hidden" id="navigation">
+                    <div class="navigation__container">
+                        <ul class="header-nav d-xl-none">
+                            <li class="header-nav__item"><a href="services.html" class="header-nav__link">Услуги</a></li>
+                            <li class="header-nav__item"><a href="reviews.html" class="header-nav__link">Отзывы</a></li>
+                            <li class="header-nav__item"><a href="#" class="header-nav__link">Прайс-лист</a></li>
+                            <li class="header-nav__item"><a href="news.html" class="header-nav__link">Блог</a></li>
+                            <li class="header-nav__item"><a href="contacts.html" class="header-nav__link">Контакты</a></li>
+                        </ul>
+                        <ul class="navigation-list d-xl-flex justify-content-between">  
+                            <li class="navigation-list__item">
+                                <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-1.svg" alt="" class="img-fluid"></span>Ремонт окон</a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-2.svg" alt="" class="img-fluid"></span>Обслуживание окон</a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-3.svg" alt="" class="img-fluid"></span>Москитные сетки</a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-4.svg" alt="" class="img-fluid"></span>Производство</a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-5.svg" alt="" class="img-fluid"></span>Рольставни</a>
+                            </li>
+                            <li class="navigation-list__item">
+                                <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-6.svg" alt="" class="img-fluid"></span>Жалюзи</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- /navigation -->
+            </div>
+        </header>
+        <!-- /header -->
+        <div class="preview preview_repair-window">
            <div class="preview__image">
-                <img src="img/preview-repair-window.jpg" alt="" class="w-100">
+                <img data-src="img/preview-repair-window.jpg" alt="" class="w-100">
            </div>
            <div class="container preview__content">
             <!-- breadcrumb -->
@@ -125,7 +128,7 @@
         </div>
         <!-- /preview -->
         <!-- work -->
-        <section class="work-section">
+        <section class="work-section pos-rel">
             <div class="container">
                 <h2 class="title_size-lg title_margin-bottom-lg text-black">Как работает <span class="text-primary">наш сервис?</span></h2>
                 <p class="text_size-xl_vertical title_margin-bottom-lg">С нами работают крупные строительные компании Москвы и Московской области. Мы помогаем не только быстро исправить проблему, но и следим за качеством выполнения работ.</p>
@@ -423,7 +426,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <p class="text-center"><a href="#collapse-window" class="btn btn-outline btn_size-sm" data-bs-toggle="collapse">Показать еще</a></p>
+                        <p class="text-center"><a href="#collapse-window" class="btn btn-outline btn_size-sm btn_hidden collapsed" data-bs-toggle="collapse">Показать еще</a></p>
                     </div>
                     <div class="tab-pane" id="door">
                         <div class="table-responsive table-responsive_bordered">
@@ -466,7 +469,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <p class="text-center"><a href="#collapse-door" class="btn btn-outline btn_size-sm" data-bs-toggle="collapse">Показать еще</a></p>
+                        <p class="text-center"><a href="#collapse-door" class="btn btn-outline btn_size-sm btn_hidden collapsed collapsed" data-bs-toggle="collapse">Показать еще</a></p>
                     </div>
                     <div class="tab-pane" id="balcony">
                         <div class="table-responsive table-responsive_bordered">
@@ -529,7 +532,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <p class="text-center"><a href="#collapse-balcony" class="btn btn-outline btn_size-sm" data-bs-toggle="collapse">Показать еще</a></p>
+                        <p class="text-center"><a href="#collapse-balcony" class="btn btn-outline btn_size-sm btn_hidden collapsed" data-bs-toggle="collapse">Показать еще</a></p>
                     </div>
                     <div class="tab-pane" id="veranda">
                         <div class="table-responsive table-responsive_bordered">
@@ -592,7 +595,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <p class="text-center"><a href="#collapse-veranda" class="btn btn-outline btn_size-sm" data-bs-toggle="collapse">Показать еще</a></p>
+                        <p class="text-center"><a href="#collapse-veranda" class="btn btn-outline btn_size-sm btn_hidden collapsed" data-bs-toggle="collapse">Показать еще</a></p>
                     </div>
                 </div>
             </div>
@@ -1099,7 +1102,7 @@
                         <p><a href="#" class="text-secondary text-medium">Правила использования сайта</a></p>
                         <p><a href="#" class="text-secondary text-medium">Защита персональных данных</a></p>
                     </div>
-                    <div class="col-lg- col-md-6 footer__col-2">
+                    <div class="col-lg-3 col-md-6 footer__col-2">
                         <div class="footer__title title_margin-bottom-md text-bold text_size-lg">Услуги</div>
                         <ul class="footer-nav text-medium">
                             <li class="footer-nav__item"><a href="#" class="footer-nav__link">Ремонт</a></li>
@@ -1184,6 +1187,7 @@
     <script src="js/fancybox.umd.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/stacktable.js"></script>
+    <script src="js/wow.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

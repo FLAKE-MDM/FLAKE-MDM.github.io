@@ -17,8 +17,11 @@
         <header class="header">
             <div class="container">
                 <div class="header__block d-flex align-items-center">
-                    <a href="index.html" class="logo header__logo"><img src="img/logo.svg" alt="Оконный Сервис" class="img-fluid"></a>
-                    <a href="#" class="rating-link d-block">
+                    <a href="index.html" class="logo header__logo">
+                        <img src="img/logo.svg" alt="Оконный Сервис" class="img-fluid fixed-hidden">
+                        <img src="img/logo-fixed.svg" alt="Оконный Сервис" class="img-fluid fixed-visible">
+                    </a>
+                    <a href="#" class="rating-link d-block fixed-hidden">
                         <div class="rating d-flex align-items-center justify-content-end">
                             <div class="rating__stars rating__stars_size-lg">
                                 <div class="rating__active rating__active_success" style="width:100%"></div>
@@ -28,7 +31,7 @@
                         <div class="text_size-sm text-bold d-flex align-items-center">Оценка клиентов <img src="img/2gis.svg" alt="" class="rating-link__image"></div>
                     </a>
                     <div class="header__middle">
-                        <div class="work-time d-none d-lg-flex text_size-sm"><span class="icon icon-clock"></span>С 7:00 до 24:00 без выходных в Москве и Московской области</div>
+                        <div class="work-time d-none d-lg-flex text_size-sm fixed-hidden"><span class="icon icon-clock"></span>С 7:00 до 24:00 без выходных в Москве и Московской области</div>
                         <ul class="header-nav d-none d-xl-flex">
                             <li class="header-nav__item"><a href="services.html" class="header-nav__link">Услуги</a></li>
                             <li class="header-nav__item"><a href="reviews.html" class="header-nav__link">Отзывы</a></li>
@@ -48,7 +51,7 @@
                     </button>
                 </div>
                 <!-- navigation -->
-                <nav class="navigation collapse" id="navigation">
+                <nav class="navigation collapse fixed-hidden" id="navigation">
                     <div class="navigation__container">
                         <ul class="header-nav d-xl-none">
                             <li class="header-nav__item"><a href="services.html" class="header-nav__link">Услуги</a></li>
@@ -379,7 +382,7 @@
                         <p><a href="#" class="text-secondary text-medium">Правила использования сайта</a></p>
                         <p><a href="#" class="text-secondary text-medium">Защита персональных данных</a></p>
                     </div>
-                    <div class="col-lg- col-md-6 footer__col-2">
+                    <div class="col-lg-3 col-md-6 footer__col-2">
                         <div class="footer__title title_margin-bottom-md text-bold text_size-lg">Услуги</div>
                         <ul class="footer-nav text-medium">
                             <li class="footer-nav__item"><a href="#" class="footer-nav__link">Ремонт</a></li>
@@ -464,6 +467,7 @@
     <script src="js/fancybox.umd.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/stacktable.js"></script>
+    <script src="js/wow.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
