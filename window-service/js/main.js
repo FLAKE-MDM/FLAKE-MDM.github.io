@@ -9,7 +9,6 @@ if(previewImage){
   };
 }
 
-
 window.onscroll = function checkScroll() {
   const scrollTopPosition = document.documentElement.scrollTop;
   if(scrollTopPosition > 200){
@@ -29,6 +28,10 @@ wow = new WOW(
   }
 );
 wow.init();
+
+$("[href*='modal-nav']").click(function(){
+  $(".modal-backdrop").addClass("modal-nav-backdrop")
+})
 
 
 new Swiper(".sertifficates-slider", {
@@ -308,15 +311,74 @@ $('.up-link').click(function() {
     return false;
 });
 
-$('.contacts-form').submit(function(){
-  $(this).hide();
-  $(this).parents('.consultation-section__form').find('.success-show').show();
+
+// contacts-form
+let code = 1234
+$(".contacts-form .btn").click(function(e) {
+  e.preventDefault();
+  let name = this.name.slice(4);
+
+  if(name == "success"){
+    $(this).parent().hide();
+    $(this).parents('.contacts-form').find('.success-hide').show();
+    $(this).parents('.contacts-form').find('.phone-block').removeClass("collapse");
+
+    let inputs = $(this).parents('.contacts-form').find("input[type='number']");
+
+    for(let input of inputs){
+      input.value = ""
+    }
+    return
+  }
+
+  let input = findInput.apply(this, [name]);
+
+  if(formValid(input)){
+    if(this.name == "btn-phone" || this.name == "btn-phone2"){
+      $(this).parents('.contacts-form').find(".phone-block").addClass("collapse");
+      $(this).parents('.contacts-form').find(".code-block").removeClass("collapse");
+    }
+    if(this.name == "btn-code" || this.name == "btn-code2"){
+      $(this).parents('.contacts-form').find(".code-block").addClass("collapse");
+      this.closest(".contacts-form")
+      $(this).parents('.contacts-form').find('.success-show').show();
+    }
+  }
+  
 })
-$('.close-success').click(function(e){
-  e.preventDefault()
-  $(this).parent().hide();
-  $(this).parents('.consultation-section__form').find('.success-hide').show();
-})
+
+function findInput(name){
+  let parentForm = this.closest(".contacts-form");
+  let input = parentForm.querySelector(`[name="${name}"]`);
+  return input
+}
+
+function formValid(input){
+  let outputError = document.querySelector(`#${input.name}Error`)
+  let regex = new RegExp(input.dataset.pattern)
+
+  if(input.value == ""){
+    $(outputError).removeClass("collapse");
+    outputError.textContent = "Заполните поле";
+  } else if(!regex.test(input.value)){
+    $(outputError).removeClass("collapse");
+    outputError.textContent = "Неверный формат"
+  } else if(input.name == "code" || input.name == "code2"){
+      if(input.value != code){
+        $(outputError).removeClass("collapse");
+        outputError.textContent = "Не правильный пароль";
+      } else{
+        $(outputError).addClass("collapse");
+        return true
+      }
+  }
+  else{
+    $(outputError).addClass("collapse");
+    return true
+  }
+}
+
+
 
 
 // window
@@ -560,51 +622,54 @@ let video = document.querySelector("#video-test-net");
 let videoDuration = document.querySelector(".video-block__duration");
 let playBtn = document.querySelector(".play-btn");
 
-$(window).on("load", function() {
-  let videoDurationVal = video.duration / 60;
-  videoDuration.innerHTML = videoDurationVal.toFixed(2);
-});
-
-playBtn.addEventListener('click', function () {
-  $(this).toggleClass('collapse');
-  $(videoDuration).toggleClass('collapse');
-  if (video.paused) {
-      video.play();
-  } else {
-      video.pause();
+if(video){
+  $(window).on("load", function() {
+    let videoDurationVal = video.duration / 60;
+    videoDuration.innerHTML = videoDurationVal.toFixed(2);
+  });
+  
+  playBtn.addEventListener('click', function () {
+    $(this).toggleClass('collapse');
+    $(videoDuration).toggleClass('collapse');
+    if (video.paused) {
+        video.play();
+    } else {
+        video.pause();
+    }
+  }, false);
+  
+  let $video = $("#video-test-net"),
+  mousedown = false;
+  
+  $video.click(function(){
+  if (this.paused) {
+      this.play();
+      return false;
   }
-}, false);
-
-let $video = $("#video-test-net"),
-mousedown = false;
-
-$video.click(function(){
-if (this.paused) {
-    this.play();
-    return false;
+  return true;
+  });
+  
+  $video.on('mousedown', function () {
+  mousedown = true;
+  });
+  
+  $(window).on('mouseup', function () {
+  mousedown = false;
+  });
+  
+  $video.on('play', function () {
+    $video.attr('controls', '');
+  });
+  
+  $video.on('pause', function () {
+    $(playBtn).toggleClass('collapse');
+    $(videoDuration).toggleClass('collapse');
+  if (!mousedown) {
+      $video.removeAttr('controls');
+  }
+  });
+  
 }
-return true;
-});
-
-$video.on('mousedown', function () {
-mousedown = true;
-});
-
-$(window).on('mouseup', function () {
-mousedown = false;
-});
-
-$video.on('play', function () {
-  $video.attr('controls', '');
-});
-
-$video.on('pause', function () {
-  $(playBtn).toggleClass('collapse');
-  $(videoDuration).toggleClass('collapse');
-if (!mousedown) {
-    $video.removeAttr('controls');
-}
-});
 
 
 

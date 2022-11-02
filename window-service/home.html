@@ -62,10 +62,10 @@
                         </ul>
                         <ul class="navigation-list d-xl-flex justify-content-between">  
                             <li class="navigation-list__item">
-                                <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-1.svg" alt="" class="img-fluid"></span>Ремонт окон</a>
+                                <a href="#modal-nav-repair" class="navigation-list__link" data-bs-toggle="modal"><span class="navigation-list__icon"><img src="img/icons/nav-1.svg" alt="" class="img-fluid"></span>Ремонт окон <span class="icon icon-caret ms-2 ms-xxl-4"></span></a>
                             </li>
                             <li class="navigation-list__item">
-                                <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-2.svg" alt="" class="img-fluid"></span>Обслуживание окон</a>
+                                <a href="#modal-nav-service" class="navigation-list__link" data-bs-toggle="modal"><span class="navigation-list__icon"><img src="img/icons/nav-2.svg" alt="" class="img-fluid"></span>Обслуживание окон  <span class="icon icon-caret ms-2 ms-xxl-4"></span></a>
                             </li>
                             <li class="navigation-list__item">
                                 <a href="#" class="navigation-list__link"><span class="navigation-list__icon"><img src="img/icons/nav-3.svg" alt="" class="img-fluid"></span>Москитные сетки</a>
@@ -279,35 +279,51 @@
                     <div class="title_size-lg text-black consultation-section__title">Срочная консультация</div>
                     <div class="text_size-xl_vertical text-bold">Перезвоним вам в течении <span class="circle-text">3х</span>минут</div>
                     <div class="consultation-section__form">
-                        <form action="#" class="contacts-form success-hide">
-                            <p class="text_size-md text-semibold">Как с Вами связаться?</p>
-                            <div class="messenger-group d-md-flex">
-                                <label class="messenger-group__item">
-                                    <input type="radio" name="messenger" checked class="collapse">
-                                    <span class="messenger-group__btn bg-social_light"><span class="messenger-group__icon icon icon-phone-inversion"></span>Телефон</span>
-                                </label>
-                                <label class="messenger-group__item">
-                                    <input type="radio" name="messenger" class="collapse">
-                                    <span class="messenger-group__btn bg-social_succes"><span class="messenger-group__icon icon icon-whatsapp-inversion"></span>WhatsApp</span>
-                                </label>
-                                <label class="messenger-group__item">
-                                    <input type="radio" name="messenger" class="collapse">
-                                    <span class="messenger-group__btn bg-social_primary"><span class="messenger-group__icon icon icon-telegram-inversion"></span>Telegram</span>
-                                </label>
-                            </div>
-                            <div class="d-md-flex form-group form-group_horizontal">
-                                <div class="pos-rel form-control-wrap form-control-wrap_large">
-                                    <span class="form-control__icon icon icon-phone"></span>
-                                    <input type="text" class="form-control form-control_danger" placeholder="Номер телефона">
+                        <form action="#" class="contacts-form">
+                            <div class="success-hide">
+                                <div class="phone-block">
+                                    <p class="text_size-md text-semibold">Как с Вами связаться?</p>
+                                    <div class="messenger-group d-md-flex">
+                                        <label class="messenger-group__item">
+                                            <input type="radio" name="messenger" checked class="collapse">
+                                            <span class="messenger-group__btn bg-social_light"><span class="messenger-group__icon icon icon-phone-inversion"></span>Телефон</span>
+                                        </label>
+                                        <label class="messenger-group__item">
+                                            <input type="radio" name="messenger" class="collapse">
+                                            <span class="messenger-group__btn bg-social_succes"><span class="messenger-group__icon icon icon-whatsapp-inversion"></span>WhatsApp</span>
+                                        </label>
+                                        <label class="messenger-group__item">
+                                            <input type="radio" name="messenger" class="collapse">
+                                            <span class="messenger-group__btn bg-social_primary"><span class="messenger-group__icon icon icon-telegram-inversion"></span>Telegram</span>
+                                        </label>
+                                    </div>
+                                    <div class="d-md-flex form-group form-group_horizontal">
+                                        <div class="pos-rel form-control-wrap form-control-wrap_large">
+                                            <span class="form-control__icon icon icon-phone"></span>
+                                            <input type="number" class="form-control form-control_danger" data-pattern="\d{10}" name="phone" placeholder="Номер телефона">
+                                        </div>
+                                        <button class="btn btn-danger btn_size-md w-100_sm" name="btn-phone">Отправить</button>
+                                    </div>
+                                    <p class="error-message collapse text_size-sm text-danger text-semibold" id="phoneError"></p>
                                 </div>
-                                <button class="btn btn-danger btn_size-md w-100_sm">Отправить</button>
+                                <div class="code-block collapse">
+                                    <p class="text_size-md text-semibold">Введите код подтверждения.</p>
+                                    <div class="d-md-flex form-group form-group_horizontal">
+                                        <div class="pos-rel form-control-wrap form-control-wrap_large">
+                                            <span class="form-control__icon icon icon-phone"></span>
+                                            <input type="number" class="form-control form-control_danger" data-pattern="\d{4}" name="code" placeholder="Код подтверждения">
+                                        </div>
+                                        <button class="btn btn-danger btn_size-md w-100_sm" name="btn-code">Отправить</button>
+                                    </div>
+                                    <p class="error-message collapse text_size-sm text-danger text-semibold" id="codeError"></p>
+                                </div>
+                                <p class="text_size-xs">Нажимая на кнопку, Вы даете согласие на обработку своих <a href="#" class="text-bold link-underline">персональных данных</a></p>
                             </div>
-                            <p class="text_size-xs">Нажимая на кнопку, Вы даете согласие на обработку своих <a href="#" class="text-bold link-underline">персональных данных</a></p>
+                            <div class="consultation-section__success success-show">
+                                <p class="text-center text_size-lg text-medium title_margin-bottom-md">Ваша заявка отправлена! <br>Ожидайте когда с вами свяжется наш менеджер</p>
+                                <a href="#" class="btn btn-primary w-100" name="btn-success">Хорошо  буду ждать</a>
+                            </div>
                         </form>
-                        <div class="consultation-section__success success-show">
-                            <p class="text-center text_size-lg text-medium title_margin-bottom-md">Ваша заявка отправлена! <br>Ожидайте когда с вами свяжется наш менеджер</p>
-                            <a href="#" class="btn btn-primary w-100 close-success">Хорошо  буду ждать</a>
-                        </div>
                     </div>
                 </div>
                 <div class="consultation-section__image fadeInUp wow"><img src="img/consultation.png" alt="" class="img-fluid"></div>
@@ -938,33 +954,227 @@
             <div class="modal-content">
                 <button type="button" class="icon modal__close icon-close" data-bs-dismiss="modal"></button>
                 <div class="modal__form">
-                    <div class="title_size-sm title_margin-bottom-md text-extrabold"><div class="text-primary">Оставьте заявку</div> мы перезвоним через несколько минут</div>
-                    <form action="#">
-                        <div class="pos-rel form-control-wrap form-group">
-                            <span class="form-control__icon icon icon-phone"></span>
-                            <input type="text" class="form-control form-control_danger" placeholder="Номер телефона">
+                    <form action="#" class="contacts-form">
+                        <div class="success-hide">
+                            <div class="phone-block">
+                                <div class="title_size-sm title_margin-bottom-md text-extrabold"><div class="text-primary">Оставьте заявку</div> мы перезвоним через несколько минут</div>
+                                <div class="pos-rel form-control-wrap form-group">
+                                    <span class="form-control__icon icon icon-phone"></span>
+                                    <input type="number" class="form-control form-control_danger" data-pattern="\d{10}" name="phone2" placeholder="Номер телефона">
+                                </div>
+                                <p class="error-message collapse text_size-sm text-danger text-semibold" id="phone2Error"></p>
+                                <div class="form-group">
+                                    <button class="btn w-100 btn-danger" name="btn-phone2">Отправить</button>
+                                </div>
+                                <p class="text-center text_size-xs">Нажимая на кнопку, Вы даете согласие на обработку своих <a href="#" class="link-underline text-bold">персональных данных</a></p>
+                            </div>
+                            <div class="code-block collapse">
+                                <div class="title_size-sm title_margin-bottom-md text-extrabold"><div class="text-primary">Введите </div> код подтверждения</div>
+                                <div class="pos-rel form-control-wrap form-group">
+                                    <span class="form-control__icon icon icon-phone"></span>
+                                    <input type="number" class="form-control form-control_danger" data-pattern="\d{4}" name="code2" placeholder="Код подтверждения">
+                                </div>
+                                <p class="error-message collapse text_size-sm text-danger text-semibold" id="code2Error"></p>
+                                <div class="form-group">
+                                    <button class="btn w-100 btn-danger" name="btn-code2">Отправить</button>
+                                </div>
+                                <p class="text-center text_size-xs">Нажимая на кнопку, Вы даете согласие на обработку своих <a href="#" class="link-underline text-bold">персональных данных</a></p>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <button class="btn w-100 btn-danger" data-bs-toggle="modal" data-bs-target="#success">Отправить</button>
+                        <div class="success-show collapse">
+                            <p class="text-center text_size-lg text-medium title_margin-bottom-md modal-content__text">Ваша заявка отправлена! <br>Ожидайте когда с вами свяжется наш менеджер</p>
+                            <p><a href="#" class="btn btn-primary w-100" data-bs-dismiss="modal">Хорошо  буду ждать</a></p>
                         </div>
-                        <p class="text-center text_size-xs">Нажимая на кнопку, Вы даете согласие на обработку своих <a href="#" class="link-underline text-bold">персональных данных</a></p>
                     </form>
                 </div>
             </div>
         </div>
     </div>
     <!-- /callback -->
-    <!-- success -->
-    <div class="modal fade" id="success" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content modal-content_padding">
-                <button type="button" class="icon modal__close icon-close" data-bs-dismiss="modal"></button>
-                <p class="text-center text_size-lg text-medium title_margin-bottom-md modal-content__text">Ваша заявка отправлена! <br>Ожидайте когда с вами свяжется наш менеджер</p>
-                <p><a href="#" class="btn btn-primary w-100" data-bs-dismiss="modal">Хорошо  буду ждать</a></p>
+
+
+    <!-- modal-nav -->
+    <div class="modal fade modal-nav" id="modal-nav-repair" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-nav__modal-dialog container">
+            <div class="modal-content modal-nav__modal-content">
+                <button type="button" class="modal__close_circle" data-bs-dismiss="modal">
+                    <span class="icon icon-close-inversion"></span>
+                </button>
+                <div class="modal-nav__header d-sm-flex align-items-center justify-content-between">
+                    <a href="index.html" class="logo">
+                        <img src="img/logo-inversion.svg" alt="Оконный Сервис" class="img-fluid">
+                    </a>
+                    <div class="modal-nav__social d-flex align-items-center mt-4 mt-sm-0">
+                        <div class="text-inversion me-4 pe-1 text_size-sm d-none d-md-block">Следи за нами в соцсетях</div>
+                        <div class="social-list social-list_md">
+                            <a href="#" class="social-list__item bg-social_primary" target="_blank"><span class="icon icon-telegram-inversion"></span></a>
+                            <a href="#" class="social-list__item bg-social_dark" target="_blank"><span class="icon icon-vk-inversion"></span></a>
+                            <a href="#" class="social-list__item bg-social_succes" target="_blank"><span class="icon icon-whatsapp-inversion"></span></a>
+                            <a href="#" class="social-list__item bg-social_danger" target="_blank"><span class="icon icon-ins-inversion"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-md-flex">
+                    <div class="modal-nav__main order-md-2">
+                        <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
+                            <div class="title_size-sm text-inversion text-black">Ремонт оконных систем</div>
+                            <div class="text-right mt-4 mt-xl-0">
+                                <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                            </div>
+                        </div>
+                        <div class="service-list">
+                            <a href="#" class="service-item">
+                                <div class="service-item__image"><img src="img/service-1.jpg" alt="" class="img-fluid"></div>
+                                <div class="text-semibold d-flex align-items-center text_size-sm">
+                                    Ремонт окон
+                                </div>
+                            </a>
+                            <a href="#" class="service-item">
+                                <div class="service-item__image"><img src="img/service-2.jpg" alt="" class="img-fluid"></div>
+                                <div class="text-semibold d-flex align-items-center text_size-sm">
+                                    Обслуживание
+                                </div>
+                            </a>
+                            <a href="#" class="service-item">
+                                <div class="service-item__image"><img src="img/service-3.jpg" alt="" class="img-fluid"></div>
+                                <div class="text-semibold d-flex align-items-center text_size-sm">
+                                    Москитные сетки
+                                </div>
+                            </a>
+                            <a href="#" class="service-item">
+                                <div class="service-item__image"><img src="img/service-4.jpg" alt="" class="img-fluid"></div>
+                                <div class="text-semibold d-flex align-items-center text_size-sm">
+                                    Производство
+                                </div>
+                            </a>
+                            <a href="#" class="service-item">
+                                <div class="service-item__image"><img src="img/service-5.jpg" alt="" class="img-fluid"></div>
+                                <div class="text-semibold d-flex align-items-center text_size-sm">
+                                    Рольставни
+                                </div>
+                            </a>
+                            <a href="#" class="service-item">
+                                <div class="service-item__image"><img src="img/service-6.jpg" alt="" class="img-fluid"></div>
+                                <div class="text-semibold d-flex align-items-center text_size-sm">
+                                    Жалюзи
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-nav__aside">
+                        <ul class="modal-nav-list">
+                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Ремонт окон</a></li>
+                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link active">Ремонт оконных систем</a></li>
+                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Ремонт пластиковых систем</a></li>
+                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Ремонт алюминиевых систем</a></li>
+                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Ремонт деревянных систем</a></li>
+                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Отделка окон</a></li>
+                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Апгрейд окон</a></li>
+                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Услуги по уходу и обслуживанию окон</a></li>
+                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Фурнитура</a></li>
+                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Стеклопакеты</a></li>
+                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Регулировка</a></li>
+                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Уплотинтель</a></li>
+                        </ul>
+                        <p class="text-center">
+                            <a href="#" class="btn btn-success text-upper btn_size-smd">Какая у вас проблема?</a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- /success -->
+    <div class="modal fade modal-nav" id="modal-nav-service" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-nav__modal-dialog container">
+            <div class="modal-content modal-nav__modal-content">
+                <button type="button" class="modal__close_circle" data-bs-dismiss="modal">
+                    <span class="icon icon-close-inversion"></span>
+                </button>
+                <div class="modal-nav__header d-sm-flex align-items-center justify-content-between">
+                    <a href="index.html" class="logo">
+                        <img src="img/logo-inversion.svg" alt="Оконный Сервис" class="img-fluid">
+                    </a>
+                    <div class="modal-nav__social d-flex align-items-center mt-4 mt-sm-0">
+                        <div class="text-inversion me-4 pe-1 text_size-sm d-none d-md-block">Следи за нами в соцсетях</div>
+                        <div class="social-list social-list_md">
+                            <a href="#" class="social-list__item bg-social_primary" target="_blank"><span class="icon icon-telegram-inversion"></span></a>
+                            <a href="#" class="social-list__item bg-social_dark" target="_blank"><span class="icon icon-vk-inversion"></span></a>
+                            <a href="#" class="social-list__item bg-social_succes" target="_blank"><span class="icon icon-whatsapp-inversion"></span></a>
+                            <a href="#" class="social-list__item bg-social_danger" target="_blank"><span class="icon icon-ins-inversion"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-md-flex">
+                    <div class="modal-nav__main order-md-2">
+                        <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
+                            <div class="title_size-sm text-inversion text-black">Обслуживание окон</div>
+                            <div class="text-right mt-4 mt-xl-0">
+                                <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                            </div>
+                        </div>
+                        <div class="service-list">
+                            <a href="#" class="service-item">
+                                <div class="service-item__image"><img src="img/service-1.jpg" alt="" class="img-fluid"></div>
+                                <div class="text-semibold d-flex align-items-center text_size-sm">
+                                    Ремонт окон
+                                </div>
+                            </a>
+                            <a href="#" class="service-item">
+                                <div class="service-item__image"><img src="img/service-2.jpg" alt="" class="img-fluid"></div>
+                                <div class="text-semibold d-flex align-items-center text_size-sm">
+                                    Обслуживание
+                                </div>
+                            </a>
+                            <a href="#" class="service-item">
+                                <div class="service-item__image"><img src="img/service-3.jpg" alt="" class="img-fluid"></div>
+                                <div class="text-semibold d-flex align-items-center text_size-sm">
+                                    Москитные сетки
+                                </div>
+                            </a>
+                            <a href="#" class="service-item">
+                                <div class="service-item__image"><img src="img/service-4.jpg" alt="" class="img-fluid"></div>
+                                <div class="text-semibold d-flex align-items-center text_size-sm">
+                                    Производство
+                                </div>
+                            </a>
+                            <a href="#" class="service-item">
+                                <div class="service-item__image"><img src="img/service-5.jpg" alt="" class="img-fluid"></div>
+                                <div class="text-semibold d-flex align-items-center text_size-sm">
+                                    Рольставни
+                                </div>
+                            </a>
+                            <a href="#" class="service-item">
+                                <div class="service-item__image"><img src="img/service-6.jpg" alt="" class="img-fluid"></div>
+                                <div class="text-semibold d-flex align-items-center text_size-sm">
+                                    Жалюзи
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-nav__aside">
+                        <ul class="modal-nav-list">
+                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Ремонт окон</a></li>
+                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link active">Ремонт оконных систем</a></li>
+                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Ремонт пластиковых систем</a></li>
+                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Ремонт алюминиевых систем</a></li>
+                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Ремонт деревянных систем</a></li>
+                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Отделка окон</a></li>
+                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Апгрейд окон</a></li>
+                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Услуги по уходу и обслуживанию окон</a></li>
+                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Фурнитура</a></li>
+                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Стеклопакеты</a></li>
+                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Регулировка</a></li>
+                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Уплотинтель</a></li>
+                        </ul>
+                        <p class="text-center">
+                            <a href="#" class="btn btn-success text-upper btn_size-smd">Какая у вас проблема?</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /modal-nav -->
   
 
     <script src="js/jquery-3.6.0.min.js"></script>
