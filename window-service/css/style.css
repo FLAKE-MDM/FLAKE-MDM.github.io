@@ -6929,7 +6929,7 @@ ins, del {
 
 @media only screen and (max-width: 767px) {
   .repair-price-table th {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     padding: 1rem;
   }
 }
@@ -6939,6 +6939,27 @@ ins, del {
   line-height: 2rem;
 }
 
+@media only screen and (max-width: 767px) {
+  .repair-price-table a.text-primary {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .repair-price-table a.text-primary {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 65px;
+  }
+}
+
 .repair-price-table td {
   border: none;
   padding: 1.8rem;
@@ -6946,7 +6967,9 @@ ins, del {
 
 @media only screen and (max-width: 767px) {
   .repair-price-table td {
-    padding: 1rem;
+    padding: 1rem 0.5rem;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
   }
 }
 
