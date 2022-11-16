@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CannStyle</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body_home">
+    <div class="wrap">
+        <!-- header -->
+        <header class="header">
+            <!-- header__info -->
+            <div class="header__info text_center text_size-sm text_mediumbold">
+                <div class="container">
+                    <a href="#" class="d-inline-flex align-items-center">
+                        <span class="d-none d-md-inline">Получи скидку 25% за подписку на новости</span>
+                        <span class="d-md-none">Скидка 25% за подписку</span>
+                        <span class="circle-arrow"><span class="icon icon-arrow"></span></span>
+                    </a>
+                </div>
+            </div>
+            <!-- /header__info -->
+            <div class="header__block">
+                <div class="container">
+                    <div class="d-flex align-items-center">
+                        <a href="#nav" class="btn-menu d-lg-none pane-open">
+                            <span class="btn-menu__item"></span>
+                            <span class="btn-menu__item"></span>
+                            <span class="btn-menu__item"></span>
+                        </a>
+                        <a href="index.html" class="logo header__logo">
+                            <img src="img/logo.svg" alt="" class="img-fluid">
+                        </a>
+                        <!-- nav -->
+                        <nav class="nav navbar pane pane_left pane_sm" id="nav">
+                            <a href="#" class="icon icon-close nav__close d-lg-none pane-close"></a>
+                            <ul class="nav-list d-lg-flex">
+                                <li class="nav-list__item dropdown">
+                                    <a href="#nav-1" class="nav-list__link dropdown-toggle collapsed" data-bs-toggle="collapse">Магазин</a>
+                                    <ul class="dropdown-menu-collapse nav-list__dropdown-menu collapse" id="nav-1">
+                                        <li class="dropdown-menu__item">
+                                            <a href="#" class="dropdown-link d-flex text_size-sm align-items-center">
+                                                <div class="dropdown-link__image"><img src="img/content/dropdown-link-1.jpg" alt="" class="img-fluid"></div>
+                                                <div class="dropdown-link__title">CBD Масло CannaStyle Fruity</div>
+                                                <div class="dropdown-link__price text_semibold">от 2 999 ₽</div>
+                                                <span class="circle-arrow circle-arrow_primary"><span class="icon icon-arrow-primary"></span></span>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-menu__item">
+                                            <a href="#" class="dropdown-link d-flex text_size-sm align-items-center">
+                                                <div class="dropdown-link__image"><img src="img/content/dropdown-link-2.jpg" alt="" class="img-fluid"></div>
+                                                <div class="dropdown-link__title">CBD Жидкость для вейпа Wild Berries</div>
+                                                <div class="dropdown-link__price text_semibold">от 2 999 ₽</div>
+                                                <span class="circle-arrow circle-arrow_primary"><span class="icon icon-arrow-primary"></span></span>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-menu__item">
+                                            <a href="#" class="dropdown-link d-flex text_size-sm align-items-center">
+                                                <div class="dropdown-link__image"><img src="img/content/dropdown-link-3.jpg" alt="" class="img-fluid"></div>
+                                                <div class="dropdown-link__title">CBD Электронная сигарета Pine Mint</div>
+                                                <div class="dropdown-link__price text_semibold">от 2 999 ₽</div>
+                                                <span class="circle-arrow circle-arrow_primary"><span class="icon icon-arrow-primary"></span></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-list__item"><a href="about-cbd.html" class="nav-list__link">О Cbd</a></li>
+                                <li class="nav-list__item"><a href="about.html" class="nav-list__link">О нас</a></li>
+                                <li class="nav-list__item"><a href="review.html" class="nav-list__link">Отзывы</a></li>
+                                <li class="nav-list__item"><a href="certificates.html" class="nav-list__link">Сертификаты</a></li>
+                                <li class="nav-list__item"><a href="calculator.html" class="nav-list__link">Калькулятор</a></li>
+                                <li class="nav-list__item"><a href="delivery.html" class="nav-list__link">Доставка и оплата</a></li>
+                                <li class="nav-list__item"><a href="contacts.html" class="nav-list__link">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <!-- /nav -->
+                        <div class="info-nav d-flex align-items-center">
+                            <a href="#" class="info-nav__link d-inline-flex align-items-center">
+                                <span class="icon icon-basket info-nav__icon"></span>
+                                <div class="info-nav__text d-none d-xxl-block">Корзина</div>
+                            </a>
+                            <a href="#login-pane" class="info-nav__link pane-open d-none d-md-inline-flex align-items-center">
+                                <span class="icon icon-login info-nav__icon"></span>
+                                <div class="info-nav__text d-none d-xxl-block">Войти</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="pane-close pane-close__link-nav"></a>
+        </header>
+        <!-- /header -->
+        <!-- preview -->
+        <div class="preview">
+            <div class="preview-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/preview-slide.jpg" alt="" class="preview-slider__image d-md-block d-none">
+                        <img src="img/preview-slide-mobile.jpg" alt="" class="preview-slider__image d-md-none w-100">
+                        <div class="container">
+                            <div class="preview-slider__text">
+                                <div class="title_size-lg title_margin-bottom-sm">Открой для себя весь спектр CBD продукции </div>
+                                <p>Ниже Вы можете найти подробную информацию о наших продуктах </p>
+                                <a href="#" class="btn btn_primary w-100_sm">Хочу попробовать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <img src="img/preview-slide.jpg" alt="" class="preview-slider__image d-md-block d-none">
+                            <img src="img/preview-slide-mobile.jpg" alt="" class="preview-slider__image d-md-none w-100">
+                            <div class="preview-slider__text">
+                                <div class="title_size-lg title_margin-bottom-sm">Открой для себя весь спектр CBD продукции </div>
+                                <p>Ниже Вы можете найти подробную информацию о наших продуктах </p>
+                                <a href="#" class="btn btn_primary w-100_sm">Хочу попробовать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <img src="img/preview-slide.jpg" alt="" class="preview-slider__image d-md-block d-none">
+                            <img src="img/preview-slide-mobile.jpg" alt="" class="preview-slider__image d-md-none w-100">
+                            <div class="preview-slider__text">
+                                <div class="title_size-lg title_margin-bottom-sm">Открой для себя весь спектр CBD продукции </div>
+                                <p>Ниже Вы можете найти подробную информацию о наших продуктах </p>
+                                <a href="#" class="btn btn_primary w-100_sm">Хочу попробовать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <img src="img/preview-slide.jpg" alt="" class="preview-slider__image d-md-block d-none">
+                            <img src="img/preview-slide-mobile.jpg" alt="" class="preview-slider__image d-md-none w-100">
+                            <div class="preview-slider__text">
+                                <div class="title_size-lg title_margin-bottom-sm">Открой для себя весь спектр CBD продукции </div>
+                                <p>Ниже Вы можете найти подробную информацию о наших продуктах </p>
+                                <a href="#" class="btn btn_primary w-100_sm">Хочу попробовать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container pos-rel">
+                    <div class="swiper-pagination preview-slider__pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- /preview -->
+        <div class="container">
+            <!-- review-block -->
+            <div class="review-block d-flex align-items-center flex-wrap">
+                <div class="review-block__title d-flex align-items-center text_center">
+                    <img src="img/review-title-stars.svg" alt="">
+                    <a href="#" class="review-block__link"><img src="img/review-title.svg" alt=""></a>
+                </div>
+                <div class="review-block__items d-flex align-items-center">
+                    <a href="#" class="review-block__item" target="_blank"><img src="img/icons/logo-yandex.svg" alt="" class="img-fluid"></a>
+                    <a href="#" class="review-block__item" target="_blank"><img src="img/icons/logo-otzovik.svg" alt="" class="img-fluid"></a>
+                    <a href="#" class="review-block__item" target="_blank"><img src="img/icons/logo-avito.svg" alt="" class="img-fluid"></a>
+                    <a href="#" class="review-block__item" target="_blank"><img src="img/icons/logo-wildberries.svg" alt="" class="img-fluid"></a>
+                    <a href="#" class="review-block__item" target="_blank"><img src="img/icons/logo-ozon.svg" alt="" class="img-fluid"></a>
+                </div>
+                <a href="reviews.html" class="text_primary ms-auto d-none d-md-inline-flex align-items-center mt-2">
+                    Все отзывы<span class="circle-arrow circle-arrow_primary"><span class="icon icon-arrow-primary"></span></span>
+                </a>
+            </div>
+            <!-- /review-block -->
+            <!-- advantages -->
+            <div class="advantages-section">
+                <div class="title_size-lg-mobile advantages-section__title">О наших продуктах</div>
+                <div class="row">
+                    <div class="col-6 col-lg-3">
+                        <div class="advantages-item advantages-item_padding">
+                            <div class="advantages-item__icon"><img src="img/icons/organic.svg" alt=""></div>
+                            <div class="advantages-item__title text_semibold">100% Органический продукт</div>
+                            <p>Всё наше сырье для производства CBD (КБД) выращено в Швейцарии</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="advantages-item advantages-item_padding">
+                            <div class="advantages-item__icon"><img src="img/icons/certification.svg" alt=""></div>
+                            <div class="advantages-item__title text_semibold">Строгая сертификация</div>
+                            <p>Вся продукция имеет БИО сертификаты европейского стандарта</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="advantages-item advantages-item_padding">
+                            <div class="advantages-item__icon"><img src="img/icons/legal.svg" alt=""></div>
+                            <div class="advantages-item__title text_semibold">Полностью легально в РФ</div>
+                            <p>Во всех наших продуктах содержание ТГК не превышает 0%</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="advantages-item advantages-item_padding">
+                            <div class="advantages-item__icon"><img src="img/icons/support.svg" alt=""></div>
+                            <div class="advantages-item__title text_semibold">Помощь и поддержка</div>
+                            <p>Готовы оперативно ответить на любые Ваши вопросы</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /advantages -->
+            <!-- products -->
+            <div class="product-section">
+                <div class="title_size-lg-mobile title_margin-bottom-md">Продукты CannaStyle</div>
+                <div class="row">
+                    <div class="col-xl-9 col-lg-8">
+                        <div class="product-slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#" class="product-item">
+                                        <div class="product-item__image"><img src="img/content/product-1.png" alt="" class="img-fluid"></div>
+                                        <div class="product-item__title">CBD Масло</div>
+                                        <div class="product-item__price text_light">от 2 999 ₽</div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="product-item">
+                                        <div class="product-item__image"><img src="img/content/product-2.png" alt="" class="img-fluid"></div>
+                                        <div class="product-item__title">CBD Жидкость для вейпа</div>
+                                        <div class="product-item__price text_light">от 2 999 ₽</div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="product-item">
+                                        <div class="product-item__image"><img src="img/content/product-3.png" alt="" class="img-fluid"></div>
+                                        <div class="product-item__title">CBD Электронная сигарета</div>
+                                        <div class="product-item__price text_light">от 2 999 ₽</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 d-flex">
+                        <div class="calculator-block d-flex flex-column">
+                            <div class="title_size-md text_inversion calculator-block__title">Как рассчитать дозировку?</div>
+                            <a href="calculator.html" class="btn btn_inversion-lg w-100 btn_primary mt-auto">
+                                Калькулятор дозировки
+                                <span class="circle-arrow btn__icon d-none d-lg-flex"><span class="icon icon-arrow"></span></span>
+                                <span class="circle-arrow circle-arrow_light btn__icon btn__icon-absolute-sm d-lg-none"><span class="icon icon-arrow-inversion"></span></span>
+                            </a>
+                            <div class="calculator-block__image d-lg-none"><img src="img/calculator-image.png" alt="" class="img-fluid"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /products -->
+            <!-- about -->
+            <div class="about-block">
+                <div class="title_size-lg title_margin-bottom-lg d-lg-none">Что такое CBD?</div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-block__image"><img src="img/about-1.jpg" alt="" class="img-fluid"></div>
+                    </div>
+                    <div class="col-lg-6 d-flex">
+                        <div class="about-block__text ms-auto pb-2">
+                            <div class="title_size-lg title_margin-bottom-lg d-none d-lg-block">Что такое CBD?</div>
+                            <div class="title_size-xl title_margin-bottom-sm">CBD может улучшить как психическое, так и физическое здоровье</div>
+                            <p class="title_margin-bottom-lg pb-3 pb-md-4">CBD (КБД) представляет собой одно из 100 химических соединений (называются каннабиноидами), получаемых из растения каннабис (конопля). Это не другое название конопли и не какой-то искусственно созданный препарат. Это второе основное вещество каннабиса, добываемое из растения естественным образом без использования химии с целью использования в медицине и повседневной заботе о здоровье.</p>
+                            <p>
+                                <a href="#" class="btn btn_dark btn_size-md w-100_sm">
+                                    Подробнее о CBD<span class="circle-arrow circle-arrow_light btn__icon-absolute"><span class="icon icon-arrow-inversion"></span></span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-block">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="about-block__image"><img src="img/about-2.jpg" alt="" class="img-fluid"></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-block__text about-block__text_padding">
+                            <div class="title_size-xl title_margin-bottom-md pb-lg-2">Мы производим CBD продукцию на любой вкус</div>
+                            <p class="pt-1">CBD (КБД) представляет собой одно из 100 химических соединений (называются каннабиноидами), получаемых из растения каннабис (конопля).</p>
+                            <p>CBD (КБД) представляет собой одно из 100 химических соединений (называются каннабиноидами), получаемых из растения каннабис (конопля). Это не другое название конопли и не какой-то искусственно созданный препарат. Это второе основное вещество каннабиса, добываемое из растения естественным образом без использования химии с целью использования в медицине и повседневной заботе о здоровье.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-block">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-block__image"><img src="img/about-3.jpg" alt="" class="img-fluid"></div>
+                    </div>
+                    <div class="col-lg-6 d-flex">
+                        <div class="about-block__text ms-auto pt-lg-5">
+                            <div class="title_size-xl about-block__title-margin">Почему люди выбирают продукты CannaStyle CBD</div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="advantages-item mt-5">
+                                        <div class="advantages-item__icon"><img src="img/icons/organic.svg" alt=""></div>
+                                        <div class="advantages-item__title text_semibold">100% Органический продукт</div>
+                                        <p>Всё наше сырье для производства CBD (КБД) выращено в Швейцарии</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 pe-xxl-0">
+                                    <div class="advantages-item mt-5 ms-xxl-5 ps-4">
+                                        <div class="advantages-item__icon"><img src="img/icons/laboratory.svg" alt=""></div>
+                                        <div class="advantages-item__title text_semibold">Лабораторные исследования</div>
+                                        <p>Всё наше сырье для производства CBD (КБД) выращено в Швейцарии</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="advantages-item mt-md-5 mb-0">
+                                        <div class="advantages-item__icon"><img src="img/icons/spectrum.svg" alt=""></div>
+                                        <div class="advantages-item__title text_semibold">Широкий спектр</div>
+                                        <p>Всё наше сырье для производства CBD (КБД) выращено в Швейцарии</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 pe-xxl-0">
+                                    <div class="advantages-item mt-md-5 mb-0 ms-xxl-5 ps-4">
+                                        <div class="advantages-item__icon"><img src="img/icons/legal-sheet.svg" alt=""></div>
+                                        <div class="advantages-item__title text_semibold">Полностью легально</div>
+                                        <p>Всё наше сырье для производства CBD (КБД) выращено в Швейцарии</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /about -->
+            <!-- review -->
+            <div class="review-section">
+                <div class="title_size-lg-mobile title_margin-bottom-sm text_center-sm pt-2 pt-md-0">Отзывы покупателей</div>
+                <p class="mb-0 text_center-sm">Для нас очень важно, чтобы наши покупатели получали помощь и достойную обратную связь. <br>Показываем вам отзывы с независимых площадок.</p>
+                <!-- review-block -->
+                <div class="review-block d-flex align-items-center review-block_padding flex-wrap">
+                    <div class="review-block__title align-items-center d-flex text_center">
+                        <img src="img/review-title-stars.svg" alt="">
+                        <a href="#" class="review-block__link"><img src="img/review-title.svg" alt=""></a>
+                    </div>
+                    <div class="review-block__items d-flex align-items-center">
+                        <a href="#" class="review-block__item" target="_blank"><img src="img/icons/logo-yandex.svg" alt="" class="img-fluid"></a>
+                        <a href="#" class="review-block__item" target="_blank"><img src="img/icons/logo-otzovik.svg" alt="" class="img-fluid"></a>
+                        <a href="#" class="review-block__item" target="_blank"><img src="img/icons/logo-avito.svg" alt="" class="img-fluid"></a>
+                        <a href="#" class="review-block__item" target="_blank"><img src="img/icons/logo-wildberries.svg" alt="" class="img-fluid"></a>
+                        <a href="#" class="review-block__item" target="_blank"><img src="img/icons/logo-ozon.svg" alt="" class="img-fluid"></a>
+                    </div>
+                    <a href="reviews.html" class="text_primary ms-auto d-none d-md-inline-flex align-items-center mt-2">
+                        Все отзывы<span class="circle-arrow circle-arrow_primary"><span class="icon icon-arrow-primary"></span></span>
+                    </a>
+                </div>
+                <!-- /review-block -->
+                <div class="row review-row">
+                    <div class="col-lg-6">
+                        <div class="review-item">
+                            <div class="d-flex align-items-center">
+                                <div class="text_semibold review-item__name">Дмитрий</div>
+                                <div class="review-item__logo"><img src="img/icons/logo-yandex-circle.svg" alt=""></div>
+                            </div>
+                            <div class="review-item__info text_light">27 лет, Санкт-Петербург</div>
+                            <div class="review-item__body">После начала использования - первый же приступ мигрени сопровождался без головных болей. Это наверное самое классное, что может быть. Планирую и дальше использовать масло.</div>
+                            <a href="reviews.html" class="text_primary ms-auto d-inline-flex align-items-center mt-2">
+                                Подробнее<span class="circle-arrow circle-arrow_primary"><span class="icon icon-arrow-primary"></span></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="review-item ms-xl-1">
+                            <div class="d-flex align-items-center">
+                                <div class="text_semibold review-item__name">Катя</div>
+                                <div class="review-item__logo"><img src="img/icons/logo-ozon-circle.svg" alt=""></div>
+                            </div>
+                            <div class="review-item__info text_light">23 года, Москва</div>
+                            <div class="review-item__body">После начала использования - первый же приступ мигрени сопровождался без головных болей. Это наверное самое классное, что может быть. Планирую и дальше использовать масло.</div>
+                            <a href="reviews.html" class="text_primary ms-auto d-inline-flex align-items-center mt-2">
+                                Подробнее<span class="circle-arrow circle-arrow_primary"><span class="icon icon-arrow-primary"></span></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="review-item">
+                            <div class="d-flex align-items-center">
+                                <div class="text_semibold review-item__name">Кирилл</div>
+                                <div class="review-item__logo"><img src="img/icons/logo-wildberries-circle.svg" alt=""></div>
+                            </div>
+                            <div class="review-item__info text_light">31 год, Санкт-Петербург</div>
+                            <div class="review-item__body">После начала использования - первый же приступ мигрени сопровождался без головных болей. Это наверное самое классное, что может быть. Планирую и дальше использовать масло.</div>
+                            <a href="reviews.html" class="text_primary ms-auto d-inline-flex align-items-center mt-2">
+                                Подробнее<span class="circle-arrow circle-arrow_primary"><span class="icon icon-arrow-primary"></span></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-none d-md-block">
+                        <div class="review-item ms-xl-1">
+                            <div class="d-flex align-items-center">
+                                <div class="text_semibold review-item__name">Артемий</div>
+                                <div class="review-item__logo"><img src="img/icons/logo-yandex-circle.svg" alt=""></div>
+                            </div>
+                            <div class="review-item__info text_light">18 лет, Екатеринбург</div>
+                            <div class="review-item__body">После начала использования - первый же приступ мигрени сопровождался без головных болей. Это наверное самое классное, что может быть. Планирую и дальше использовать масло.</div>
+                            <a href="reviews.html" class="text_primary ms-auto d-inline-flex align-items-center mt-2">
+                                Подробнее<span class="circle-arrow circle-arrow_primary"><span class="icon icon-arrow-primary"></span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="reviews.html" class="btn btn_light w-100 d-md-none mt-1">Больше отзывов</a>
+            </div>
+            <!-- /review -->
+            <!-- catalogue -->
+            <div class="d-flex title_margin-bottom-md align-items-baseline">
+                <div class="title_size-lg-mobile me-5 pe-3">Выберите свой продукт</div>
+                <a href="catalogue.html" class="text_primary d-none d-md-inline-flex align-items-center mt-2 ms-1">
+                    Все товары<span class="circle-arrow circle-arrow_primary"><span class="icon icon-arrow-primary"></span></span>
+                </a>
+            </div>
+            <div class="catalogue-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="catalogue-item">
+                            <a href="item.html" class="catalogue-item__image"><img src="img/content/product-4.png" alt="" class="img-fluid"></a>
+                            <a href="item.html" class="catalogue-item__title d-inline-block text_size-sm">CBD Масло CannaStyle Fruity 1000 Mg 30 Ml</a>
+                            <div class="catalogue-item__price text_semibold">от 2 999 ₽</div>
+                            <a href="#" class="btn btn_dark">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="catalogue-item">
+                            <a href="item.html" class="catalogue-item__image"><img src="img/content/product-5.png" alt="" class="img-fluid"></a>
+                            <a href="item.html" class="catalogue-item__title d-inline-block text_size-sm">CBD Масло CannaStyle Fruity 1000 Mg 30 Ml</a>
+                            <div class="catalogue-item__price text_semibold">от 2 999 ₽</div>
+                            <a href="#" class="btn btn_dark">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="catalogue-item">
+                            <a href="item.html" class="catalogue-item__image"><img src="img/content/product-6.png" alt="" class="img-fluid"></a>
+                            <a href="item.html" class="catalogue-item__title d-inline-block text_size-sm">CBD Масло CannaStyle Fruity 1000 Mg 30 Ml</a>
+                            <div class="catalogue-item__price text_semibold">от 2 999 ₽</div>
+                            <a href="#" class="btn btn_dark">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="catalogue-item">
+                            <a href="item.html" class="catalogue-item__image"><img src="img/content/product-4.png" alt="" class="img-fluid"></a>
+                            <a href="item.html" class="catalogue-item__title d-inline-block text_size-sm">CBD Масло CannaStyle Fruity 1000 Mg 30 Ml</a>
+                            <div class="catalogue-item__price text_semibold">от 2 999 ₽</div>
+                            <a href="#" class="btn btn_dark">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="catalogue-item">
+                            <a href="item.html" class="catalogue-item__image"><img src="img/content/product-6.png" alt="" class="img-fluid"></a>
+                            <a href="item.html" class="catalogue-item__title d-inline-block text_size-sm">CBD Масло CannaStyle Fruity 1000 Mg 30 Ml</a>
+                            <div class="catalogue-item__price text_semibold">от 2 999 ₽</div>
+                            <a href="#" class="btn btn_dark">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="catalogue.html" class="btn btn_light w-100 d-md-none mt-1">Все продукты</a>
+            <!-- /catalogue -->
+            <!-- calculator -->
+            <div class="calculator-section d-flex">
+                <div class="calculator-section__text text_inversion">
+                    <div class="title_size-lg-mobile title_margin-bottom-xs calculator-block__title">Как рассчитать дозировку?</div>
+                    <p class="d-none d-lg-block">Рассчитайте свою дозировку КБД основываясь на весе вашего тела и цели использования с нашей формой расчета дозировки.</p>
+                    <p>
+                        <a href="calculator.html" class="btn btn_inversion-lg btn_primary mt-auto btn_size-md w-100_md">
+                            Калькулятор дозировки
+                            <span class="circle-arrow btn__icon d-none d-lg-flex"><span class="icon icon-arrow"></span></span>
+                            <span class="circle-arrow circle-arrow_light btn__icon d-lg-none"><span class="icon icon-arrow-inversion"></span></span>
+                        </a>
+                    </p>
+                </div>
+                <div class="calculator-section__image">
+                    <img src="img/calculator.png" alt="" class="img-fluid d-none d-lg-block">
+                    <img src="img/calculator-image.png" alt="" class="img-fluid d-lg-none">
+                </div>
+            </div>
+            <!-- calculator -->
+            <!-- contacts -->
+            <div class="contacts-section text_center">
+                <div class="title_size-lg-mobile title_margin-bottom-xs">Есть вопросы?</div>
+                <p class="title_margin-bottom-md">Позвони по номеру телефона, и наш менеджер поможет с любым вопросом. Рассчитаем дозировку, проконсультируем по продукту, подарим скидку 5%</p>
+                <div class="title_size-lg-mobile title_margin-bottom-xs contacts-section__phone"><a href="tel:88002222604">8 800 2222 604</a></div>
+                <p class="title_margin-bottom-xs pb-2 pb-md-0">Звонок бесплатный</p>
+                <div class="social-list d-flex justify-content-center align-items-center">
+                    <a href="#" class="social-list__link social-list__link_circle" target="_blank"><img src="img/icons/tg-primary.svg" alt=""></a>
+                    <a href="#" class="social-list__link social-list__link_circle" target="_blank"><img src="img/icons/ok-primary.svg" alt=""></a>
+                    <a href="#" class="social-list__link social-list__link_circle" target="_blank"><img src="img/icons/ins-primary.svg" alt=""></a>
+                    <a href="#" class="social-list__link social-list__link_circle" target="_blank"><img src="img/icons/vk-primary.svg" alt=""></a>
+                    <a href="#" class="social-list__link social-list__link_circle" target="_blank"><img src="img/icons/fb-primary.svg" alt=""></a>
+                </div>
+            </div>
+            <!-- /contacts -->
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="d-flex align-items-center flex-wrap">
+                    <a href="index.html" class="logo footer__logo d-none d-xl-block"><img src="img/logo-footer.svg" alt="" class="img-fluid"></a>
+                    <a href="tel:88002222604" class="footer__phone text_inversion text_semibold text_size-lg"><span class="icon icon-phone-inversion"></span>8 800 2222 604</a>
+                    <a href="#" class="btn btn_primary btn_size-xs ms-auto d-lg-none">Помощь<span class="circle-arrow circle-arrow_light btn__icon"><span class="icon icon-arrow-inversion"></span></span></a>
+                    <div class="social-list footer__social-list d-flex justify-content-center align-items-center">
+                        <a href="#" class="social-list__link" target="_blank"><img src="img/icons/tg-inversion.svg" alt=""></a>
+                        <a href="#" class="social-list__link" target="_blank"><img src="img/icons/ok-inversion.svg" alt=""></a>
+                        <a href="#" class="social-list__link" target="_blank"><img src="img/icons/ins-inversion.svg" alt=""></a>
+                        <a href="#" class="social-list__link" target="_blank"><img src="img/icons/vk-inversion.svg" alt=""></a>
+                        <a href="#" class="social-list__link" target="_blank"><img src="img/icons/fb-inversion.svg" alt=""></a>
+                    </div>
+                    <div class="payment d-flex align-items-center ms-auto">
+                        <div class="payment__item"><img src="img/icons/mir.svg" alt="" class="img-fluid"></div>
+                        <div class="payment__item"><img src="img/icons/visa.svg" alt="" class="img-fluid"></div>
+                        <div class="payment__item"><img src="img/icons/mastercard.svg" alt="" class="img-fluid"></div>
+                    </div>
+                </div>
+                <div class="d-none d-lg-flex justify-content-between align-items-center footer__center">
+                    <ul class="footer-nav d-flex nav-list">
+                        <li class="nav-list__item"><a href="catalogue.html" class="nav-list__link active">Магазин</a></li>
+                        <li class="nav-list__item"><a href="about-cbd.html" class="nav-list__link">О Cbd</a></li>
+                        <li class="nav-list__item"><a href="about.html" class="nav-list__link">О нас</a></li>
+                        <li class="nav-list__item"><a href="review.html" class="nav-list__link">Отзывы</a></li>
+                        <li class="nav-list__item"><a href="certificates.html" class="nav-list__link">Сертификаты</a></li>
+                        <li class="nav-list__item"><a href="calculator.html" class="nav-list__link">Калькулятор</a></li>
+                        <li class="nav-list__item"><a href="delivery.html" class="nav-list__link">Доставка и оплата</a></li>
+                        <li class="nav-list__item"><a href="contacts.html" class="nav-list__link">Контакты</a></li>
+                        <li class="nav-list__item"><a href="contacts.html" class="nav-list__link">Еще <span class="circle-arrow circle-arrow_light"><span class="icon icon-arrow-inversion"></span></span></a></li>
+                    </ul>
+                    <a href="#" class="btn btn_primary btn_size-xs">Помощь<span class="circle-arrow circle-arrow_light btn__icon"><span class="icon icon-arrow-inversion"></span></span></a>
+                </div>
+                <div class="copyright d-lg-none text_inversion text_mediumbold text_size-xs">© cannastyle.com 2022</div>
+                <div class="footer__bottom">
+                    <p class="text_size-sm footer__collapse-title">
+                        <a href="#statement" class="collapsed text_light footer__dropdown-toggle dropdown-toggle dropdown-toggle_light dropdown-toggle_sm collapsed" data-bs-toggle="collapse">Заявление об ограничении ответственности</a>
+                    </p>
+                    <div class="collapse footer__collapse" id="statement">
+                        <div class="footer__collapse-body text_light text_size-xs">
+                            <p>Данный продукт не предназначен для использования или продажи лицам, не достигшим 18-летнего возраста.. Хранить в недоступном для детей месте. Данный продукт не должен использоваться, если вы беременны или кормите грудью. Перед использованием следует проконсультироваться с врачом. Всегда консультируйтесь с врачом перед использованием, если у вас есть серьезное заболевание или вы используете отпускаемые по рецепту лекарства.. Этот продукт не предназначен для диагностики, лечения или профилактики каких-либо заболеваний. Этот продукт следует использовать только в соответствии с указаниями на этикетке. Эти заявления не были оценены FDA или каким-либо органом по безопасности пищевых продуктов и/или лекарств. Используя сайт, вы соглашаетесь с политикой конфиденциальности и пользовательским соглашением.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+        
+        
+        <!-- login-pane -->
+        <div class="pane" id="login-pane">
+            <div class="pane__header">
+                <a href="#" class="icon icon-close pane__close pane-close"></a>
+            </div>
+            <div class="title_size-lg-mobile text_semibold title_margin-bottom-sm">Войти или зарегистрироваться</div>
+            <p class="text_size-sm me-xl-5 pe-xl-4">Мы отправим на номер SMS-сообщение с кодом подтверждения.</p>
+            <div class="pane__form">
+                <form action="#" name="form-phone" id="form-phone">
+                    <div class="form-group_margin-lg">
+                        <label class="label">Телефон</label>
+                        <input type="number" class="form-control" placeholder="Введите номер телефона" id="phone">
+                        <div class="text_size-xs text_danger collapse pt-1" id="phoneError">Заполните поле</div>
+                    </div>
+                    <div class="form-group_margin-xs pt-2 pb-md-1 pb-2">
+                        <button class="btn w-100 btn_primary">Получить код
+                            <span class="btn__icon-absolute circle-arrow circle-arrow_light">
+                                <span class="icon icon-arrow-right-inversion"></span>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="form-group_margin-xs pt-1 pt-md-0">
+                        <a href="#login-email" class="btn w-100 btn_primary-light pane-open">Войти по почте и паролю</a>
+                    </div>
+                </form>
+            </div>
+        </div>  
+        <!-- /login-pane -->
+
+        <!-- code-pane -->
+        <div class="pane" id="code-pane">
+            <div class="pane__header">
+                <a href="#" class="icon icon-close pane__close pane-close "></a>
+            </div>
+            <div class="title_size-lg-mobile text_semibold title_margin-bottom-sm">Войти или зарегистрироваться</div>
+            <p class="text_size-sm">Код был отправлен на номер <br>
+                + 7 999-999-99-99</p>
+            <div class="pane__form">
+                <form action="#" name="login-code" id="login-code">
+                    <div class="form-group_margin-md pb-1">
+                        <label class="label">Код из SMS</label>
+                        <div class="d-flex code-group justify-content-between align-items-center" id="code-group">
+                            <input type="text" class="form-control_xs form-control">
+                            <input type="text" class="form-control_xs form-control">
+                            <input type="text" class="form-control_xs form-control">
+                            <div class="code-group__separator text_light text_size-sm">–</div>
+                            <input type="text" class="form-control_xs form-control">
+                            <input type="text" class="form-control_xs form-control">
+                            <input type="text" class="form-control_xs form-control">
+                        </div>
+                    </div>
+                    <div class="form-group_margin-sm pb-md-1">
+                        <button class="btn w-100 btn_primary">Подтвердить вход
+                            <span class="btn__icon-absolute circle-arrow circle-arrow_light">
+                                <span class="icon icon-arrow-right-inversion"></span>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="ps-2 ps-md-0 form-group_margin-xs text_size-sm pb-md-1"><a href="#" class="text_primary text_mediumbold">Отправить код повторно</a></div>
+                    <div class="ps-2 ps-md-0 form-group_margin-xs text_size-sm">Код можно отправить повторно через <br>
+                        120 секунд</div>
+                </form>
+                <div class="form-group_margin-xs">
+                    <a href="#login-email" class="btn w-100 btn_primary-light pane-open">Войти по почте и паролю</a>
+                </div>
+            </div>
+        </div>  
+        <!-- /code-pane -->
+
+        <!-- login-email -->
+        <div class="pane" id="login-email">
+            <div class="pane__header">
+                <a href="#" class="icon icon-close pane__close pane-close "></a>
+            </div>
+            <div class="title_size-lg-mobile text_semibold title_margin-bottom-sm">Войти по почте и паролю</div>
+            <p class="text_size-sm mb-4 pb-3">Только для зарегистрированных <br> пользователей</p>
+            <form action="#">
+                <div class="form-group_margin-sm">
+                    <label class="label">E-mail</label>
+                    <input type="email" class="form-control" placeholder="Boris@gmail.com" id="email">
+                </div>
+                <div class="form-group_margin-sm">
+                    <label class="label">Пароль</label>
+                    <div class="pos-rel wrap-pass">
+                        <input type="password" class="form-control" placeholder="**********" id="pass">
+                        <a href="#" class="pass-view icon icon-view"></a>
+                    </div>
+                </div>
+                <div class="form-group_margin-xs">
+                    <button class="btn w-100 btn_primary">Войти
+                        <span class="btn__icon-absolute circle-arrow circle-arrow_light">
+                            <span class="icon icon-arrow-right-inversion"></span>
+                        </span>
+                    </button>
+                </div>
+                <div class="form-group_margin-xs">
+                    <a href="#login-pane" class="btn w-100 btn_primary-light pane-open">Войти по номеру телефона</a>
+                </div>
+            </form>
+        </div>  
+        <!-- /login-email-->
+
+
+
+        <a href="#" class="pane-close pane-close__link"></a>
+    </div>
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

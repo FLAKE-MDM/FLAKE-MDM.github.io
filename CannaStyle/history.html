@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CannStyle</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body_home">
+    <div class="wrap">
+        <!-- header -->
+        <header class="header">
+            <!-- header__info -->
+            <div class="header__info text_center text_size-sm text_mediumbold">
+                <div class="container">
+                    <a href="#" class="d-inline-flex align-items-center">
+                        <span class="d-none d-md-inline">Получи скидку 25% за подписку на новости</span>
+                        <span class="d-md-none">Скидка 25% за подписку</span>
+                        <span class="circle-arrow"><span class="icon icon-arrow"></span></span>
+                    </a>
+                </div>
+            </div>
+            <!-- /header__info -->
+            <div class="header__block">
+                <div class="container">
+                    <div class="d-flex align-items-center">
+                        <a href="#nav" class="btn-menu d-lg-none pane-open">
+                            <span class="btn-menu__item"></span>
+                            <span class="btn-menu__item"></span>
+                            <span class="btn-menu__item"></span>
+                        </a>
+                        <a href="index.html" class="logo header__logo">
+                            <img src="img/logo.svg" alt="" class="img-fluid">
+                        </a>
+                        <!-- nav -->
+                        <nav class="nav navbar pane pane_left pane_sm" id="nav">
+                            <a href="#" class="icon icon-close nav__close d-lg-none pane-close"></a>
+                            <ul class="nav-list d-lg-flex">
+                                <li class="nav-list__item dropdown">
+                                    <a href="#nav-1" class="nav-list__link dropdown-toggle collapsed" data-bs-toggle="collapse">Магазин</a>
+                                    <ul class="dropdown-menu-collapse nav-list__dropdown-menu collapse" id="nav-1">
+                                        <li class="dropdown-menu__item">
+                                            <a href="#" class="dropdown-link d-flex text_size-sm align-items-center">
+                                                <div class="dropdown-link__image"><img src="img/content/dropdown-link-1.jpg" alt="" class="img-fluid"></div>
+                                                <div class="dropdown-link__title">CBD Масло CannaStyle Fruity</div>
+                                                <div class="dropdown-link__price text_semibold">от 2 999 ₽</div>
+                                                <span class="circle-arrow circle-arrow_primary"><span class="icon icon-arrow-primary"></span></span>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-menu__item">
+                                            <a href="#" class="dropdown-link d-flex text_size-sm align-items-center">
+                                                <div class="dropdown-link__image"><img src="img/content/dropdown-link-2.jpg" alt="" class="img-fluid"></div>
+                                                <div class="dropdown-link__title">CBD Жидкость для вейпа Wild Berries</div>
+                                                <div class="dropdown-link__price text_semibold">от 2 999 ₽</div>
+                                                <span class="circle-arrow circle-arrow_primary"><span class="icon icon-arrow-primary"></span></span>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-menu__item">
+                                            <a href="#" class="dropdown-link d-flex text_size-sm align-items-center">
+                                                <div class="dropdown-link__image"><img src="img/content/dropdown-link-3.jpg" alt="" class="img-fluid"></div>
+                                                <div class="dropdown-link__title">CBD Электронная сигарета Pine Mint</div>
+                                                <div class="dropdown-link__price text_semibold">от 2 999 ₽</div>
+                                                <span class="circle-arrow circle-arrow_primary"><span class="icon icon-arrow-primary"></span></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-list__item"><a href="about-cbd.html" class="nav-list__link">О Cbd</a></li>
+                                <li class="nav-list__item"><a href="about.html" class="nav-list__link">О нас</a></li>
+                                <li class="nav-list__item"><a href="review.html" class="nav-list__link">Отзывы</a></li>
+                                <li class="nav-list__item"><a href="certificates.html" class="nav-list__link">Сертификаты</a></li>
+                                <li class="nav-list__item"><a href="calculator.html" class="nav-list__link">Калькулятор</a></li>
+                                <li class="nav-list__item"><a href="delivery.html" class="nav-list__link">Доставка и оплата</a></li>
+                                <li class="nav-list__item"><a href="contacts.html" class="nav-list__link">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <!-- /nav -->
+                        <div class="info-nav d-flex align-items-center">
+                            <a href="#" class="info-nav__link d-inline-flex align-items-center">
+                                <span class="icon icon-basket info-nav__icon"></span>
+                                <div class="info-nav__text d-none d-xxl-block">Корзина</div>
+                            </a>
+                            <a href="#login-pane" class="info-nav__link pane-open d-none d-md-inline-flex align-items-center">
+                                <span class="icon icon-login info-nav__icon"></span>
+                                <div class="info-nav__text d-none d-xxl-block">Войти</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="pane-close pane-close__link-nav"></a>
+        </header>
+        <!-- /header -->
+        <div class="container">
+            <!-- breadcrumb -->
+            <ul class="breadcrumb">
+                <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Главная</a></li>
+                <li class="breadcrumb__item">Отзывы</li>
+            </ul>
+            <!-- /breadcrumb -->
+        </div>
+        <div class="bg_light heading-block mb-0">
+            <div class="container">
+                <div class="row profile-content">
+                    <div class="col-xl-3 col-lg-4 d-none d-lg-block">
+                        <div class="floating-block profile-sidebar">
+                            <div class="profile-sidebar__header pos-rel">
+                                <div class="text_semibold">Личный кабинет</div>
+                                <div class="text_size-xsm text_light">+7 920 210-20-10</div>
+                            </div>
+                            <ul class="profile-nav">
+                                <li class="profile-nav__item">
+                                    <a href="#" class="profile-nav__link active">
+                                        Мои заказы
+                                        <span class="profile-nav__count">2</span>
+                                    </a>
+                                </li>
+                                <li class="profile-nav__item"><a href="profile.html" class="profile-nav__link">Профиль</a></li>
+                                <li class="profile-nav__item"><a href="#" class="profile-nav__link">Выйти из аккаунта</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-8">
+                        <div class="ps-xl-5">
+                            <h1 class="title_size-lg-mobile title_margin-bottom-md">Мои заказы</h1>
+                            <div class="tab-nav-sm nav">
+                                <a href="#curent" data-bs-toggle="tab" class="tab-nav-sm__link active">Текущие заказы  <span class="ms-2">2</span></a>
+                                <a href="#all" data-bs-toggle="tab" class="tab-nav-sm__link">Все заказы  <span class="ms-2">12</span></a>
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="curent">
+                                    <!-- history-item -->
+                                    <div class="history-item">
+                                        <div class="history-item__header d-flex">
+                                            <a href="#history-1" data-bs-toggle="collapse" class="history-item__link collapsed"><div class="icon icon-arrow-right"></div></a>
+                                            <div class="me-4">
+                                                <div class="history-item__title text_semibold">N 20223891-104054</div>
+                                                <div class="history-item__status text_size-xsm text_warning">Ожидает подтверждения</div>
+                                            </div>
+                                            <div class="ms-auto text_right">
+                                                <div class="history-item__price text_semibold">2 999 ₽</div>
+                                                <div class="history-item__date text_light text_size-xsm">3 августа</div>
+                                            </div>
+                                        </div>
+                                        <div class="collapse" id="history-1">
+                                            <div class="history-item__body">
+                                                <div class="text_semibold history-item__title">Данные</div>
+                                                <div class="data-group">
+                                                    <div class="data-item row text_size-sm">
+                                                        <div class="data-item__title col-xl-3 col-md-4">Получатель</div>
+                                                        <div class="data-item__text col-auto">Аркадий Мирный</div>
+                                                    </div>
+                                                    <div class="data-item row text_size-sm">
+                                                        <div class="data-item__title col-xl-3 col-md-4">E-mail</div>
+                                                        <div class="data-item__text col-auto">arkash@gmail.com</div>
+                                                    </div>
+                                                    <div class="data-item row text_size-sm">
+                                                        <div class="data-item__title col-xl-3 col-md-4">Телефон</div>
+                                                        <div class="data-item__text col-auto">+7 922 201-20-10</div>
+                                                    </div>
+                                                    <div class="data-item row text_size-sm">
+                                                        <div class="data-item__title col-xl-3 col-md-4">Параметры оплаты</div>
+                                                        <div class="data-item__text col-auto">Оплачен картой онлайн</div>
+                                                    </div>
+                                                    <div class="data-item row text_size-sm">
+                                                        <div class="data-item__title col-xl-3 col-md-4">Параметры доставки</div>
+                                                        <div class="data-item__text col-auto">Курьерская доставка СДЭК</div>
+                                                    </div>
+                                                </div>
+                                                <!-- order-list -->
+                                                <div class="order-list">
+                                                    <div class="order-list__header text_semibold d-flex">
+                                                        <div class="history-item__title">Состав заказа</div>
+                                                        <div class="d-none d-md-block order-list-item__count text_center ms-auto">Количество</div>
+                                                        <div class="d-none d-md-block order-list-item__price text_right">Сумма</div>
+                                                    </div>
+                                                    <div class="order-list-item d-flex">
+                                                        <a href="item.html" class="order-list-item__image"><img src="img/content/product-5.png" alt="" class="img-fluid"></a>
+                                                        <div class="order-list-item__text d-flex">
+                                                            <a href="item.html" class="order-list-item__title text_size-sm">CBD Масло CannaStyle Fruity 3000 Mg 30 Ml</a>
+                                                            <div class="order-list-item__count text_center ms-md-auto text_mediumbold">1<span class="d-md-none"> х 8 999 ₽</span></div>
+                                                            <div class="order-list-item__price text_mediumbold text_right">8 999 ₽</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="order-list__total d-flex justify-content-between text_semibold">
+                                                        <span class="text_semibold">Итого</span>
+                                                        <span class="mt-md-2 text_mediumbold">11 999 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <!-- /order-list -->
+                                                <div class="history-item__footer d-md-flex">
+                                                    <a href="#" class="w-100_sm btn btn_size-sm text_normal btn_primary-light">Отследить заказ</a>
+                                                    <a href="#" class="w-100_sm btn btn_size-sm text_normal btn_light text_light">Проблема с заказом</a>
+                                                    <a href="#" class="w-100_sm btn btn_size-sm text_normal btn_light text_light">Отменить заказ</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /history-item -->
+                                    <!-- history-item -->
+                                    <div class="history-item">
+                                        <div class="history-item__header active d-flex">
+                                            <a href="#history-2" data-bs-toggle="collapse" class="history-item__link"><div class="icon icon-arrow-right"></div></a>
+                                            <div class="me-4">
+                                                <div class="history-item__title text_semibold">N 20223891-104051</div>
+                                                <div class="history-item__status text_size-xsm text_success">Ожидает в пункте выдачи</div>
+                                            </div>
+                                            <div class="ms-auto text_right">
+                                                <div class="history-item__price text_semibold">11 998 ₽</div>
+                                                <div class="history-item__date text_light text_size-xsm">3 августа</div>
+                                            </div>
+                                        </div>
+                                        <div class="collapse show" id="history-2">
+                                            <div class="history-item__body">
+                                                <div class="text_semibold history-item__title">Данные</div>
+                                                <div class="data-group">
+                                                    <div class="data-item row text_size-sm">
+                                                        <div class="data-item__title col-xl-3 col-md-4">Получатель</div>
+                                                        <div class="data-item__text col-auto">Аркадий Мирный</div>
+                                                    </div>
+                                                    <div class="data-item row text_size-sm">
+                                                        <div class="data-item__title col-xl-3 col-md-4">E-mail</div>
+                                                        <div class="data-item__text col-auto">arkash@gmail.com</div>
+                                                    </div>
+                                                    <div class="data-item row text_size-sm">
+                                                        <div class="data-item__title col-xl-3 col-md-4">Телефон</div>
+                                                        <div class="data-item__text col-auto">+7 922 201-20-10</div>
+                                                    </div>
+                                                    <div class="data-item row text_size-sm">
+                                                        <div class="data-item__title col-xl-3 col-md-4">Параметры оплаты</div>
+                                                        <div class="data-item__text col-auto">Оплачен картой онлайн</div>
+                                                    </div>
+                                                    <div class="data-item row text_size-sm">
+                                                        <div class="data-item__title col-xl-3 col-md-4">Параметры доставки</div>
+                                                        <div class="data-item__text col-auto">Курьерская доставка СДЭК</div>
+                                                    </div>
+                                                </div>
+                                                <!-- order-list -->
+                                                <div class="order-list">
+                                                    <div class="order-list__header text_semibold d-flex">
+                                                        <div class="history-item__title">Состав заказа</div>
+                                                        <div class="d-none d-md-block order-list-item__count text_center ms-auto">Количество</div>
+                                                        <div class="d-none d-md-block order-list-item__price text_right">Сумма</div>
+                                                    </div>
+                                                    <div class="order-list-item d-flex">
+                                                        <a href="item.html" class="order-list-item__image"><img src="img/content/product-4.png" alt="" class="img-fluid"></a>
+                                                        <div class="order-list-item__text d-flex">
+                                                            <a href="item.html" class="order-list-item__title text_size-sm">CBD Масло CannaStyle Natural 600 Mg 30 Ml</a>
+                                                            <div class="order-list-item__count text_center ms-md-auto text_mediumbold">1<span class="d-md-none"> х 2 999 ₽</span></div>
+                                                            <div class="order-list-item__price text_mediumbold text_right">2 999 ₽</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="order-list-item d-flex">
+                                                        <a href="item.html" class="order-list-item__image"><img src="img/content/product-5.png" alt="" class="img-fluid"></a>
+                                                        <div class="order-list-item__text d-flex">
+                                                            <a href="item.html" class="order-list-item__title text_size-sm">CBD Масло CannaStyle Fruity 3000 Mg 30 Ml</a>
+                                                            <div class="order-list-item__count text_center ms-md-auto text_mediumbold">1<span class="d-md-none"> х 8 999 ₽</span></div>
+                                                            <div class="order-list-item__price text_mediumbold text_right">8 999 ₽</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="order-list__total d-flex justify-content-between text_semibold">
+                                                        <span class="text_semibold">Итого</span>
+                                                        <span class="mt-md-2 text_mediumbold">11 999 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <!-- /order-list -->
+                                                <div class="history-item__footer d-md-flex">
+                                                    <a href="#" class="w-100_sm btn btn_size-sm text_normal btn_primary-light">Отследить заказ</a>
+                                                    <a href="#" class="w-100_sm btn btn_size-sm text_normal btn_light text_light">Проблема с заказом</a>
+                                                    <a href="#" class="w-100_sm btn btn_size-sm text_normal btn_light text_light">Отменить заказ</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /history-item -->
+                                </div>
+                                <div class="tab-pane fade" id="all">
+                                    <!-- history-item -->
+                                    <div class="history-item">
+                                        <div class="history-item__header d-flex">
+                                            <a href="#history-3" data-bs-toggle="collapse" class="history-item__link collapsed"><div class="icon icon-arrow-right"></div></a>
+                                            <div class="me-4">
+                                                <div class="history-item__title text_semibold">N 20223891-104051</div>
+                                                <div class="history-item__status text_size-xsm text_success">Ожидает в пункте выдачи</div>
+                                            </div>
+                                            <div class="ms-auto text_right">
+                                                <div class="history-item__price text_semibold">11 998 ₽</div>
+                                                <div class="history-item__date text_light text_size-xsm">3 августа</div>
+                                            </div>
+                                        </div>
+                                        <div class="collapse" id="history-3">
+                                            <div class="history-item__body">
+                                                <div class="text_semibold history-item__title">Данные</div>
+                                                <div class="data-group">
+                                                    <div class="data-item row text_size-sm">
+                                                        <div class="data-item__title col-xl-3 col-md-4">Получатель</div>
+                                                        <div class="data-item__text col-auto">Аркадий Мирный</div>
+                                                    </div>
+                                                    <div class="data-item row text_size-sm">
+                                                        <div class="data-item__title col-xl-3 col-md-4">E-mail</div>
+                                                        <div class="data-item__text col-auto">arkash@gmail.com</div>
+                                                    </div>
+                                                    <div class="data-item row text_size-sm">
+                                                        <div class="data-item__title col-xl-3 col-md-4">Телефон</div>
+                                                        <div class="data-item__text col-auto">+7 922 201-20-10</div>
+                                                    </div>
+                                                    <div class="data-item row text_size-sm">
+                                                        <div class="data-item__title col-xl-3 col-md-4">Параметры оплаты</div>
+                                                        <div class="data-item__text col-auto">Оплачен картой онлайн</div>
+                                                    </div>
+                                                    <div class="data-item row text_size-sm">
+                                                        <div class="data-item__title col-xl-3 col-md-4">Параметры доставки</div>
+                                                        <div class="data-item__text col-auto">Курьерская доставка СДЭК</div>
+                                                    </div>
+                                                </div>
+                                                <!-- order-list -->
+                                                <div class="order-list">
+                                                    <div class="order-list__header text_semibold d-flex">
+                                                        <div class="history-item__title">Состав заказа</div>
+                                                        <div class="d-none d-md-block order-list-item__count text_center ms-auto">Количество</div>
+                                                        <div class="d-none d-md-block order-list-item__price text_right">Сумма</div>
+                                                    </div>
+                                                    <div class="order-list-item d-flex">
+                                                        <a href="item.html" class="order-list-item__image"><img src="img/content/product-4.png" alt="" class="img-fluid"></a>
+                                                        <div class="order-list-item__text d-flex">
+                                                            <a href="item.html" class="order-list-item__title text_size-sm">CBD Масло CannaStyle Natural 600 Mg 30 Ml</a>
+                                                            <div class="order-list-item__count text_center ms-md-auto text_mediumbold">1<span class="d-md-none"> х 2 999 ₽</span></div>
+                                                            <div class="order-list-item__price text_mediumbold text_right">2 999 ₽</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="order-list-item d-flex">
+                                                        <a href="item.html" class="order-list-item__image"><img src="img/content/product-5.png" alt="" class="img-fluid"></a>
+                                                        <div class="order-list-item__text d-flex">
+                                                            <a href="item.html" class="order-list-item__title text_size-sm">CBD Масло CannaStyle Fruity 3000 Mg 30 Ml</a>
+                                                            <div class="order-list-item__count text_center ms-md-auto text_mediumbold">1<span class="d-md-none"> х 8 999 ₽</span></div>
+                                                            <div class="order-list-item__price text_mediumbold text_right">8 999 ₽</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="order-list__total d-flex justify-content-between">
+                                                        <span class="text_semibold">Итого</span>
+                                                        <span class="mt-md-2 text_mediumbold">11 999 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <!-- /order-list -->
+                                                <div class="history-item__footer d-md-flex">
+                                                    <a href="#" class="w-100_sm btn btn_size-sm text_normal btn_primary-light">Отследить заказ</a>
+                                                    <a href="#" class="w-100_sm btn btn_size-sm text_normal btn_light text_light">Проблема с заказом</a>
+                                                    <a href="#" class="w-100_sm btn btn_size-sm text_normal btn_light text_light">Отменить заказ</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /history-item -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="d-flex align-items-center flex-wrap">
+                    <a href="index.html" class="logo footer__logo d-none d-xl-block"><img src="img/logo-footer.svg" alt="" class="img-fluid"></a>
+                    <a href="tel:88002222604" class="footer__phone text_inversion text_semibold text_size-lg"><span class="icon icon-phone-inversion"></span>8 800 2222 604</a>
+                    <a href="#" class="btn btn_primary btn_size-xs ms-auto d-lg-none">Помощь<span class="circle-arrow circle-arrow_light btn__icon"><span class="icon icon-arrow-inversion"></span></span></a>
+                    <div class="social-list footer__social-list d-flex justify-content-center align-items-center">
+                        <a href="#" class="social-list__link" target="_blank"><img src="img/icons/tg-inversion.svg" alt=""></a>
+                        <a href="#" class="social-list__link" target="_blank"><img src="img/icons/ok-inversion.svg" alt=""></a>
+                        <a href="#" class="social-list__link" target="_blank"><img src="img/icons/ins-inversion.svg" alt=""></a>
+                        <a href="#" class="social-list__link" target="_blank"><img src="img/icons/vk-inversion.svg" alt=""></a>
+                        <a href="#" class="social-list__link" target="_blank"><img src="img/icons/fb-inversion.svg" alt=""></a>
+                    </div>
+                    <div class="payment d-flex align-items-center ms-auto">
+                        <div class="payment__item"><img src="img/icons/mir.svg" alt="" class="img-fluid"></div>
+                        <div class="payment__item"><img src="img/icons/visa.svg" alt="" class="img-fluid"></div>
+                        <div class="payment__item"><img src="img/icons/mastercard.svg" alt="" class="img-fluid"></div>
+                    </div>
+                </div>
+                <div class="d-none d-lg-flex justify-content-between align-items-center footer__center">
+                    <ul class="footer-nav d-flex nav-list">
+                        <li class="nav-list__item"><a href="catalogue.html" class="nav-list__link active">Магазин</a></li>
+                        <li class="nav-list__item"><a href="about-cbd.html" class="nav-list__link">О Cbd</a></li>
+                        <li class="nav-list__item"><a href="about.html" class="nav-list__link">О нас</a></li>
+                        <li class="nav-list__item"><a href="review.html" class="nav-list__link">Отзывы</a></li>
+                        <li class="nav-list__item"><a href="certificates.html" class="nav-list__link">Сертификаты</a></li>
+                        <li class="nav-list__item"><a href="calculator.html" class="nav-list__link">Калькулятор</a></li>
+                        <li class="nav-list__item"><a href="delivery.html" class="nav-list__link">Доставка и оплата</a></li>
+                        <li class="nav-list__item"><a href="contacts.html" class="nav-list__link">Контакты</a></li>
+                        <li class="nav-list__item"><a href="contacts.html" class="nav-list__link">Еще <span class="circle-arrow circle-arrow_light"><span class="icon icon-arrow-inversion"></span></span></a></li>
+                    </ul>
+                    <a href="#" class="btn btn_primary btn_size-xs">Помощь<span class="circle-arrow circle-arrow_light btn__icon"><span class="icon icon-arrow-inversion"></span></span></a>
+                </div>
+                <div class="copyright d-lg-none text_inversion text_mediumbold text_size-xs">© cannastyle.com 2022</div>
+                <div class="footer__bottom">
+                    <p class="text_size-sm footer__collapse-title">
+                        <a href="#statement" class="collapsed text_light footer__dropdown-toggle dropdown-toggle dropdown-toggle_light dropdown-toggle_sm collapsed" data-bs-toggle="collapse">Заявление об ограничении ответственности</a>
+                    </p>
+                    <div class="collapse footer__collapse" id="statement">
+                        <div class="footer__collapse-body text_light text_size-xs">
+                            <p>Данный продукт не предназначен для использования или продажи лицам, не достигшим 18-летнего возраста.. Хранить в недоступном для детей месте. Данный продукт не должен использоваться, если вы беременны или кормите грудью. Перед использованием следует проконсультироваться с врачом. Всегда консультируйтесь с врачом перед использованием, если у вас есть серьезное заболевание или вы используете отпускаемые по рецепту лекарства.. Этот продукт не предназначен для диагностики, лечения или профилактики каких-либо заболеваний. Этот продукт следует использовать только в соответствии с указаниями на этикетке. Эти заявления не были оценены FDA или каким-либо органом по безопасности пищевых продуктов и/или лекарств. Используя сайт, вы соглашаетесь с политикой конфиденциальности и пользовательским соглашением.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+        <!-- login-pane -->
+        <div class="pane" id="login-pane">
+            <div class="pane__header">
+                <a href="#" class="icon icon-close pane__close pane-close"></a>
+            </div>
+            <div class="title_size-lg-mobile text_semibold title_margin-bottom-sm">Войти или зарегистрироваться</div>
+            <p class="text_size-sm me-xl-5 pe-xl-4">Мы отправим на номер SMS-сообщение с кодом подтверждения.</p>
+            <div class="pane__form">
+                <form action="#" name="form-phone" id="form-phone">
+                    <div class="form-group_margin-lg">
+                        <label class="label">Телефон</label>
+                        <input type="number" class="form-control" placeholder="Введите номер телефона" id="phone">
+                        <div class="text_size-xs text_danger collapse pt-1" id="phoneError">Заполните поле</div>
+                    </div>
+                    <div class="form-group_margin-xs pt-2 pb-md-1 pb-2">
+                        <button class="btn w-100 btn_primary">Получить код
+                            <span class="btn__icon-absolute circle-arrow circle-arrow_light">
+                                <span class="icon icon-arrow-right-inversion"></span>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="form-group_margin-xs pt-1 pt-md-0">
+                        <a href="#login-email" class="btn w-100 btn_primary-light pane-open">Войти по почте и паролю</a>
+                    </div>
+                </form>
+            </div>
+        </div>  
+        <!-- /login-pane -->
+
+        <!-- code-pane -->
+        <div class="pane" id="code-pane">
+            <div class="pane__header">
+                <a href="#" class="icon icon-close pane__close pane-close "></a>
+            </div>
+            <div class="title_size-lg-mobile text_semibold title_margin-bottom-sm">Войти или зарегистрироваться</div>
+            <p class="text_size-sm">Код был отправлен на номер <br>
+                + 7 999-999-99-99</p>
+            <div class="pane__form">
+                <form action="#" name="login-code" id="login-code">
+                    <div class="form-group_margin-md pb-1">
+                        <label class="label">Код из SMS</label>
+                        <div class="d-flex code-group justify-content-between align-items-center" id="code-group">
+                            <input type="text" class="form-control_xs form-control">
+                            <input type="text" class="form-control_xs form-control">
+                            <input type="text" class="form-control_xs form-control">
+                            <div class="code-group__separator text_light text_size-sm">–</div>
+                            <input type="text" class="form-control_xs form-control">
+                            <input type="text" class="form-control_xs form-control">
+                            <input type="text" class="form-control_xs form-control">
+                        </div>
+                    </div>
+                    <div class="form-group_margin-sm pb-md-1">
+                        <button class="btn w-100 btn_primary">Подтвердить вход
+                            <span class="btn__icon-absolute circle-arrow circle-arrow_light">
+                                <span class="icon icon-arrow-right-inversion"></span>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="ps-2 ps-md-0 form-group_margin-xs text_size-sm pb-md-1"><a href="#" class="text_primary text_mediumbold">Отправить код повторно</a></div>
+                    <div class="ps-2 ps-md-0 form-group_margin-xs text_size-sm">Код можно отправить повторно через <br>
+                        120 секунд</div>
+                </form>
+                <div class="form-group_margin-xs">
+                    <a href="#login-email" class="btn w-100 btn_primary-light pane-open">Войти по почте и паролю</a>
+                </div>
+            </div>
+        </div>  
+        <!-- /code-pane -->
+
+        <!-- login-email -->
+        <div class="pane" id="login-email">
+            <div class="pane__header">
+                <a href="#" class="icon icon-close pane__close pane-close "></a>
+            </div>
+            <div class="title_size-lg-mobile text_semibold title_margin-bottom-sm">Войти по почте и паролю</div>
+            <p class="text_size-sm mb-4 pb-3">Только для зарегистрированных <br> пользователей</p>
+            <form action="#">
+                <div class="form-group_margin-sm">
+                    <label class="label">E-mail</label>
+                    <input type="email" class="form-control" placeholder="Boris@gmail.com" id="email">
+                </div>
+                <div class="form-group_margin-sm">
+                    <label class="label">Пароль</label>
+                    <div class="pos-rel wrap-pass">
+                        <input type="password" class="form-control" placeholder="**********" id="pass">
+                        <a href="#" class="pass-view icon icon-view"></a>
+                    </div>
+                </div>
+                <div class="form-group_margin-xs">
+                    <button class="btn w-100 btn_primary">Войти
+                        <span class="btn__icon-absolute circle-arrow circle-arrow_light">
+                            <span class="icon icon-arrow-right-inversion"></span>
+                        </span>
+                    </button>
+                </div>
+                <div class="form-group_margin-xs">
+                    <a href="#login-pane" class="btn w-100 btn_primary-light pane-open">Войти по номеру телефона</a>
+                </div>
+            </form>
+        </div>  
+        <!-- /login-email-->
+
+        
+
+        <a href="#" class="pane-close pane-close__link"></a>
+    </div>
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/datepicker-ru.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
