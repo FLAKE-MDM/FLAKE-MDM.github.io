@@ -983,7 +983,7 @@
                         </div>
                         <div class="success-show collapse">
                             <p class="text-center text_size-lg text-medium title_margin-bottom-md modal-content__text">Ваша заявка отправлена! <br>Ожидайте когда с вами свяжется наш менеджер</p>
-                            <p><a href="#" class="btn btn-primary w-100" data-bs-dismiss="modal">Хорошо  буду ждать</a></p>
+                            <p><button class="btn btn-primary w-100" data-bs-dismiss="modal" name="btn-succes2">Хорошо  буду ждать</button></p>
                         </div>
                     </form>
                 </div>
@@ -1016,65 +1016,203 @@
                 </div>
                 <div class="d-md-flex">
                     <div class="modal-nav__main order-md-2">
-                        <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
-                            <div class="title_size-sm text-inversion text-black">Ремонт оконных систем</div>
-                            <div class="text-right mt-4 mt-xl-0">
-                                <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                        <div class="tab-content">
+                            <div class="tab-pane fade" id="modal-nav-1">
+                                <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
+                                    <div class="title_size-sm text-inversion text-black">Ремонт окон</div>
+                                    <div class="text-right mt-4 mt-xl-0">
+                                        <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                                    </div>
+                                </div>
+                                <div class="service-list">
+                                    <a href="#" class="service-item">
+                                        <div class="service-item__image"><img src="img/service-3.jpg" alt="" class="img-fluid"></div>
+                                        <div class="text-semibold d-flex align-items-center text_size-sm">
+                                            Москитные сетки
+                                        </div>
+                                    </a>
+                                    <a href="#" class="service-item">
+                                        <div class="service-item__image"><img src="img/service-4.jpg" alt="" class="img-fluid"></div>
+                                        <div class="text-semibold d-flex align-items-center text_size-sm">
+                                            Производство
+                                        </div>
+                                    </a>
+                                    <a href="#" class="service-item">
+                                        <div class="service-item__image"><img src="img/service-5.jpg" alt="" class="img-fluid"></div>
+                                        <div class="text-semibold d-flex align-items-center text_size-sm">
+                                            Рольставни
+                                        </div>
+                                    </a>
+                                    <a href="#" class="service-item">
+                                        <div class="service-item__image"><img src="img/service-6.jpg" alt="" class="img-fluid"></div>
+                                        <div class="text-semibold d-flex align-items-center text_size-sm">
+                                            Жалюзи
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="service-list">
-                            <a href="#" class="service-item">
-                                <div class="service-item__image"><img src="img/service-1.jpg" alt="" class="img-fluid"></div>
-                                <div class="text-semibold d-flex align-items-center text_size-sm">
-                                    Ремонт окон
+                            <div class="tab-pane fade show active" id="modal-nav-2">
+                                <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
+                                    <div class="title_size-sm text-inversion text-black">Ремонт оконных систем</div>
+                                    <div class="text-right mt-4 mt-xl-0">
+                                        <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                                    </div>
                                 </div>
-                            </a>
-                            <a href="#" class="service-item">
-                                <div class="service-item__image"><img src="img/service-2.jpg" alt="" class="img-fluid"></div>
-                                <div class="text-semibold d-flex align-items-center text_size-sm">
-                                    Обслуживание
+                                <div class="service-list">
+                                    <a href="#" class="service-item">
+                                        <div class="service-item__image"><img src="img/service-1.jpg" alt="" class="img-fluid"></div>
+                                        <div class="text-semibold d-flex align-items-center text_size-sm">
+                                            Ремонт окон
+                                        </div>
+                                    </a>
+                                    <a href="#" class="service-item">
+                                        <div class="service-item__image"><img src="img/service-2.jpg" alt="" class="img-fluid"></div>
+                                        <div class="text-semibold d-flex align-items-center text_size-sm">
+                                            Обслуживание
+                                        </div>
+                                    </a>
+                                    <a href="#" class="service-item">
+                                        <div class="service-item__image"><img src="img/service-3.jpg" alt="" class="img-fluid"></div>
+                                        <div class="text-semibold d-flex align-items-center text_size-sm">
+                                            Москитные сетки
+                                        </div>
+                                    </a>
+                                    <a href="#" class="service-item">
+                                        <div class="service-item__image"><img src="img/service-4.jpg" alt="" class="img-fluid"></div>
+                                        <div class="text-semibold d-flex align-items-center text_size-sm">
+                                            Производство
+                                        </div>
+                                    </a>
+                                    <a href="#" class="service-item">
+                                        <div class="service-item__image"><img src="img/service-5.jpg" alt="" class="img-fluid"></div>
+                                        <div class="text-semibold d-flex align-items-center text_size-sm">
+                                            Рольставни
+                                        </div>
+                                    </a>
+                                    <a href="#" class="service-item">
+                                        <div class="service-item__image"><img src="img/service-6.jpg" alt="" class="img-fluid"></div>
+                                        <div class="text-semibold d-flex align-items-center text_size-sm">
+                                            Жалюзи
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                            <a href="#" class="service-item">
-                                <div class="service-item__image"><img src="img/service-3.jpg" alt="" class="img-fluid"></div>
-                                <div class="text-semibold d-flex align-items-center text_size-sm">
-                                    Москитные сетки
+                            </div>
+                            <div class="tab-pane fade" id="modal-nav-3">
+                                <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
+                                    <div class="title_size-sm text-inversion text-black">Ремонт пластиковых систем</div>
+                                    <div class="text-right mt-4 mt-xl-0">
+                                        <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                                    </div>
                                 </div>
-                            </a>
-                            <a href="#" class="service-item">
-                                <div class="service-item__image"><img src="img/service-4.jpg" alt="" class="img-fluid"></div>
-                                <div class="text-semibold d-flex align-items-center text_size-sm">
-                                    Производство
+                                <div class="service-list">
+                                    <a href="#" class="service-item">
+                                        <div class="service-item__image"><img src="img/service-4.jpg" alt="" class="img-fluid"></div>
+                                        <div class="text-semibold d-flex align-items-center text_size-sm">
+                                            Производство
+                                        </div>
+                                    </a>
+                                    <a href="#" class="service-item">
+                                        <div class="service-item__image"><img src="img/service-5.jpg" alt="" class="img-fluid"></div>
+                                        <div class="text-semibold d-flex align-items-center text_size-sm">
+                                            Рольставни
+                                        </div>
+                                    </a>
+                                    <a href="#" class="service-item">
+                                        <div class="service-item__image"><img src="img/service-6.jpg" alt="" class="img-fluid"></div>
+                                        <div class="text-semibold d-flex align-items-center text_size-sm">
+                                            Жалюзи
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                            <a href="#" class="service-item">
-                                <div class="service-item__image"><img src="img/service-5.jpg" alt="" class="img-fluid"></div>
-                                <div class="text-semibold d-flex align-items-center text_size-sm">
-                                    Рольставни
+                            </div>
+                            <div class="tab-pane fade" id="modal-nav-4">
+                                <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
+                                    <div class="title_size-sm text-inversion text-black">Ремонт алюминиевых систем</div>
+                                    <div class="text-right mt-4 mt-xl-0">
+                                        <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                                    </div>
                                 </div>
-                            </a>
-                            <a href="#" class="service-item">
-                                <div class="service-item__image"><img src="img/service-6.jpg" alt="" class="img-fluid"></div>
-                                <div class="text-semibold d-flex align-items-center text_size-sm">
-                                    Жалюзи
+                            </div>
+                            <div class="tab-pane fade" id="modal-nav-5">
+                                <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
+                                    <div class="title_size-sm text-inversion text-black">Ремонт деревянных систем</div>
+                                    <div class="text-right mt-4 mt-xl-0">
+                                        <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                                    </div>
                                 </div>
-                            </a>
+                            </div>
+                            <div class="tab-pane fade" id="modal-nav-6">
+                                <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
+                                    <div class="title_size-sm text-inversion text-black">Отделка окон</div>
+                                    <div class="text-right mt-4 mt-xl-0">
+                                        <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="modal-nav-7">
+                                <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
+                                    <div class="title_size-sm text-inversion text-black">Апгрейд окон</div>
+                                    <div class="text-right mt-4 mt-xl-0">
+                                        <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="modal-nav-8">
+                                <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
+                                    <div class="title_size-sm text-inversion text-black">Услуги по уходу и обслуживанию окон</div>
+                                    <div class="text-right mt-4 mt-xl-0">
+                                        <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="modal-nav-9">
+                                <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
+                                    <div class="title_size-sm text-inversion text-black">Фурнитура</div>
+                                    <div class="text-right mt-4 mt-xl-0">
+                                        <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="modal-nav-10">
+                                <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
+                                    <div class="title_size-sm text-inversion text-black">Стеклопакеты</div>
+                                    <div class="text-right mt-4 mt-xl-0">
+                                        <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="modal-nav-11">
+                                <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
+                                    <div class="title_size-sm text-inversion text-black">Регулировка</div>
+                                    <div class="text-right mt-4 mt-xl-0">
+                                        <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="modal-nav-12">
+                                <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
+                                    <div class="title_size-sm text-inversion text-black">Уплотинтель</div>
+                                    <div class="text-right mt-4 mt-xl-0">
+                                        <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="modal-nav__aside">
-                        <ul class="modal-nav-list">
-                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Ремонт окон</a></li>
-                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link active">Ремонт оконных систем</a></li>
-                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Ремонт пластиковых систем</a></li>
-                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Ремонт алюминиевых систем</a></li>
-                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Ремонт деревянных систем</a></li>
-                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Отделка окон</a></li>
-                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Апгрейд окон</a></li>
-                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Услуги по уходу и обслуживанию окон</a></li>
-                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Фурнитура</a></li>
-                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Стеклопакеты</a></li>
-                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Регулировка</a></li>
-                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Уплотинтель</a></li>
+                        <ul class="modal-nav-list nav">
+                            <li class="modal-nav-list__item"><a href="#modal-nav-1" data-bs-toggle="tab" class="modal-nav-list__link">Ремонт окон</a></li>
+                            <li class="modal-nav-list__item"><a href="#modal-nav-2" data-bs-toggle="tab" class="modal-nav-list__link active">Ремонт оконных систем</a></li>
+                            <li class="modal-nav-list__item"><a href="#modal-nav-3" data-bs-toggle="tab" class="modal-nav-list__link">Ремонт пластиковых систем</a></li>
+                            <li class="modal-nav-list__item"><a href="#modal-nav-4" data-bs-toggle="tab" class="modal-nav-list__link">Ремонт алюминиевых систем</a></li>
+                            <li class="modal-nav-list__item"><a href="#modal-nav-5" data-bs-toggle="tab" class="modal-nav-list__link">Ремонт деревянных систем</a></li>
+                            <li class="modal-nav-list__item"><a href="#modal-nav-6" data-bs-toggle="tab" class="modal-nav-list__link">Отделка окон</a></li>
+                            <li class="modal-nav-list__item"><a href="#modal-nav-7" data-bs-toggle="tab" class="modal-nav-list__link">Апгрейд окон</a></li>
+                            <li class="modal-nav-list__item"><a href="#modal-nav-8" data-bs-toggle="tab" class="modal-nav-list__link">Услуги по уходу и обслуживанию окон</a></li>
+                            <li class="modal-nav-list__item"><a href="#modal-nav-9" data-bs-toggle="tab" class="modal-nav-list__link">Фурнитура</a></li>
+                            <li class="modal-nav-list__item"><a href="#modal-nav-10" data-bs-toggle="tab" class="modal-nav-list__link">Стеклопакеты</a></li>
+                            <li class="modal-nav-list__item"><a href="#modal-nav-11" data-bs-toggle="tab" class="modal-nav-list__link">Регулировка</a></li>
+                            <li class="modal-nav-list__item"><a href="#modal-nav-12" data-bs-toggle="tab" class="modal-nav-list__link">Уплотинтель</a></li>
                         </ul>
                         <p class="text-center">
                             <a href="#" class="btn btn-success text-upper btn_size-smd">Какая у вас проблема?</a>
@@ -1106,65 +1244,203 @@
                 </div>
                 <div class="d-md-flex">
                     <div class="modal-nav__main order-md-2">
-                        <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
-                            <div class="title_size-sm text-inversion text-black">Обслуживание окон</div>
-                            <div class="text-right mt-4 mt-xl-0">
-                                <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                        <div class="tab-content">
+                            <div class="tab-pane fade" id="modal-nav-2-1">
+                                <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
+                                    <div class="title_size-sm text-inversion text-black">Ремонт окон</div>
+                                    <div class="text-right mt-4 mt-xl-0">
+                                        <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                                    </div>
+                                </div>
+                                <div class="service-list">
+                                    <a href="#" class="service-item">
+                                        <div class="service-item__image"><img src="img/service-3.jpg" alt="" class="img-fluid"></div>
+                                        <div class="text-semibold d-flex align-items-center text_size-sm">
+                                            Москитные сетки
+                                        </div>
+                                    </a>
+                                    <a href="#" class="service-item">
+                                        <div class="service-item__image"><img src="img/service-4.jpg" alt="" class="img-fluid"></div>
+                                        <div class="text-semibold d-flex align-items-center text_size-sm">
+                                            Производство
+                                        </div>
+                                    </a>
+                                    <a href="#" class="service-item">
+                                        <div class="service-item__image"><img src="img/service-5.jpg" alt="" class="img-fluid"></div>
+                                        <div class="text-semibold d-flex align-items-center text_size-sm">
+                                            Рольставни
+                                        </div>
+                                    </a>
+                                    <a href="#" class="service-item">
+                                        <div class="service-item__image"><img src="img/service-6.jpg" alt="" class="img-fluid"></div>
+                                        <div class="text-semibold d-flex align-items-center text_size-sm">
+                                            Жалюзи
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="service-list">
-                            <a href="#" class="service-item">
-                                <div class="service-item__image"><img src="img/service-1.jpg" alt="" class="img-fluid"></div>
-                                <div class="text-semibold d-flex align-items-center text_size-sm">
-                                    Ремонт окон
+                            <div class="tab-pane fade show active" id="modal-nav-2-2">
+                                <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
+                                    <div class="title_size-sm text-inversion text-black">Ремонт оконных систем</div>
+                                    <div class="text-right mt-4 mt-xl-0">
+                                        <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                                    </div>
                                 </div>
-                            </a>
-                            <a href="#" class="service-item">
-                                <div class="service-item__image"><img src="img/service-2.jpg" alt="" class="img-fluid"></div>
-                                <div class="text-semibold d-flex align-items-center text_size-sm">
-                                    Обслуживание
+                                <div class="service-list">
+                                    <a href="#" class="service-item">
+                                        <div class="service-item__image"><img src="img/service-1.jpg" alt="" class="img-fluid"></div>
+                                        <div class="text-semibold d-flex align-items-center text_size-sm">
+                                            Ремонт окон
+                                        </div>
+                                    </a>
+                                    <a href="#" class="service-item">
+                                        <div class="service-item__image"><img src="img/service-2.jpg" alt="" class="img-fluid"></div>
+                                        <div class="text-semibold d-flex align-items-center text_size-sm">
+                                            Обслуживание
+                                        </div>
+                                    </a>
+                                    <a href="#" class="service-item">
+                                        <div class="service-item__image"><img src="img/service-3.jpg" alt="" class="img-fluid"></div>
+                                        <div class="text-semibold d-flex align-items-center text_size-sm">
+                                            Москитные сетки
+                                        </div>
+                                    </a>
+                                    <a href="#" class="service-item">
+                                        <div class="service-item__image"><img src="img/service-4.jpg" alt="" class="img-fluid"></div>
+                                        <div class="text-semibold d-flex align-items-center text_size-sm">
+                                            Производство
+                                        </div>
+                                    </a>
+                                    <a href="#" class="service-item">
+                                        <div class="service-item__image"><img src="img/service-5.jpg" alt="" class="img-fluid"></div>
+                                        <div class="text-semibold d-flex align-items-center text_size-sm">
+                                            Рольставни
+                                        </div>
+                                    </a>
+                                    <a href="#" class="service-item">
+                                        <div class="service-item__image"><img src="img/service-6.jpg" alt="" class="img-fluid"></div>
+                                        <div class="text-semibold d-flex align-items-center text_size-sm">
+                                            Жалюзи
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                            <a href="#" class="service-item">
-                                <div class="service-item__image"><img src="img/service-3.jpg" alt="" class="img-fluid"></div>
-                                <div class="text-semibold d-flex align-items-center text_size-sm">
-                                    Москитные сетки
+                            </div>
+                            <div class="tab-pane fade" id="modal-nav-2-3">
+                                <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
+                                    <div class="title_size-sm text-inversion text-black">Ремонт пластиковых систем</div>
+                                    <div class="text-right mt-4 mt-xl-0">
+                                        <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                                    </div>
                                 </div>
-                            </a>
-                            <a href="#" class="service-item">
-                                <div class="service-item__image"><img src="img/service-4.jpg" alt="" class="img-fluid"></div>
-                                <div class="text-semibold d-flex align-items-center text_size-sm">
-                                    Производство
+                                <div class="service-list">
+                                    <a href="#" class="service-item">
+                                        <div class="service-item__image"><img src="img/service-4.jpg" alt="" class="img-fluid"></div>
+                                        <div class="text-semibold d-flex align-items-center text_size-sm">
+                                            Производство
+                                        </div>
+                                    </a>
+                                    <a href="#" class="service-item">
+                                        <div class="service-item__image"><img src="img/service-5.jpg" alt="" class="img-fluid"></div>
+                                        <div class="text-semibold d-flex align-items-center text_size-sm">
+                                            Рольставни
+                                        </div>
+                                    </a>
+                                    <a href="#" class="service-item">
+                                        <div class="service-item__image"><img src="img/service-6.jpg" alt="" class="img-fluid"></div>
+                                        <div class="text-semibold d-flex align-items-center text_size-sm">
+                                            Жалюзи
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                            <a href="#" class="service-item">
-                                <div class="service-item__image"><img src="img/service-5.jpg" alt="" class="img-fluid"></div>
-                                <div class="text-semibold d-flex align-items-center text_size-sm">
-                                    Рольставни
+                            </div>
+                            <div class="tab-pane fade" id="modal-nav-2-4">
+                                <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
+                                    <div class="title_size-sm text-inversion text-black">Ремонт алюминиевых систем</div>
+                                    <div class="text-right mt-4 mt-xl-0">
+                                        <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                                    </div>
                                 </div>
-                            </a>
-                            <a href="#" class="service-item">
-                                <div class="service-item__image"><img src="img/service-6.jpg" alt="" class="img-fluid"></div>
-                                <div class="text-semibold d-flex align-items-center text_size-sm">
-                                    Жалюзи
+                            </div>
+                            <div class="tab-pane fade" id="modal-nav-2-5">
+                                <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
+                                    <div class="title_size-sm text-inversion text-black">Ремонт деревянных систем</div>
+                                    <div class="text-right mt-4 mt-xl-0">
+                                        <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                                    </div>
                                 </div>
-                            </a>
+                            </div>
+                            <div class="tab-pane fade" id="modal-nav-2-6">
+                                <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
+                                    <div class="title_size-sm text-inversion text-black">Отделка окон</div>
+                                    <div class="text-right mt-4 mt-xl-0">
+                                        <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="modal-nav-2-7">
+                                <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
+                                    <div class="title_size-sm text-inversion text-black">Апгрейд окон</div>
+                                    <div class="text-right mt-4 mt-xl-0">
+                                        <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="modal-nav-2-8">
+                                <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
+                                    <div class="title_size-sm text-inversion text-black">Услуги по уходу и обслуживанию окон</div>
+                                    <div class="text-right mt-4 mt-xl-0">
+                                        <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="modal-nav-2-9">
+                                <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
+                                    <div class="title_size-sm text-inversion text-black">Фурнитура</div>
+                                    <div class="text-right mt-4 mt-xl-0">
+                                        <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="modal-nav-2-10">
+                                <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
+                                    <div class="title_size-sm text-inversion text-black">Стеклопакеты</div>
+                                    <div class="text-right mt-4 mt-xl-0">
+                                        <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="modal-nav-2-11">
+                                <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
+                                    <div class="title_size-sm text-inversion text-black">Регулировка</div>
+                                    <div class="text-right mt-4 mt-xl-0">
+                                        <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="modal-nav-2-12">
+                                <div class="d-xl-flex justify-content-between align-items-center title_margin-bottom-mlg">
+                                    <div class="title_size-sm text-inversion text-black">Уплотинтель</div>
+                                    <div class="text-right mt-4 mt-xl-0">
+                                        <a href="#" class="text-primary-light text_size-sm text-bold">Смотреть все услуги<span class="d-none d-xxl-inline"> по ремонту окон</span></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="modal-nav__aside">
-                        <ul class="modal-nav-list">
-                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Ремонт окон</a></li>
-                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link active">Ремонт оконных систем</a></li>
-                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Ремонт пластиковых систем</a></li>
-                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Ремонт алюминиевых систем</a></li>
-                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Ремонт деревянных систем</a></li>
-                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Отделка окон</a></li>
-                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Апгрейд окон</a></li>
-                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Услуги по уходу и обслуживанию окон</a></li>
-                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Фурнитура</a></li>
-                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Стеклопакеты</a></li>
-                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Регулировка</a></li>
-                            <li class="modal-nav-list__item"><a href="#" class="modal-nav-list__link">Уплотинтель</a></li>
+                        <ul class="modal-nav-list nav">
+                            <li class="modal-nav-list__item"><a href="#modal-nav-2-1" data-bs-toggle="tab" class="modal-nav-list__link">Ремонт окон</a></li>
+                            <li class="modal-nav-list__item"><a href="#modal-nav-2-2" data-bs-toggle="tab" class="modal-nav-list__link active">Ремонт оконных систем</a></li>
+                            <li class="modal-nav-list__item"><a href="#modal-nav-2-3" data-bs-toggle="tab" class="modal-nav-list__link">Ремонт пластиковых систем</a></li>
+                            <li class="modal-nav-list__item"><a href="#modal-nav-2-4" data-bs-toggle="tab" class="modal-nav-list__link">Ремонт алюминиевых систем</a></li>
+                            <li class="modal-nav-list__item"><a href="#modal-nav-2-5" data-bs-toggle="tab" class="modal-nav-list__link">Ремонт деревянных систем</a></li>
+                            <li class="modal-nav-list__item"><a href="#modal-nav-2-6" data-bs-toggle="tab" class="modal-nav-list__link">Отделка окон</a></li>
+                            <li class="modal-nav-list__item"><a href="#modal-nav-2-7" data-bs-toggle="tab" class="modal-nav-list__link">Апгрейд окон</a></li>
+                            <li class="modal-nav-list__item"><a href="#modal-nav-2-8" data-bs-toggle="tab" class="modal-nav-list__link">Услуги по уходу и обслуживанию окон</a></li>
+                            <li class="modal-nav-list__item"><a href="#modal-nav-2-9" data-bs-toggle="tab" class="modal-nav-list__link">Фурнитура</a></li>
+                            <li class="modal-nav-list__item"><a href="#modal-nav-2-10" data-bs-toggle="tab" class="modal-nav-list__link">Стеклопакеты</a></li>
+                            <li class="modal-nav-list__item"><a href="#modal-nav-2-11" data-bs-toggle="tab" class="modal-nav-list__link">Регулировка</a></li>
+                            <li class="modal-nav-list__item"><a href="#modal-nav-2-12" data-bs-toggle="tab" class="modal-nav-list__link">Уплотинтель</a></li>
                         </ul>
                         <p class="text-center">
                             <a href="#" class="btn btn-success text-upper btn_size-smd">Какая у вас проблема?</a>
