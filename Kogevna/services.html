@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кожевня</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrap" id="wrap">
+        <!-- header -->
+        <header class="header">
+            <nav class="navigation" id="navigation">
+                <div class="container container_md d-md-flex justify-content-end">
+                    <a href="#" class="close-link menu-toggler d-md-none d-flex align-items-center">закрыть  <div class="close-link__circle">х</div></a>
+                    <ul class="nav-list d-md-flex">
+                        <li class="nav-list__item">
+                            <a href="home.html" class="nav-list__link">
+                                <span class="d-md-none">На главную страницу</span>
+                                <span class="d-none d-md-inline">Главная страница</span>
+                            </a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="marketplaces.html" class="nav-list__link">О <span class="d-md-none">нашем</span> производстве</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="services.html" class="nav-list__link active">Виды <br class="d-sm-none"> услуг</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="contacts.html" class="nav-list__link">
+                                <span class="d-md-none">Контактная информация</span>
+                                <span class="d-none d-md-inline">Контакты</span>
+                            </a>
+                        </li>
+                        <li class="nav-list__item d-md-none">
+                            <a href="#" class="nav-list__link">Пошив <span class="d-md-none">изделий <br class="d-sm-none"></span> на заказ</a>
+                        </li>
+                        <li class="nav-list__item d-md-none">
+                            <a href="#" class="nav-list__link"><span class="d-md-none">Предложения </span>Для оптовиков</a>
+                        </li>
+                        <li class="nav-list__item d-md-none">
+                            <a href="#" class="nav-list__link">Корпоративные подарки</a>
+                        </li>
+                        <li class="nav-list__item d-md-none">
+                            <a href="#" class="nav-list__link">
+                                <span class="d-md-none">Для продавцов <br class="d-sm-none">на Маркетплейсах</span>
+                                <span class="d-none d-md-inline">Для маркетплейсов</span>
+                            </a>
+                        </li>
+                        <li class="nav-list__item d-md-none">
+                            <a href="#" class="nav-list__link">
+                                <span class="d-md-none">По системе Дропшиппинг</span>
+                                <span class="d-none d-md-inline">Система Дропшиппинг</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container container_md">
+                <!-- header__content -->
+                <div class="header__content d-flex align-items-start">
+                    <a href="index.html" class="logo header__logo">
+                        <img src="img/logo.svg" alt="" class="img-fluid d-none d-md-block">
+                        <img src="img/logo-mobile.png" alt="" class="img-fluid d-md-none">
+                        <div class="logo__text d-md-none">изделия из кожи на заказ</div>
+                    </a>
+                    <div class="slogan d-none d-lg-block">Швейное производство полного цикла. Работаем по всей России и СНГ.</div>
+                    <div class="d-md-none ms-auto d-flex align-items-start">
+                        <a href="https://wa.me/89252823999" class="d-none d-fixed-block icon icon-whatsApp"></a>
+                        <a href="tel:89252823999" class="d-none d-fixed-block icon icon-phone ms-3"></a>
+                        <a href="#" class="btn-menu ms-3 menu-toggler">МЕНЮ</a>
+                    </div>
+                    <div class="header__contacts d-flex flex-wrap">
+                        <div class="contacts-group">
+                            <a href="https://wa.me/89252823999" class="contacts-item d-flex align-items-center">
+                                <div class="contacts-item__icon me-1 me-md-2"><span class="icon icon-whatsApp"></span></div>
+                                <div class="text_dotted">Открыть Whats App</div>
+                            </a>
+                            <a href="mailto:info@kozhevnya.ru" class="contacts-item d-flex align-items-center">
+                                <div class="contacts-item__icon me-1 me-md-2"><span class="icon icon-email mt-1"></span></div>
+                                <div class="text_dotted">info@kozhevnya.ru</div>
+                            </a>
+                        </div>
+                        <div class="contacts-group">
+                            <a href="tel:89252823999" class="contacts-item d-flex align-items-center">
+                                <div class="contacts-item__icon"><span class="icon icon-phone"></span></div>
+                                <div class="text_bold">8-925-282-39-99</div>
+                            </a>
+                            <a href="#callback" data-bs-toggle="modal" class="contacts-item d-flex align-items-center">
+                                <div class="contacts-item__icon"><span class="icon icon-callback"></span></div>
+                                <div class="text_dotted">Обратный звонок</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /header__content -->
+                <ul class="secondary-nav d-none d-md-flex text_upper">
+                    <li class="secondary-nav__item"><a href="#" class="secondary-nav__link">Пошив на заказ</a></li>
+                    <li class="secondary-nav__item"><a href="#" class="secondary-nav__link">Для оптовиков</a></li>
+                    <li class="secondary-nav__item"><a href="#" class="secondary-nav__link">Корпоративные подарки</a></li>
+                    <li class="secondary-nav__item"><a href="#" class="secondary-nav__link">Для маркетплейсов</a></li>
+                    <li class="secondary-nav__item"><a href="#" class="secondary-nav__link">Система Дропшиппинг</a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- /header -->
+        <!-- breadcrumb -->
+        <div class="breadcrumb">
+            <img src="img/breadcrumb-services.jpg" alt="" class="breadcrumb__image">
+            <div class="container container_md">
+                <ul class="breadcrumb-list">
+                    <li class="breadcrumb-list__item">
+                        <span class="icon icon-home breadcrumb-list__icon"></span>
+                        <a href="#" class="breadcrumb-list__link">Главная страница</a>
+                    </li>
+                    <li class="breadcrumb-list__item">Перечень услуг</li>
+                </ul>
+            </div>
+        </div>
+        <!-- /breadcrumb -->
+        <div class="container">
+            <div class="container_md container">
+                <div class="title title_margin-bottom-sm">Услуги Швейного производства</div>
+                <p class="text_center text_vertical">Современное производство нередко испытывает потребность в изготовлении нестандартных изделий из кожи. Наша компания производит изделия из кожи на заказ по выгодным ценам. Мы заинтересованы во взаимовыгодном сотрудничестве как  предприятиями, так и с физическими лицами.</p>
+                <div class="row row_md pt-1 pt-md-0">
+                    <div class="col-md-6 d-flex">
+                        <div class="service-item text_light">
+                            <img src="img/bg-service-1.jpg" alt=""  class="service-item__image">
+                            <div class="d-flex service-item__header">
+                                <div class="service-item__icon"><img src="img/icons/service-1.svg" alt="" class="img-fluid w-100"></div>
+                                <div class="title text_left">пошив изделий <br>на заказ</div>
+                            </div>
+                            <div class="service-item__description">Пришлите фото или сделайте эскиз на бумаге и укажите необходимые размеры, а мы переведём всё в чертёж и произведём расчёт. Прикрепите фотографию или лекало и получите пробный образец и подготовим всю технич-кую документацию.</div>
+                            <div class="text_right"><a href="#" class="btn btn_primary btn_size-sm">ПОДРОБНЕЕ</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex">
+                        <div class="service-item text_light">
+                            <img src="img/bg-service-2.jpg" alt=""  class="service-item__image">
+                            <div class="d-flex service-item__header">
+                                <div class="service-item__icon"><img src="img/icons/service-2.svg" alt="" class="img-fluid w-100"></div>
+                                <div class="title text_left">Предложения <br>для оптовиков</div>
+                            </div>
+                            <div class="service-item__description">Пришлите фото или сделайте эскиз на бумаге и укажите необходимые размеры, а мы переведём всё в чертёж и произведём расчёт. Прикрепите фотографию или лекало и получите пробный образец и подготовим всю технич-кую документацию.</div>
+                            <div class="text_right"><a href="#" class="btn btn_primary btn_size-sm">ПОДРОБНЕЕ</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex">
+                        <div class="service-item text_light">
+                            <img src="img/bg-service-3.jpg" alt=""  class="service-item__image">
+                            <div class="d-flex service-item__header">
+                                <div class="service-item__icon"><img src="img/icons/service-3.png" alt="" class="img-fluid service-item__icon-img"></div>
+                                <div class="title text_left">Корпоративные <br>подарки</div>
+                            </div>
+                            <div class="service-item__description">Пришлите фото или сделайте эскиз на бумаге и укажите необходимые размеры, а мы переведём всё в чертёж и произведём расчёт. Прикрепите фотографию или лекало и получите пробный образец и подготовим всю технич-кую документацию.</div>
+                            <div class="text_right"><a href="#" class="btn btn_primary btn_size-sm">ПОДРОБНЕЕ</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex">
+                        <div class="service-item text_light">
+                            <img src="img/bg-service-4.jpg" alt=""  class="service-item__image">
+                            <div class="d-flex service-item__header">
+                                <div class="service-item__icon"><img src="img/icons/service-4.svg" alt="" class="img-fluid w-100"></div>
+                                <div class="title text_left">Для продавцов <br>на маркетплейсах</div>
+                            </div>
+                            <div class="service-item__description">Пришлите фото или сделайте эскиз на бумаге и укажите необходимые размеры, а мы переведём всё в чертёж и произведём расчёт. Прикрепите фотографию или лекало и получите пробный образец и подготовим всю технич-кую документацию.</div>
+                            <div class="text_right"><a href="#" class="btn btn_primary btn_size-sm">ПОДРОБНЕЕ</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex">
+                        <div class="service-item text_light">
+                            <img src="img/bg-service-5.jpg" alt=""  class="service-item__image">
+                            <div class="d-flex service-item__header">
+                                <div class="service-item__icon"><img src="img/icons/service-5.svg" alt="" class="img-fluid w-100"></div>
+                                <div class="title text_left">По системе <br>Дропшиппинг</div>
+                            </div>
+                            <div class="service-item__description">Пришлите фото или сделайте эскиз на бумаге и укажите необходимые размеры, а мы переведём всё в чертёж и произведём расчёт. Прикрепите фотографию или лекало и получите пробный образец и подготовим всю технич-кую документацию.</div>
+                            <div class="text_right"><a href="#" class="btn btn_primary btn_size-sm">ПОДРОБНЕЕ</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex">
+                        <div class="service-item text_light">
+                            <img src="img/bg-service-6.jpg" alt=""  class="service-item__image">
+                            <div class="d-flex service-item__header">
+                                <div class="service-item__icon"><img src="img/icons/service-6.svg" alt="" class="img-fluid w-100"></div>
+                                <div class="title text_left">Упаковка и <br>Доставка</div>
+                            </div>
+                            <div class="service-item__description">Пришлите фото или сделайте эскиз на бумаге и укажите необходимые размеры, а мы переведём всё в чертёж и произведём расчёт. Прикрепите фотографию или лекало и получите пробный образец и подготовим всю технич-кую документацию.</div>
+                            <div class="text_right"><a href="#" class="btn btn_primary btn_size-sm">ПОДРОБНЕЕ</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- consultation-block -->
+            <div class="consultation-block bg_success text_light d-flex">
+                <div class="icon icon-whatsApp-light icon-whatsApp-light_xl consultation-block__icon"></div>
+                <div class="consultation-block__text title_size-md title text_normal mb-1">Нужна консультация? Хотите оБСУДить заказ? <br>
+                    остались вопросы? Напишите нам в <a href="#" class="text_bold text_dotted text_light">whats app</a>
+                </div>
+            </div>
+            <!-- /consultation-block -->
+            <!-- example-section -->
+            <div class="example-section">
+                <div class="title title_size-md mb-md-3 mb-2">фотографии примеров работ</div>
+                <p class="text_center text_size-sm text_bold mx-5 px-4 mx-md-0 px-md-0 pt-1 pt-md-0">Мы готовы предложить кожаные изделия из «<span class="text_dotted">В НАЛИЧИИ</span>» (с Вашим лого) или любые другие «<span class="text_dotted text_upper">на заказ</span>»
+                </p>
+                <div class="wrap-slider example-slider__wrap">
+                    <div class="example-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="example-item">
+                                    <div class="example-item__image">
+                                        <a href="img/content/example-1.jpg" class="d-flex" data-fancybox="gallery-1"><img src="img/content/example-1.jpg" alt="" class="w-100"></a>
+                                        <div class="collapse">
+                                            <a href="img/content/example-1.jpg" class="d-flex" data-fancybox="gallery-1"><img src="img/content/example-1.jpg" alt=""></a>
+                                            <a href="img/content/example-1.jpg" class="d-flex" data-fancybox="gallery-1"><img src="img/content/example-1.jpg" alt=""></a>
+                                            <a href="img/content/example-1.jpg" class="d-flex" data-fancybox="gallery-1"><img src="img/content/example-1.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="example-item__body">
+                                        <p class="text_bold text_upper">Кардхолдер</p>
+                                        <p>В наличии:</p>
+                                        <p class="text_bold">20 моделей</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="example-item">
+                                    <div class="example-item__image">
+                                        <a href="img/content/example-2.jpg" class="d-flex" data-fancybox="gallery-2"><img src="img/content/example-2.jpg" alt="" class="w-100"></a>
+                                        <div class="collapse">
+                                            <a href="img/content/example-2.jpg" class="d-flex" data-fancybox="gallery-2"><img src="img/content/example-2.jpg" alt=""></a>
+                                            <a href="img/content/example-2.jpg" class="d-flex" data-fancybox="gallery-2"><img src="img/content/example-2.jpg" alt=""></a>
+                                            <a href="img/content/example-2.jpg" class="d-flex" data-fancybox="gallery-2"><img src="img/content/example-2.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="example-item__body">
+                                        <p class="text_bold text_upper">Кошелёк</p>
+                                        <p>В наличии:</p>
+                                        <p class="text_bold">50 моделей</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="example-item">
+                                    <div class="example-item__image">
+                                        <a href="img/content/example-3.jpg" class="d-flex" data-fancybox="gallery-3"><img src="img/content/example-3.jpg" alt="" class="w-100"></a>
+                                        <div class="collapse">
+                                            <a href="img/content/example-3.jpg" class="d-flex" data-fancybox="gallery-3"><img src="img/content/example-3.jpg" alt=""></a>
+                                            <a href="img/content/example-3.jpg" class="d-flex" data-fancybox="gallery-3"><img src="img/content/example-3.jpg" alt=""></a>
+                                            <a href="img/content/example-3.jpg" class="d-flex" data-fancybox="gallery-3"><img src="img/content/example-3.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="example-item__body">
+                                        <p class="text_bold text_upper">портмоне</p>
+                                        <p>В наличии:</p>
+                                        <p class="text_bold">70 моделей</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="example-item">
+                                    <div class="example-item__image">
+                                        <a href="img/content/example-4.jpg" class="d-flex" data-fancybox="gallery-4"><img src="img/content/example-4.jpg" alt="" class="w-100"></a>
+                                        <div class="collapse">
+                                            <a href="img/content/example-4.jpg" class="d-flex" data-fancybox="gallery-4"><img src="img/content/example-4.jpg" alt=""></a>
+                                            <a href="img/content/example-4.jpg" class="d-flex" data-fancybox="gallery-4"><img src="img/content/example-4.jpg" alt=""></a>
+                                            <a href="img/content/example-4.jpg" class="d-flex" data-fancybox="gallery-4"><img src="img/content/example-4.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="example-item__body">
+                                        <p class="text_bold text_upper">футляр</p>
+                                        <p>В наличии:</p>
+                                        <p class="text_bold">40 моделей</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="example-item">
+                                    <div class="example-item__image">
+                                        <a href="img/content/example-5.jpg" class="d-flex" data-fancybox="gallery-5"><img src="img/content/example-5.jpg" alt="" class="w-100"></a>
+                                        <div class="collapse">
+                                            <a href="img/content/example-5.jpg" class="d-flex" data-fancybox="gallery-5"><img src="img/content/example-5.jpg" alt=""></a>
+                                            <a href="img/content/example-5.jpg" class="d-flex" data-fancybox="gallery-5"><img src="img/content/example-5.jpg" alt=""></a>
+                                            <a href="img/content/example-5.jpg" class="d-flex" data-fancybox="gallery-5"><img src="img/content/example-5.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="example-item__body">
+                                        <p class="text_bold text_upper">чехол</p>
+                                        <p>В наличии:</p>
+                                        <p class="text_bold">50 моделей</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="example-item">
+                                    <div class="example-item__image">
+                                        <a href="img/content/example-3.jpg" class="d-flex" data-fancybox="gallery-6"><img src="img/content/example-3.jpg" alt="" class="w-100"></a>
+                                        <div class="collapse">
+                                            <a href="img/content/example-3.jpg" class="d-flex" data-fancybox="gallery-6"><img src="img/content/example-3.jpg" alt=""></a>
+                                            <a href="img/content/example-3.jpg" class="d-flex" data-fancybox="gallery-6"><img src="img/content/example-3.jpg" alt=""></a>
+                                            <a href="img/content/example-3.jpg" class="d-flex" data-fancybox="gallery-6"><img src="img/content/example-3.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="example-item__body">
+                                        <p class="text_bold text_upper">портмоне</p>
+                                        <p>В наличии:</p>
+                                        <p class="text_bold">70 моделей</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="swiper-arrow swiper-prev example-prev"></a>
+                    <a href="#" class="swiper-arrow swiper-next example-next"></a>
+                </div>
+                <div class="text_center"><a href="#" class="btn btn_dark">обсудить условия</a></div>
+            </div>
+            <!-- /example-section -->
+            <!-- callback-block -->
+            <div class="callback-block bg_primary text_center">
+                <span class="text_upper text_bold text_size-lg text_light">остались вопросы?</span>
+                <a href="#" class="btn btn_dark ms-1 ms-md-3">напишите нам</a>
+            </div>
+            <!-- /callback-block -->
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-lg-6 col-md-4">
+                        <div class="footer__content">
+                            <div class="d-flex align-items-start">
+                                <a href="index.html" class="logo footer__logo">
+                                    <img src="img/logo.svg" alt="" class="img-fluid d-none d-md-block">
+                                    <img src="img/logo-mobile.png" alt="" class="img-fluid d-md-none">
+                                    <div class="logo__text d-md-none">изделия из кожи на заказ</div>
+                                </a>
+                                <div class="slogan footer__slogan d-none d-lg-block">Швейное производство полного цикла. Работаем по всей России и СНГ.</div>
+                            </div>
+                            <div class="copyright">
+                                <p class="d-none d-md-block">Копирования всех состовляющих частей сайта в какой бы то ни было форме без разрешения владельца авторских прав запрещено.</p>
+                                <p>2022 © <span class="d-md-none">ИП Глушенков Николай Владимирович</span><a href="#privacyPolicy" data-bs-toggle="modal" class="link_underline text_bold d-none d-md-inline">Политика конфиденциальности</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 d-none d-md-block">
+                        <ul class="footer-nav">
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link link_underline text_bold">Главная страница</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link link_underline text_bold">Для Маркетплейсов</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link link_underline text_bold">Система Дропшиппинг</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link link_underline text_bold">Корпоративные подарки</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link link_underline text_bold">Для оптовиков</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link link_underline text_bold">Пошив на заказ</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link link_underline text_bold">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-3 col-md-4">
+                        <div class="footer__contacts">
+                            <p class="d-none d-md-block"><span class="text_bold">Адрес</span>: 109383, г.Москва, <br>1-й Красковский проезд 38А, стр.40  <span class="icon icon-metro mx-2"></span><span class="text_bold">Лухмановская</span></p>
+                            <p class="text_bold d-none d-md-block">Телефон: <a href="tel:89252823999">8-925-282-39-99</a><span class="icon icon-whatsApp-success ms-2"></span></p>
+                            <p class="text_bold d-md-none">Телефоны: <br><a href="tel:89252823999">8-925-282-39-99</a> <br><a href="tel:89266699922">8-926-669-99-22</a></p>
+                            <p><span class="text_bold">Эл.почта:</span> <a href="mailto:info@kozhevnya.ru" class="link_underline">info@kozhevnya.ru</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text_center d-md-none"><a href="#privacyPolicy" data-bs-toggle="modal" class="link_underline text_bold">Политика конфиденциальности</a></div>
+            </div>
+        </footer>
+        <!-- /footer -->
+        <div class="fixed-links">
+            <div class="container container_md pos-rel">
+                <div class="fixed-links__block d-flex flex-column align-items-end">
+                    <a href="#" class="icon icon-whatsApp icon-whatsApp_lg"></a>
+                    <a href="#wrap" class="up-link"><span class="icon icon-caret-up"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- privacyPolicy -->
+    <div class="modal fade" id="privacyPolicy" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog_lg">
+            <div class="modal-content">
+                <button type="button" data-bs-dismiss="modal" class="close-link d-flex align-items-center">закрыть  <span class="close-link__circle">х</span></button>
+                <div class="title title_margin-bottom-sm">Политика конфиденциальности</div>
+                <div class="privacy-section">
+                    <div class="privacy-group">
+                        <p class="text_bold">1. Политика конфиденциальности</p>
+                        <p>1.1. Настоящая Политика в отношении обработки персональных данных (далее – Политика) составлена в соответствии с пунктом 2 статьи 18.1 Федерального закона «О персональных данных» № 152-ФЗ от 27 июля 2006 г., а также иными нормативными правовыми актами Российской Федерации в области защиты и обработки персональных данных и действует в отношении всех персональных данных (далее – данные), которые Организация (далее – Оператор, Общество) может получить от субъекта персональных данных, являющегося стороной по гражданско-правовому договору, от пользователя сети Интернет (далее – Пользователь) во время использования им любого из сайтов, сервисов, служб, программ, продуктов или услуг, а также от субъекта персональных данных, состоящего с Оператором в отношениях, регулируемых трудовым законодательством (далее – Работник).</p>
+                        <p>1.2. Оператор обеспечивает защиту обрабатываемых персональных данных от несанкционированного доступа и разглашения, неправомерного использования или утраты в соответствии с требованиями Федерального закона от 27 июля 2006 г. № 152-ФЗ «О персональных данных».</p>
+                        <p>1.3. Оператор вправе вносить изменения в настоящую Политику. При внесении изменений в заголовке Политики указывается дата последнего обновления редакции. Новая редакция Политики вступает в силу с момента ее размещения на сайте, если иное не предусмотрено новой редакцией Политики.</p>
+                    </div>
+                    <div class="privacy-group">
+                        <p class="text_bold">2. Термины и принятые сокращения</p>
+                        <p>2.1. Персональные данные – любая информация, относящаяся к прямо или косвенно определенному или определяемому физическому лицу (субъекту персональных данных).</p>
+                        <p>2.2. Обработка персональных данных – любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.</p>
+                        <p>2.3. Автоматизированная обработка персональных данных – обработка персональных данных с помощью средств вычислительной техники.</p>
+                        <p>2.4. Информационная система персональных данных (ИСПД) – совокупность содержащихся в базах данных персональных данных и обеспечивающих их обработку информационных технологий и технических средств.</p>
+                        <p>2.5. Персональные данные, сделанные общедоступными субъектом персональных данных, – персональные данные, доступ неограниченного круга лиц к которым предоставлен субъектом персональных данных либо по его просьбе.</p>
+                        <p>2.6. Блокирование персональных данных – временное прекращение обработки персональных данных (за исключением случаев, если обработка необходима для уточнения персональных данных).</p>
+                        <p>2.7. Уничтожение персональных данных – действия, в результате которых становится невозможным восстановить содержание персональных данных в информационной системе персональных данных и (или) в результате которых уничтожаются материальные носители персональных данных.</p>
+                        <p>2.8. Оператор – организация, самостоятельно или совместно с другими лицами организующая обработку персональных данных, а также определяющая цели обработки персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными. </p>
+                    </div>
+                    <div class="privacy-group">
+                        <p class="text_bold">3. Обработка персональных данных</p>
+                        <p>3.1. Получение персональных данных.</p>
+                        <p>3.1.1. Все персональные данные следует получать от самого субъекта. Если персональные данные субъекта можно получить только у третьей стороны, то субъект должен быть уведомлен об этом или от него должно быть получено согласие.</p>
+                        <p>3.1.2. Оператор должен сообщить субъекту о целях, предполагаемых источниках и способах получения персональных данных, характере подлежащих получению персональных данных, перечне действий с персональными данными, сроке, в течение которого действует согласие, и порядке его отзыва, а также о последствиях отказа субъекта дать письменное согласие на их получение.</p>
+                        <p>3.1.3. Документы, содержащие персональные данные, создаются путем:</p>
+                        <p>– копирования оригиналов документов (паспорт, документ об образовании, свидетельство ИНН, пенсионное свидетельство и др.);</p>
+                        <p>– внесения сведений в учетные формы;</p>
+                        <p>– получения оригиналов необходимых документов (трудовая книжка, медицинское заключение, характеристика и др.).</p>
+                        <p>3.2. Обработка персональных данных.</p>
+                        <p>3.2.1. Обработка персональных данных осуществляется:</p>
+                        <p>– с согласия субъекта персональных данных на обработку его персональных данных;</p>
+                        <p>– в случаях, когда обработка персональных данных необходима для осуществления и выполнения возложенных законодательством РФ функций, полномочий и обязанностей;</p>
+                        <p>– в случаях, когда осуществляется обработка персональных данных, доступ неограниченного круга лиц к которым предоставлен субъектом персональных данных либо по его просьбе (далее – персональные данные, сделанные общедоступными субъектом персональных данных).</p>
+                        <p>3.2.2. Цели обработки персональных данных:</p>
+                        <p>– осуществление трудовых отношений;</p>
+                        <p>– осуществление гражданско-правовых отношений;</p>
+                        <p>– для связи с пользователем, в связи с заполнением формы обратной связи на сайте, в  том числе направление уведомлений, запросов и информации, касающихся использования сайта магазина, обработки, согласования заказов и их доставки, исполнения соглашений и договоров;</p>
+                        <p>- обезличивания персональных данных для получения обезличенных статистических данных, которые передаются третьему лицу для проведения исследований, выполнения работ или оказания услуг по поручению магазина.</p>
+                        <p>3.2.3. Категории субъектов персональных данных.</p>
+                        <p>Обрабатываются персональные данные следующих субъектов персональных данных:</p>
+                        <p>– физические лица, состоящие с Обществом в трудовых отношениях;</p>
+                        <p>– физические лица, уволившиеся из Общества;</p>
+                        <p>– физические лица, являющиеся кандидатами на работу;</p>
+                        <p>– физические лица, состоящие с Обществом в гражданско-правовых отношениях;</p>
+                        <p>– физические лица, являющиеся Пользователями Сайта Магазина.</p>
+                        <p>3.2.4. Персональные данные, обрабатываемые Оператором:</p>
+                        <p>– данные, полученные при осуществлении трудовых отношений;</p>
+                        <p>– данные, полученные для осуществления отбора кандидатов на работу;</p>
+                        <p>– данные, полученные при осуществлении гражданско-правовых отношений;</p>
+                        <p>– данные, полученные от Пользователей Сайта Магазина.</p>
+                        <p>3.2.5. Обработка персональных данных ведется:</p>
+                        <p>– с использованием средств автоматизации;</p>
+                        <p>– без использования средств автоматизации.</p>
+                        <p>3.3. Хранение персональных данных.</p>
+                        <p>3.3.1. Персональные данные субъектов могут быть получены, проходить дальнейшую обработку и передаваться на хранение как на бумажных носителях, так и в электронном виде.</p>
+                        <p>3.3.2. Персональные данные, зафиксированные на бумажных носителях, хранятся в запираемых шкафах либо в запираемых помещениях с ограниченным правом доступа.</p>
+                        <p>3.3.3. Персональные данные субъектов, обрабатываемые с использованием средств автоматизации в разных целях, хранятся в разных папках.</p>
+                        <p>3.3.4. Не допускается хранение и размещение документов, содержащих персональных данных, в открытых электронных каталогах (файлообменниках) в ИСПД.</p>
+                        <p>3.3.5. Хранение персональных данных в форме, позволяющей определить субъекта персональных данных, осуществляется не дольше, чем этого требуют цели их обработки, и они подлежат уничтожению по достижении целей обработки или в случае утраты необходимости в их достижении.</p>
+                        <p>3.4. Уничтожение персональных данных.</p>
+                        <p>3.4.1. Уничтожение документов (носителей), содержащих персональных данных, производится путем сожжения, дробления (измельчения), химического разложения, превращения в бесформенную массу или порошок. Для уничтожения бумажных документов допускается применение шредера.</p>
+                        <p>3.4.2. Персональные данные на электронных носителях уничтожаются путем стирания или форматирования носителя.</p>
+                        <p>3.4.3. Факт уничтожения персональных данных подтверждается документально актом об уничтожении носителей.</p>
+                        <p>3.5. Передача персональных данных.</p>
+                        <p>3.5.1. Оператор передает персональные данные третьим лицам в следующих случаях:</p>
+                        <p>– субъект выразил свое согласие на такие действия;</p>
+                        <p>– передача предусмотрена российским или иным применимым законодательством в рамках установленной законодательством процедуры.</p>
+                        <p>3.5.2. Перечень лиц, которым передаются персональные данные.</p>
+                        <p>– Пенсионный фонд РФ для учета (на законных основаниях);</p>
+                        <p>– налоговые органы РФ (на законных основаниях);</p>
+                        <p>– Фонд социального страхования РФ (на законных основаниях);</p>
+                        <p>– территориальный фонд обязательного медицинского страхования (на законных основаниях);</p>
+                        <p>– страховые медицинские организации по обязательному и добровольному медицинскому страхованию (на законных основаниях);</p>
+                        <p>– банки для начисления заработной платы (на основании договора);</p>
+                        <p>– органы МВД России в случаях, установленных законодательством;</p>
+                        <p>– обезличенные персональные данные Пользователей сайта интернет-магазина передаются контрагентам Магазина.</p>
+                    </div>
+                    <div class="privacy-group">
+                        <p class="text_bold">4. Защита персональных данных</p>
+                        <p>4.1. В соответствии с требованиями нормативных документов Оператором создана система защиты персональных данных (СЗПД), состоящая из подсистем правовой, организационной и технической защиты.</p>
+                        <p>4.2. Подсистема правовой защиты представляет собой комплекс правовых, организационно-распорядительных и нормативных документов, обеспечивающих создание, функционирование и совершенствование СЗПД.</p>
+                        <p>4.3. Подсистема организационной защиты включает в себя организацию структуры управления СЗПД, разрешительной системы, защиты информации при работе с сотрудниками, партнерами и сторонними лицами.</p>
+                        <p>4.4. Подсистема технической защиты включает в себя комплекс технических, программных, программно-аппаратных средств, обеспечивающих защиту персональных данных.</p>
+                        <p>4.4. Основными мерами защиты персональных данных, используемыми Оператором, являются:</p>
+                        <p>4.5.1. Назначение лица, ответственного за обработку персональных данных, которое осуществляет организацию обработки персональных данных, обучение и инструктаж, внутренний контроль за соблюдением учреждением и его работниками требований к защите персональных данных.</p>
+                        <p>4.5.2. Определение актуальных угроз безопасности персональных данных при их обработке в ИСПД и разработка мер и мероприятий по защите персональных данных.</p>
+                        <p>4.5.3. Разработка политики в отношении обработки персональных данных.</p>
+                        <p>4.5.4. Установление правил доступа к персональных данных, обрабатываемым в ИСПД, а также обеспечение регистрации и учета всех действий, совершаемых с персональными данными в ИСПД.</p>
+                        <p>4.5.5. Установление индивидуальных паролей доступа сотрудников в информационную систему в соответствии с их производственными обязанностями.</p>
+                        <p>4.5.6. Применение прошедших в установленном порядке процедуру оценки соответствия средств защиты информации.</p>
+                        <p>4.5.7. Сертифицированное антивирусное программное обеспечение с регулярно обновляемыми базами.</p>
+                        <p>4.5.8. Соблюдение условий, обеспечивающих сохранность персональных данных и исключающих несанкционированный к ним доступ.</p>
+                        <p>4.5.9. Обнаружение фактов несанкционированного доступа к персональным данным и принятие мер.</p>
+                        <p>4.5.10. Восстановление персональных данных, модифицированных или уничтоженных вследствие несанкционированного доступа к ним.</p>
+                        <p>4.5.11. Обучение работников Оператора, непосредственно осуществляющих обработку персональных данных, положениям законодательства РФ о персональных данных, в том числе требованиям к защите персональных данных, документам, определяющим политику Оператора в отношении обработки персональных данных, локальным актам по вопросам обработки персональных данных.</p>
+                        <p>4.5.12. Осуществление внутреннего контроля и аудита.</p>
+                    </div>
+                    <div class="privacy-group">
+                        <p class="text_bold">5. Основные права субъекта персональных данных и обязанности Оператора</p>
+                        <p>5.1. Основные права субъекта персональных данных.</p>
+                        <p>Субъект имеет право на доступ к его персональным данным и следующим сведениям:</p>
+                        <p>– подтверждение факта обработки персональных данных Оператором;</p>
+                        <p>– правовые основания и цели обработки персональных данных;</p>
+                        <p>– цели и применяемые Оператором способы обработки персональных данных;</p>
+                        <p>– наименование и место нахождения Оператора, сведения о лицах (за исключением работников Оператора), которые имеют доступ к персональных данных или которым могут быть раскрыты персональные данные на основании договора с Оператором или на основании федерального закона;</p>
+                        <p>– сроки обработки персональных данных, в том числе сроки их хранения;</p>
+                        <p>– порядок осуществления субъектом персональных данных прав, предусмотренных Федеральным законом;</p>
+                        <p>– наименование или фамилия, имя, отчество и адрес лица, осуществляющего обработку персональных данных по поручению Оператора, если обработка поручена или будет поручена такому лицу;</p>
+                        <p>– обращение к Оператору и направление ему запросов;</p>
+                        <p>– обжалование действий или бездействия Оператора.</p>
+                        <p>5.2. Обязанности Оператора.</p>
+                        <p>Оператор обязан:</p>
+                        <p>– при сборе персональных данных предоставить информацию об обработке персональных данных;</p>
+                        <p>– в случаях если персональные данные были получены не от субъекта персональных данных, уведомить субъекта;</p>
+                        <p>– при отказе в предоставлении персональных данных субъекту разъясняются последствия такого отказа;</p>
+                        <p>– опубликовать или иным образом обеспечить неограниченный доступ к документу, определяющему его политику в отношении обработки персональных данных, к сведениям о реализуемых требованиях к защите персональных данных;</p>
+                        <p>– принимать необходимые правовые, организационные и технические меры или обеспечивать их принятие для защиты персональных данных от неправомерного или случайного доступа к ним, уничтожения, изменения, блокирования, копирования, предоставления, распространения персональных данных, а также от иных неправомерных действий в отношении персональных данных;</p>
+                        <p>– давать ответы на запросы и обращения субъектов персональных данных, их представителей и уполномоченного органа по защите прав субъектов персональных данных.</p>
+                    </div>
+                    <div class="text_center text_bold"><a href="#" data-bs-dismiss="modal">- Конец -</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /privacyPolicy -->
+
+
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
