@@ -209,7 +209,7 @@
                 <p class="text_center text_size-sm text_bold mx-5 px-4 mx-md-0 px-md-0 pt-1 pt-md-0">Мы готовы предложить кожаные изделия из «<span class="text_dotted">В НАЛИЧИИ</span>» (с Вашим лого) или любые другие «<span class="text_dotted text_upper">на заказ</span>»
                 </p>
                 <div class="wrap-slider example-slider__wrap">
-                    <div class="example-slider swiper">
+                    <div class="example-slider swiper" id="example-slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="example-item">
@@ -513,7 +513,60 @@
     </div>
     <!-- /privacyPolicy -->
 
-
+<!-- callback -->
+<div class="modal fade" id="callback" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content modal-content_bordered modal-content_padding">
+            <button type="button" data-bs-dismiss="modal" class="close-link d-flex align-items-center">закрыть  <span class="close-link__circle">х</span></button>
+            <div class="title title_margin-bottom-md title_size-lg">напишите нам</div>
+            <form action="#">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Ваш телефон или эл.почта">
+                </div>
+                <div class="form-group pos-rel">
+                    <div class="form-group__text text_bold">ТЕМА:</div>
+                    <input type="text" class="form-control form-control_padding" placeholder="Получить бесплатный образец">
+                </div>
+                <div class="mb-2 pb-1">
+                    <textarea name="mess3" id="mess3" class="form-control form-control_textarea form-control_normal" placeholder="Так же можете написать любое сообщения и прикрепить фото/файл"></textarea>
+                </div>
+                <p class="text_bold mb-0">Куда ответ:</p>
+                <div class="check-list d-flex align-items-center pt-2 mt-md-1">
+                    <label class="label d-flex align-items-center me-3 me-md-4 pe-1">
+                        <input type="checkbox" class="form-check-input">
+                        <span class="icon icon-whatsApp icon-whatsApp_md me-2 me-md-3"></span>
+                        <span>whats'app</span>
+                    </label>
+                    <label class="label d-flex align-items-center me-3 me-md-4 pe-md-1">
+                        <input type="checkbox" class="form-check-input">
+                        <span class="icon icon-email-fill icon-email_md me-1 me-md-3"></span>
+                        <span>эл.почта</span>
+                    </label>
+                    <label class="label d-flex align-items-center">
+                        <input type="checkbox" class="form-check-input">
+                        <span class="icon icon-phone icon-phone_md me-2 me-md-3"></span>
+                        <span>звонок</span>
+                    </label>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-4 ps-sm-2 pt-2">
+                    <label class="d-flex align-items-center ms-sm-4">
+                        <input type="file" class="collapse">
+                        <span class="icon icon-file icon-file_md me-3"></span>
+                        <span class="d-block">
+                            <span class="d-inline-block text_dotted text_bold"><i>ПРИКРЕПИТЬ</i></span>
+                            <br><span class="d-inline-block text_dotted text_bold"><i>ФАЙЛ</i></span>
+                        </span>
+                    </label>
+                    <button class="btn btn_dark btn_dark-primary">отправить</button>
+                </div>
+            </form>
+            <div class="form-footer mt-3 pt-1">
+                <p class="text_center mb-0">Заявка подразумевает обязательное согласие с публичной офертой и <a href="#privacyPolicy" data-bs-toggle="modal" class="link_underline text_bold">политикой конфиденциальности</a>.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /callback -->
 
 
 

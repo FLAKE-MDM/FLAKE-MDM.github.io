@@ -22,7 +22,7 @@ if(window.innerWidth < 768){
     };
 }
 
-new Swiper(".example-slider", {
+new Swiper("#example-slider", {
   slidesPerView: 3,
   spaceBetween: 16,
   navigation: {
@@ -35,11 +35,45 @@ new Swiper(".example-slider", {
         },
       },
 });
+new Swiper("#example-slider-2", {
+  slidesPerView: 1,
+  spaceBetween: 16,
+  navigation: {
+    nextEl: ".example-next-2",
+    prevEl: ".example-prev-2",
+  },
+  breakpoints: {
+        768: {
+          slidesPerView: 3,
+        },
+        992: {
+          slidesPerView: 5,
+        },
+      },
+});
 
+new Swiper(".production-slider", {
+    slidesPerView: 1,
+    loop: true, 
+    navigation: {
+      nextEl: ".swiper-next",
+      prevEl: ".swiper-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+});
 
+$(".map-toggler").click(function(e){
+  e.preventDefault();
+  $("#map-collapse").toggleClass("active");
+  this.textContent == "развернуть карту" ? this.textContent = "свернуть карту" : this.textContent = "развернуть карту"
+})
 
-
-
+$(".article-link").click(function(e){
+  this.textContent == "Развернуть статью" ? this.textContent = "Свернуть статью" : this.textContent = "Развернуть статью"
+})
 
 
 
