@@ -2402,14 +2402,13 @@ textarea.form-control_textarea-md {
 .preview {
   background: url(../img/bg-preview.jpg) 50% 50% no-repeat;
   background-size: cover;
-  position: relative;
-  z-index: 95;
 }
 
 @media only screen and (min-width: 768px) {
   .preview {
     margin-bottom: -8rem;
     position: relative;
+    z-index: 1;
   }
   .preview:after {
     content: '';
