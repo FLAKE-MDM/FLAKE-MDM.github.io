@@ -14,39 +14,13 @@
     <div class="wrap" id="wrap">
         <!-- header -->
         <header class="header">
-            <nav class="navigation" id="navigation">
+            <nav class="navigation d-none d-md-block">
                 <div class="container container_md d-md-flex justify-content-end">
-                    <a href="#" class="close-link menu-toggler d-md-none d-flex align-items-center">закрыть  <div class="close-link__circle">х</div></a>
                     <ul class="nav-list d-md-flex">
-                        <li class="nav-list__item">
-                            <a href="home.html" class="nav-list__link">
-                                <span class="d-md-none">На главную страницу</span>
-                                <span class="d-none d-md-inline">Главная страница</span>
-                            </a>
-                        </li>
-                        <li class="nav-list__item"><a href="marketplaces.html" class="nav-list__link">О <span class="d-md-none">нашем</span> производстве</a></li>
-                        <li class="nav-list__item"><a href="services.html" class="nav-list__link">Виды <br class="d-sm-none"> услуг</a></li>
-                        <li class="nav-list__item">
-                            <a href="contacts.html" class="nav-list__link active">
-                                <span class="d-md-none">Контактная информация</span>
-                                <span class="d-none d-md-inline">Контакты</span>
-                            </a>
-                        </li>
-                        <li class="nav-list__item d-md-none"><a href="#" class="nav-list__link">Пошив <span class="d-md-none">изделий <br class="d-sm-none"></span> на заказ</a></li>
-                        <li class="nav-list__item d-md-none"><a href="#" class="nav-list__link"><span class="d-md-none">Предложения </span>Для оптовиков</a></li>
-                        <li class="nav-list__item d-md-none"><a href="#" class="nav-list__link">Корпоративные подарки</a></li>
-                        <li class="nav-list__item d-md-none">
-                            <a href="#" class="nav-list__link">
-                                <span class="d-md-none">Для продавцов <br class="d-sm-none">на Маркетплейсах</span>
-                                <span class="d-none d-md-inline">Для маркетплейсов</span>
-                            </a>
-                        </li>
-                        <li class="nav-list__item d-md-none">
-                            <a href="#" class="nav-list__link">
-                                <span class="d-md-none">По системе Дропшиппинг</span>
-                                <span class="d-none d-md-inline">Система Дропшиппинг</span>
-                            </a>
-                        </li>
+                        <li class="nav-list__item"><a href="home.html" class="nav-list__link">Главная страница</a></li>
+                        <li class="nav-list__item"><a href="marketplaces.html" class="nav-list__link">О производстве</a></li>
+                        <li class="nav-list__item"><a href="services.html" class="nav-list__link">Виды услуг</a></li>
+                        <li class="nav-list__item"><a href="contacts.html" class="nav-list__link">Контакты</a></li>
                     </ul>
                 </div>
             </nav>
@@ -55,14 +29,44 @@
                 <div class="header__content d-flex align-items-start">
                     <a href="index.html" class="logo header__logo">
                         <img src="img/logo.svg" alt="" class="img-fluid d-none d-md-block">
-                        <img src="img/logo-mobile.png" alt="" class="img-fluid d-md-none">
+                        <img src="img/logo-mobile.svg" alt="" class="img-fluid d-md-none">
                         <div class="logo__text d-md-none">изделия из кожи на заказ</div>
                     </a>
                     <div class="slogan d-none d-lg-block">Швейное производство полного цикла. Работаем по всей России и СНГ.</div>
                     <div class="d-md-none ms-auto d-flex align-items-start">
                         <a href="https://wa.me/89252823999" class="d-none d-fixed-block icon icon-whatsApp"></a>
                         <a href="tel:89252823999" class="d-none d-fixed-block icon icon-phone ms-3"></a>
-                        <a href="#" class="btn-menu ms-3 menu-toggler">МЕНЮ</a>
+                        <div class="menu ms-3 d-md-none">
+                            <a href="#mobile-menu" class="btn-menu" data-bs-toggle="collapse">МЕНЮ</a>
+                            <ul class="nav-list collapse" id="mobile-menu">
+                                <li class="nav-list__item">
+                                    <a href="home.html" class="nav-list__link">На главную страницу</a>
+                                </li>
+                                <li class="nav-list__item">
+                                    <a href="marketplaces.html" class="nav-list__link">О нашем производстве</a>
+                                </li>
+                                <li class="nav-list__item">
+                                    <a href="services.html" class="nav-list__link">Виды <br> услуг</a>
+                                </li>
+                                <li class="nav-list__item">
+                                    <a href="contacts.html" class="nav-list__link">Контактная информация</a>
+                                </li>
+                                <li class="nav-list__item">
+                                    <a href="#" class="nav-list__link">Пошив изделий <br>на заказ</a>
+                                </li>
+                                <li class="nav-list__item">
+                                    <a href="#" class="nav-list__link">Предложения <br>для оптовиков</a>
+                                </li>
+                                <li class="nav-list__item">
+                                    <a href="#" class="nav-list__link">Корпоративные подарки</a></li>
+                                <li class="nav-list__item">
+                                    <a href="#" class="nav-list__link">Для продавцов <br>на Маркетплейсах</a>
+                                </li>
+                                <li class="nav-list__item d-md-none">
+                                    <a href="#" class="nav-list__link">По системе Дропшиппинг</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="header__contacts d-flex flex-wrap">
                         <div class="contacts-group">

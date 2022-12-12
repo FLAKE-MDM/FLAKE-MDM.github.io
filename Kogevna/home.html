@@ -16,50 +16,13 @@
         <div class="preview">
             <!-- header -->
             <header class="header header_preview">
-                <nav class="navigation" id="navigation">
+                <nav class="navigation d-none d-md-block">
                     <div class="container container_md d-md-flex justify-content-end">
-                        <a href="#" class="close-link menu-toggler d-md-none d-flex align-items-center">закрыть  <div class="close-link__circle">х</div></a>
                         <ul class="nav-list d-md-flex">
-                            <li class="nav-list__item">
-                                <a href="home.html" class="nav-list__link">
-                                    <span class="d-md-none">На главную страницу</span>
-                                    <span class="d-none d-md-inline">Главная страница</span>
-                                </a>
-                            </li>
-                            <li class="nav-list__item">
-                                <a href="marketplaces.html" class="nav-list__link">О <span class="d-md-none">нашем</span> производстве
-                                </a>
-                            </li>
-                            <li class="nav-list__item">
-                                <a href="services.html" class="nav-list__link">Виды <br class="d-sm-none"> услуг</a>
-                            </li>
-                            <li class="nav-list__item">
-                                <a href="contacts.html" class="nav-list__link">
-                                    <span class="d-md-none">Контактная информация</span>
-                                    <span class="d-none d-md-inline">Контакты</span>
-                                </a>
-                            </li>
-                            <li class="nav-list__item d-md-none">
-                                <a href="#" class="nav-list__link">Пошив <span class="d-md-none">изделий <br class="d-sm-none"></span> на заказ</a>
-                            </li>
-                            <li class="nav-list__item d-md-none">
-                                <a href="#" class="nav-list__link"><span class="d-md-none">Предложения </span>Для оптовиков</a>
-                            </li>
-                            <li class="nav-list__item d-md-none">
-                                <a href="#" class="nav-list__link">Корпоративные подарки</a
-                                    ></li>
-                            <li class="nav-list__item d-md-none">
-                                <a href="#" class="nav-list__link">
-                                    <span class="d-md-none">Для продавцов <br class="d-sm-none">на Маркетплейсах</span>
-                                    <span class="d-none d-md-inline">Для маркетплейсов</span>
-                                </a>
-                            </li>
-                            <li class="nav-list__item d-md-none">
-                                <a href="#" class="nav-list__link">
-                                    <span class="d-md-none">По системе Дропшиппинг</span>
-                                    <span class="d-none d-md-inline">Система Дропшиппинг</span>
-                                </a>
-                            </li>
+                            <li class="nav-list__item"><a href="home.html" class="nav-list__link">Главная страница</a></li>
+                            <li class="nav-list__item"><a href="marketplaces.html" class="nav-list__link">О производстве</a></li>
+                            <li class="nav-list__item"><a href="services.html" class="nav-list__link">Виды услуг</a></li>
+                            <li class="nav-list__item"><a href="contacts.html" class="nav-list__link">Контакты</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -68,15 +31,45 @@
                     <div class="header__content d-flex align-items-start">
                         <a href="index.html" class="logo header__logo">
                             <img src="img/logo-light.svg" alt="" class="img-fluid d-none d-md-block">
-                            <img src="img/logo-mobile.png" alt="" class="img-fluid d-none d-fixed-block">
-                            <img src="img/logo-mobile-light.png" alt="" class="img-fluid d-md-none d-fixed-none">
+                            <img src="img/logo-mobile.svg" alt="" class="img-fluid d-none d-fixed-block">
+                            <img src="img/logo-mobile-light.svg" alt="" class="img-fluid d-md-none d-fixed-none">
                             <div class="logo__text d-md-none text_light">изделия из кожи на заказ</div>
                         </a>
                         <div class="slogan d-none d-lg-block text_light">Швейное производство полного цикла. Работаем по всей России и СНГ.</div>
                         <div class="d-md-none ms-auto d-flex align-items-start">
                             <a href="https://wa.me/89252823999" class="d-none d-fixed-block icon icon-whatsApp"></a>
                             <a href="tel:89252823999" class="d-none d-fixed-block icon icon-phone ms-3"></a>
-                            <a href="#" class="btn-menu ms-3 menu-toggler">МЕНЮ</a>
+                            <div class="menu ms-3 d-md-none">
+                                <a href="#mobile-menu" class="btn-menu" data-bs-toggle="collapse">МЕНЮ</a>
+                                <ul class="nav-list collapse" id="mobile-menu">
+                                    <li class="nav-list__item">
+                                        <a href="home.html" class="nav-list__link">На главную страницу</a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a href="marketplaces.html" class="nav-list__link">О нашем производстве</a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a href="services.html" class="nav-list__link">Виды <br> услуг</a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a href="contacts.html" class="nav-list__link">Контактная информация</a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a href="#" class="nav-list__link">Пошив изделий <br>на заказ</a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a href="#" class="nav-list__link">Предложения <br>для оптовиков</a>
+                                    </li>
+                                    <li class="nav-list__item">
+                                        <a href="#" class="nav-list__link">Корпоративные подарки</a></li>
+                                    <li class="nav-list__item">
+                                        <a href="#" class="nav-list__link">Для продавцов <br>на Маркетплейсах</a>
+                                    </li>
+                                    <li class="nav-list__item d-md-none">
+                                        <a href="#" class="nav-list__link">По системе Дропшиппинг</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="header__contacts d-flex flex-wrap">
                             <div class="contacts-group">
@@ -184,12 +177,12 @@
             <!-- /advantages-section -->
             <!-- about-section -->
             <div class="about-section bg_inversion">
-                <div class="title title_margin-bottom-sm pb-1">О ПРОИЗВОДСТВЕ</div>
+                <div class="title about-section__title">О ПРОИЗВОДСТВЕ</div>
                 <div class="row">
                     <div class="col-md-4 col-lg-3">
                         <a href="video/video.mp4" class="icon-link text_center" data-fancybox="video">
-                            <div class="icon-link__image icon-link__image_video"><img src="img/video-link.png" alt="" class="img-fluid"></div>
-                            <div class="text_dotted">ВИДЕО-ПРЕЗЕНТАЦИЯ</div>
+                            <div class="icon-link__image icon-link__image_video mb-3"><img src="img/video-link.png" alt="" class="img-fluid"></div>
+                            <div class="text_dotted mb-1">ВИДЕО-ПРЕЗЕНТАЦИЯ</div>
                             <div class="text_dotted">НАШЕГО ПРОИЗВОДСТВА</div>
                         </a>
                     </div>
@@ -203,7 +196,7 @@
                         </ul>
                         <p class="text_center text_bold">Мы производители и с нами всегда можно договориться! <br>
                             Качество для нас - превыше всего!</p>
-                        <div class="text_center text_danger text_bold">Хотите дешевле? Напишите нам, сделаем лучшую цену на рынке!</div>
+                        <div class="text_center text_danger text_bold">Хотите дешевле? <a href="#" class="text_danger text_dotted">Напишите нам</a>, сделаем лучшую цену на рынке!</div>
                     </div>
                 </div>
             </div>
@@ -220,7 +213,7 @@
             <div class="catalogue-section">
                 <div class="container container_md">
                     <div class="title title_margin-bottom-sm">ПРИМЕРЫ ПРОДУКЦИИ</div>
-                    <p class="text_center text_size-md text_bold mx-5 mx-md-0 pb-md-1">Мы готовы предложить кожаные изделия из «<span class="text_dotted">В НАЛИЧИИ</span>» (с Вашим лого) или любые другие «<span class="text_dotted text_upper">на заказ</span>»
+                    <p class="text_center text_size-md text_bold mx-5 mx-md-0 pb-md-2">Мы готовы предложить кожаные изделия из «<span class="text_dotted">В НАЛИЧИИ</span>» (с Вашим лого) или любые другие «<span class="text_dotted text_upper">на заказ</span>»
                     </p>
                     <ul class="nav tabs-nav d-flex flex-wrap">
                         <li class="tabs-nav__item"><a href="#tab-1" class="tabs-nav__link" data-bs-toggle="tab">Клатчи</a></li>
@@ -246,7 +239,9 @@
                             <div class="row row_md">
                                 <div class="col-6 col-lg-3 col-md-4 d-flex">
                                     <div class="catalogue-item">
-                                        <div class="catalogue-item__image"><img src="img/content/item-1.jpg" alt="" class="w-100"></div>
+                                        <div class="catalogue-item__image">
+                                            <a href="#item-card" data-bs-toggle="modal"><img src="img/content/item-1.jpg" alt="" class="w-100"></a>
+                                        </div>
                                         <p class="text_bold text_upper">шоппер №1</p>
                                         <p>Опт. цена ≈ <span class="text_bold">600₽</span></p>
                                         <p>Рек. Розн. цена ≈ <span class="text_bold">1800₽</span></p>
@@ -255,7 +250,9 @@
                                 </div>
                                 <div class="col-6 col-lg-3 col-md-4 d-flex">
                                     <div class="catalogue-item">
-                                        <div class="catalogue-item__image"><img src="img/content/item-5.jpg" alt="" class="w-100"></div>
+                                        <div class="catalogue-item__image">
+                                            <a href="#item-card" data-bs-toggle="modal"><img src="img/content/item-5.jpg" alt="" class="w-100"></a>
+                                        </div>
                                         <p class="text_bold text_upper">шоппер №5</p>
                                         <p>Опт. цена ≈ <span class="text_bold">600₽</span></p>
                                         <p>Рек. Розн. цена ≈ <span class="text_bold">1800₽</span></p>
@@ -268,7 +265,9 @@
                             <div class="row row_md">
                                 <div class="col-6 col-lg-3 col-md-4 d-flex">
                                     <div class="catalogue-item">
-                                        <div class="catalogue-item__image"><img src="img/content/item-1.jpg" alt="" class="w-100"></div>
+                                        <div class="catalogue-item__image">
+                                            <a href="#item-card" data-bs-toggle="modal"><img src="img/content/item-1.jpg" alt="" class="w-100"></a>
+                                        </div>
                                         <p class="text_bold text_upper">шоппер №1</p>
                                         <p>Опт. цена ≈ <span class="text_bold">600₽</span></p>
                                         <p>Рек. Розн. цена ≈ <span class="text_bold">1800₽</span></p>
@@ -277,7 +276,9 @@
                                 </div>
                                 <div class="col-6 col-lg-3 col-md-4 d-flex">
                                     <div class="catalogue-item">
-                                        <div class="catalogue-item__image"><img src="img/content/item-2.jpg" alt="" class="w-100"></div>
+                                        <div class="catalogue-item__image">
+                                            <a href="#item-card" data-bs-toggle="modal"><img src="img/content/item-2.jpg" alt="" class="w-100"></a>
+                                        </div>
                                         <p class="text_bold text_upper">шоппер №2</p>
                                         <p>Опт. цена ≈ <span class="text_bold">500₽</span></p>
                                         <p>Рек. Розн. цена ≈ <span class="text_bold">1500₽</span></p>
@@ -286,7 +287,9 @@
                                 </div>
                                 <div class="col-6 col-lg-3 col-md-4 d-flex">
                                     <div class="catalogue-item">
-                                        <div class="catalogue-item__image"><img src="img/content/item-3.jpg" alt="" class="w-100"></div>
+                                        <div class="catalogue-item__image">
+                                            <a href="#item-card" data-bs-toggle="modal"><img src="img/content/item-3.jpg" alt="" class="w-100"></a>
+                                        </div>
                                         <p class="text_bold text_upper">шоппер №3</p>
                                         <p>Опт. цена ≈ <span class="text_bold">700₽</span></p>
                                         <p>Рек. Розн. цена ≈ <span class="text_bold">1900₽</span></p>
@@ -295,7 +298,9 @@
                                 </div>
                                 <div class="col-6 col-lg-3 col-md-4 d-flex">
                                     <div class="catalogue-item">
-                                        <div class="catalogue-item__image"><img src="img/content/item-4.jpg" alt="" class="w-100"></div>
+                                        <div class="catalogue-item__image">
+                                            <a href="#item-card" data-bs-toggle="modal"><img src="img/content/item-4.jpg" alt="" class="w-100"></a>
+                                        </div>
                                         <p class="text_bold text_upper">шоппер №4</p>
                                         <p>Опт. цена ≈ <span class="text_bold">600₽</span></p>
                                         <p>Рек. Розн. цена ≈ <span class="text_bold">1800₽</span></p>
@@ -304,7 +309,9 @@
                                 </div>
                                 <div class="col-6 col-lg-3 col-md-4 d-flex">
                                     <div class="catalogue-item">
-                                        <div class="catalogue-item__image"><img src="img/content/item-5.jpg" alt="" class="w-100"></div>
+                                        <div class="catalogue-item__image">
+                                            <a href="#item-card" data-bs-toggle="modal"><img src="img/content/item-5.jpg" alt="" class="w-100"></a>
+                                        </div>
                                         <p class="text_bold text_upper">шоппер №5</p>
                                         <p>Опт. цена ≈ <span class="text_bold">600₽</span></p>
                                         <p>Рек. Розн. цена ≈ <span class="text_bold">1800₽</span></p>
@@ -313,7 +320,9 @@
                                 </div>
                                 <div class="col-6 col-lg-3 col-md-4 d-flex">
                                     <div class="catalogue-item">
-                                        <div class="catalogue-item__image"><img src="img/content/item-6.jpg" alt="" class="w-100"></div>
+                                        <div class="catalogue-item__image">
+                                            <a href="#item-card" data-bs-toggle="modal"><img src="img/content/item-6.jpg" alt="" class="w-100"></a>
+                                        </div>
                                         <p class="text_bold text_upper">шоппер №6</p>
                                         <p>Опт. цена ≈ <span class="text_bold">600₽</span></p>
                                         <p>Рек. Розн. цена ≈ <span class="text_bold">1800₽</span></p>
@@ -322,7 +331,9 @@
                                 </div>
                                 <div class="col-6 col-lg-3 col-md-4 d-flex">
                                     <div class="catalogue-item">
-                                        <div class="catalogue-item__image"><img src="img/content/item-7.jpg" alt="" class="w-100"></div>
+                                        <div class="catalogue-item__image">
+                                            <a href="#item-card" data-bs-toggle="modal"><img src="img/content/item-7.jpg" alt="" class="w-100"></a>
+                                        </div>
                                         <p class="text_bold text_upper">шоппер №7</p>
                                         <p>Опт. цена ≈ <span class="text_bold">600₽</span></p>
                                         <p>Рек. Розн. цена ≈ <span class="text_bold">1800₽</span></p>
@@ -331,7 +342,9 @@
                                 </div>
                                 <div class="col-6 col-lg-3 col-md-4 d-flex">
                                     <div class="catalogue-item">
-                                        <div class="catalogue-item__image"><img src="img/content/item-8.jpg" alt="" class="w-100"></div>
+                                        <div class="catalogue-item__image">
+                                            <a href="#item-card" data-bs-toggle="modal"><img src="img/content/item-8.jpg" alt="" class="w-100"></a>
+                                        </div>
                                         <p class="text_bold text_upper">шоппер №8</p>
                                         <p>Опт. цена ≈ <span class="text_bold">600₽</span></p>
                                         <p>Рек. Розн. цена ≈ <span class="text_bold">1800₽</span></p>
@@ -344,7 +357,9 @@
                             <div class="row row_md">
                                 <div class="col-6 col-lg-3 col-md-4 d-flex">
                                     <div class="catalogue-item">
-                                        <div class="catalogue-item__image"><img src="img/content/item-3.jpg" alt="" class="w-100"></div>
+                                        <div class="catalogue-item__image">
+                                            <a href="#item-card" data-bs-toggle="modal"><img src="img/content/item-4.jpg" alt="" class="w-100"></a>
+                                        </div>
                                         <p class="text_bold text_upper">шоппер №3</p>
                                         <p>Опт. цена ≈ <span class="text_bold">700₽</span></p>
                                         <p>Рек. Розн. цена ≈ <span class="text_bold">1900₽</span></p>
@@ -353,7 +368,9 @@
                                 </div>
                                 <div class="col-6 col-lg-3 col-md-4 d-flex">
                                     <div class="catalogue-item">
-                                        <div class="catalogue-item__image"><img src="img/content/item-1.jpg" alt="" class="w-100"></div>
+                                        <div class="catalogue-item__image">
+                                            <a href="#item-card" data-bs-toggle="modal"><img src="img/content/item-5.jpg" alt="" class="w-100"></a>
+                                        </div>
                                         <p class="text_bold text_upper">шоппер №1</p>
                                         <p>Опт. цена ≈ <span class="text_bold">600₽</span></p>
                                         <p>Рек. Розн. цена ≈ <span class="text_bold">1800₽</span></p>
@@ -450,12 +467,7 @@
                             <div class="swiper-slide">
                                 <div class="example-item">
                                     <div class="example-item__image">
-                                        <a href="img/content/example-1.jpg" class="d-flex" data-fancybox="gallery-1"><img src="img/content/example-1.jpg" alt="" class="w-100"></a>
-                                        <div class="collapse">
-                                            <a href="img/content/example-1.jpg" class="d-flex" data-fancybox="gallery-1"><img src="img/content/example-1.jpg" alt=""></a>
-                                            <a href="img/content/example-1.jpg" class="d-flex" data-fancybox="gallery-1"><img src="img/content/example-1.jpg" alt=""></a>
-                                            <a href="img/content/example-1.jpg" class="d-flex" data-fancybox="gallery-1"><img src="img/content/example-1.jpg" alt=""></a>
-                                        </div>
+                                        <a href="img/content/example-1-lg.jpg" class="d-flex" data-fancybox="gallery-1"><img src="img/content/example-1.jpg" alt="" class="w-100"></a>
                                     </div>
                                     <div class="example-item__body">
                                         <p class="text_bold text_upper">Кардхолдер</p>
@@ -467,12 +479,7 @@
                             <div class="swiper-slide">
                                 <div class="example-item">
                                     <div class="example-item__image">
-                                        <a href="img/content/example-2.jpg" class="d-flex" data-fancybox="gallery-2"><img src="img/content/example-2.jpg" alt="" class="w-100"></a>
-                                        <div class="collapse">
-                                            <a href="img/content/example-2.jpg" class="d-flex" data-fancybox="gallery-2"><img src="img/content/example-2.jpg" alt=""></a>
-                                            <a href="img/content/example-2.jpg" class="d-flex" data-fancybox="gallery-2"><img src="img/content/example-2.jpg" alt=""></a>
-                                            <a href="img/content/example-2.jpg" class="d-flex" data-fancybox="gallery-2"><img src="img/content/example-2.jpg" alt=""></a>
-                                        </div>
+                                        <a href="img/content/example-2-lg.jpg" class="d-flex" data-fancybox="gallery-1"><img src="img/content/example-2.jpg" alt="" class="w-100"></a>
                                     </div>
                                     <div class="example-item__body">
                                         <p class="text_bold text_upper">Кошелёк</p>
@@ -484,12 +491,7 @@
                             <div class="swiper-slide">
                                 <div class="example-item">
                                     <div class="example-item__image">
-                                        <a href="img/content/example-3.jpg" class="d-flex" data-fancybox="gallery-3"><img src="img/content/example-3.jpg" alt="" class="w-100"></a>
-                                        <div class="collapse">
-                                            <a href="img/content/example-3.jpg" class="d-flex" data-fancybox="gallery-3"><img src="img/content/example-3.jpg" alt=""></a>
-                                            <a href="img/content/example-3.jpg" class="d-flex" data-fancybox="gallery-3"><img src="img/content/example-3.jpg" alt=""></a>
-                                            <a href="img/content/example-3.jpg" class="d-flex" data-fancybox="gallery-3"><img src="img/content/example-3.jpg" alt=""></a>
-                                        </div>
+                                        <a href="img/content/example-3-lg.jpg" class="d-flex" data-fancybox="gallery-1"><img src="img/content/example-3.jpg" alt="" class="w-100"></a>
                                     </div>
                                     <div class="example-item__body">
                                         <p class="text_bold text_upper">портмоне</p>
@@ -501,12 +503,7 @@
                             <div class="swiper-slide">
                                 <div class="example-item">
                                     <div class="example-item__image">
-                                        <a href="img/content/example-4.jpg" class="d-flex" data-fancybox="gallery-4"><img src="img/content/example-4.jpg" alt="" class="w-100"></a>
-                                        <div class="collapse">
-                                            <a href="img/content/example-4.jpg" class="d-flex" data-fancybox="gallery-4"><img src="img/content/example-4.jpg" alt=""></a>
-                                            <a href="img/content/example-4.jpg" class="d-flex" data-fancybox="gallery-4"><img src="img/content/example-4.jpg" alt=""></a>
-                                            <a href="img/content/example-4.jpg" class="d-flex" data-fancybox="gallery-4"><img src="img/content/example-4.jpg" alt=""></a>
-                                        </div>
+                                        <a href="img/content/example-4-lg.jpg" class="d-flex" data-fancybox="gallery-1"><img src="img/content/example-4.jpg" alt="" class="w-100"></a>
                                     </div>
                                     <div class="example-item__body">
                                         <p class="text_bold text_upper">футляр</p>
@@ -518,12 +515,7 @@
                             <div class="swiper-slide">
                                 <div class="example-item">
                                     <div class="example-item__image">
-                                        <a href="img/content/example-5.jpg" class="d-flex" data-fancybox="gallery-5"><img src="img/content/example-5.jpg" alt="" class="w-100"></a>
-                                        <div class="collapse">
-                                            <a href="img/content/example-5.jpg" class="d-flex" data-fancybox="gallery-5"><img src="img/content/example-5.jpg" alt=""></a>
-                                            <a href="img/content/example-5.jpg" class="d-flex" data-fancybox="gallery-5"><img src="img/content/example-5.jpg" alt=""></a>
-                                            <a href="img/content/example-5.jpg" class="d-flex" data-fancybox="gallery-5"><img src="img/content/example-5.jpg" alt=""></a>
-                                        </div>
+                                        <a href="img/content/example-5-lg.jpg" class="d-flex" data-fancybox="gallery-1"><img src="img/content/example-5.jpg" alt="" class="w-100"></a>
                                     </div>
                                     <div class="example-item__body">
                                         <p class="text_bold text_upper">чехол</p>
@@ -535,12 +527,7 @@
                             <div class="swiper-slide">
                                 <div class="example-item">
                                     <div class="example-item__image">
-                                        <a href="img/content/example-3.jpg" class="d-flex" data-fancybox="gallery-6"><img src="img/content/example-3.jpg" alt="" class="w-100"></a>
-                                        <div class="collapse">
-                                            <a href="img/content/example-3.jpg" class="d-flex" data-fancybox="gallery-6"><img src="img/content/example-3.jpg" alt=""></a>
-                                            <a href="img/content/example-3.jpg" class="d-flex" data-fancybox="gallery-6"><img src="img/content/example-3.jpg" alt=""></a>
-                                            <a href="img/content/example-3.jpg" class="d-flex" data-fancybox="gallery-6"><img src="img/content/example-3.jpg" alt=""></a>
-                                        </div>
+                                        <a href="img/content/example-3-lg.jpg" class="d-flex" data-fancybox="gallery-1"><img src="img/content/example-3.jpg" alt="" class="w-100"></a>
                                     </div>
                                     <div class="example-item__body">
                                         <p class="text_bold text_upper">портмоне</p>
@@ -744,12 +731,7 @@
                                 <div class="swiper-slide">
                                     <div class="example-item bg_dark">
                                         <div class="example-item__image">
-                                            <a href="img/content/example-6.jpg" class="d-flex" data-fancybox="gallery-7"><img src="img/content/example-6.jpg" alt="" class="w-100"></a>
-                                            <div class="collapse">
-                                                <a href="img/content/example-6.jpg" class="d-flex" data-fancybox="gallery-7"><img src="img/content/example-6.jpg" alt=""></a>
-                                                <a href="img/content/example-6.jpg" class="d-flex" data-fancybox="gallery-7"><img src="img/content/example-6.jpg" alt=""></a>
-                                                <a href="img/content/example-6.jpg" class="d-flex" data-fancybox="gallery-7"><img src="img/content/example-6.jpg" alt=""></a>
-                                            </div>
+                                            <a href="img/content/example-6-lg.jpg" class="d-flex" data-fancybox="gallery-2"><img src="img/content/example-6.jpg" alt="" class="w-100"></a>
                                         </div>
                                         <div class="example-item__body">
                                             <p class="text_bold text_upper">обложка</p>
@@ -763,12 +745,7 @@
                                 <div class="swiper-slide">
                                     <div class="example-item bg_dark">
                                         <div class="example-item__image">
-                                            <a href="img/content/example-7.jpg" class="d-flex" data-fancybox="gallery-8"><img src="img/content/example-7.jpg" alt="" class="w-100"></a>
-                                            <div class="collapse">
-                                                <a href="img/content/example-7.jpg" class="d-flex" data-fancybox="gallery-8"><img src="img/content/example-7.jpg" alt=""></a>
-                                                <a href="img/content/example-7.jpg" class="d-flex" data-fancybox="gallery-8"><img src="img/content/example-7.jpg" alt=""></a>
-                                                <a href="img/content/example-7.jpg" class="d-flex" data-fancybox="gallery-8"><img src="img/content/example-7.jpg" alt=""></a>
-                                            </div>
+                                            <a href="img/content/example-7-lg.jpg" class="d-flex" data-fancybox="gallery-2"><img src="img/content/example-7.jpg" alt="" class="w-100"></a>
                                         </div>
                                         <div class="example-item__body">
                                             <p class="text_bold text_upper">кошелёк</p>
@@ -782,12 +759,7 @@
                                 <div class="swiper-slide">
                                     <div class="example-item bg_dark">
                                         <div class="example-item__image">
-                                            <a href="img/content/example-8.jpg" class="d-flex" data-fancybox="gallery-9"><img src="img/content/example-8.jpg" alt="" class="w-100"></a>
-                                            <div class="collapse">
-                                                <a href="img/content/example-8.jpg" class="d-flex" data-fancybox="gallery-9"><img src="img/content/example-8.jpg" alt=""></a>
-                                                <a href="img/content/example-8.jpg" class="d-flex" data-fancybox="gallery-9"><img src="img/content/example-8.jpg" alt=""></a>
-                                                <a href="img/content/example-8.jpg" class="d-flex" data-fancybox="gallery-9"><img src="img/content/example-8.jpg" alt=""></a>
-                                            </div>
+                                            <a href="img/content/example-8-lg.jpg" class="d-flex" data-fancybox="gallery-2"><img src="img/content/example-8.jpg" alt="" class="w-100"></a>
                                         </div>
                                         <div class="example-item__body">
                                             <p class="text_bold text_upper">брелок</p>
@@ -801,12 +773,7 @@
                                 <div class="swiper-slide">
                                     <div class="example-item bg_dark">
                                         <div class="example-item__image">
-                                            <a href="img/content/example-9.jpg" class="d-flex" data-fancybox="gallery-10"><img src="img/content/example-9.jpg" alt="" class="w-100"></a>
-                                            <div class="collapse">
-                                                <a href="img/content/example-9.jpg" class="d-flex" data-fancybox="gallery-10"><img src="img/content/example-9.jpg" alt=""></a>
-                                                <a href="img/content/example-9.jpg" class="d-flex" data-fancybox="gallery-10"><img src="img/content/example-9.jpg" alt=""></a>
-                                                <a href="img/content/example-9.jpg" class="d-flex" data-fancybox="gallery-10"><img src="img/content/example-9.jpg" alt=""></a>
-                                            </div>
+                                            <a href="img/content/example-9-lg.jpg" class="d-flex" data-fancybox="gallery-2"><img src="img/content/example-9.jpg" alt="" class="w-100"></a>
                                         </div>
                                         <div class="example-item__body">
                                             <p class="text_bold text_upper">Бирка</p>
@@ -820,12 +787,7 @@
                                 <div class="swiper-slide">
                                     <div class="example-item bg_dark">
                                         <div class="example-item__image">
-                                            <a href="img/content/example-10.jpg" class="d-flex" data-fancybox="gallery-11"><img src="img/content/example-10.jpg" alt="" class="w-100"></a>
-                                            <div class="collapse">
-                                                <a href="img/content/example-10.jpg" class="d-flex" data-fancybox="gallery-11"><img src="img/content/example-10.jpg" alt=""></a>
-                                                <a href="img/content/example-10.jpg" class="d-flex" data-fancybox="gallery-11"><img src="img/content/example-10.jpg" alt=""></a>
-                                                <a href="img/content/example-10.jpg" class="d-flex" data-fancybox="gallery-11"><img src="img/content/example-10.jpg" alt=""></a>
-                                            </div>
+                                            <a href="img/content/example-10-lg.jpg" class="d-flex" data-fancybox="gallery-2"><img src="img/content/example-10.jpg" alt="" class="w-100"></a>
                                         </div>
                                         <div class="example-item__body">
                                             <p class="text_bold text_upper">Конверт</p>
@@ -839,12 +801,7 @@
                                 <div class="swiper-slide">
                                     <div class="example-item bg_dark">
                                         <div class="example-item__image">
-                                            <a href="img/content/example-3.jpg" class="d-flex" data-fancybox="gallery-6"><img src="img/content/example-3.jpg" alt="" class="w-100"></a>
-                                            <div class="collapse">
-                                                <a href="img/content/example-3.jpg" class="d-flex" data-fancybox="gallery-6"><img src="img/content/example-3.jpg" alt=""></a>
-                                                <a href="img/content/example-3.jpg" class="d-flex" data-fancybox="gallery-6"><img src="img/content/example-3.jpg" alt=""></a>
-                                                <a href="img/content/example-3.jpg" class="d-flex" data-fancybox="gallery-6"><img src="img/content/example-3.jpg" alt=""></a>
-                                            </div>
+                                            <a href="img/content/example-3-lg.jpg" class="d-flex" data-fancybox="gallery-2"><img src="img/content/example-3.jpg" alt="" class="w-100"></a>
                                         </div>
                                         <div class="example-item__body">
                                             <p class="text_bold text_upper">Конверт</p>
