@@ -755,15 +755,27 @@ p {
 }
 
 .preview {
-  background: url(../img/bg-preview.jpg) 50% 25% no-repeat;
+  background: url(../img/bg-preview.jpg) 50% 0 no-repeat;
   background-size: cover;
   position: relative;
   z-index: 1;
 }
 
+@media only screen and (max-width: 1399px) {
+  .preview {
+    background-position: 25% 2rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .preview {
+    background-position: 50% 2rem;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .preview {
-    background-position: 78% 25%;
+    background-position: 78% 0;
   }
 }
 
@@ -800,7 +812,7 @@ p {
     position: relative;
     left: 0;
     right: 0;
-    margin: -8rem auto 3rem;
+    margin: -8rem auto 0;
     top: 0;
   }
 }
@@ -985,8 +997,8 @@ p {
   -webkit-transform: translate(0, -5rem);
           transform: translate(0, -5rem);
   opacity: 0;
-  -webkit-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .anim__show._active,
@@ -1000,8 +1012,8 @@ p {
   -webkit-transform: translate(5rem, 0);
           transform: translate(5rem, 0);
   opacity: 0;
-  -webkit-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .anim__showR._active,
@@ -1015,8 +1027,8 @@ p {
   -webkit-transform: translate(-5rem, 0);
           transform: translate(-5rem, 0);
   opacity: 0;
-  -webkit-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .anim__showL._active,
@@ -1112,7 +1124,9 @@ p {
 }
 
 .advantages {
-  margin: -8.8rem 0 28.7rem;
+  margin: -8.8rem 0 20rem;
+  position: relative;
+  z-index: 6;
 }
 
 @media only screen and (max-width: 1399px) {
@@ -1152,9 +1166,15 @@ p {
           justify-content: flex-end;
 }
 
+@media only screen and (max-width: 1919px) {
+  .advantages__image {
+    top: -19rem;
+  }
+}
+
 @media only screen and (max-width: 1399px) {
   .advantages__image {
-    top: -22rem;
+    top: -14rem;
   }
 }
 
@@ -1176,9 +1196,13 @@ p {
   }
 }
 
-@media only screen and (min-width: 1400px) {
+.advantages__image img {
+  max-width: 75%;
+}
+
+@media only screen and (max-width: 991px) {
   .advantages__image img {
-    max-width: 72rem;
+    max-width: 90%;
   }
 }
 
@@ -1274,7 +1298,7 @@ p {
 
 @media only screen and (max-width: 1199px) {
   .about {
-    padding-bottom: 4rem;
+    padding-bottom: 1rem;
   }
 }
 
@@ -1321,7 +1345,7 @@ p {
     position: relative;
     left: -5%;
     top: 0;
-    margin: 0 auto -3.5rem;
+    margin: -8rem auto -10rem;
     max-width: 50rem;
   }
 }
@@ -1329,6 +1353,12 @@ p {
 @media only screen and (max-width: 575px) {
   .about__image {
     left: -5%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .about__image {
+    margin: -5rem auto -5.5rem;
   }
 }
 
@@ -1378,7 +1408,7 @@ p {
 
 @media only screen and (max-width: 1199px) {
   .about__heading {
-    margin-bottom: 4rem;
+    margin-bottom: 3.5rem;
   }
 }
 
@@ -1409,7 +1439,7 @@ p {
 
 @media only screen and (max-width: 767px) {
   .about-item {
-    margin: 0 0 2rem 0;
+    margin: 0 0 2rem 0.7rem;
     padding: 1.7rem 1.5rem 1.7rem 10.5rem;
     font-size: 1.4rem;
   }
@@ -1523,6 +1553,12 @@ p {
   }
 }
 
+@media only screen and (max-width: 1199px) {
+  .design {
+    z-index: 5;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .design {
     font-size: 1.6rem;
@@ -1545,7 +1581,7 @@ p {
 
 @media only screen and (max-width: 767px) {
   .design__image {
-    margin-top: 7rem;
+    margin-top: 0;
   }
 }
 
@@ -1559,7 +1595,7 @@ p {
 
 @media only screen and (max-width: 767px) {
   .work {
-    padding: 5rem 0;
+    padding: 2.5rem 0 0.6rem;
   }
 }
 
@@ -1579,7 +1615,7 @@ p {
 
 @media only screen and (max-width: 767px) {
   .work__row {
-    margin-top: 3rem;
+    margin-top: 2.6rem;
   }
 }
 
@@ -1652,7 +1688,7 @@ p {
 
 @media only screen and (max-width: 767px) {
   .partners-group {
-    margin: 3rem 0;
+    margin: 2.6rem 0 3rem;
   }
 }
 
