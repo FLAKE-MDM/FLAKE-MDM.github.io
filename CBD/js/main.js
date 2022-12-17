@@ -521,9 +521,7 @@ $('.tag-nav__link').click(function(e){
 })
 
 // datepicker
-$(document).ready ( function(){
-  $( "#birthday" ).val("24 мая 1991");
-});
+
 $( "#birthday" ).datepicker( $.datepicker.regional[ "ru" ] );
 $( "#birthday" ).datepicker( "option", "dateFormat", "d MM y" );
 
