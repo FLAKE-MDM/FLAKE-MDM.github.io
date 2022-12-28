@@ -1249,7 +1249,7 @@ body {
   background: url(../img/bg-preview.jpg) 50% 50% no-repeat;
   background-size: cover;
   position: relative;
-  padding: 18.7rem 0 29.9rem;
+  padding: 18.7rem 0 28.4rem;
   z-index: 1;
 }
 
@@ -1494,11 +1494,11 @@ textarea.form-control {
 }
 
 .form-section__btn {
-  margin: 2rem 0 -3.6rem;
+  margin: 2rem 0 -3.8rem;
 }
 
 .advantages-section {
-  margin: 13.3rem 0 2.9rem;
+  margin: 13.5rem 0 2.9rem;
 }
 
 .advantages-item {
@@ -2076,13 +2076,33 @@ textarea.form-control {
   font-size: 1.9rem;
 }
 
+@media only screen and (max-width: 767px) {
+  .review-item__name {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+}
+
 .review-item__city {
   font-size: 1.9rem;
   margin-bottom: 1.2rem;
 }
 
+@media only screen and (max-width: 767px) {
+  .review-item__city {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+}
+
 .review-item__info {
   margin: 0.9rem 0 0 3rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .review-item__info {
+    margin: 0.8rem 0 0 1rem;
+  }
 }
 
 .review-item_list {
@@ -2090,11 +2110,26 @@ textarea.form-control {
   margin: 0 0 3rem;
 }
 
+@media only screen and (max-width: 767px) {
+  .review-item_list {
+    padding: 2rem;
+  }
+}
+
 .review-item_list .review-item__image {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   position: static;
   width: 8.2rem;
   height: 8.2rem;
   margin: 0 0 2rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .review-item_list .review-item__image {
+    width: 7rem;
+    height: 7rem;
+  }
 }
 
 .footer {
@@ -2228,6 +2263,12 @@ textarea.form-control {
   margin: 5.4rem 0 6.1rem;
 }
 
+@media only screen and (max-width: 767px) {
+  .price-group {
+    margin: 0 0 3rem;
+  }
+}
+
 .price-group__heading {
   margin-bottom: 2rem;
 }
@@ -2247,6 +2288,12 @@ textarea.form-control {
 
 .pagination__item {
   margin: 0 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .pagination__item {
+    margin: 0 0.4rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {
