@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lux personel</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png">
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <!-- header__top -->
+                <div class="header__top d-flex">
+                    <a href="/" class="logo header__logo d-lg-none">
+                        <img src="img/logo.svg" alt="" class="logo__image img-fluid">
+                    </a>
+                    <a href="#nav" class="btn-menu d-lg-none" data-bs-toggle="collapse">
+                        <span class="btn-menu__item"></span>
+                        <span class="btn-menu__item"></span>
+                        <span class="btn-menu__item"></span>
+                    </a>
+                    <div class="d-none d-lg-block d-xxl-flex">
+                        <div class="header__address">
+                            <span class="icon icon-map me-3"></span>Алматы, ул. Шевченко, д. 118, оф. 115
+                        </div>
+                        <a href="mailto:lux.personnel@mail.ru" class="email text_inversion me-5"><span class="icon icon-email me-3"></span>lux.personnel@mail.ru</a>
+                    </div>
+                    <div class="header__phones d-none d-lg-flex me-5">
+                        <span class="icon icon-phone me-3"></span>
+                        <div class="d-flex flex-column flex-xl-row">
+                            <a href="tel:+77072321414" class="phone text_warning ps-1">+7 707 232-14-14</a>
+                            <a href="tel:+77072255080" class="phone text_warning">+7 707 225-50-80</a>
+                        </div>
+                    </div>
+                    <div class="language-list d-none d-lg-flex">
+                        <a href="#" class="language-list__link text_inversion">Каз</a>
+                        <a href="#" class="language-list__link text_inversion">Рус</a>
+                        <a href="#" class="language-list__link text_inversion">Eng</a>
+                    </div>
+                </div>
+                <!-- /header__top -->
+                <!-- nav -->
+                <nav class="nav align-items-center collapse d-lg-flex" id="nav">
+                    <ul class="nav-list d-lg-flex">
+                        <li class="nav-list__item"><a href="#about-section" class="nav-list__link slow">О Компании</a></li>
+                        <li class="nav-list__item"><a href="#category-section" class="nav-list__link slow">Специалисты</a></li>
+                        <li class="nav-list__item"><a href="#aspirants-section" class="nav-list__link slow">Соискателям</a></li>
+                    </ul>
+                    <a href="/" class="logo header__logo d-none d-lg-block">
+                        <img src="img/logo.svg" alt="" class="logo__image img-fluid">
+                    </a>
+                    <ul class="nav-list d-lg-flex ms-auto">
+                        <li class="nav-list__item"><a href="#price" class="nav-list__link" data-bs-toggle="modal">Прайс</a></li>
+                        <li class="nav-list__item"><a href="#employers-section" class="nav-list__link slow">Работодателям</a></li>
+                        <li class="nav-list__item"><a href="#abroad-section" class="nav-list__link slow">Персонал за границу</a></li>
+                    </ul>
+                    <div class="d-lg-none">
+                        <div class="header__address">
+                            <span class="icon icon-map me-3"></span>Алматы, ул. Шевченко, д. 118, оф. 115
+                        </div>
+                        <a href="mailto:lux.personnel@mail.ru" class="email text_inversion me-5"><span class="icon icon-email me-3"></span>lux.personnel@mail.ru</a>
+                    </div>
+                    <div class="header__phones d-lg-none d-flex mt-3">
+                        <span class="icon icon-phone me-3"></span>
+                        <div class="d-flex flex-column flex-xl-row">
+                            <a href="tel:+77072321414" class="phone text_warning ps-1">+7 707 232-14-14</a>
+                            <a href="tel:+77072255080" class="phone text_warning">+7 707 225-50-80</a>
+                        </div>
+                    </div>
+                    <div class="language-list d-lg-none d-flex">
+                        <a href="#" class="language-list__link text_inversion">Каз</a>
+                        <a href="#" class="language-list__link text_inversion">Рус</a>
+                        <a href="#" class="language-list__link text_inversion">Eng</a>
+                    </div>
+                </nav>
+                <!-- /nav -->
+            </div>
+        </header>
+        <!-- /header -->
+        <!-- preview -->
+        <div class="preview">
+            <div class="container">
+                <div class="preview__text text_inversion">
+                    <h1 class="title_size-lg preview__title">Агентство по подбору домашнего персонала</h1>
+                    <p>Эксклюзивное агентство Lux personnel предлагает высококлассный подбор  домашнего персонала в Алматы в сфере семейного сервиса.</p>
+                    <div class="btn-group justify-content-between d-flex flex-wrap">
+                        <a href="#form" class="btn btn_primary me-3 btn_size-md mb-4" data-bs-toggle="modal">Подобрать персонал</a>
+                        <a href="#aspirants" class="btn btn_inversion btn_size-md mb-4" data-bs-toggle="modal">Найти работу</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /preview -->
+        <div class="container">
+            <!-- form-section -->
+            <div class="form-section text_inversion">
+                <div class="title_size-md text_center form-section__title">Онлайн-заказ персонала</div>
+                <form action="#">
+                    <div class="row row_lg">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input type="text" class="form-control_border form-control_inversion" placeholder="Ваше имя">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <input type="tel" class="form-control_border form-control_inversion" placeholder="Ваш телефон">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <div class="fake-select">
+                                    <a href="#" class="fake-select__link form-control_border form-control_inversion dropdown-toggle dropdown-toggle_inversion" data-bs-toggle="dropdown" aria-expanded="false"><span class="fake-select__value">Выберите персонал</span></a>
+                                    <div class="dropdown-menu fake-select__dropdown" style="">
+                                        <label class="fake-select__item"> 
+                                            <input type="radio" class="collapse sort-input" name="personal">
+                                            Домработница
+                                        </label>
+                                        <label class="fake-select__item">
+                                            <input type="radio" class="collapse sort-input" name="personal">
+                                            Водитель
+                                        </label>
+                                        <label class="fake-select__item">
+                                            <input type="radio" class="collapse sort-input" name="personal">
+                                            Повар
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-section__btn text_center">
+                        <button class="btn btn_light">Оставить заявку</button>
+                    </div>
+                </form>
+            </div>
+            <!-- /form-section -->
+            <!-- advantages -->
+            <div class="advantages-section">
+                <div class="row">
+                    <div class="col-md-6 col-xl-3">
+                        <div class="advantages-item text_center">
+                            <div class="color-box color-box_blue">
+                                <div class="color-box__inside"><img src="img/icons/advantages-1.svg" alt="" class="img-fluid"></div>
+                            </div>
+                            <div class="advantages-item__title">Безопасность</div>
+                            <div class="advantages-item__text">Мы, как компания с 10 летним опытом, заботимся о своей репутации.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="advantages-item text_center">
+                            <div class="color-box color-box_green">
+                                <div class="color-box__inside"><img src="img/icons/advantages-2.svg" alt="" class="img-fluid"></div>
+                            </div>
+                            <div class="advantages-item__title">Конфиденциальность</div>
+                            <div class="advantages-item__text">Абсолютная конфиденциальность <br class="d-none d-xl-block">наших клиентов.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="advantages-item text_center">
+                            <div class="color-box color-box_violet">
+                                <div class="color-box__inside"><img src="img/icons/advantages-3.svg" alt="" class="img-fluid"></div>
+                            </div>
+                            <div class="advantages-item__title">Индивидуальный подход</div>
+                            <div class="advantages-item__text">Индивидуальный подход, каждый заказ закреплен <br class="d-none d-xl-block">за персональным менеджером.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="advantages-item text_center">
+                            <div class="color-box color-box_light-blue">
+                                <div class="color-box__inside"><img src="img/icons/advantages-4.svg" alt="" class="img-fluid"></div>
+                            </div>
+                            <div class="advantages-item__title">Бесплатная замена</div>
+                            <div class="advantages-item__text">Предоставим бесплатную замену персонала, если Вас не устроит качество работы или возникнут какие-либо разногласия.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /advantages -->
+            <!-- about -->
+            <div class="about-section" id="about-section">
+                <div class="d-lg-flex">
+                    <div class="about-section__text order-lg-2">
+                        <div class="title_size-md title_after title_margin-bottom-md">О компании</div>
+                        <div class="text-decoration">
+                            Наше агентство специализируется на подборе домашнего персонала в семьи и является одним из лучших агентств Казахстана.
+                        </div>
+                        <p>Мы заслужили репутацию честного партнера, который не скрывает возможных «подводных камней» в подборе того или иного работника. Многие клиенты обращаются к нам снова и рекомендуют нас друзьям, более 70% клиентов приходят к нам по рекомендациям наших клиентов. Наши работники востребованы у самых взыскательных клиентов! </p>
+                        <a href="#" class="btn btn_primary">Подобрать персонал</a>
+                    </div>
+                    <div class="about-section__slider">
+                        <div class="about-slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/content/about.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/content/about.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="d-flex about-slider__swiper-nav swiper-nav">
+                                <a href="#" class="swiper-prev swiper-arrow"><span class="icon icon-prev"></span></a>
+                                <a href="#" class="swiper-next swiper-arrow"><span class="icon icon-next"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /about -->
+            <!-- category -->
+            <div class="category-section" id="category-section">
+                <div class="title_size-md title_margin-bottom-lg title_after">Наши специалисты</div>
+                <div class="row">
+                    <a href="#category" data-bs-toggle="modal" class="col-md-6 col-lg-4">
+                        <div class="category-item">
+                            <img src="img/content/category-1.jpg" alt="" class="category-item__image">
+                            <div class="category-item__title">Опытные няни</div>
+                            <div>от <span class="category-item__price text_semibold">2 500</span> выход</div>
+                        </div>
+                    </a>
+                    <a href="#category" data-bs-toggle="modal" class="col-md-6 col-lg-4">
+                        <div class="category-item">
+                            <img src="img/content/category-2.jpg" alt="" class="category-item__image">
+                            <div class="category-item__title">Гувернантка</div>
+                            <div>от <span class="category-item__price text_semibold">60 000</span> выход</div>
+                        </div>
+                    </a>
+                    <a href="#category" data-bs-toggle="modal" class="col-md-6 col-lg-4">
+                        <div class="category-item">
+                            <img src="img/content/category-3.jpg" alt="" class="category-item__image">
+                            <div class="category-item__title">Специалист по <br>VIP-гардеробу</div>
+                            <div>от <span class="category-item__price text_semibold">60 000</span> выход</div>
+                        </div>
+                    </a>
+                    <a href="#category" data-bs-toggle="modal" class="col-md-6 col-lg-4">
+                        <div class="category-item">
+                            <img src="img/content/category-4.jpg" alt="" class="category-item__image">
+                            <div class="category-item__title">Домработница</div>
+                            <div>от <span class="category-item__price text_semibold">60 000</span> выход</div>
+                        </div>
+                    </a>
+                    <a href="#category" data-bs-toggle="modal" class="col-md-6 col-lg-4">
+                        <div class="category-item">
+                            <img src="img/content/category-5.jpg" alt="" class="category-item__image">
+                            <div class="category-item__title">Повар</div>
+                            <div>от <span class="category-item__price text_semibold">60 000</span> выход</div>
+                        </div>
+                    </a>
+                    <a href="#category" data-bs-toggle="modal" class="col-md-6 col-lg-4">
+                        <div class="category-item">
+                            <img src="img/content/category-6.jpg" alt="" class="category-item__image">
+                            <div class="category-item__title">Водитель</div>
+                            <div>от <span class="category-item__price text_semibold">30 000</span> выход</div>
+                        </div>
+                    </a>
+                    <a href="#category" data-bs-toggle="modal" class="col-md-6 col-lg-4">
+                        <div class="category-item">
+                            <img src="img/content/category-7.jpg" alt="" class="category-item__image">
+                            <div class="category-item__title">Садовник</div>
+                            <div>от <span class="category-item__price text_semibold">30 000</span> выход</div>
+                        </div>
+                    </a>
+                    <a href="#category" data-bs-toggle="modal" class="col-md-6 col-lg-4">
+                        <div class="category-item">
+                            <img src="img/content/category-8.jpg" alt="" class="category-item__image">
+                            <div class="category-item__title">Сиделка</div>
+                            <div>от <span class="category-item__price text_semibold">80 000</span> выход</div>
+                        </div>
+                    </a>
+                    <a href="#category" data-bs-toggle="modal" class="col-md-6 col-lg-4">
+                        <div class="category-item">
+                            <img src="img/content/category-9.jpg" alt="" class="category-item__image">
+                            <div class="category-item__title">Семейная пара</div>
+                            <div>от <span class="category-item__price text_semibold">50 000</span> месяц</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- /category -->
+            <!-- info -->
+            <div class="info-section">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="advantages-item d-flex flex-column flex-xl-row align-items-center">
+                            <div class="color-box color-box_md color-box_green text_inversion">
+                                <div class="color-box__inside">
+                                    <div class="color-box__num">10</div>
+                                    <div class="color-box__text">лет</div>
+                                </div>
+                            </div>
+                            <div class="advantages-item__title advantages-item__title_margin">работаем на рынке персонала</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="advantages-item d-flex flex-column flex-xl-row align-items-center">
+                            <div class="color-box color-box_md color-box_violet text_inversion">
+                                <div class="color-box__inside">
+                                    <div class="color-box__num">7548</div>
+                                    <div class="color-box__text">семей</div>
+                                </div>
+                            </div>
+                            <div class="advantages-item__title advantages-item__title_margin">довольны нашим сотрудничеством</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="advantages-item d-flex flex-column flex-xl-row align-items-center">
+                            <div class="color-box color-box_md color-box_blue text_inversion">
+                                <div class="color-box__inside">
+                                    <div class="color-box__num">15000</div>
+                                </div>
+                            </div>
+                            <div class="advantages-item__title advantages-item__title_margin">сотрудников в нашей базе</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /info -->
+            <!-- text-section -->
+            <div class="text-section" id="employers-section">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="text-section__content pb-4">
+                            <div class="title_size-md title_margin-bottom-md title_after">Работадателям</div>
+                            <div class="text-decoration">Обратившись в наше агентство по подбору домашнего персонала Lux personnel, вы сделаете первый шаг к успешному подбору  домашнего персонала.</div>
+                            <p>Мы проконсультируем Вас по всем интересующим вопросам и дадим полезные рекомендации, подберём весь необходимый персонал для вашего дома, в соответствии с вашими требованиями.</p>
+                            <a href="#employers" class="btn btn_primary mb-1" data-bs-toggle="modal">Читать подробнее</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text-section__image"><img src="img/content/img-1.jpg" alt="" class="img-fluid d-block"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- /text-section -->
+            <!-- text-section -->
+            <div class="text-section" id="aspirants-section">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="text-section__content_padding">
+                            <div class="title_size-md title_margin-bottom-md title_after">Соискателям</div>
+                            <div class="text-decoration">Агентство по подбору домашнего персонала Lux personnel занимается трудоустройством домашнего персонала в элитные семьи Алматы и осуществляет постоянный набор кандидатов на актуальные вакансии.</div>
+                            <p>Наше кадровое агентство постоянно обновляет базу квалифицированных специалистов в сфере семейного сервиса. Если у вас имеется хороший опыт в сфере домашнего персонала, то мы рады пригласить вас на актуальные вакансии. Анкетирование проводится совершенно бесплатно, так как не в наших правилах принимать оплату за невыполненную работу. Ведь наша работа – это ваше трудоустройство.</p>
+                            <a href="#aspirants" class="btn btn_primary" data-bs-toggle="modal">Читать подробнее</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text-section__image text-section__image_margin mt-2"><img src="img/content/img-2.jpg" alt="" class="img-fluid d-block"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- /text-section -->
+            <!-- team -->
+            <div class="team-section">
+                <div class="title_size-md title_margin-bottom-lg title_after">Наша команда</div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="team-item text_center">
+                            <div class="team-item__image"><img src="img/content/team-1.jpg" alt="d-block"></div>
+                            <div class="team-item__name">Иванова Наталья Петровна</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-item text_center">
+                            <div class="team-item__image"><img src="img/content/team-1.jpg" alt="d-block"></div>
+                            <div class="team-item__name">Иванова Наталья Петровна</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-item text_center">
+                            <div class="team-item__image"><img src="img/content/team-2.jpg" alt="d-block"></div>
+                            <div class="team-item__name">Иванова Наталья Петровна</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /team -->
+            <!-- text-section -->
+            <div class="text-section" id="abroad-section">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="text-section__content pb-4">
+                            <div class="title_size-md title_margin-bottom-md title_after">Персонал за границу</div>
+                            <div class="text-decoration">Lux personnel помогает в трудоустройстве персонала в Европу, США и ОАЭ. На протяжении 10 лет, мы трудоустраиваем домашний персонал по всему миру, за это время более 250 человек нашли работу. Если Вы готовы работать в другой стране и получить официальное трудоустройство, обращайтесь к нам мы Вам поможем на всех этапах трудоустройства.</div>
+                            <ul class="dots-list">
+                                <li class="dots-list__item">Тщательный и качественный подбор, учитывая все Ваши пожелания;</li>
+                                <li class="dots-list__item">Строго относимся к конфиденциальности;</li>
+                                <li class="dots-list__item">Предоставляем взаимовыгодные условия между кандидатом и работодателем;</li>
+                            </ul>
+                            <a href="#" class="btn btn_primary">Оставить заявку</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text-section__image"><img src="img/content/img-3.jpg" alt="" class="img-fluid d-block"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- /text-section -->
+            <!-- text-section -->
+            <div class="text-section">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="text-section__content_padding pb-3">
+                            <div class="title_size-md title_margin-bottom-md title_after">Подбор горничной для ухода за VIP-гардеробом</div>
+                            <div class="text-decoration pb-3">Вещи, из которых состоит VIP-гардероб, как правило брендовые, изготовленные из дорогих, сложных тканей, требующих особого ухода. Справиться с этой непростой задачей Вам поможет горничная по VIP-гардеробу.​
+                             </div>
+                            <p>Специалист по VIP-гардеробу умеет работать с костюмной группой, обувью, юбки, блузы, платья – из дорогих тканей требуют отдельного ухода.</p>
+                            <a href="#" class="btn btn_primary">Читать подробнее</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text-section__image text-section__image_margin mt-1"><img src="img/content/img-4.jpg" alt="" class="img-fluid d-block"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- /text-section -->
+            <!-- review -->
+            <div class="review-section">
+                <div class="title_size-md title_after">Отзывы наших клиентов</div>
+                <div class="review-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="review-item text_center">
+                                <div class="review-item__image"><img src="img/content/user-1.jpg" alt="" class="w-100 d-block"></div>
+                                <div class="review-item__name text_semibold">Ангелина Авановга</div>
+                                <div class="review-item__city">Алма-Ата</div>
+                                <p>Мы заслужили репутацию честного партнера, который не скрывает возможных «подводных камней» в подборе того или иного работника. </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-item text_center">
+                                <div class="review-item__image"><img src="img/content/user-2.jpg" alt="" class="w-100 d-block"></div>
+                                <div class="review-item__name text_semibold">Ангелина Авановга</div>
+                                <div class="review-item__city">Алма-Ата</div>
+                                <p>Мы заслужили репутацию честного партнера, который не скрывает возможных «подводных камней» в подборе того или иного работника. </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-item text_center">
+                                <div class="review-item__image"><img src="img/content/user-3.jpg" alt="" class="w-100 d-block"></div>
+                                <div class="review-item__name text_semibold">Ангелина Авановга</div>
+                                <div class="review-item__city">Алма-Ата</div>
+                                <p>Мы заслужили репутацию честного партнера, который не скрывает возможных «подводных камней» в подборе того или иного работника. </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-item text_center">
+                                <div class="review-item__image"><img src="img/content/user-2.jpg" alt="" class="w-100 d-block"></div>
+                                <div class="review-item__name text_semibold">Ангелина Авановга</div>
+                                <div class="review-item__city">Алма-Ата</div>
+                                <p>Мы заслужили репутацию честного партнера, который не скрывает возможных «подводных камней» в подборе того или иного работника. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex swiper-nav justify-content-center">
+                        <a href="#" class="swiper-prev swiper-arrow me-5"><span class="icon icon-prev"></span></a>
+                        <a href="#reviews" class="btn btn_primary"  data-bs-toggle="modal">Подобрать персонал</a>
+                        <a href="#" class="swiper-next swiper-arrow ms-5"><span class="icon icon-next"></span></a>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-5">
+                    <div class="col-md-7 col-xl-5"><a href="#review-form" class="btn btn_primary w-100" data-bs-toggle="modal">Оставить отзыв</a></div>
+                </div>
+            </div>
+            <!-- /review -->
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <ul class="footer-nav d-none d-lg-flex justify-content-between">
+                    <li class="footer-nav__item"><a href="#about-section" class="footer-nav__link slow">О компании</a></li>
+                    <li class="footer-nav__item"><a href="#category-section" class="footer-nav__link slow">Специалисты</a></li>
+                    <li class="footer-nav__item"><a href="#price" class="footer-nav__link" data-bs-toggle="modal">Прайс</a></li>
+                    <li class="footer-nav__item"><a href="#aspirants-section" class="footer-nav__link slow">Соискателям</a></li>
+                    <li class="footer-nav__item"><a href="#employers-section" class="footer-nav__link slow">Работодателям</a></li>
+                    <li class="footer-nav__item"><a href="#abroad-section" class="footer-nav__link slow">Персонал за границу</a></li>
+                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Контакты</a></li>
+                </ul>
+                <div class="d-md-flex justify-content-between align-items-center">
+                    <a href="/" class="logo footer__logo d-flex align-items-center">
+                        <img src="img/logo-footer.svg" alt="" class="">
+                        <div class="slogan">Агентство по подбору <br> домашнего персонала</div>
+                    </a>
+                    <div class="footer__contacts d-md-flex">
+                        <div class="footer__phones d-flex flex-column flex-lg-row">
+                            <a href="tel:+77072321414" class="phone text_warning"><span class="icon me-3 icon-phone"></span>+7 707 232-14-14</a>
+                            <a href="tel:+77072255080" class="phone text_warning"><span class="icon me-3 icon-phone"></span>+7 707 225-50-80</a>
+                        </div>
+                        <div class="social-list footer__social-list d-flex">
+                            <a href="#" class="social-list__link icon icon-ins" target="_blank"></a>
+                            <a href="#" class="social-list__link icon icon-fb" target="_blank"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom d-md-flex justify-content-between text_inversion">
+                    <div class="footer__info d-lg-flex order-md-2">
+                        <div class="footer__address me-md-5 pe-md-3">
+                            <span class="icon icon-map me-3"></span>Алматы, ул. Шевченко, д. 118, оф. 115
+                        </div>
+                        <a href="mailto:lux.personnel@mail.ru" class="email text_inversion"><span class="icon icon-email me-3"></span>lux.personnel@mail.ru</a>
+                    </div>
+                    <div class="copyright">© Lux personnel, 2003 — 2022</div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+    </div>
+
+
+    <!-- aspirants -->
+    <div class="modal fade" id="aspirants" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="container">
+                <div class="modal-content">
+                    <button type="button" class="modal__close" data-bs-dismiss="modal">x</button>
+                    <div class="title_size-md title_margin-bottom-sm">Соискателям</div>
+                    <div class="text-decoration text-decoration_md">Агентство по подбору домашнего персонала Lux personnel занимается трудоустройством домашнего персонала в элитные семьи Алматы и осуществляет постоянный набор кандидатов на актуальные вакансии.</div>
+                    <p>Мы рады приветствовать вас в нашем агентстве по подбору домашнего персонала <span class="text_semibold">Lux personnel</span>.</p>
+                    <p>Наше кадровое агентство постоянно обновляет базу квалифицированных специалистов в сфере семейного сервиса. Если у вас имеется хороший опыт в сфере домашнего персонала, то мы рады пригласить вас на актуальные вакансии. Анкетирование проводится совершенно бесплатно, так как не в наших правилах принимать оплату за невыполненную работу. Ведь наша работа – это ваше трудоустройство.</p>
+                    <div class="title_size-sm text_bold title_margin-bottom-sm">Порядок подбора вакансии:</div>
+                    <p>Заполнение анкеты Соискателя с фотографией и занесение его в базу данных Агентства. Проведение предварительного собеседования с Соискателем перед встречей с потенциальным Работодателем, ознакомление с требованиями и условиями оплаты Работодателя. Собеседование Соискателя с потенциальным Работодателем проводится в офисе Агентства или на территории Работодателя в заранее согласованное время. После проведенного собеседования, выбранный Соискатель приглашается на пробные выходы.</p>
+                    <div class="title_size-sm text_bold title_margin-bottom-sm">Список документов, необходимых для анкетирования:</div>
+                    <div class="row">
+                        <div class="col-md-4 col-xl-3 pe-xl-0">
+                            <ul class="dots-list dots-list_padding">
+                                <li class="dots-list__item">Фотография 5х5.</li>
+                                <li class="dots-list__item">Удостоверение личности.</li>
+                                <li class="dots-list__item">Адресная справка.</li>
+                                <li class="dots-list__item">Справка о несудимости.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-8 col-xl-9">
+                            <ul class="dots-list dots-list_vertical ms-xl-5">
+                                <li class="dots-list__item">Медицинская книжка, или следующие медицинские справки: флюрография и анализ на микрореакцию.</li>
+                                <li class="dots-list__item">Свидетельства и дипломы о прохождении курсов и окончании учебного заведения.</li>
+                                <li class="dots-list__item">Рекомендации.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="title_size-sm text_bold title_margin-bottom-md text_primary">Будем рады встрече с вами и надеемся на длительное плодотворное сотрудничество!</div>
+                    <div class="title_size-sm text_bold title_margin-bottom-sm">Полезная информация для соискателей</div>
+                    <p>Большинство соискателей полагает, что для работы в семьях в качестве домашнего персонала не требуется специальных знаний и особенных усилий. Однако это весьма ошибочное мнение. Опыта по воспитанию своих детей и ведению собственного хозяйства явно недостаточно, чтобы устроиться домработницей, или няней в престижный дом.</p>
+                    <p>В своей практике мы довольно часто встречаем соискателей, которые совершенно не годятся для работы в семьях. Домработница должна ежедневно доводить до блеска дом или большую квартиру, гладить горы белья, ухаживать за различными поверхностями, работать с VIP гардеробом, дорогостоящей техникой, с которой ей не приходилось сталкиваться в повседневной жизни. При этом все работы должны выполняться быстро, тихо и незаметно.</p>
+                    <p>Претендуя на вакансию няни, Вы обязаны не только знать различные методики развития детей, но и владеть ими на практике. То есть, Вы должны иметь навыки подготовки развивающих детских программ, уметь подстроиться под нужды ребенка и требования семьи. Каким бы опытом Вы не обладали в повседневной жизни, работодатель всегда предъявляет гораздо более строгие требования, особенно если это касается элитных семей.</p>
+                    <div class="modal-content__btn text_center"><a href="#form" class="btn btn_primary" data-bs-toggle="modal">Оставить заявку</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /aspirants -->
+
+    <!-- employers -->
+    <div class="modal fade" id="employers" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="container">
+                <div class="modal-content">
+                    <button type="button" class="modal__close" data-bs-dismiss="modal">x</button>
+                    <div class="title_size-md title_margin-bottom-sm">Работадателям</div>
+                    <div class="text-decoration text-decoration_margin text-decoration_md">Уважаемые работодатели, чтобы понять, как работает наше агентство, предлагаем Вам ознакомиться с порядком подбора персонала</div>
+                    <div class="title_size-xs text_semibold title_margin-bottom-sm">Оформление заявки на подбор Персонала по следующим специальностям:</div>
+                    <div class="row">
+                        <div class="col-md-3 col-xl-2">
+                            <ul class="dots-list dots-list_padding mb-5">
+                                <li class="dots-list__item">Няня</li>
+                                <li class="dots-list__item">Гувернантка</li>
+                                <li class="dots-list__item">Репетитор</li>
+                                <li class="dots-list__item">Домработница</li>
+                                <li class="dots-list__item">Экономка</li>
+                                <li class="dots-list__item">Сиделка</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-9 col-xl-10">
+                            <ul class="dots-list dots-list_padding ms-xl-5 ps-xl-4 mb-5">
+                                <li class="dots-list__item">Повар</li>
+                                <li class="dots-list__item">Водитель</li>
+                                <li class="dots-list__item">Семейная пара для загородного дома</li>
+                                <li class="dots-list__item">Помощники по хозяйству</li>
+                                <li class="dots-list__item">Садовник</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="title_size-xs text_semibold title_margin-bottom-sm">Полезная информация для соискателей</div>
+                    <ul class="num-list">
+                        <li class="num-list__item">Отбор данных нескольких Соискателей (не менее трех), кандидатов, максимально соответствующих требованиям Заказчика.</li>
+                        <li class="num-list__item">Тщательная проверка рекомендаций.</li>
+                        <li class="num-list__item">Проведение предварительного собеседования с Соискателями в офисе Агентства и ознакомление их с требованиями и условиями оплаты Заказчика.</li>
+                        <li class="num-list__item">Проведение собеседования с участием нескольких Кандидатов в офисе Агентства в присутствии личного менеджера.</li>
+                        <li class="num-list__item">Выезд с Соискателем на дом или в офис к Заказчику (по его желанию).</li>
+                        <li class="num-list__item">Предоставление испытательного срока (3 календарных дня) для Соискателя в доме Заказчика.</li>
+                        <li class="num-list__item">Заключение Договора на оказание услуг по поиску и подбору домашнего персонала.</li>
+                        <li class="num-list__item">Постоянное отслеживание качества работы подобранного Агентством Персонала и контакт с Заказчиком в целях выявления и урегулирования возможных разногласий с работником.</li>
+                    </ul>
+                    <div class="modal-content__btn text_center"><a href="#form" class="btn btn_primary" data-bs-toggle="modal">Оставить заявку</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /employers -->
+
+    <!-- category -->
+    <div class="modal fade" id="category" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="container">
+                <div class="modal-content">
+                    <button type="button" class="modal__close" data-bs-dismiss="modal">x</button>
+                    <div class="title_size-md title_margin-bottom-md">Няня в Алматы</div>
+                    <div class="category-row row">
+                        <div class="category-row__image pt-2 mt-1">
+                            <div class="text-section__image mx-0"><img src="img/content/category.jpg" alt="" class="img-fluid d-block"></div>
+                        </div>
+                        <div class="category-row__text">
+                            <div class="text-decoration text-decoration_sm"><span class="text_semibold">Появление в семье ребенка это очень большое счастье для всей семьи.</span> Но кроме радости также появляются и дополнительные хлопоты о развитии ребенка. Особо много переживаний у родителей происходят именно в первые месяцы жизни ребенка т.к именно в это время происходит формирование его основных навыков и умений.</div>
+                            <p>Рождение ребенка вносит коррективы в ритм жизни родителей, особенно если они при этом заняты построением своей карьеры. Понимая данную ситуацию, Мы предлагаем Вам наши услуги няни в Алматы.</p>
+                            <p class="mb-4 pb-2">Няни Алматы от нашего агенства – это высоко квалифицированные специалисты, с мед. образованием, а также большим практическим опытом работы, как с новорожденными, так и с грудными детьми.</p>
+                        </div>
+                    </div>
+                    <p>Няни для ребенка (от 0 до 2 лет) обладают всеми навыками необходимыми для ухода за младенцами, знают все особенности и тонкости питания ребенка, помогут молодой маме правильно организовать режим дня, кормления и всех необходимых процедур для правильного развития ребенка.</p>
+                    <p>Наши няни внимательно, ответственно и с особой заботой относятся ко всем детям! Многие няни владеют практическими методиками развития детей, такими как (М. Монтессори, Н.А. Зайцев, Никитины, Глен Доман, методика Вальдорфского детского сада); знаниями основ детской психологии . Имеют хорошие рекомендации семей, где ранее работали и готовы стать близким другом для Вашего малыша!</p>
+                    <div class="modal-content__btn text_center"><a href="#form" class="btn btn_primary" data-bs-toggle="modal">Оставить заявку</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /category -->
+
+    <!-- price -->
+    <div class="modal fade" id="price" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="container">
+                <div class="modal-content">
+                    <button type="button" class="modal__close" data-bs-dismiss="modal">x</button>
+                    <div class="title_size-md title_margin-bottom-sm mt-2">Прайс-лист</div>
+                    <div class="text-decoration text-decoration_md pb-1">
+                        Уважаемые работодатели, на этой странице Вы можете узнать средние расценки персонала по уходу за детьми, обслуживающего персонала и стоимость экспресс услуг домашних сотрудников.
+                    </div>
+                    <p>Точный размер оплаты работника определяется в индивидуальном порядке в зависимости от его профессионализма и опыта работы.</p>
+                    <p>Также мы приглашаем Вас ознакомиться с прайс-листом нашего агентства.</p>
+                    <!-- price-group -->
+                    <div class="price-group">
+                        <div class="price-group__heading">
+                            <div class="row title_size-sm text_bold align-items-end">
+                                <div class="col-md-4 col-xl-4">Услуги по уходу за детьми</div>
+                                <div class="col-md-4 col-xl-4 ps-xl-3 d-none d-md-block">Требования к специалисту</div>
+                                <div class="col-md-4 col-xl-3 d-none d-md-block ms-auto">Стоимость</div>
+                            </div>
+                        </div>
+                        <div class="price-item">
+                            <div class="row">
+                                <div class="col-md-4 col-xl-4"><a href="#" class="link_underline text_primary title_size-sm text_semibold">Няня к грудничку</a></div>
+                                <div class="col-md-4 col-xl-4 ps-xl-3">
+                                    <p>Медицинское образование.</p>
+                                    <p>Опыт работы в семьях.</p>
+                                </div>
+                                <div class="col-md-4 col-xl-3 ms-auto">от 250 000 тенге в месяц.</div>
+                            </div>
+                        </div>
+                        <div class="price-item">
+                            <div class="row">
+                                <div class="col-md-4 col-xl-4"><a href="#" class="link_underline text_primary title_size-sm text_semibold">Няня-воспитатель</a></div>
+                                <div class="col-md-4 col-xl-4 ps-xl-3">
+                                    <p>Педагогическое образование.</p>
+                                    <p>Опыт работы в семьях, или в образовательных учреждениях.</p>
+                                </div>
+                                <div class="col-md-4 col-xl-3 ms-auto">от 250 000 тенге в месяц.</div>
+                            </div>
+                        </div>
+                        <div class="price-item">
+                            <div class="row">
+                                <div class="col-md-4 col-xl-4"><a href="#" class="link_underline text_primary title_size-sm text_semibold">Гувернер</a></div>
+                                <div class="col-md-4 col-xl-4 ps-xl-3">
+                                    <p>Высшее педагогическое, или филологическое образование.</p>
+                                    <p>Опыт работы.</p>
+                                </div>
+                                <div class="col-md-4 col-xl-3 ms-auto">от 250 000 тенге в месяц.</div>
+                            </div>
+                        </div>
+                        <div class="price-item">
+                            <div class="row">
+                                <div class="col-md-4 col-xl-4"><a href="#" class="link_underline text_primary title_size-sm text_semibold">Гувернер со знанием
+                                    иностранных языков</a></div>
+                                <div class="col-md-4 col-xl-4 ps-xl-3">
+                                    <p>Высшее филологическое образование.</p>
+                                    <p>Знание иностранных языков.</p>
+                                    <p>Опыт работы.</p>
+                                </div>
+                                <div class="col-md-4 col-xl-3 ms-auto">от 300 000 тенге в месяц.</div>
+                            </div>
+                        </div>
+                        <div class="price-item">
+                            <div class="row">
+                                <div class="col-md-4 col-xl-4"><a href="#" class="link_underline text_primary title_size-sm text_semibold">Репетитор</a></div>
+                                <div class="col-md-4 col-xl-4 ps-xl-3">
+                                    <p>Высшее педагогическое образование.</p>
+                                    <p>Опыт работы.</p>
+                                </div>
+                                <div class="col-md-4 col-xl-3 ms-auto">от 5000 до 6000 тенге/ академический час.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /price-group -->
+                    <!-- price-group -->
+                    <div class="price-group">
+                        <div class="price-group__heading">
+                            <div class="row title_size-sm text_bold align-items-end">
+                                <div class="col-md-4 col-xl-4">Услуги обслуживающего персонала</div>
+                                <div class="col-md-4 col-xl-4 ps-xl-3 d-none d-md-block">Требования к специалисту</div>
+                                <div class="col-md-4 col-xl-3 d-none d-md-block ms-auto">Стоимость</div>
+                            </div>
+                        </div>
+                        <div class="price-item">
+                            <div class="row">
+                                <div class="col-md-4 col-xl-4"><a href="#" class="link_underline text_primary title_size-sm text_semibold">Домработница</a></div>
+                                <div class="col-md-4 col-xl-4 ps-xl-3">
+                                    <p>Опыт работы в семьях, аккуратность.</p>
+                                    <p>Ответственность.</p>
+                                </div>
+                                <div class="col-md-4 col-xl-3 ms-auto">от 200 000 до 350 000 тенге в месяц.</div>
+                            </div>
+                        </div>
+                        <div class="price-item">
+                            <div class="row">
+                                <div class="col-md-4 col-xl-4"><a href="#" class="link_underline text_primary title_size-sm text_semibold">Горничная</a></div>
+                                <div class="col-md-4 col-xl-4 ps-xl-3">
+                                    <p>Опыт работы в семьях.</p>
+                                    <p>Профессиональные навыки</p>
+                                </div>
+                                <div class="col-md-4 col-xl-3 ms-auto">от 12 000 тенге за выход.</div>
+                            </div>
+                        </div>
+                        <div class="price-item">
+                            <div class="row">
+                                <div class="col-md-4 col-xl-4"><a href="#" class="link_underline text_primary title_size-sm text_semibold">Экономка</a></div>
+                                <div class="col-md-4 col-xl-4 ps-xl-3">
+                                    <p>Высшее экономическое образование.</p>
+                                    <p>Опыт работы в семьях.</p>
+                                    <p>Профессионализм. Аккуратность.</p>
+                                </div>
+                                <div class="col-md-4 col-xl-3 ms-auto">от 250 000 тенге в месяц.</div>
+                            </div>
+                        </div>
+                        <div class="price-item">
+                            <div class="row">
+                                <div class="col-md-4 col-xl-4"><a href="#" class="link_underline text_primary title_size-sm text_semibold">Управляющий</a></div>
+                                <div class="col-md-4 col-xl-4 ps-xl-3">
+                                    <p>Опыт работы. Ответственность.</p>
+                                </div>
+                                <div class="col-md-4 col-xl-3 ms-auto">от 400 000 тенге в месяц.</div>
+                            </div>
+                        </div>
+                        <div class="price-item">
+                            <div class="row">
+                                <div class="col-md-4 col-xl-4"><a href="#" class="link_underline text_primary title_size-sm text_semibold">Повар</a></div>
+                                <div class="col-md-4 col-xl-4 ps-xl-3">
+                                    <p>Опыт работы в ресторанах, семьях.</p>
+                                    <p>Знание различных кухонь, лечебно-оздоровительныех диет, включая вегетарианство и раздельное питание.</p>
+                                </div>
+                                <div class="col-md-4 col-xl-3 ms-auto">от 300 000 до 600 000 тенге в месяц.</div>
+                            </div>
+                        </div>
+                        <div class="price-item">
+                            <div class="row">
+                                <div class="col-md-4 col-xl-4"><a href="#" class="link_underline text_primary title_size-sm text_semibold">Водитель</a></div>
+                                <div class="col-md-4 col-xl-4 ps-xl-3">
+                                    <p>Среднее специальное образование.</p>
+                                    <p>Опыт вождения от 6 лет.</p>
+                                    <p>Техническая грамотность.</p>
+                                </div>
+                                <div class="col-md-4 col-xl-3 ms-auto">от 250 000 до 350 000 тенге в месяц.</div>
+                            </div>
+                        </div>
+                        <div class="price-item">
+                            <div class="row">
+                                <div class="col-md-4 col-xl-4"><a href="#" class="link_underline text_primary title_size-sm text_semibold">Сиделка (приходящая; с проживанием)</a></div>
+                                <div class="col-md-4 col-xl-4 ps-xl-3">
+                                    <p>Медицинское образование.</p>
+                                    <p>Опыт работы по уходу за престарелыми и больными.</p>
+                                </div>
+                                <div class="col-md-4 col-xl-3 ms-auto">
+                                    12 000 тенге в день; <br>
+                                    250 000 — в месяц.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-item">
+                            <div class="row">
+                                <div class="col-md-4 col-xl-4"><a href="#" class="link_underline text_primary title_size-sm text_semibold">Садовник</a></div>
+                                <div class="col-md-4 col-xl-4 ps-xl-3">
+                                    <p>Профильное образование (агроном, флорист, ландшафтный дизайнер).</p>
+                                    <p>Опыт работы.</p>
+                                </div>
+                                <div class="col-md-4 col-xl-3 ms-auto">от 15 000 тенге за выход.</div>
+                            </div>
+                        </div>
+                        <div class="price-item">
+                            <div class="row">
+                                <div class="col-md-4 col-xl-4"><a href="#" class="link_underline text_primary title_size-sm text_semibold">Семейная пара</a></div>
+                                <div class="col-md-4 col-xl-4 ps-xl-3">
+                                    <p>Опыт работы с проживанием.</p>
+                                </div>
+                                <div class="col-md-4 col-xl-3 ms-auto">от 500 000 тенге в месяц.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /price-group -->
+                    <!-- price-group -->
+                    <div class="price-group">
+                        <div class="price-group__heading">
+                            <div class="row title_size-sm text_bold align-items-end">
+                                <div class="col-6 col-md-4">Экспресс услуги</div>
+                                <div class="col-6 col-md-7">Стоимость</div>
+                            </div>
+                        </div>
+                        <div class="price-item">
+                            <div class="row">
+                                <div class="col-6 col-md-4"><a href="#" class="link_underline text_primary title_size-sm text_semibold">Экспресс-няня</a></div>
+                                <div class="col-6 col-md-7 ps-xl-3">от 3 000 тенге в час</div>
+                            </div>
+                        </div>
+                        <div class="price-item">
+                            <div class="row">
+                                <div class="col-6 col-md-4"><a href="#" class="link_underline text_primary title_size-sm text_semibold">Экспресс-домработница</a></div>
+                                <div class="col-6 col-md-7 ps-xl-3">от 15 000 тенге за выход.</div>
+                            </div>
+                        </div>
+                        <div class="price-item">
+                            <div class="row">
+                                <div class="col-6 col-md-4"><a href="#" class="link_underline text_primary title_size-sm text_semibold">Экспресс-повар <br>(в зависимости от гостей)</a></div>
+                                <div class="col-6 col-md-7 ps-xl-3">
+                                    <p>от 4000 тенге в час; 20 000-30 000 тенге за выход (до 10 гостей);</p>
+                                    <p>30 000-40 000 тенге за выход (до 20 гостей).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-item">
+                            <div class="row">
+                                <div class="col-6 col-md-4"><a href="#" class="link_underline text_primary title_size-sm text_semibold">Экспресс-сиделка</a></div>
+                                <div class="col-6 col-md-7 ps-xl-3">
+                                    от 3000 тенге в час.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /price-group -->
+                    <div class="price-group mb-0">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="price-group__heading title_size-sm text_bold">Стоимость</div>
+                                <div class="price-item title_size-sm text_bold">100% от установленного месячного оклада подобранного Вам работника.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="price-group__heading title_size-sm text_bold">Услуги агентства</div>
+                                <div class="price-item">Договор сроком на 3 месяца и право на 5 бесплатных замен на протяжении срока действия договора.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /price -->
+
+    <!-- form -->
+    <div class="modal fade" id="form" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog_sm">
+            <div class="container">
+                <div class="modal-content modal-content_padding">
+                    <button type="button" class="modal__close modal__close_sm" data-bs-dismiss="modal">x</button>
+                    <div class="title_size-md title_margin-bottom-sm text_center">Подобрать персонал</div>
+                    <div class="modal-content__form">
+                        <form action="#">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Ваше имя">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" placeholder="Ваш телефон">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Выберите персонал">
+                            </div>
+                            <div class="modal-content__btn text_center pt-3 mt-5"><button class="btn btn_primary">Оставить заявку</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /form -->
+
+    <!-- review-form -->
+    <div class="modal fade" id="review-form" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog_sm">
+            <div class="container">
+                <div class="modal-content modal-content_padding">
+                    <button type="button" class="modal__close modal__close_sm" data-bs-dismiss="modal">x</button>
+                    <div class="title_size-md title_margin-bottom-sm text_center">Оставить отзыв</div>
+                    <div class="modal-content__form">
+                        <form action="#">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Ваше имя">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Выберите персонал">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Напишите отзыв"></textarea>
+                            </div>
+                            <div class="modal-content__btn text_center pt-3 mt-5"><button class="btn btn_primary">Оставить отзыв</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /review-form -->
+
+    <!-- reviews -->
+    <div class="modal fade" id="reviews" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="container">
+                <div class="modal-content modal-content_padding">
+                    <button type="button" class="modal__close" data-bs-dismiss="modal">x</button>
+                    <div class="title_size-md title_margin-bottom-md">О компании</div>
+                    <div class="review-item review-item_list">
+                        <div class="d-flex">
+                            <div class="review-item__image"><img src="img/content/user-1.jpg" alt="" class="w-100 d-block"></div>
+                            <div class="review-item__info">
+                                <div class="review-item__name text_semibold">Ангелина Авановга</div>
+                                <div class="review-item__city">Алма-Ата</div>
+                            </div>
+                        </div>
+                        <p>Мы заслужили репутацию честного партнера, который не скрывает возможных «подводных камней» в подборе того или иного работника.  Многие клиенты обращаются к нам снова и рекомендуют нас друзьям, более 70% клиентов приходят к нам по рекомендациям наших клиентов. Наши работники востребованы у самых взыскательных клиентов! </p>
+                    </div>
+                    <div class="review-item review-item_list">
+                        <div class="d-flex">
+                            <div class="review-item__image"><img src="img/content/user-2.jpg" alt="" class="w-100 d-block"></div>
+                            <div class="review-item__info">
+                                <div class="review-item__name text_semibold">Ангелина Авановга</div>
+                                <div class="review-item__city">Санкт-Петербург</div>
+                            </div>
+                        </div>
+                        <p>Многие клиенты обращаются к нам снова и рекомендуют нас друзьям, более 70% клиентов приходят к нам по рекомендациям наших клиентов. Наши работники востребованы у самых взыскательных клиентов! </p>
+                    </div>
+                    <div class="review-item review-item_list">
+                        <div class="d-flex">
+                            <div class="review-item__image"><img src="img/content/user-1.jpg" alt="" class="w-100 d-block"></div>
+                            <div class="review-item__info">
+                                <div class="review-item__name text_semibold">Ангелина Авановга</div>
+                                <div class="review-item__city">Алма-Ата</div>
+                            </div>
+                        </div>
+                        <p>Мы заслужили репутацию честного партнера, который не скрывает возможных «подводных камней» в подборе того или иного работника.  Многие клиенты обращаются к нам снова и рекомендуют нас друзьям, более 70% клиентов приходят к нам по рекомендациям наших клиентов. Наши работники востребованы у самых взыскательных клиентов! </p>
+                    </div>
+                    <div class="review-item review-item_list">
+                        <div class="d-flex">
+                            <div class="review-item__image"><img src="img/content/user-2.jpg" alt="" class="w-100 d-block"></div>
+                            <div class="review-item__info">
+                                <div class="review-item__name text_semibold">Ангелина Авановга</div>
+                                <div class="review-item__city">Санкт-Петербург</div>
+                            </div>
+                        </div>
+                        <p>Многие клиенты обращаются к нам снова и рекомендуют нас друзьям, более 70% клиентов приходят к нам по рекомендациям наших клиентов. Наши работники востребованы у самых взыскательных клиентов! </p>
+                    </div>
+                    <ul class="pagination d-flex justify-content-center align-items-center">
+                        <li class="pagination__item"><a href="#" class="pagination__link"><span class="icon icon-prev"></span></a></li>
+                        <li class="pagination__item"><span class="pagination__link active">1</span></li>
+                        <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+                        <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+                        <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+                        <li class="pagination__item"><a href="#" class="pagination__link"><span class="icon icon-next"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /reviews -->
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
