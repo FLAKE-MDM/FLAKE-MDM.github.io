@@ -1,0 +1,104 @@
+.text-section{
+    margin: 9rem 0 10.2rem;
+    @include bp(sm){
+        margin: 5rem 0;
+    }
+    &__image{
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        @include bp(xxl-up){
+            margin: 0 -4.1rem 0 2rem;
+            &_margin{
+                margin: 0 0 0 -7.1rem;
+            }
+        }
+        @include bp(md){
+            margin: 2rem auto 0!important;
+            display: block;
+            width: 100%;
+        }
+        &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: -1;
+            bottom: 0;
+            left: 1.8rem;
+            right: 1.8rem;
+            height: 21.5rem;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.16);
+        }
+        img{
+            border-radius: 8px;
+            @include bp(md){
+                width: 100%;
+            }
+        }
+    }
+    p{
+        margin-bottom: 3.9rem;
+    }
+    &__content_padding{
+        @include bp(xxl-up){
+            padding-left: 2rem;
+        }
+    }
+    
+}
+.dots-list{
+    padding: 0.9rem 1rem 0 1.2rem;
+    margin-bottom: 4rem;
+    @include bp(xxl-up){
+        padding-right: 5%;
+    }
+    &__item{
+        position: relative;
+        padding-left: 1.5rem;
+        margin-bottom: 0.6rem;
+        &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 0.3rem;
+            height: 0.3rem;
+            left: 0;
+            top: 1.5rem;
+            border-radius: 50%;
+            background: #000;
+        }
+    }
+    &_padding{
+        padding-top: 0.5rem;
+        padding-right: 0;
+        .dots-list__item{
+            margin-bottom: 1.2rem;
+        }
+    }
+    &_vertical{
+        padding: 0 1rem 0 0.8rem;
+        line-height: 3.6rem;
+        margin-bottom: 1.9rem;
+        .dots-list__item{
+            margin-bottom: 1.7rem;
+        }
+    }
+}
+.num-list{
+    counter-reset: list;
+    padding-left: 0.7rem;
+    line-height: 3.6rem;
+    margin-bottom: 3rem;
+    &__item{
+        position: relative;
+        padding-left: 2rem;
+        margin-bottom: 1.8rem;
+        counter-increment: list;
+        &:before{
+            content: counter(list)".";
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}

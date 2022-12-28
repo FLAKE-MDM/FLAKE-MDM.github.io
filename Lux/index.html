@@ -410,7 +410,7 @@
                             <div class="text-decoration pb-3">Вещи, из которых состоит VIP-гардероб, как правило брендовые, изготовленные из дорогих, сложных тканей, требующих особого ухода. Справиться с этой непростой задачей Вам поможет горничная по VIP-гардеробу.​
                              </div>
                             <p>Специалист по VIP-гардеробу умеет работать с костюмной группой, обувью, юбки, блузы, платья – из дорогих тканей требуют отдельного ухода.</p>
-                            <a href="#form" class="btn btn_primary" data-bs-toggle="modal">Читать подробнее</a>
+                            <a href="#form" class="btn btn_primary" data-bs-toggle="modal">Оставить заявку</a>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -459,7 +459,7 @@
                     </div>
                     <div class="d-flex swiper-nav justify-content-center">
                         <a href="#" class="swiper-prev swiper-arrow me-5"><span class="icon icon-prev"></span></a>
-                        <a href="#reviews" class="btn btn_primary"  data-bs-toggle="modal">Подобрать персонал</a>
+                        <a href="#reviews" class="btn btn_primary"  data-bs-toggle="modal">Смотерть все отзывы</a>
                         <a href="#" class="swiper-next swiper-arrow ms-5"><span class="icon icon-next"></span></a>
                     </div>
                 </div>
@@ -547,7 +547,7 @@
                     <p>Большинство соискателей полагает, что для работы в семьях в качестве домашнего персонала не требуется специальных знаний и особенных усилий. Однако это весьма ошибочное мнение. Опыта по воспитанию своих детей и ведению собственного хозяйства явно недостаточно, чтобы устроиться домработницей, или няней в престижный дом.</p>
                     <p>В своей практике мы довольно часто встречаем соискателей, которые совершенно не годятся для работы в семьях. Домработница должна ежедневно доводить до блеска дом или большую квартиру, гладить горы белья, ухаживать за различными поверхностями, работать с VIP гардеробом, дорогостоящей техникой, с которой ей не приходилось сталкиваться в повседневной жизни. При этом все работы должны выполняться быстро, тихо и незаметно.</p>
                     <p>Претендуя на вакансию няни, Вы обязаны не только знать различные методики развития детей, но и владеть ими на практике. То есть, Вы должны иметь навыки подготовки развивающих детских программ, уметь подстроиться под нужды ребенка и требования семьи. Каким бы опытом Вы не обладали в повседневной жизни, работодатель всегда предъявляет гораздо более строгие требования, особенно если это касается элитных семей.</p>
-                    <div class="modal-content__btn text_center"><a href="#form" class="btn btn_primary" data-bs-toggle="modal">Оставить заявку</a></div>
+                    <div class="modal-content__btn text_center"><a href="#form-work" class="btn btn_primary" data-bs-toggle="modal">Оставить заявку</a></div>
                 </div>
             </div>
         </div>
@@ -880,7 +880,23 @@
                                 <input type="tel" class="form-control" placeholder="Ваш телефон">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Выберите персонал">
+                                <div class="fake-select">
+                                    <a href="#" class="fake-select__link form-control dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><span class="fake-select__value">Выберите персонал</span></a>
+                                    <div class="dropdown-menu fake-select__dropdown" style="">
+                                        <label class="fake-select__item"> 
+                                            <input type="radio" class="collapse sort-input" name="personal">
+                                            Домработница
+                                        </label>
+                                        <label class="fake-select__item">
+                                            <input type="radio" class="collapse sort-input" name="personal">
+                                            Водитель
+                                        </label>
+                                        <label class="fake-select__item">
+                                            <input type="radio" class="collapse sort-input" name="personal">
+                                            Повар
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
                             <div class="modal-content__btn text_center pt-3 mt-5"><button class="btn btn_primary">Оставить заявку</button></div>
                         </form>
@@ -891,23 +907,73 @@
     </div>
     <!-- /form -->
 
-    <!-- review-form -->
-    <div class="modal fade" id="review-form" tabindex="-1" aria-hidden="true">
+    <!-- form-work -->
+    <div class="modal fade" id="form-work" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog_sm">
             <div class="container">
                 <div class="modal-content modal-content_padding">
                     <button type="button" class="modal__close modal__close_sm" data-bs-dismiss="modal">x</button>
-                    <div class="title_size-md title_margin-bottom-sm text_center">Оставить отзыв</div>
+                    <div class="title_size-md title_margin-bottom-sm text_center">Найти работу</div>
                     <div class="modal-content__form">
                         <form action="#">
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Ваше имя">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Выберите персонал">
+                                <input type="tel" class="form-control" placeholder="Ваш телефон">
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" placeholder="Напишите отзыв"></textarea>
+                                <div class="fake-select">
+                                    <a href="#" class="fake-select__link form-control dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><span class="fake-select__value">Должность <span class="d-none d-md-inline">на трудоустройство</span></span></a>
+                                    <div class="dropdown-menu fake-select__dropdown" style="">
+                                        <label class="fake-select__item"> 
+                                            <input type="radio" class="collapse sort-input" name="personal">
+                                            Домработница
+                                        </label>
+                                        <label class="fake-select__item">
+                                            <input type="radio" class="collapse sort-input" name="personal">
+                                            Водитель
+                                        </label>
+                                        <label class="fake-select__item">
+                                            <input type="radio" class="collapse sort-input" name="personal">
+                                            Повар
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-content__btn text_center pt-3 mt-5"><button class="btn btn_primary">Оставить заявку</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /form-work -->
+
+    <!-- review-form -->
+    <div class="modal fade" id="review-form" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog_sm">
+            <div class="container">
+                <div class="modal-content modal-content_padding">
+                    <button type="button" class="modal__close modal__close_sm" data-bs-dismiss="modal">x</button>
+                    <div class="title_size-md mb-3 text_center">Оставьте ваш отзыв</div>
+                    <div class="text_center title_margin-bottom-sm">Нам важно ваше мнение</div>
+                    <div class="modal-content__form">
+                        <form action="#">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Имя">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" placeholder="Телефон">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Номер договора">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Коментарий"></textarea>
                             </div>
                             <div class="modal-content__btn text_center pt-3 mt-5"><button class="btn btn_primary">Оставить отзыв</button></div>
                         </form>

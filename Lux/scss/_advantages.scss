@@ -1,0 +1,83 @@
+.advantages{
+    &-section{
+        margin: 13.5rem 0 2.9rem;
+    }
+    &-item{
+        margin-bottom: 3rem;
+        line-height: 3rem;
+        &__title{
+            font-weight: 700;
+            margin: 2.8rem 0 0.8rem;
+            line-height: 3rem;
+            font-size: 2rem;
+            &_margin{
+                margin: 0 0 0 2.3rem;
+                @include bp(lg){
+                    margin: 2rem auto 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+.color-box{
+    width: 15.6rem;
+    height: 15.6rem;
+    padding: 2.1rem;
+    border-radius: 12px;
+    display: flex;
+    margin: 0 auto;
+    flex-shrink: 0;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    &_md{
+        width: 14rem;
+        height: 14rem;
+        padding: 1.4rem;
+    }
+    &__num{
+        font-size: 3.2rem;
+        font-weight: 600;
+        margin-top: 0.2rem;
+    }
+    &__inside{
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+    &_blue{
+        background: linear-gradient(261.97deg, #347EE4 5.66%, #2B64B2 95.05%);
+        box-shadow: 0px 10px 20px rgba(84, 127, 185, 0.25);
+        .color-box__inside{
+            background: #337ADD;
+            box-shadow: 0px 0px 20px #2E69BA;
+        }
+    }
+    &_green{
+        background: linear-gradient(261.97deg, #2FD297 5.66%, #2CB382 95.05%);
+        box-shadow: 0px 10px 20px rgba(0, 144, 14, 0.25);
+        .color-box__inside{
+            background: rgba(47, 210, 151, 0.3);
+            box-shadow: 0px 0px 20px rgba(0, 144, 14, 0.4);
+        }
+    }
+    &_violet{
+        background: linear-gradient(261.97deg, #AB3FF7 5.66%, #7B2CB3 95.05%);
+        box-shadow: 0px 10px 20px rgba(64, 0, 144, 0.25);
+        .color-box__inside{
+            background: rgba(156, 69, 219, 0.3);
+            box-shadow: 0px 0px 20px rgba(64, 0, 144, 0.4);
+        }
+    }
+    &_light-blue{
+        background: linear-gradient(261.97deg, #3DC1E7 5.66%, #2C95B3 95.05%);
+        box-shadow: 0px 10px 20px rgba(0, 108, 144, 0.25);
+        .color-box__inside{
+            background: #38B3D6;
+            box-shadow: 0px 0px 20px rgba(0, 108, 144, 0.4);
+        }
+    }
+}

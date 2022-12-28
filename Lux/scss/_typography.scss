@@ -1,0 +1,127 @@
+a{
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+    color: #000;
+    &:hover{
+        color: $primary;
+    }
+}
+p{
+    margin-bottom: 5.1rem;
+    @include bp(md){
+        margin-bottom: 3rem;
+    }
+}
+.title{
+    &_size{
+        &-xs{
+            font-size: 1.9rem;
+            line-height: 3.2rem;
+        }
+        &-sm{
+            font-size: 2rem;
+            line-height: 3.2rem;
+        }
+        &-md{
+            font-size: 3.4rem;
+            line-height: 4.2rem;
+            font-weight: 500;
+            @include bp(sm){
+                font-size: 3rem;
+                line-height: 3.8rem;
+            }
+        }
+        &-lg{
+            font-size: 4.6rem;
+            line-height: 5.6rem;
+            font-weight: 500;
+            @include bp(sm){
+                font-size: 3.5rem;
+                line-height: 4.3rem;
+            }
+        }
+    }
+    &_after{
+        position: relative;
+        &:before{
+            content: '';
+            display: block;
+            height: 1rem;
+            width: 10.5rem;
+            background: rgba(127, 116, 208, 0.1);
+            position: absolute;
+            top: 2.8rem;
+            left: 0.1rem;
+        }
+    }
+    &_margin{
+        &-bottom{
+            &-sm{
+                margin-bottom: 2.2rem;
+                @include bp(sm){
+                    margin-bottom: 1.6rem;
+                }
+            }
+            &-md{
+                margin-bottom: 3.2rem;
+                @include bp(sm){
+                    margin-bottom: 1.8rem;
+                }
+            }
+            &-lg{
+                margin-bottom: 4.1rem;
+                @include bp(sm){
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+}
+.text{
+    // colors
+    &_inversion{
+        color: #fff;
+    }
+    &_primary{
+        color: $primary;
+    }
+    &_danger{
+        color: $danger;
+    }
+    &_light{
+        color: $light;
+    }
+    &_warning{
+        color: $warning;
+    }
+    &_success{
+        color: $success;
+
+    }
+    // weight
+    &_normal{
+        font-weight: 400;
+    }
+    &_mediumbold{
+        font-weight: 500;
+    }
+    &_semibold{
+        font-weight: 600;
+    }
+    &_bold{
+        font-weight: 700;
+    }
+    // alignment
+    &_center{
+        text-align: center;
+    }
+}
+a.text_primary:hover{
+    color: $primary - 50;
+}
+.link_underline{
+    text-decoration: underline;
+    &:hover{
+        text-decoration: none;
+    }
+}

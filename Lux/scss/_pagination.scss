@@ -1,0 +1,36 @@
+.pagination{
+    padding-top: 1rem;
+    &__item{
+        margin: 0 1rem;
+        @include bp(sm){
+            margin: 0 0.4rem;
+        }
+        @include bp(md-up){
+            &:first-child{
+                margin-right: 2rem;
+            }
+            &:last-child{
+                margin-left: 2rem;
+            }
+        }
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 7rem;
+        height: 7rem;
+        font-weight: 500;
+        background: #FFFFFF;
+        border-radius: 8px;
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.08);
+        @include bp(sm){
+            width: 4rem;
+            height: 4rem;
+        }
+        &:hover, &.active{
+            background: $primary;
+            color: #fff;
+        }
+    }
+}

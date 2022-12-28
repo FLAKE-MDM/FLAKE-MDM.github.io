@@ -1,0 +1,88 @@
+.footer{
+    background: #45425C;
+    &-nav{
+        padding: 2.1rem 0.9rem 2rem 0.4rem;
+        border-bottom: 1px solid #585477;
+        margin-bottom: 1.9rem;
+        &__link{
+            color: #fff;
+            font-weight: 600;
+            @include bp(lg){
+                font-size: 1.6rem;
+            }
+        }
+    }
+    &__contacts{
+        margin-top: -0.6rem;
+    }
+    &__phones{
+        align-self: flex-start;
+        .phone{
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            margin: 0 2.8rem 0 0!important;
+            display: inline-block;
+            @include bp(md){
+                margin-bottom: 0.5rem!important;
+            }
+        }
+        .icon-phone{
+            margin-bottom: -0.5rem;
+        }
+    }
+    &__social-list{
+        @include bp(md){
+            align-self: center;
+        }
+        @include bp(sm){
+            margin: 1.5rem auto 2.5rem;
+            justify-content: center;
+        }
+    }
+    &__bottom{
+        border-top: 1px solid #585477;
+        padding: 2.6rem 0;
+        font-size: 1.7rem;
+        line-height: 2.1rem;
+        margin-top: 0.8rem;
+        @include bp(sm){
+            font-size: 1.4rem;
+            text-align: center;
+        }
+        .email{
+            @include bp(sm){
+                display: block;
+                margin: 0.5rem 0;
+            }
+        }
+    }
+    &__logo{
+        margin-left: -1.4rem;
+        @include bp(md){
+            margin-right: auto;
+        }
+        @include bp(sm){
+            margin-bottom: 1rem;
+        }
+        img{
+            margin: -0.4rem 0 0.2rem;
+        }
+    }
+    &__info{
+        margin-right: -0.3rem;
+    }
+}
+.slogan{
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    margin-left: 0.4rem;
+    color: #F7C700;
+}
+.social-list{
+    &__link{
+        margin-left: 1.5rem;
+        @include bp(sm){
+            margin: 0 0.8rem;
+        }
+    }
+}

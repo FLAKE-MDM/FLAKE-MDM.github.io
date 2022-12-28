@@ -1,0 +1,153 @@
+.icon{
+    background-repeat: no-repeat;
+    background-size: contain!important;
+    background-position: 0 0;
+    display: inline-block;
+    flex-shrink: 0;
+}
+.icon-map{
+    width: 1.2rem;
+    height: 1.4rem;
+    background-image: url(../img/icons/map.svg);
+}
+.icon-email{
+    width: 1.5rem;
+    height: 1.1rem;
+    background-image: url(../img/icons/email.svg);
+}
+.icon-phone{
+    width: 2rem;
+    height: 2rem;
+    background-image: url(../img/icons/phone.svg);
+}
+.icon-ins{
+    width: 2.4rem;
+    height: 2.4rem;
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/ins.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/ins-primary.svg);
+    }
+}
+a:hover>.icon-ins, .active>.icon-ins{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-fb{
+    width: 2.4rem;
+    height: 2.4rem;
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/fb.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/fb-primary.svg);
+    }
+}
+a:hover>.icon-, .active>.icon-{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-prev{
+    width: 1.9rem;
+    height: 1.5rem;
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/prev.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/prev-inversion.svg);
+    }
+}
+a:hover>.icon-prev, .active>.icon-prev{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+.icon-next{
+    width: 1.9rem;
+    height: 1.5rem;
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/next.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/next-inversion.svg);
+    }
+}
+a:hover>.icon-next, .active>.icon-next{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
+
+
+

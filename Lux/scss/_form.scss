@@ -1,0 +1,90 @@
+.form{
+    &-group{
+        margin-bottom: 2rem;
+    }
+    &-control{
+        font-family: inherit;
+        display: block;
+        border: 1px solid #636363;
+        border-radius: 5px;
+        padding: 2rem;
+        width: 100%;
+        font-size: 2rem;
+        line-height: 2rem;
+        font-weight: 400;
+        color: #000;
+        background: #fff;
+        transition: all 0.3s ease-out;
+        &.has-error{
+            border-color: $danger;
+            &::-webkit-input-placeholder{color:$danger!important}
+            &::-moz-placeholder{color:$danger!important}
+            &:-moz-placeholder{color:$danger!important}
+            &:-ms-input-placeholder{color:$danger!important}
+        }
+        &:disabled{
+            background: #E8E8E8;
+            border-color: #E8E8E8;
+        }
+        &_border{
+            display: block;
+            width: 100%;
+            background: transparent;
+            border-radius: 0;
+            padding: 2rem 0;
+            border: none;
+            border-bottom: 2px solid #000;
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 2rem;
+            &.dropdown-toggle{
+                &::before{
+                    right: 0;
+                }
+            }
+        }
+        &_inversion{
+            color: #fff;
+            border-color: #fff;
+            &::-webkit-input-placeholder{color: #fff!important;}
+            &::-moz-placeholder{color: #fff!important;}
+            &:-moz-placeholder{color: #fff!important;}
+            &:-ms-input-placeholder{color: #fff!important;}
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+    &.has-error{
+        border-color: $danger;
+        color: $danger;
+    }
+}
+textarea.form-control{
+    min-height: 12.4rem;
+    resize: vertical;
+}
+
+// fake-select
+.fake-select{
+    position: relative;
+    &__info{
+        display: inline-block;
+        margin-left: 1.2rem;
+    }
+    &__item{
+        display: block;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: #000;
+        padding: 1.5rem 2rem;
+        font-weight: 500;
+        &:hover, &.fake-select__item_active{
+            color: $primary;
+        }
+    }
+    &__link{
+        white-space: nowrap;
+        
+    }
+}

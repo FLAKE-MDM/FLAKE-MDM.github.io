@@ -1,0 +1,18 @@
+.price{
+    &-group{
+      margin: 5.4rem 0 6.1rem;
+      @include bp(sm){
+          margin: 0 0 3rem;
+      }
+      &__heading{
+        margin-bottom: 2rem;
+      }
+    }
+    &-item{
+        border-top: 1px solid #fff;
+        padding: 2rem 0 1.9rem;
+        p{
+            margin-bottom: 0;
+        }
+    }
+  }

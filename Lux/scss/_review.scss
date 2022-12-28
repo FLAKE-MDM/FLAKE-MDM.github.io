@@ -1,0 +1,95 @@
+.review{
+    &-section{
+        margin-bottom: 11.9rem;
+    }
+    &-slider{
+        .swiper-slide{
+            padding-top: 4.6rem;
+        }
+        .swiper-arrow{
+            @include bp(sm){
+                position: absolute;
+                top: 5rem;
+                left: -1rem;
+                z-index: 5;
+                &.swiper-next{
+                    left: auto;
+                    right: -1rem;
+                }
+            }
+        }
+    }
+    &-item{
+        position: relative;
+        background: #FFFFFF;
+        border-radius: 8px;
+        padding: 7.4rem 3rem 2.1rem;
+        margin: 6rem 0 5rem;
+        line-height: 3rem;
+        &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 1.5rem;
+            right: 1.5rem;
+            height: 4.9rem;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            z-index: -1;
+        }
+        &__image{
+            width: 12rem;
+            height: 12rem;
+            border-radius: 50%;
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -6rem;
+            margin: 0 auto;
+        }
+        p{
+            margin-bottom: 1rem;
+        }
+        &__name{
+            font-size: 1.9rem;
+            @include bp(sm){
+                font-size: 1.5rem;
+                line-height: 2.4rem;
+            }
+        }
+        &__city{
+            font-size: 1.9rem;
+            margin-bottom: 1.2rem;
+            @include bp(sm){
+                font-size: 1.5rem;
+                line-height: 2.4rem;
+            }
+        }
+        &__info{
+            margin: 0.9rem 0 0 3rem;
+            @include bp(sm){
+                margin: 0.8rem 0 0 1rem;
+            }
+        }
+        &_list{
+            padding: 3rem 3rem 2rem;
+            margin: 0 0 3rem;
+            @include bp(sm){
+                padding: 2rem;
+            }
+            .review-item__image{
+                flex-shrink: 0;
+                position: static;
+                width: 8.2rem;
+                height: 8.2rem;
+                margin: 0 0 2rem;
+                @include bp(sm){
+                    width: 7rem;
+                    height: 7rem;
+                }
+            }
+        }
+    }
+}
