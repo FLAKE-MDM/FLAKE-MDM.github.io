@@ -605,6 +605,8 @@ p {
 .header {
   padding: 1.1rem 0 0.9rem;
   margin-bottom: 0.1rem;
+  position: relative;
+  z-index: 95;
 }
 
 .logo {
@@ -764,6 +766,12 @@ p {
   background: url(../img/bg-preview.jpg) 50% 0 no-repeat;
   background-size: cover;
   position: relative;
+}
+
+@media only screen and (min-width: 1900px) {
+  .preview {
+    padding-bottom: 30rem;
+  }
 }
 
 @media only screen and (max-width: 1399px) {
@@ -1130,14 +1138,32 @@ p {
 }
 
 .advantages {
-  margin: -37rem 0 5rem;
+  margin: -65rem 0 0;
   position: relative;
   z-index: 6;
 }
 
+@media only screen and (max-width: 1919px) {
+  .advantages {
+    margin: -40rem 0 0;
+  }
+}
+
+@media only screen and (max-width: 1599px) {
+  .advantages {
+    margin-top: -45rem;
+  }
+}
+
 @media only screen and (max-width: 1399px) {
   .advantages {
-    margin: -20rem 0 0;
+    margin-top: -34rem;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .advantages {
+    margin-top: -20rem;
   }
 }
 
@@ -1149,7 +1175,7 @@ p {
 
 @media only screen and (max-width: 767px) {
   .advantages {
-    margin-top: -6rem 0 3rem;
+    margin: -6rem 0 3rem;
   }
 }
 
@@ -1186,7 +1212,6 @@ p {
   width: 48.5%;
   margin-left: auto;
   padding-top: 29rem;
-  padding-bottom: 10rem;
 }
 
 @media only screen and (max-width: 1919px) {
@@ -1203,7 +1228,6 @@ p {
 
 @media only screen and (max-width: 1199px) {
   .advantages__text {
-    padding-bottom: 0;
     width: 52.5%;
     padding-top: 7rem;
   }
@@ -1283,9 +1307,21 @@ p {
   padding-bottom: 20rem;
 }
 
+@media only screen and (max-width: 1599px) {
+  .about {
+    padding-bottom: 5rem;
+  }
+}
+
+@media only screen and (max-width: 1599px) {
+  .about {
+    padding-bottom: 21.5rem;
+  }
+}
+
 @media only screen and (max-width: 1399px) {
   .about {
-    padding-bottom: 12rem;
+    padding-bottom: 9rem;
   }
 }
 
@@ -1375,19 +1411,13 @@ p {
 
 @media only screen and (max-width: 1399px) {
   .about__text {
-    padding-top: 25rem;
+    padding-top: 0;
   }
 }
 
 @media only screen and (max-width: 991px) {
   .about__text {
     width: 100%;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .about__text {
-    padding-top: 0;
   }
 }
 
@@ -1399,7 +1429,7 @@ p {
   margin-bottom: 0.6rem;
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1399px) {
   .about__heading {
     margin-bottom: 3.5rem;
   }
@@ -1424,9 +1454,9 @@ p {
   z-index: 1;
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1599px) {
   .about-item {
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
   }
 }
 
