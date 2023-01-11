@@ -1350,6 +1350,12 @@ p {
   }
 }
 
+@media only screen and (min-width: 1600px) {
+  .about__image {
+    top: -2.5rem;
+  }
+}
+
 @media only screen and (max-width: 1199px) {
   .about__image {
     left: 38%;
