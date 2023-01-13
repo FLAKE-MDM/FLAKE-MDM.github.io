@@ -316,6 +316,10 @@ body.show {
   overflow: hidden;
 }
 
+body.show .wrap {
+  height: 100vh;
+}
+
 .wrap {
   overflow: hidden;
   min-height: 100%;
@@ -645,10 +649,10 @@ p {
   .nav {
     position: fixed;
     top: 0;
-    height: 100vh;
     left: 0;
     right: 0;
-    overflow: hidden;
+    bottom: 0;
+    overflow-y: auto;
     z-index: 94;
     background: rgba(20, 12, 10, 0.7);
     -webkit-transform: translateX(100%);
@@ -665,7 +669,6 @@ p {
     display: -ms-flexbox;
     display: flex;
     margin: 0;
-    padding-bottom: 15rem;
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
   }
