@@ -766,6 +766,12 @@ p {
   }
 }
 
+.btn-menu.show {
+  position: fixed;
+  top: 3.3rem;
+  right: 1.5rem;
+}
+
 .btn-menu.show .btn-menu__line {
   background: #ff9853;
 }
