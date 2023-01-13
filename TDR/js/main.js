@@ -1,5 +1,5 @@
 // menu
-$(".btn-menu").click(function(e){
+$(".btn-menu, .close-menu").click(function(e){
     e.preventDefault();
     $("#nav, body, .btn-menu").toggleClass("show")
 })
