@@ -918,7 +918,7 @@ p {
 
 .preview__text {
   width: 50%;
-  padding: 20.7rem 0 48rem 4.35%;
+  padding: 20.7rem 0 48rem;
   font-size: 2rem;
   line-height: 2.4rem;
   font-weight: 300;
@@ -1543,10 +1543,6 @@ p {
   -webkit-box-shadow: inset 2px 2px 2px 0px #9b9796;
   box-shadow: inset 2px 2px 2px 0px #9b9796;
   z-index: -1;
-}
-
-.about-item .text_size-md {
-  font-size: 1.9rem;
 }
 
 .about-item__image {
