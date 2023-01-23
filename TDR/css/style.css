@@ -918,7 +918,7 @@ p {
 
 .preview__text {
   width: 50%;
-  padding: 20.7rem 0 48rem;
+  padding: 20.7rem 0 48rem 6.8rem;
   font-size: 2rem;
   line-height: 2.4rem;
   font-weight: 300;
@@ -928,13 +928,13 @@ p {
 
 @media only screen and (max-width: 1919px) {
   .preview__text {
-    padding: 13rem 0 59rem;
+    padding: 13rem 0 59rem 6.8rem;
   }
 }
 
 @media only screen and (max-width: 1599px) {
   .preview__text {
-    padding: 7rem 0 59rem;
+    padding: 7rem 0 59rem 6.8rem;
   }
 }
 
