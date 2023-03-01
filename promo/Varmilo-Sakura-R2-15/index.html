@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клавіатура Varmilo Sakura R2</title>
+    <style>
+      *, :before, :after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+:focus {
+  outline: 0;
+}
+
+::-webkit-input-placeholder {
+  text-indent: 0px;
+  -webkit-transition: text-indent 0.3s ease;
+  transition: text-indent 0.3s ease;
+  font-family: inherit;
+  color: #838D9B !important;
+}
+
+::-moz-placeholder {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  font-family: inherit;
+  color: #838D9B !important;
+}
+
+:-moz-placeholder {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  font-family: inherit;
+  color: #838D9B !important;
+}
+
+:-ms-input-placeholder {
+  text-indent: 0px;
+  -webkit-transition: text-indent 0.3s ease;
+  transition: text-indent 0.3s ease;
+  font-family: inherit;
+  color: #838D9B !important;
+}
+
+:focus::-webkit-input-placeholder {
+  text-indent: -1000px;
+  -webkit-transition: text-indent 0.3s ease;
+  transition: text-indent 0.3s ease;
+}
+
+:focus::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+:focus:-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+:focus:-ms-input-placeholder {
+  text-indent: -1000px;
+  -webkit-transition: text-indent 0.3s ease;
+  transition: text-indent 0.3s ease;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+label, input:not([type="checkbox"]),
+input:not([type="radio"]), button {
+  -webkit-appearance: none;
+  font-family: inherit;
+}
+
+label, input[type="submit"], button {
+  cursor: pointer;
+}
+
+img {
+  border: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:hover::-webkit-outer-spin-button,
+input:hover::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url("fonts/DINPro-Light.eot");
+  src: url("fonts/DINPro-Light.eot?#iefix") format("embedded-opentype"), url("fonts/DINPro-Light.woff") format("woff"), url("fonts/DINPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url("fonts/DINPro.eot");
+  src: url("fonts/DINPro.eot?#iefix") format("embedded-opentype"), url("fonts/DINPro.woff") format("woff"), url("fonts/DINPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url("fonts/DINPro-Bold.eot");
+  src: url("fonts/DINPro-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/DINPro-Bold.woff") format("woff"), url("fonts/DINPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url("fonts/DINPro-Black.eot");
+  src: url("fonts/DINPro-Black.eot?#iefix") format("embedded-opentype"), url("fonts/DINPro-Black.woff") format("woff"), url("fonts/DINPro-Black.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+body {
+  font: 300 2.2rem/2.8rem 'DIN Pro';
+  color: #000;
+  background: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+}
+
+.wrap {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1520px;
+}
+
+.img-fluid {
+  display: block;
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .order-md-2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.d-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+@media only screen and (min-width: 576px) {
+  .d-sm-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .d-md-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .d-lg-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .d-xl-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .col-md-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 25%;
+  }
+  .col-md-5 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+  .col-md-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+  .col-md-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 50%;
+  }
+  .col-md-7 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+  .col-md-8 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .col-lg-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 25%;
+  }
+  .col-lg-5 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+  .col-lg-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+  .col-lg-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 50%;
+  }
+  .col-lg-7 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+  .col-lg-8 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .col-xl-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.justify-content-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.justify-content-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.bg_primary {
+  background: #F3809E;
+  color: #fff;
+}
+
+.title {
+  font-size: 3.6rem;
+  line-height: 4.6rem;
+  font-weight: bold;
+  margin-bottom: 1.8rem;
+  color: #F3809E;
+}
+
+@media only screen and (max-width: 991px) {
+  .title {
+    font-size: 2.8rem;
+    line-height: 3rem;
+  }
+}
+
+.title_margin {
+  margin-bottom: 2.8rem;
+}
+
+.title_md {
+  font-weight: 300;
+  font-size: 7rem;
+  line-height: 9rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  .title_md {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .title_md {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+}
+
+.title_lg {
+  font-size: 8.5rem;
+  line-height: 10rem;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 1199px) {
+  .title_lg {
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .title_lg {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+}
+
+.text_primary {
+  color: #F3809E;
+}
+
+.text_inversion {
+  color: #fff;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+.text-block {
+  max-width: 88.9rem;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 991px) {
+  .text-block {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.promo-55-1 {
+  position: relative;
+}
+
+.promo-55-1__logo {
+  margin: 0.2rem 2rem 0 0.4rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-55-1__logo {
+    margin: 0 0 1rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.promo-55-1__title {
+  padding: 0 6.7rem 2.6rem 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+}
+
+@media only screen and (max-width: 991px) {
+  .promo-55-1__title {
+    padding: 1rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-55-1__title {
+    position: relative;
+  }
+}
+
+.promo-55-1__title span {
+  display: block;
+  margin: 0 2.1rem -0.2rem 0;
+}
+
+@media only screen and (max-width: 991px) {
+  .promo-55-1__title span {
+    margin: 0;
+  }
+}
+
+.promo-55-1__image {
+  position: relative;
+}
+
+.promo-55-1__text {
+  font-size: 5rem;
+  line-height: 6.4rem;
+  padding: 2.5rem 6.7rem 1.5rem;
+}
+
+@media only screen and (max-width: 1499px) {
+  .promo-55-1__text {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}
+
+@media only screen and (max-width: 1349px) {
+  .promo-55-1__text {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .promo-55-1__text {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-55-1__text {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    text-align: center;
+  }
+}
+
+.promo-55-2__text {
+  padding: 2.3rem 8rem 0 5.8rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media only screen and (max-width: 1199px) {
+  .promo-55-2__text {
+    padding: 2rem !important;
+  }
+}
+
+.promo-55-2__text.order-md-2 {
+  padding: 2.1rem 8rem 3rem 7rem;
+}
+
+.promo-55-2__text.bg_primary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3.4rem 5rem 1.9rem 7rem;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+.promo-55-2__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.promo-55-3 {
+  background: url(img/bg-promo-55-3.jpg) 50% 100% no-repeat;
+  padding-bottom: 4.5rem;
+}
+
+.promo-55-3__text {
+  padding: 11.7rem 5% 5rem 5.8rem;
+}
+
+@media only screen and (max-width: 1349px) {
+  .promo-55-3__text {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .promo-55-3__text {
+    padding: 2rem;
+  }
+}
+
+.promo-55-3__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.promo-55-4 {
+  position: relative;
+}
+
+.promo-55-4__logo {
+  position: absolute;
+  bottom: 6.3rem;
+  left: 5.7rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-55-4__logo {
+    width: 20rem;
+    left: 1rem;
+    bottom: 1rem;
+  }
+}
+
+.promo-55-5 {
+  position: relative;
+  z-index: 1;
+  font-size: 2.4rem;
+}
+
+.promo-55-5__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+.promo-55-5__text {
+  padding: 2.4rem 22% 0.4rem 21.7%;
+}
+@media only screen and (max-width: 1199px) {
+  .promo-55-5__text {
+    padding: 3rem 10% 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .promo-55-5__text {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+}
+
+.num {
+  font-weight: 800;
+  font-size: 10rem;
+  line-height: 10rem;
+  margin-bottom: -0.9rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .num {
+    font-size: 7rem;
+    line-height: 7rem;
+  }
+}
+
+.unit {
+  font-size: 5rem;
+  line-height: 6.4rem;
+}
+
+.promo-55-6 {
+  padding: 10.4rem 0 9.3rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-55-6 {
+    padding: 5rem 0;
+  }
+}
+
+.promo-55-6__text {
+  padding: 6.6rem 15% 5.3rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  .promo-55-6__text {
+    padding: 5rem 2rem;
+  }
+}
+
+.promo-55-7 {
+  background: url(img/bg-promo-55-7.jpg) 50% 100% no-repeat;
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-55-7 {
+    background-size: auto 100%;
+  }
+}
+
+.promo-55-7__text {
+  padding: 10.4rem 16% 6.9rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  .promo-55-7__text {
+    padding: 5rem 2rem;
+  }
+}
+
+.promo-55-7__image {
+  position: relative;
+  margin-bottom: -4.5rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .promo-55-7__image {
+    margin-bottom: -2.5rem;
+  }
+}
+
+.promo-55-7__logo {
+  padding: 3.9rem 2rem 2.3rem;
+}
+
+    </style>
+</head>
+<body>
+    <div class="wrap promo-55">
+        <div class="promo-55-1">
+            <div class="promo-55-1__image">
+                <img src="img/promo-55-1.jpg" alt="" class="img-fluid">
+                <h1 class="title_lg promo-55-1__title text_primary"><span>Клавіатура</span><strong>Varmilo Sakura R2 </strong></h1>
+            </div>
+            <div class="bg_primary promo-55-1__text d-md-flex justify-content-between">
+                <div class="promo-55-1__logo"><img src="img/logo.svg" alt="" class="img-fluid"></div>
+                (із перемикачами Cherry MX Blue)
+            </div>
+        </div>
+        <div class="promo-55-2">
+            <div class="d-md-flex">
+                <div class="order-md-2 col-md-6 promo-55-2__text">
+                    <div class="title">Натхнення ніжністю та мистецтвом</div>
+                    <p>Стильна дизайнерська механічна клавіатура Varmilo Sakura R2 – одна з найвпізнаваніших у світі. На створення ніжного дизайну кейборда розробників надихнула дивовижна природа Азії та сакура, що уособлює величну культуру, втілену в різних видах східного мистецтва. Для цієї унікальної моделі було створено оригінальний вузловатий шрифт та символи для клавіш. А деталізовані зображення на окремих клавішах нанесено вручну.</p>
+                    <p>Цей кейборд дійсно унікальний та неповторний, як і кожен витвір мистецтва.</p>
+                </div>
+                <div class="col-md-6 d-flex"><img src="img/promo-55-2_1.jpg" alt="" class="img-fluid promo-55-2__image"></div>
+            </div>
+            <div class="d-md-flex">
+                <div class="col-md-6 promo-55-2__text">
+                    <div class="title">Надійність та довговічність <br>у кожному дотику</div>
+                    <p>Незмінною особливістю клавіатур Varmilo залишаються найкращі технічні функції, що в цій моделі доповнено повністю оновленим дизайном корпусу. Клавіші V-Silk мають гладеньку поверхню й значно менше «притягують» бруд, залишаючись такими ж приємними на дотик, але вже по-новому. Їх виготовлено з надміцного PBT-пластику із застосуванням dye-sublimation-технології, на бічних поверхнях клавіш вигравірувано символи. Саме завдяки dye-sub символи не стираються й абсолютно не відчуваються під час друку, а якісний PBT-пластик вирізняється надійністю та довговічністю.</p>
+                </div>
+                <div class="col-md-6 d-flex"><img src="img/promo-55-2_2.jpg" alt="" class="img-fluid promo-55-2__image"></div>
+            </div>
+            <div class="d-xl-flex">
+                <div class="order-md-2 col-xl-6 promo-55-2__text bg_primary">
+                    <div class="title text_inversion">Механічна клавіатура <br>з найвідомішими технологічними перемикачами</div>
+                    <p>Технологія механічної клавіатури передбачає наявність перемикачів (світчів) під кожною клавішею, від типу яких залежить тиск, клацання та відгук клавіш під час друку.</p>
+                </div>
+                <div class="col-xl-6 d-sm-flex">
+                    <div class="col-md-6"><img src="img/promo-55-2_3.jpg" alt="" class="img-fluid promo-55-2__image"></div>
+                    <div class="col-md-6"><img src="img/promo-55-2_4.jpg" alt="" class="img-fluid promo-55-2__image"></div>
+                </div>
+            </div>
+            <img src="img/promo-55-2.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="promo-55-3 d-lg-flex">
+            <div class="promo-55-3__text col-lg-6">
+                <div class="title">Унікальні технології <br>задля комфорту друку та гри</div>
+                <p>Клавіатура має три різні режими (вимкнена, статичне підсвічування, ефект загасання), чотири рівні яскравості та біле підсвічування. Якісно зібрані, кейборди Varmilo вироблено з преміальних матеріалів. Це монолітна конструкція, яка слугуватиме довгі роки. Підкладка, що поглинає звуки під час натискання, робить процес друку тихішим, як порівняти зі звичайними механічними клавіатурами.</p>
+            </div>
+            <div class="promo-55-3__image col-lg-6"><img src="img/promo-55-3.png" alt="" class="img-fluid"></div>
+        </div>
+        <div class="promo-55-4">
+            <img src="img/promo-55-4.jpg" alt="" class="img-fluid">
+            <div class="promo-55-4__logo"><img src="img/logo.svg" alt="" class="img-fluid"></div>
+        </div>
+        <div class="promo-55-5 bg_primary">
+            <img src="img/promo-55-5.jpg" alt="" class="promo-55-5__image">
+            <div class="promo-55-5__text d-md-flex justify-content-between">
+                <div class="col">
+                  <div class="num">50 <span class="unit">г</span></div>
+                  <p>робоча сила</p>
+                </div>
+                <div class="col">
+                  <div class="num">2 <span class="unit">мм</span></div>
+                  <p>хід активації</p>
+                </div>
+                <div class="col">
+                  <div class="num">4 <span class="unit">мм</span></div>
+                  <p>повний хід</p>
+                </div>
+            </div>
+        </div>
+        <div class="promo-55-6">
+            <div class="d-flex justify-content-center"><img src="img/promo-55-6_1.jpg" alt="" class="img-fluid"></div>
+            <div class="promo-55-6__text text_center">
+                <div class="title">Перемикачі CHERRY MX BLUE: <br>тактильні світчі із звуковим супроводом точки спрацювання</div>
+                <p>Перемикачі Cherry MX Blue мають характерний звук під час натискання клавіш і досить сильний відгук спрацювання. Ці світчі найчастіше вибирають для довготривалого друку на клавіатурі, адже процес дуже нагадує набір на друкарській машинці. Окрема конструкція слайдера забезпечує найбільш суттєвий зворотний зв’язок з усіх перемикачів лінійки Cherry MX.</p>
+            </div>
+            <div class="d-flex justify-content-center"><img src="img/promo-55-6_2.jpg" alt="" class="img-fluid"></div>
+        </div>
+        <div class="promo-55-7">
+            <div class="d-flex justify-content-center"><img src="img/promo-55-7_1.png" alt="" class="img-fluid"></div>
+            <div class="promo-55-7__text text_center">
+                <div class="title">Мистецтво, реалізоване у високих технологіях</div>
+                <p>Слоган Varmilo – «Клавіатура митців» – ідеально передає підхід Varmilo до створення механічних клавіатур та втілює їхню унікальність. Виробник зосереджується не лише на розробленні та впровадженні нових функцій, а й на тому, щоби клавіатура була справжнім витвором мистецтва, завдяки яскравому та унікальному дизайну з майже ручним розписом.</p>
+            </div>
+            <div class="d-flex justify-content-center"><img src="img/promo-55-7_2.png" alt="" class="img-fluid promo-55-7__image"></div>
+            <div class="promo-55-7__logo bg_primary d-flex justify-content-center">
+                <img src="img/logo.svg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>   
+</body>
+</html>

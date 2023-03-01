@@ -1,0 +1,610 @@
+@import 'reset';
+@import 'mixin';
+@import 'fonts';
+
+
+
+
+
+
+
+
+body{
+    font: 400 3.5rem/3.3rem 'Bosch Sans', sans-serif;
+    color: #000;
+    background: #fff;
+    @include bp(xl){
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    @include bp(sm){
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+}
+.wrap{
+    overflow: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
+}
+.img-fluid{
+    display: block;
+    max-width: 100%;
+}
+.order-md-2{
+    @include bp(md-up){
+        order: 2;
+    }
+}
+.d-flex{
+    display: flex!important;
+}
+.d-md{
+    @include bp(md-up){
+        &-flex{
+            display: flex!important;
+        }
+    }
+}
+.align-items-center{
+    align-items: center;
+}
+.align-items-start{
+    align-items: start;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.bg_primary{
+    color: #fff;
+    background: rgb(1,59,107); 
+    background: -moz-linear-gradient(left,  rgba(1,59,107,1) 0%, rgba(0,84,144,1) 100%);
+    background: -webkit-linear-gradient(left,  rgba(1,59,107,1) 0%,rgba(0,84,144,1) 100%);
+    background: linear-gradient(to right,  rgba(1,59,107,1) 0%,rgba(0,84,144,1) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#013b6b', endColorstr='#005490',GradientType=1 );
+}
+.text_bold{
+    font-weight: 800;
+}
+.text_center{
+    text-align: center;
+}
+.title{
+    font-weight: 800;
+    font-size: 8.7rem;
+    line-height: 1;
+    @include bp(xl){
+        font-size: 6rem;
+    }
+    @include bp(sm){
+        font-size: 3.5rem;
+    }
+    &-block{
+        padding: 0.8rem 2rem 3rem;
+        &_padding{
+            padding: 3rem 2rem 3.3rem;
+        }
+    }
+    &_xs{
+        font-size: 5.5rem;
+        font-weight: 800;
+        line-height: 0.85;
+        @include bp(xl){
+            font-size: 4rem;
+        }
+        @include bp(lg){
+            font-size: 3.5rem;
+        }
+        @include bp(sm){
+            font-size: 2.8rem;
+        }
+    }
+    &_sm{
+        font-size: 8rem;
+        line-height: 1;
+        font-weight: 800;
+        @include bp(xl){
+            font-size: 6rem;
+        }
+        @include bp(lg){
+          font-size: 4rem;
+        }
+    }
+    &_md{
+        font-size: 8.5rem;
+        line-height: 1;
+        font-weight: 800;
+        @include bp(xxl){
+            font-size: 6rem;
+            line-height: 7rem!important;
+        }
+        @include bp(lg){
+            font-size: 4rem!important;
+            line-height: 4.5rem!important;
+        }
+    }
+    &_lg{
+        font-size: 8.9rem;
+        line-height: 1;
+        font-weight: 800;
+        @include bp(xxl){
+           font-size: 6rem;
+           line-height: 7rem!important;
+        }
+        @include bp(lg){
+            font-size: 4rem!important;
+            line-height: 4.5rem!important;
+        }
+    }
+}
+
+.header{
+    position: relative;
+    padding: 7.7rem 1.5rem 1.5rem 5.5rem;
+    @include bp(lg){
+        padding: 2rem 2rem;
+    }
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2.4rem;
+        background: url(../img/header-before.jpg) 0 0 no-repeat;
+        background-size: 100% auto;
+    }
+}
+.logo{
+    @include bp(lg){
+        align-self: center;
+    }
+    @include bp(sm){
+        width: 20rem;
+    }
+}
+.logo-sm{
+    margin: 6.8rem 0 0 auto;
+    @include bp(sm){
+        margin-top: 0;
+    }
+}
+
+// promo-57-1
+.promo-57-1{
+    position: relative;
+    &__text{
+        position: absolute;
+        left: 3.9rem;
+        width: 46.5%;
+        top: 23.1%;
+        @include bp(lg){
+          left: 2rem;
+        }
+        @include bp(md){
+            position: static;
+            width: 100%;
+            padding: 0 2rem 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+    &__title{
+        font-size: 5.1rem;
+        line-height: 1;
+        font-weight: 800;
+        padding: 0 1rem;
+        letter-spacing: -0.19rem;
+        @include bp(lg){
+          font-size: 4rem;
+        }
+        @include bp(md){
+            padding: 0;
+        }
+        @include bp(sm){
+            font-size: 3rem;
+        }
+    }
+    &__series{
+        display: block;
+        font-size: 23.6rem;
+        transform: scaleX(0.57) translateX(-40%);
+        margin-bottom: 4.4rem;
+        line-height: 0.9;
+        white-space: nowrap;
+        @include bp(xxxl){
+           font-size: 20rem;
+        }
+        @include bp(xxl){
+            font-size: 16rem;
+        }
+        @include bp(lg){
+          font-size: 12rem;
+          margin-bottom: 2rem;
+        }
+        @include bp(sm){
+            font-size: 8rem;
+        }
+    }
+    &__logo{
+        display: flex;
+        justify-content: flex-end;
+        margin: 8.2rem 3.2rem 2.1rem 0;
+        @include bp(lg){
+          margin-top: 3rem;
+        }
+        @include bp(sm){
+            margin-right: 0;
+            justify-content: center;
+        }
+    }
+}
+
+// promo-57-2
+.promo-57-2{
+    &__title{
+        margin-bottom: 3.3rem;
+    }
+}
+.advantages-item{
+    display: flex;
+    justify-content: space-between;
+    font-size: 7.3rem;
+    line-height: 8.7rem;
+    @include bp(xxl){
+        font-size: 4rem!important;
+        line-height: 5rem!important;
+        margin-bottom: 5rem!important;
+    }
+    @include bp(lg){
+        font-size: 2.5rem!important;
+        line-height: 3rem!important;
+    }
+    @include bp(sm){
+        flex-direction: column;
+    }
+    &__text{
+        position: relative;
+        z-index: 2;
+        width: 49.6%;
+        flex-shrink: 0;
+        padding-left: 5rem;
+        &.order-md-2{
+            padding-right: 2rem;
+        }
+        @include bp(xxxl){
+            flex-shrink: 0;
+        }
+        @include bp(xxl){
+           padding: 0 2rem!important;
+        }
+        @include bp(sm){
+            width: 100%;
+        }
+    }
+    .advantages-item__title{
+        margin: 6.2rem 0 0.5rem 0rem;
+        @include bp(xxl){
+           margin: 2rem 0!important;
+        }
+    }
+    &__image{
+        position: relative;
+        flex-shrink: 0;
+        @include bp(xxxl){
+            flex-shrink: 1;
+        }
+        @include bp(xxl){
+           margin: 0!important;
+        }
+        @include bp(sm){
+            width: 30rem;
+            margin: 0 auto!important;
+        }
+    }
+    &__icon{
+        margin: 10.9rem 0 0 2.4rem;
+        @include bp(xxl){
+           margin: 5rem 0 0!important;
+           width: 12rem;
+        }
+    }
+    p{
+        margin-bottom: 2rem;
+    }
+    &-1{
+        line-height: 9.9rem;
+        @include bp(xxxxl-up){
+           margin-bottom: -21.2rem;
+           .advantages-item__text{
+            padding-left: 0;
+           }
+        }
+        .advantages-item__title{
+            margin: 6.2rem 0 0.5rem 0rem;
+        }
+    }
+    &-2{
+        line-height: 9.3rem;
+        margin-bottom: 25.5rem;
+        .advantages-item__title{
+            margin-bottom: 4rem;
+            @include bp(xxxxl-up){
+                white-space: nowrap;
+            }
+        }
+        .advantages-item__image{
+            margin: 5.4rem 4.4rem 0 0;
+        }
+        .advantages-item__icon{
+            margin: 14.7rem 0 0 0.5rem;
+        }
+    }
+    &-3{
+        margin-bottom: 48rem;
+        line-height: 10.1rem;
+        .advantages-item__title{
+            line-height: 10.1rem;
+            margin-bottom: 12.2rem;
+        }
+        .advantages-item__text{
+            @include bp(xxxxl-up){
+                width: 53.4%;
+            }
+        }
+        .advantages-item__image{
+            margin: 10.9rem 0 0 7.5rem;
+        }
+    }
+    &-4{
+        font-size: 7.9rem;
+        margin-bottom: 9rem;
+        line-height: 9.8rem;
+        .advantages-item__title{
+            line-height: 9.8rem;
+            margin-bottom: 9.2rem;
+        }
+        .advantages-item__text{
+            padding: 6.3rem 0 0 8.9rem;
+        }                                                 
+    }
+    &-5{
+        font-size: 7.9rem;
+        line-height: 9.8rem;
+        margin-bottom: 15.6rem;
+        .advantages-item__image{
+            margin-left: 10rem;
+        }
+        .advantages-item__text{
+            padding: 2.8rem 2rem 0 1.1rem;
+        }
+        .advantages-item__title{
+            margin-bottom: 10rem;
+        }
+        .advantages-item__icon{
+            margin: 5.2rem 0 0;
+        }
+    }
+    &-6{
+        line-height: 9.8rem;
+        margin-bottom: 26.5rem;
+        .advantages-item__image{
+            margin: 0 3% 0 -13%;
+        }
+        .advantages-item__text{
+            padding: 5.2rem 0 0 9.8rem;
+        }
+        .advantages-item__title{
+            margin-bottom: 0;
+            line-height: 10.2rem;
+        }
+        p{
+            margin-bottom: 10rem;
+            @include bp(xxl){
+                margin-bottom: 4rem;
+            }
+            @include bp(sm){
+                margin-bottom: 2px;
+            }
+            &:last-child{
+                @include bp(xxxl-up){
+                    font-size: 8.5rem;
+                }
+            }
+        }
+    }
+    &-7{
+        font-size: 7.5rem;
+        line-height: 9.8rem;
+        margin-bottom: 6.3rem;
+        .advantages-item__image{
+            margin-left: 6rem;
+        }
+        .advantages-item__text{
+            padding-left: 2.2rem;
+        }
+        .advantages-item__title{
+            margin-bottom: 9.8rem;
+        }
+        .advantages-item__icon{
+            margin: 9.5rem 0 0 0;
+        }
+    }
+}
+
+// promo-57-3
+.promo-57-3{
+    &__image{
+        margin: 3.7rem 0 4.3rem;
+    }
+    &__title{
+        padding: 2.8rem 2rem 4rem;
+    }
+}
+
+// promo-57-4
+.promo-57-4{
+    background: #003e6e;
+    padding: 4.8rem 0 4.1rem;
+    margin-bottom: 4.5rem;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    @include bp(md){
+        display: block;
+    }
+    &__text{
+        width: 50.5%;
+        font-weight: 800;
+        margin-left: 2rem;
+        padding-right: 2rem;
+        @include bp(xxl){
+           width: 80%;
+        }
+        @include bp(md){
+            width: 100%;
+            margin: 0;
+            padding: 0 2rem;
+        }
+    }
+    &__image{
+        padding: 2.6rem 0;
+        @include bp(md){
+            padding: 2rem 2rem 4rem;
+            img{
+                width: 40rem;
+                margin: 0 auto;
+            }
+        }
+    }
+    &__logo{
+        margin-top: 4.1rem;
+        display: flex;
+        justify-content: center;
+        padding-right: 2rem;
+        @include bp(xxl){
+           padding: 0 2rem;
+        }
+    }
+}
+.info-item{
+    margin-bottom: 1.3rem;
+    line-height: 1.2;
+    @include bp(md){
+        margin-bottom: 3rem;
+    }
+    @include bp(xs){
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    &_margin{
+        @include bp(xxxl-up){
+            margin-bottom: 4.8rem;
+        }
+    }
+    &__icon{
+        width: 11.6rem;
+        flex-shrink: 0;
+        margin-right: 2.8rem;
+        @include bp(xs){
+            margin: 0 auto 1rem;
+        }
+        &_margin{
+            margin-top: 2.4rem;
+            @include bp(md){
+                margin-top: 0;
+            }
+        }
+    }
+    &__title{
+        margin-bottom: 0.6rem;
+    }
+}
+
+// promo-57-5
+.promo-57-5{
+    margin-top: 4.4rem;
+    position: relative;
+    color: #fff;
+    background: #003c6b;
+    &__heading{
+        position: absolute;
+        top: 10.7rem;
+        left: 9.9rem;  
+        @include bp(xxxl){
+           top: 3rem;
+           left: 2rem;
+        }  
+        @include bp(xs){
+            position: static;
+            padding: 2rem;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    &__title{
+        font-size: 13.8rem;
+        line-height: 1.2;
+        font-weight: 800;
+        letter-spacing: 2px;
+        @include bp(xxxl){
+           font-size: 10rem;
+        }
+        @include bp(lg){
+          font-size: 8rem;
+          line-height: 1;
+        }
+        @include bp(md){
+            font-size: 4rem;
+        }
+        @include bp(xs){
+            font-size: 3rem;
+        }
+    }
+    &__logo{
+        margin: 4.1rem 8rem 0 0;
+        flex-shrink: 0;
+        @include bp(xxxl){
+           margin-right: 3rem;
+        }
+        @include bp(xxl){
+           width: 20%;
+           margin-top: 0;
+        }
+        @include bp(xs){
+            width: 15rem;
+            margin: 0 auto 1rem;
+        }
+    }
+    &__text{
+        font-size: 7.5rem;
+        line-height: 9.3rem;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 2rem 5% 5.2rem;
+        @include bp(xxxl){
+           font-size: 5rem;
+           line-height: 6rem;
+        }
+        @include bp(lg){
+          font-size: 3rem;
+          line-height: 1;
+        }
+        @include bp(md){
+            padding: 2rem;
+        }
+        @include bp(xs){
+            position: static;
+            font-size: 2.2rem;
+            line-height: 1.2;
+        }
+    }
+}
+
