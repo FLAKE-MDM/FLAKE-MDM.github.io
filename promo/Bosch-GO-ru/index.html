@@ -1,0 +1,1877 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bosch GO</title>
+    <style>
+        *, :before, :after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+:focus {
+  outline: 0;
+}
+
+::-webkit-input-placeholder {
+  text-indent: 0px;
+  -webkit-transition: text-indent 0.3s ease;
+  transition: text-indent 0.3s ease;
+  font-family: inherit;
+  color: #838D9B !important;
+}
+
+::-moz-placeholder {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  font-family: inherit;
+  color: #838D9B !important;
+}
+
+:-moz-placeholder {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  font-family: inherit;
+  color: #838D9B !important;
+}
+
+:-ms-input-placeholder {
+  text-indent: 0px;
+  -webkit-transition: text-indent 0.3s ease;
+  transition: text-indent 0.3s ease;
+  font-family: inherit;
+  color: #838D9B !important;
+}
+
+:focus::-webkit-input-placeholder {
+  text-indent: -1000px;
+  -webkit-transition: text-indent 0.3s ease;
+  transition: text-indent 0.3s ease;
+}
+
+:focus::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+:focus:-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+:focus:-ms-input-placeholder {
+  text-indent: -1000px;
+  -webkit-transition: text-indent 0.3s ease;
+  transition: text-indent 0.3s ease;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+label, input:not([type="checkbox"]),
+input:not([type="radio"]), button {
+  -webkit-appearance: none;
+  font-family: inherit;
+}
+
+label, input[type="submit"], button {
+  cursor: pointer;
+}
+
+img {
+  border: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:hover::-webkit-outer-spin-button,
+input:hover::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+
+@font-face {
+  font-family: 'Bosch Sans';
+  src: url("fonts/BoschSans-Regular.eot");
+  src: url("fonts/BoschSans-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/BoschSans-Regular.woff") format("woff"), url("fonts/BoschSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bosch Sans';
+  src: url("fonts/BoschSans-Bold.eot");
+  src: url("fonts/BoschSans-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/BoschSans-Bold.woff") format("woff"), url("fonts/BoschSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bosch Sans';
+  src: url("fonts/BoschSans-Black.eot");
+  src: url("fonts/BoschSans-Black.eot?#iefix") format("embedded-opentype"), url("fonts/BoschSans-Black.woff") format("woff"), url("fonts/BoschSans-Black.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  font: 400 5.8rem/1 'Bosch Sans', sans-serif;
+  color: #005691;
+  background: #fff;
+}
+
+@media only screen and (max-width: 1349px) {
+  body {
+    font-size: 4rem;
+    line-height: 1.1;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  body {
+    font-size: 2.5rem;
+  }
+}
+
+.wrap {
+  overflow: hidden;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.img-fluid {
+  display: block;
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .order-md-2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.d-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+@media only screen and (min-width: 576px) {
+  .d-sm-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .d-md-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .col-md-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .d-lg-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.align-items-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.justify-content-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.justify-content-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.text_inversion {
+  color: #fff !important;
+}
+
+.text_upper {
+  text-transform: uppercase;
+}
+
+.text_bold {
+  font-weight: 700;
+}
+
+.text_black {
+  font-weight: 800;
+}
+
+.bg_gray {
+  background: #d7d7d7;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.text_right {
+  text-align: right;
+}
+
+.separator {
+  position: relative;
+  width: 7rem;
+  height: 0.8rem;
+  margin: 6rem auto 3rem;
+  background: #005691;
+  left: 0.5rem;
+}
+
+@media only screen and (max-width: 1349px) {
+  .separator {
+    margin-top: 4rem !important;
+  }
+}
+
+.separator:before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 0.8rem;
+  width: 0.8rem;
+  right: 100%;
+  margin-right: 0.5rem;
+  background: #005691;
+}
+
+.title {
+  font-size: 11.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: -0.4rem;
+  line-height: 1;
+}
+
+@media only screen and (max-width: 1349px) {
+  .title {
+    font-size: 8rem;
+    line-height: 1.1;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .title {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .title {
+    font-size: 3.4rem;
+  }
+}
+
+.logo {
+  background: #a6000f;
+  /* Old browsers */
+  background: -webkit-gradient(linear, left top, left bottom, from(#a6000f), to(#e20014));
+  background: linear-gradient(to bottom, #a6000f 0%, #e20014 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000f', endColorstr='#e20014',GradientType=0 );
+  padding: 14.5rem 4.6rem 11.6rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  .logo {
+    padding: 8rem 3rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .logo {
+    padding: 2rem;
+  }
+}
+
+.promo-63-1 {
+  position: relative;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.promo-63-1__text {
+  position: absolute;
+  top: 7.05%;
+  right: 2rem;
+  left: 2rem;
+  padding: 0 2rem;
+  font-size: 11.2rem;
+  letter-spacing: -0.2rem;
+}
+.promo-63-1__logo{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8.5rem;
+  padding-left: 3.2%;
+}
+@media only screen and (max-width: 767px) {
+  .promo-63-1__logo {
+    width: 35rem;
+    max-width: 100%;
+    margin: 0 auto 3rem;
+  }
+}
+
+
+@media only screen and (max-width: 1349px) {
+  .promo-63-1__text {
+    font-size: 8rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .promo-63-1__text {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-1__text {
+    top: 3rem;
+    font-size: 2.7rem;
+    left: 1rem;
+    right: 1rem;
+  }
+}
+
+.promo-63-1__text p {
+  margin-bottom: 3.7rem;
+  padding-left: 30.9%;
+  letter-spacing: -0.4rem;
+}
+@media only screen and (max-width: 1459px) {
+  .promo-63-1__text p {
+    padding-left: 28.9%;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  .promo-63-1__text p {
+    padding-left: 32.9%;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .promo-63-1__text p {
+    padding-left: 28.9%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .promo-63-1__text p {
+    margin-bottom: 2rem;
+    padding-left: 30.9%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .promo-63-1__text p {
+    letter-spacing: -0.1rem;
+    margin: 0 auto 1rem;
+    width: 23rem;
+    padding: 0;
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%);
+  }
+}
+
+.promo-63-1__text .text_inversion {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: -0.3rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-1__text .text_inversion {
+    margin-right: 2rem;
+  }
+}
+
+.promo-63-2 {
+  padding: 16.2rem 3.9rem 5.2rem;
+}
+
+@media only screen and (max-width: 1349px) {
+  .promo-63-2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+
+@media only screen and (max-width: 991px) {
+  .promo-63-2 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-2 {
+    padding-top: 5rem;
+    padding-bottom: 0;
+  }
+}
+
+.promo-63-2__text {
+  letter-spacing: -0.1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.promo-63-2__title {
+  font-size: 9.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 0.6rem;
+  line-height: 1.38;
+  letter-spacing: -0.35rem;
+}
+
+@media only screen and (max-width: 1349px) {
+  .promo-63-2__title {
+    font-size: 8rem;
+    line-height: 1.2;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .promo-63-2__title {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-2__title {
+    font-size: 3.4rem;
+  }
+}
+
+.advantages-block {
+  width: 49.2%;
+  padding: 5.7rem 3rem 0;
+  position: relative;
+  z-index: 1;
+  background: #f8f8f8;
+  margin-top: 4.6rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .advantages-block {
+    padding: 3rem 1.5rem 0;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .advantages-block {
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .advantages-block + .advantages-block {
+    margin-top: 0;
+  }
+}
+
+.advantages-block__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+.advantages-block__title {
+  font-size: 7rem;
+  margin: 9.7rem 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: -0.35rem;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 1349px) {
+  .advantages-block__title {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .advantages-block__title {
+    margin: 4rem 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .advantages-block__title {
+    font-size: 3.4rem;
+  }
+}
+
+.advantages-item {
+  font-size: 4.65rem;
+  color: #000;
+  margin-bottom: 4.2rem;
+  padding: 0 1rem;
+  width: 50%;
+}
+
+@media only screen and (max-width: 1349px) {
+  .advantages-item {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .advantages-item {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .advantages-item {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .advantages-item {
+    width: 100%;
+  }
+}
+
+.advantages-item__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 3.4rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .advantages-item__icon {
+    width: 20rem;
+    margin: 0 auto 2rem;
+  }
+}
+
+.promo-63-3__separator{
+  margin-bottom: 4.7rem;
+}
+
+.promo-63-3__text {
+  padding: 23rem 2rem 7.1rem;
+  font-size: 8.9rem;
+  line-height: 1.04;
+  letter-spacing: 0.25rem;
+}
+
+@media only screen and (max-width: 1349px) {
+  .promo-63-3__text {
+    padding-top: 15rem;
+    font-size: 5rem;
+    letter-spacing: 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .promo-63-3__text {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-3__text {
+    font-size: 2.5rem;
+    padding: 5rem 2rem;
+  }
+}
+
+.promo-63-3__title {
+  letter-spacing: -0.45rem;
+  margin-bottom: 8.4rem;
+  font-size: 10rem;
+}
+
+@media only screen and (max-width: 1349px) {
+  .promo-63-3__title {
+    font-size: 8rem;
+    letter-spacing: 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .promo-63-3__title {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-3__title {
+    font-size: 3.4rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.promo-63-3__block {
+  position: relative;
+}
+
+.promo-63-3__block-1-text {
+  position: absolute;
+    top: 10.2rem;
+    font-size: 4.6rem;
+    left: 6.2%;
+    right: 0;
+    padding: 2rem;
+    letter-spacing: -0.1rem;
+}
+@media only screen and (min-width: 1400px){
+  .promo-63-3__block-1-text i{
+    font-size: 6.3rem;
+  }
+}
+
+
+@media only screen and (max-width: 1199px) {
+  .promo-63-3__block-1-text {
+    font-size: 3rem;
+    
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .promo-63-3__block-1-text {
+    top: 5rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-3__block-1-text {
+    top: 0;
+    font-size: 2rem;
+  }
+}
+
+.promo-63-3__block-1-text p {
+  margin-bottom: 2.3rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .promo-63-3__block-1-text p {
+    margin-bottom: 1rem;
+  }
+}
+
+.promo-63-3__block-2-text {
+  top: 13.6rem;
+}
+@media only screen and (max-width: 1400px){
+  .promo-63-3__block-1-text, .promo-63-3__block-2-text{
+    top: 3rem;
+    left: 3rem;
+  }
+}
+@media only screen and (max-width: 767px){
+  .promo-63-3__block-1-text, .promo-63-3__block-2-text{
+    top: 0;
+    left: 0;
+  }
+  .promo-63-3__block-2-text{
+    background: rgba(255,255,255,0.5);
+    padding-bottom: 0;
+  }
+}
+
+.promo-63-4__text {
+  padding: 10.1rem 2rem 7.1rem;
+  line-height: 1.1;
+  letter-spacing: 0.1rem;
+}
+
+.promo-63-4__text .separator{
+  margin: 4.3rem auto 4.9rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-4__text {
+    padding: 5rem 2rem;
+  }
+}
+
+.promo-63-4__title {
+  font-size: 8.7rem;
+  line-height: 1.48;
+  letter-spacing: -0.45rem;
+  margin-bottom: 4rem;
+}
+
+
+
+@media only screen and (max-width: 1349px) {
+  .promo-63-4__title {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-4__title {
+    font-size: 3.5rem;
+  }
+}
+
+.promo-63-4__image-1-text-top {
+  position: absolute;
+  color: #01adff;
+  top: 8.7%;
+  left: 10.1%;
+  letter-spacing: 0.05rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  .promo-63-4__image-1-text-top {
+    top: 3rem;
+    left: 3rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-4__image-1-text-top {
+    top: 0;
+    left: 0;
+    padding: 1.5rem;
+  }
+}
+
+.promo-63-4__image-1-text-bottom {
+  position: absolute;
+  bottom: 9.3%;
+  right: 8.7%;
+  letter-spacing: 0.05rem;
+  color: #01adff;
+  text-align: right;
+}
+
+@media only screen and (max-width: 1199px) {
+  .promo-63-4__image-1-text-bottom {
+    bottom: 3rem;
+    right: 3rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-4__image-1-text-bottom {
+    bottom: 0;
+    right: 0;
+    padding: 1.5rem;
+  }
+}
+
+.promo-63-4__image-1-text-bottom::after {
+  content: '';
+  display: block;
+  width: 10.2rem;
+  height: 0.4rem;
+  background: #01adff;
+  margin: 7rem 2rem -0.1rem auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-4__image-1-text-bottom::after {
+    display: none;
+  }
+}
+
+.promo-63-4__image-2-text {
+  position: absolute;
+    top: 23.2%;
+    left: 8.5%;
+    color: #fff;
+    font-size: 4.7rem;
+    border-radius: 25px;
+    width: 70%;
+    line-height: 1.17;
+}
+
+@media only screen and (max-width: 1199px) {
+  .promo-63-4__image-2-text {
+    font-size: 3rem;
+    padding: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-4__image-2-text {
+    position: static;
+    font-size: 2rem;
+    border-radius: 0;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background: #232323;
+  }
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.num {
+  font-size: 18.4rem;
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .num {
+    font-size: 5rem;
+  }
+}
+
+.num span {
+  font-size: 7rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .num span {
+    font-size: 3rem;
+  }
+}
+
+.promo-63-5__text {
+  padding: 23rem 2rem 3rem;
+  line-height: 1.1;
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-5__text {
+    padding: 5rem 2rem 3rem;
+  }
+}
+
+.promo-63-5__image-text {
+  position: absolute;
+  font-size: 4.6rem;
+  font-style: italic;
+  top: 77.3%;
+  left: 12.7%;
+  letter-spacing: 0.05rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  .promo-63-5__image-text {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-5__image-text {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .promo-63-5__image-text {
+    background: #f6f6f8;
+    position: static;
+    padding: 0 2rem 1rem;
+    margin-top: -5rem;
+  }
+}
+
+.promo-63-5__image-text p {
+  margin-bottom: 1.2rem;
+}
+
+.promo-63-5__separator {
+  margin: 6.9rem auto 4.8rem;
+}
+
+.promo-63-5__bottom {
+  background: #eaeaea;
+  padding: 6.6rem 2rem 7.2rem 10.2%;
+}
+
+@media only screen and (max-width: 1349px) {
+  .promo-63-5__bottom {
+    padding: 4rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .promo-63-5__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.promo-63-5__bottom-image {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+@media only screen and (max-width: 991px) {
+  .promo-63-5__bottom-image {
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+  }
+}
+
+.promo-63-5__bottom-text {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+      margin: 0 0 2.3rem 5%;
+    letter-spacing: 0.04rem;
+    line-height: 1.2;
+    font-size: 4.6rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  .promo-63-5__bottom-text {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .promo-63-5__bottom-text {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-5__bottom-text {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .promo-63-5__bottom-text {
+    margin: 2rem 0 0;
+    width: 100%;
+  }
+}
+
+.promo-63-6__text {
+  padding: 21rem 2rem 9.8rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .promo-63-6__text {
+    padding: 8rem 2rem 3rem;
+  }
+}
+
+.promo-63-6__separator {
+  margin-top: 6.9rem;
+}
+
+.box__text {
+  position: absolute;
+  font-size: 7rem;
+  line-height: 1.1;
+  top: 16.5%;
+  letter-spacing: -0.2rem;
+  left: 7.6%;
+  font-weight: bold;
+  max-width: 70%;
+}
+
+@media only screen and (max-width: 1199px) {
+  .box__text {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .box__text {
+    font-size: 3rem;
+    top: 2rem;
+    left: 2rem;
+  }
+}
+
+.box__text::after {
+  content: '';
+  display: block;
+  width: 8.2rem;
+  height: 0.7rem;
+  margin: 2.4rem 0.2rem 0;
+  background: #005691;
+}
+
+@media only screen and (max-width: 767px) {
+  .box__text::after {
+    margin-top: 1rem;
+  }
+}
+
+.box__text.text_inversion:after {
+  background: #fff;
+  margin-top: 4.7rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .box__text.text_inversion:after {
+    margin-top: 1rem;
+  }
+}
+
+.box__text_bottom {
+  top: auto;
+  bottom: 12.6%;
+}
+
+@media only screen and (max-width: 767px) {
+  .box__text_bottom {
+    bottom: 2rem !important;
+  }
+}
+
+.box__text_bottom.text_inversion {
+  bottom: 16.5%;
+}
+
+.promo-63-7 .title {
+  line-height: 1.1;
+  letter-spacing: -0.5rem;
+  padding-bottom: 0.3rem;
+}
+
+.promo-63-7__text {
+  padding: 21rem 5% 13.8rem;
+  line-height: 1.1;
+  letter-spacing: 0.1rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-7__text {
+    padding: 5rem 2rem;
+  }
+}
+
+.promo-63-7__separator {
+  margin-bottom: 5rem;
+}
+
+.promo-63-7__image-text {
+  position: absolute;
+  top: 12.8%;
+  left: 10%;
+  font-size: 4.6rem;
+  line-height: 1.1;
+  letter-spacing: 0.03rem;
+}
+
+@media only screen and (max-width: 1349px) {
+  .promo-63-7__image-text {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-7__image-text {
+    top: 2rem;
+    left: 2rem;
+    font-size: 1.8rem;
+  }
+}
+
+.promo-63-7__image-text b {
+  display: block;
+  font-size: 7rem;
+  letter-spacing: -0.23rem;
+}
+
+@media only screen and (max-width: 1349px) {
+  .promo-63-7__image-text b {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-7__image-text b {
+    font-size: 2.2rem;
+  }
+}
+
+.promo-63-7__image-text__separator {
+  margin: 7.5rem 0 0 1.4rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-7__image-text__separator {
+    display: none;
+  }
+}
+
+.promo-63-7__image-text.text_right {
+  left: auto;
+  right: 9%;
+  top: 8.3%;
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-7__image-text.text_right {
+    right: 2rem;
+    top: 2rem;
+  }
+}
+
+.promo-63-7__image-text.text_right .promo-63-7__image-text__separator {
+  margin: 8.7rem 0.2rem 0 auto;
+}
+
+.promo-63-8 {
+  background: #f2f2f2;
+  padding: 0 3.9rem 2.5rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-8 {
+    padding: 0 0 2rem;
+  }
+}
+
+.promo-63-8__text {
+  padding: 12rem 2rem 6.9rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-8__text {
+    padding: 5rem 2rem;
+  }
+}
+
+.promo-63-8__text .separator {
+  margin-top: 5.5rem;
+}
+
+.card {
+  background: #fff;
+  padding: 2.7rem;
+  border-radius: 15px;
+  margin-bottom: 3.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .card {
+    padding: 2rem;
+  }
+}
+
+.card_sm {
+  max-width: 49%;
+}
+
+@media only screen and (max-width: 767px) {
+  .card_sm {
+    max-width: 100%;
+  }
+}
+
+.card__text {
+  font-size: 4.6rem;
+  padding: 2.8rem 0 0;
+  letter-spacing: 0.08rem;
+  line-height: 1.3;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1349px) {
+  .card__text {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .card__text {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .card__text {
+    font-size: 2.5rem;
+  }
+}
+
+.card__num {
+  position: absolute;
+  top: 4.1rem;
+  left: 4.4rem;
+  font-weight: bold;
+  font-size: 4.6rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .card__num {
+    top: 1rem;
+    left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .card__image img {
+    width: 100%;
+  }
+}
+
+.promo-63-9 {
+  background: #f7f7f7; 
+  padding: 17.5rem 0 14.8rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .promo-63-9 {
+    padding: 8rem 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-9 {
+    padding: 5rem 0;
+  }
+}
+
+.promo-63-9__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 2rem;
+}
+
+.promo-63-9__separator {
+  margin: 8.6rem auto 3.5rem;
+}
+
+
+
+@media only screen and (max-width: 1349px) {
+  .promo-63-9__image {
+    padding: 0 2rem;
+  }
+}
+
+.promo-63-10 {
+  background: linear-gradient(to right,  rgba(247,247,247,1) 0%,rgba(233,233,233,1) 100%); 
+  padding: 19.2rem 2rem 2rem;
+}
+
+@media only screen and (max-width: 1349px) {
+  .promo-63-10 {
+    padding-top: 12rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .promo-63-10 {
+    padding: 8rem 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-10 {
+    padding: 5rem 0 0;
+  }
+}
+
+.promo-63-10__title {
+  margin-bottom: 8.5rem;
+}
+
+@media only screen and (max-width: 1349px) {
+  .promo-63-10__title {
+    margin-bottom: 6rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-10__title {
+    margin-bottom: 3rem;
+  }
+}
+
+.promo-63-10__separator{
+  margin-bottom: 21rem;
+}
+@media only screen and (max-width: 1349px) {
+  .promo-63-10__separator {
+    margin-bottom: 6rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .promo-63-10__separator {
+    margin-bottom: 3rem;
+  }
+}
+.equipment-row {
+  padding: 0 15% 0 10%;
+}
+
+@media only screen and (max-width: 1349px) {
+  .equipment-row {
+    padding: 0 2rem;
+  }
+}
+
+.equipment-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+  font-size: 4.6rem;
+  line-height: 1.3;
+}
+
+@media only screen and (max-width: 1349px) {
+  .equipment-item {
+    margin: 0 2rem 3rem;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .equipment-item {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .equipment-item {
+    font-size: 2.5rem;
+  }
+}
+
+.equipment-item__image {
+  margin-bottom: 2.2rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .equipment-item__image {
+    margin-bottom: 1rem;
+  }
+}
+
+.promo-63-11 {
+  background: #fff;
+  border-radius: 15px;
+  padding: 19.6rem 3.7% 20rem;
+  margin: 10.5rem 1.7rem 4rem;
+}
+
+@media only screen and (max-width: 1349px) {
+  .promo-63-11 {
+    padding: 15rem 2rem 8rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .promo-63-11 {
+    margin: 8rem 0 0;
+    padding-top: 10rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-11 {
+    padding-top: 5rem;
+    border-radius: 0;
+  }
+}
+
+.promo-63-11__text {
+  width: 67%;
+  margin: 0 2rem 15.2rem 2.2rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+@media only screen and (max-width: 1349px) {
+  .promo-63-11__text {
+    margin-right: 5%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .promo-63-11__text {
+    margin-left: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-11__text {
+    width: 100%;
+    margin: 0 0 3rem;
+  }
+}
+
+.promo-63-11__title {
+  margin-bottom: 8.7rem;
+}
+
+@media only screen and (max-width: 1349px) {
+  .promo-63-11__title {
+    margin-bottom: 6rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-11__title {
+    margin-bottom: 4rem;
+  }
+}
+
+.promo-63-11__separator {
+  margin-bottom: 19.5rem;
+}
+
+@media only screen and (max-width: 1349px) {
+  .promo-63-11__separator {
+    margin-bottom: 6rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-11__separator {
+    margin-bottom: 4rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .promo-63-11__image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.characteristics__title {
+  margin-bottom: 3.5rem;
+  letter-spacing: -0.03rem;
+  font-size: 4.7rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (max-width: 1199px) {
+  .characteristics__title {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .characteristics__title {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0;
+  }
+}
+
+.characteristics-group {
+  border-top: 2px solid #b8b8b8;
+  border-bottom: 2px solid #b8b8b8;
+}
+
+.characteristics-item {
+  padding: 3.45rem 00.5rem 3.45rem 0;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 4.7rem;
+}
+
+@media only screen and (max-width: 1349px) {
+  .characteristics-item {
+    font-size: 3rem;
+    padding: 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .characteristics-item {
+    font-size: 2rem;
+  }
+}
+
+.characteristics-item:not(:last-child) {
+  border-bottom: 2px solid #e7e7e7;
+}
+
+.characteristics-item__value {
+  margin-left: 2rem;
+  color: rgba(0, 0, 0, 0.4);
+  text-align: right;
+}
+
+    </style>
+</head>
+<body>
+    <div class="wrap promo-63">
+        <div class="logo"><img src="img/logo.png" alt="" class="img-fluid"></div>
+        <div class="promo-63-1">
+            <div class="promo-63-1__text">
+                <div class="promo-63-1__logo"><img src="img/logo-blue-sm.png" alt="" class="img-fluid"></div>
+                <p><span class="text_inversion">ЕЩЕ</span> ПРОЩЕ,</p>
+                <p><span class="text_inversion">ЕЩЕ</span> УДОБНЕЕ.</p>
+            </div>
+            <img src="img/promo-63-1.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="promo-63-2 bg_gray">
+            <div class="promo-63-2__text text_center">
+                <p class="text_upper text_bold">АККУМУЛЯТОРНАЯ ОТВЕРТКА BOSCH GO 2.0</p>
+                <div class="promo-63-2__title">удобная настройка <br>для начала работы <br>& идеальный результат<br>в любой ситуации</div>
+                <div class="separator"></div>
+            </div>
+            <p class="text_center">Для сверления и заворачивания шурупов <br>в дереве, металле и пластике</p>
+            <div class="d-md-flex justify-content-between">
+                <div class="advantages-block text_center">
+                    <div class="advantages-block__image"><img src="img/bg-advantages.jpg" alt="" class="advantages-block__image"></div>
+                    <div class="advantages-block__title text_inversion">| МОЩНОСТЬ |</div>
+                    <div class="d-sm-flex">
+                        <div class="advantages-item text_inversion col-md-6">
+                            <div class="advantages-item__icon"><img src="img/advantages-1.png" alt="" class="img-fluid"></div>
+                            <p>Установка электрических панелей</p>
+                        </div>
+                        <div class="advantages-item text_inversion col-md-6">
+                            <div class="advantages-item__icon"><img src="img/advantages-2.png" alt="" class="img-fluid"></div>
+                            <p>Ремонт бытовых приборов</p>
+                        </div>
+                    </div>
+                    <div class="d-sm-flex">
+                        <div class="advantages-item text_inversion col-md-6">
+                            <div class="advantages-item__icon"><img src="img/advantages-3.png" alt="" class="img-fluid"></div>
+                            <p>Сборка <br>мебели</p>
+                        </div>
+                        <div class="advantages-item text_inversion col-md-6">
+                            <div class="advantages-item__icon"><img src="img/advantages-4.png" alt="" class="img-fluid"></div>
+                            <p>Установка освещения</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="advantages-block text_center">
+                    <div class="advantages-block__title">| ТОЧНОСТЬ |</div>
+                    <div class="d-sm-flex">
+                        <div class="advantages-item col-md-6">
+                            <div class="advantages-item__icon"><img src="img/advantages-5.png" alt="" class="img-fluid"></div>
+                            <p>Ремонт электронных устройств</p>
+                        </div>
+                        <div class="advantages-item col-md-6">
+                            <div class="advantages-item__icon"><img src="img/advantages-6.png" alt="" class="img-fluid"></div>
+                            <p>Ремонт компьтеров и ноутбуков</p>
+                        </div>
+                    </div>
+                    <div class="d-sm-flex">
+                        <div class="advantages-item col-md-6">
+                            <div class="advantages-item__icon"><img src="img/advantages-7.png" alt="" class="img-fluid"></div>
+                            <p>Ремонт электроники</p>
+                        </div>
+                        <div class="advantages-item col-md-6">
+                            <div class="advantages-item__icon"><img src="img/advantages-8.png" alt="" class="img-fluid"></div>
+                            <p>Ремонт спортивного инвентаря</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="promo-63-3">
+            <div class="promo-63-3__text text_center">
+                <div class="promo-63-3__title text_upper text_bold">2 режима работы</div>
+                <div class="separator promo-63-3__separator"></div>
+                <p>Надави на отвертку <br>или нажми на кнопку </p>
+            </div>
+            <div class="promo-63-3__block">
+                <div class="promo-63-3__block-1-text text_inversion text_bold">
+                    <p>Надави на отвертку для начала работы</p>
+                    <p><i>Простое нажатие, отличный результат</i></p>
+                </div>
+                <img src="img/promo-63-3_1.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="promo-63-3__block">
+                <div class="promo-63-3__block-1-text promo-63-3__block-2-text text_bold">
+                    <p>Нажми кнопку для начала работы</p>
+                    <p><i>Для применений с высокой <br>точностью работы</i></p>
+                </div>
+                <img src="img/promo-63-3_2.png" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="promo-63-4">
+            <div class="promo-63-4__text text_center">
+                <div class="promo-63-4__title text_bold text_upper">НАСТРОЙКА  <br>крутящЕГО моментА <br>для различных применений</div>
+                <div class="separator"></div>
+                <p>5 настроек крутящего момента <br>и режим повышенной мощности</p>
+            </div>
+            <div class="promo-63-4__image-1 pos-rel">
+                <div class="promo-63-4__image-1-text-top"><div class="num text_bold">5<span> Нм</span></div>Макс. крутящий момент</div>
+                <div class="promo-63-4__image-1-text-bottom"><div class="num">0,2<span> Нм</span></div>Мин. крутящий момент</div>
+                <img src="img/promo-63-4_1.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="promo-63-4__image-2 pos-rel">
+                <div class="promo-63-4__image-2-text">Инструмент автоматически остановится, если система распознает неправильное
+                  заворачивание</div>
+                <img src="img/promo-63-4_2.png" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="promo-63-5">
+            <div class="promo-63-5__text text_center">
+                <div class="title">УДОБНЫЙ контроль</div>
+                <div class="separator promo-63-5__separator"></div>
+                <p>Электронный тормоз сразу же останавливает инструмент, предотвращая повреждение рабочей поверхности и шурупа </p>
+            </div>
+            <div class="promo-63-5__image pos-rel">
+                <img src="img/promo-63-5.jpg" alt="" class="img-fluid">
+                <div class="promo-63-5__image-text">
+                    <p>Начни работу нажатием,</p>
+                    <p>Отпусти инструмент для остановки,</p>
+                </div>
+            </div>
+            <div class="promo-63-5__bottom d-flex">
+                <div class="promo-63-5__bottom-image"><img src="img/promo-63-5_2.jpg" alt="" class="img-fluid"></div>
+                <div class="promo-63-5__bottom-text">Инструмент без электронного тормоза может повредить поверхность и срывать шляпку шурупа</div>
+            </div>
+        </div>
+        <div class="promo-63-6">
+            <div class="promo-63-6__text text_center">
+                <div class="title">применение</div>
+                <div class="separator promo-63-6__separator"></div>
+            </div>
+            <div class="box pos-rel">
+                <div class="box__text text_inversion">Заворачивание <br>в дерево</div>
+                <img src="img/promo-63-6_1.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="box pos-rel">
+                <div class="box__text text_inversion">Установка и ремонт <br>электрических панелей</div>
+                <img src="img/promo-63-6_2.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="box pos-rel">
+                <div class="box__text box__text_bottom">Ремонт <br>бытовых <br>приборов</div>
+                <img src="img/promo-63-6_3.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="box pos-rel">
+                <div class="box__text text_inversion box__text_bottom">Сборка мебели</div>
+                <img src="img/promo-63-6_4.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="promo-63-7">
+            <div class="promo-63-7__text text_center">
+                <div class="title">Мощный двигатель<br>s360 об/мин</div>
+                <div class="separator promo-63-7__separator"></div>
+                <p>Обеспечивает быструю и плавную работу, <br>сохраняя при этом ту же производительность</p>
+            </div>
+            <div class="pos-rel">
+                <div class="promo-63-7__image-text text_inversion">
+                    <p><b>Мощный двигатель<br>с надежным редуктором</b></p>
+                    <div class="separator promo-63-7__image-text__separator"></div>
+                </div>
+                <img src="img/promo-63-7_1.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="pos-rel">
+                <div class="promo-63-7__image-text text_inversion text_right">
+                    <p><b>Зарядный порт Micro-USB с <br>Electronic Cell Protection</b></p>
+                    <p>Предотвращает перегрев, перезаряд и перегрузку</p>
+                    <div class="separator promo-63-7__image-text__separator"></div>
+                </div>
+                <img src="img/promo-63-7_2.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="promo-63-8">
+            <div class="promo-63-8__text text_center">
+                <div class="title">руководство по <br>применению</div>
+                <div class="separator"></div>
+            </div>
+            <div class="d-md-flex justify-content-between">
+                <div class="card card_sm">
+                    <div class="card__image pos-rel">
+                        <img src="img/promo-63-8_1.jpg" alt="" class="img-fluid">
+                        <div class="card__num">01</div>
+                    </div>
+                    <div class="card__text text_center">Выбери <br>направление работы</div>
+                </div>
+                <div class="card card_sm">
+                    <div class="card__image pos-rel">
+                        <img src="img/promo-63-8_2.jpg" alt="" class="img-fluid">
+                        <div class="card__num">02</div>
+                    </div>
+                    <div class="card__text text_center">Установи крутящий момент</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image pos-rel">
+                    <img src="img/promo-63-8_3.jpg" alt="" class="img-fluid">
+                    <div class="card__num">03</div>
+                </div>
+                <div class="card__text text_center">Надави на отвертку или нажми на кнопку <br>для начала работы</div>
+            </div>
+        </div>
+        <div class="promo-63-9">
+            <div class="promo-63-9__logo"><img src="img/logo-blue.png" alt="" class="img-fluid"></div>
+            <div class="separator promo-63-9__separator"></div>
+            <div class="promo-63-9__image">
+                <img src="img/promo-63-9.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="promo-63-10">
+            <div class="title promo-63-10__title text_center">Комплектация</div>
+            <div class="separator promo-63-10__separator"></div>
+            <div class="d-md-flex equipment-row justify-content-between">
+                <div class="equipment-item">
+                    <div class="equipment-item__image"><img src="img/promo-63-10_1.jpg" alt="" class="img-fluid"></div>
+                    <div class="equipment-item__text text_center">Пластиковый кейс</div>
+                </div>
+                <div class="equipment-item">
+                    <div class="equipment-item__image"><img src="img/promo-63-10_2.jpg" alt="" class="img-fluid"></div>
+                    <div class="equipment-item__text text_center">Руководство <br>пользователя</div>
+                </div>
+            </div>
+            <div class="d-md-flex equipment-row justify-content-between">
+                <div class="equipment-item">
+                    <div class="equipment-item__image"><img src="img/promo-63-10_3.jpg" alt="" class="img-fluid"></div>
+                    <div class="equipment-item__text text_center">Bosch GO</div>
+                </div>
+                <div class="equipment-item">
+                    <div class="equipment-item__image"><img src="img/promo-63-10_4.jpg" alt="" class="img-fluid"></div>
+                    <div class="equipment-item__text text_center">Зарядный<br>кабель</div>
+                </div>
+            </div>
+            <div class="promo-63-11">
+                <div class="title text_center promo-63-11__title">характеристики</div>
+                <div class="separator promo-63-11__separator"></div>
+                <div class="d-md-flex justify-content-between">
+                    <div class="promo-63-11__text">
+                        <div class="characteristics__title">Технические характеристики</div>
+                        <div class="characteristics-group">
+                            <div class="characteristics-item d-flex justify-content-between">
+                                <div class="characteristics-item__title">Напряжение:</div>
+                                <div class="characteristics-item__value">3.6 В</div>
+                            </div>
+                            <div class="characteristics-item d-flex justify-content-between">
+                                <div class="characteristics-item__title">Кол-во оборотов на х/х:</div>
+                                <div class="characteristics-item__value">360 об/мин</div>
+                            </div>
+                            <div class="characteristics-item d-flex justify-content-between">
+                                <div class="characteristics-item__title">Макс. крутящий момент:</div>
+                                <div class="characteristics-item__value">5/2.5 Н*м</div>
+                            </div>
+                            <div class="characteristics-item d-flex justify-content-between">
+                                <div class="characteristics-item__title">Вид аккумулятора:</div>
+                                <div class="characteristics-item__value">Lithium-ion</div>
+                            </div>
+                            <div class="characteristics-item d-flex justify-content-between">
+                                <div class="characteristics-item__title">Емкость аккумулятора:</div>
+                                <div class="characteristics-item__value">1.5 Ач</div>
+                            </div>
+                            <div class="characteristics-item d-flex justify-content-between">
+                                <div class="characteristics-item__title">Зарядка Micro USB:</div>
+                                <div class="characteristics-item__value">Да</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promo-63-11__image"><img src="img/promo-63-11.jpg" alt="" class="img-fluid"></div>
+                </div>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>
