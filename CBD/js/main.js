@@ -19,19 +19,7 @@ $('.preview-slider').slick({
     },
   ]
 });
-$('.preview-slider').on('beforeChange', function(event, slick, currentSlide){
-  let items = document.querySelectorAll(".slide-dark");
-  for(let i = 0; i < items.length; ++i){
-    if(items[i].classList.contains("slick-current")){
-      $('.header').removeClass('header_inversion');
-      $('.preview-slider .slick-dots').removeClass('slick-dots_inversion');
-      break;
-    } else{
-      $('.header').addClass('header_inversion');
-      $('.preview-slider .slick-dots').addClass('slick-dots_inversion');
-    }
-  }
-});
+
 
 // header
 let oldScrollTopPosition = 0;
